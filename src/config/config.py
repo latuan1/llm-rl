@@ -1,6 +1,6 @@
 class CLANG_PATH:
     WINDOW = ""
-    UBUNTU = "/usr/lib/llvm-14/lib/libclang.so.1"
+    UBUNTU = "/usr/lib/x86_64-linux-gnu"
 
 class MODEL_NAME:
     CODET5_BASE = "models/codet5-base"
