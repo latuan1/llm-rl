@@ -1,8 +1,12 @@
+import os
+from os.path import dirname
+
 import clang
-from clang.cindex import Config
+from clang.cindex import Config, Index
 from src.config.config import CLANG_PATH
 
 Config.set_library_path(CLANG_PATH.UBUNTU)
+
 
 def check_cpp_code_ast(code: str) -> bool:
     """
@@ -12,7 +16,7 @@ def check_cpp_code_ast(code: str) -> bool:
     ngược lại trả về False.
     """
     # Tạo một instance của Index
-    index = clang.cindex.Index.create()
+    index = Index.create()
     try:
         # Parse code dưới dạng một file tạm thời "tmp.cpp"
         tu = index.parse(
