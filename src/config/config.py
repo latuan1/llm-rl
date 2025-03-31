@@ -40,7 +40,7 @@ MAIN_OUTPUT_PATH = normalize_path(f"{PROJECT_PATH}/aka-output")
 if not os.path.exists(MAIN_OUTPUT_PATH):
     os.makedirs(MAIN_OUTPUT_PATH)
 
-timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")
+timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M")
 OUTPUT_PATH = normalize_path(f"{MAIN_OUTPUT_PATH}/{timestamp}")
 
 if not os.path.exists(OUTPUT_PATH):

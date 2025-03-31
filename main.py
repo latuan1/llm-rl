@@ -2,15 +2,15 @@ from src.data.preprocess import preprocess_dataset2
 from src.predict.evaluate import load_model_and_dataset, evaluate_model
 from src.utils.model_utils import load_model_by_type
 from src.utils.mylogger import logger
-from src.config.config import MODEL_NAME, TRAINSET_DATA_PATH_PROCESS, VALIDATIONSET_DATA_PATH_PROCESS, TRAINSET_RAW, \
+from src.config.config import MODEL, TRAINSET_DATA_PATH_PROCESS, VALIDATIONSET_DATA_PATH_PROCESS, TRAINSET_RAW, \
     VALIDATIONSET_RAW, TARGET_SELETCTION_STRATEGIES, OPTIMIZE_TARGET_STRATEGY, OUTPUT_VALIDATIONSET_CSV, \
     OUTPUT_TRAINSET_CSV
 from src.utils.token_statistics import count_token_for_both, count_tokens
 
 
 def main():
-    logger.info(f"[UET] Load mô hình {MODEL_NAME} và tokenizer tương ứng")
-    modelObject = load_model_by_type(MODEL_NAME)
+    logger.info(f"[UET] Load mô hình {MODEL} và tokenizer tương ứng")
+    modelObject = load_model_by_type(MODEL)
 
     # TIEN XU LY DU LIEU
     logger.info(

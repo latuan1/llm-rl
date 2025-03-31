@@ -40,7 +40,7 @@ def evaluate_model(dataset, modelObject: BaseModel, outputFolder: str, limit: in
             try:
                 source_text, predicted = modelObject.generate_from_sample(sample)
                 ground_truth = str(sample["target"])
-                check_ast = check_cpp_code_ast(predicted)
+                check_ast = str(check_cpp_code_ast(predicted))
 
                 writer.writerow([source_text, ground_truth, predicted, check_ast])
                 f.flush()
