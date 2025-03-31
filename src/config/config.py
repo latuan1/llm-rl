@@ -24,8 +24,8 @@ class MASKING_STRATEGIES(Enum):
     NONE = 0
     RANDOM = 1
 
-max_source_length = 32
-max_target_length = 32
+max_source_length = 512
+max_target_length = 512
 
 REMOVE_COMMENT_MODE = COMMENT_REMOVAL.AST
 

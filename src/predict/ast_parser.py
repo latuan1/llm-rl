@@ -28,7 +28,7 @@ def check_cpp_code_ast(code: str) -> bool:
         if errors:
             logger.info("Có lỗi khi parse code:")
             for error in errors:
-                logger.info(" -", error)
+                logger.info(error)
             return False
 
         # Nếu không có lỗi, trả về True
