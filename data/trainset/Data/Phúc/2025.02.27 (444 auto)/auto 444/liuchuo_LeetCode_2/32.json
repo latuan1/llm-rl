@@ -1,0 +1,137 @@
+[
+    {
+        "f": [],
+        "fm": "vector<int> majorityElement(vector<int>& nums) {         vector<int> result;         set<int> s;         map<int, int> m;         int n = nums.size();         for(int i = 0; i < n; i++) {             m[nums[i]]++;             if(m[nums[i]] > n / 3)                 s.insert(nums[i]);         }         for(auto it = s.begin(); it != s.end(); it++)             result.push_back(*it);         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> majorityElement(vector<int>& nums) {         vector<int> result;         set<int> s;         map<int, int> m;         int n = nums.size();         for(int i = 0; i < n; i++) {             m[nums[i]]++;             if(m[nums[i]] > n / 3)                 s.insert(nums[i]);         }         for(auto it = s.begin(); it != s.end(); it++)             result.push_back(*it);         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/229. Majority Element II.cpp/Solution/majorityElement(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool isPowerOfTwo(int n) {         if(n <= 0)             return false;         while(n != 1) {             if(n % 2 == 0) {                 n = n / 2;             } else {                 return false;             }         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isPowerOfTwo(int n) {         if(n <= 0)             return false;         while(n != 1) {             if(n % 2 == 0) {                 n = n / 2;             } else {                 return false;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/231. Power of Two.cpp/Solution/isPowerOfTwo(int)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode* func(ListNode* head) {         if(head->next != NULL) {             ListNode *tail = func(head->next);             tail->next = head;             head->next = NULL;         }         return head;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* func(ListNode* head) {         if(head->next != NULL) {             ListNode *tail = func(head->next);             tail->next = head;             head->next = NULL;         }         return head;     }          ListNode* reverseList(ListNode* head) {         if(head == NULL || head->next == NULL)              return head;         ListNode *newhead = head;         while(newhead->next != NULL) {             newhead = newhead->next;         }         func(head);         return newhead;     }          bool isPalindrome(ListNode* head) {         if(head == NULL || head->next == NULL)             return true;         ListNode *p, *q;         p = head;         q = head;         while(q != NULL) {             p = p->next;             q = q->next;             if(q != NULL) {                 q = q->next;             }         }         p = reverseList(p);         while(p != NULL) {             if(head->val != p->val)                 return false;             else {                 head = head->next;                 p = p->next;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/234. Palindrome Linked List.cpp/Solution/func(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode* reverseList(ListNode* head) {         if(head == NULL || head->next == NULL)              return head;         ListNode *newhead = head;         while(newhead->next != NULL) {             newhead = newhead->next;         }         func(head);         return newhead;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* func(ListNode* head) {         if(head->next != NULL) {             ListNode *tail = func(head->next);             tail->next = head;             head->next = NULL;         }         return head;     }          ListNode* reverseList(ListNode* head) {         if(head == NULL || head->next == NULL)              return head;         ListNode *newhead = head;         while(newhead->next != NULL) {             newhead = newhead->next;         }         func(head);         return newhead;     }          bool isPalindrome(ListNode* head) {         if(head == NULL || head->next == NULL)             return true;         ListNode *p, *q;         p = head;         q = head;         while(q != NULL) {             p = p->next;             q = q->next;             if(q != NULL) {                 q = q->next;             }         }         p = reverseList(p);         while(p != NULL) {             if(head->val != p->val)                 return false;             else {                 head = head->next;                 p = p->next;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/234. Palindrome Linked List.cpp/Solution/reverseList(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool isPalindrome(ListNode* head) {         if(head == NULL || head->next == NULL)             return true;         ListNode *p, *q;         p = head;         q = head;         while(q != NULL) {             p = p->next;             q = q->next;             if(q != NULL) {                 q = q->next;             }         }         p = reverseList(p);         while(p != NULL) {             if(head->val != p->val)                 return false;             else {                 head = head->next;                 p = p->next;             }         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* func(ListNode* head) {         if(head->next != NULL) {             ListNode *tail = func(head->next);             tail->next = head;             head->next = NULL;         }         return head;     }          ListNode* reverseList(ListNode* head) {         if(head == NULL || head->next == NULL)              return head;         ListNode *newhead = head;         while(newhead->next != NULL) {             newhead = newhead->next;         }         func(head);         return newhead;     }          bool isPalindrome(ListNode* head) {         if(head == NULL || head->next == NULL)             return true;         ListNode *p, *q;         p = head;         q = head;         while(q != NULL) {             p = p->next;             q = q->next;             if(q != NULL) {                 q = q->next;             }         }         p = reverseList(p);         while(p != NULL) {             if(head->val != p->val)                 return false;             else {                 head = head->next;                 p = p->next;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/234. Palindrome Linked List.cpp/Solution/isPalindrome(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {         if(root==NULL || p==NULL || q==NULL)              return NULL;         if((p->val >= root->val && q->val <= root ->val) || (p->val <= root->val && q->val >= root->val)) {             return root;         }         if(p->val > root->val && q->val > root->val) {             return lowestCommonAncestor(root->right, p, q);         }         if(p->val < root->val && q->val < root->val) {             return lowestCommonAncestor(root->left, p, q);         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {         if(root==NULL || p==NULL || q==NULL)              return NULL;         if((p->val >= root->val && q->val <= root ->val) || (p->val <= root->val && q->val >= root->val)) {             return root;         }         if(p->val > root->val && q->val > root->val) {             return lowestCommonAncestor(root->right, p, q);         }         if(p->val < root->val && q->val < root->val) {             return lowestCommonAncestor(root->left, p, q);         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/235. Lowest Common Ancestor of a Binary Search Tree.cpp/Solution/lowestCommonAncestor(TreeNode*,TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "void deleteNode(ListNode* node) {         node->val = node->next->val;         node->next = node->next->next;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void deleteNode(ListNode* node) {         node->val = node->next->val;         node->next = node->next->next;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/237. Delete Node in a Linked List.cpp/Solution/deleteNode(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> productExceptSelf(vector<int>& nums) {         vector<int> v(nums.size());         int right = 1;         v[0] = 1;         //左边所有数字的乘积         for(int i = 1; i < nums.size(); i++) {            v[i] = nums[i - 1] * v[i - 1];          }         for(int i = nums.size() - 2; i >= 0; i--) {             right = right * nums[i + 1];             v[i] = v[i] * right;         }         return v;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> productExceptSelf(vector<int>& nums) {         vector<int> v(nums.size());         int right = 1;         v[0] = 1;         //左边所有数字的乘积         for(int i = 1; i < nums.size(); i++) {            v[i] = nums[i - 1] * v[i - 1];          }         for(int i = nums.size() - 2; i >= 0; i--) {             right = right * nums[i + 1];             v[i] = v[i] * right;         }         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/238. Product of Array Except Self .cpp/Solution/productExceptSelf(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool searchMatrix(vector<vector<int>>& matrix, int target) {         for(int i = 0; i < matrix.size(); i++)             if (binary_search(matrix[i].begin(), matrix[i].end(), target)) return true;         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool searchMatrix(vector<vector<int>>& matrix, int target) {         for(int i = 0; i < matrix.size(); i++)             if (binary_search(matrix[i].begin(), matrix[i].end(), target)) return true;         return false;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/32/240. Search a 2D Matrix II.cpp/Solution/searchMatrix(vector<vector<int>>&,int)"
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "f": [
+            "vector<int> result;",
+            "int n;"
+        ],
+        "fm": "vector<int> lexicalOrder(int n) {         this->n = n;         for (int i = 1; i <= 9; i++)             dfs(i);         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> lexicalOrder(int n) {         this->n = n;         for (int i = 1; i <= 9; i++)             dfs(i);         return result;     } private:     vector<int> result;     int n;     void dfs(int cur) {         if (cur > n) return;         result.push_back(cur);         for (int i = 0; i <= 9; i++)             dfs(10 * cur + i);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/386. Lexicographical Numbers.cpp/Solution/lexicalOrder(int)"
+    },
+    {
+        "f": [
+            "vector<int> result;",
+            "int n;"
+        ],
+        "fm": "void dfs(int cur) {         if (cur > n) return;         result.push_back(cur);         for (int i = 0; i <= 9; i++)             dfs(10 * cur + i);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> lexicalOrder(int n) {         this->n = n;         for (int i = 1; i <= 9; i++)             dfs(i);         return result;     } private:     vector<int> result;     int n;     void dfs(int cur) {         if (cur > n) return;         result.push_back(cur);         for (int i = 0; i <= 9; i++)             dfs(10 * cur + i);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/386. Lexicographical Numbers.cpp/Solution/dfs(int)"
+    },
+    {
+        "f": [],
+        "fm": "int firstUniqChar(string s) {         map<char, int> m;         for(int i = 0; i < s.length(); i++)             m[s[i]]++;         for(int i = 0; i < s.length(); i++) {             if(m[s[i]] == 1)                 return i;         }         return -1;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int firstUniqChar(string s) {         map<char, int> m;         for(int i = 0; i < s.length(); i++)             m[s[i]]++;         for(int i = 0; i < s.length(); i++) {             if(m[s[i]] == 1)                 return i;         }         return -1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/387. First Unique Character in a String .cpp/Solution/firstUniqChar(string)"
+    },
+    {
+        "f": [],
+        "fm": "char findTheDifference(string s, string t) {         int hash1[256] = {0}, hash2[256] = {0};         for(int i = 0; i < s.length(); i++)             hash1[s[i]]++;         for(int i = 0; i < t.length(); i++)             hash2[t[i]]++;         for(int i = 0; i < 256; i++)             if(hash1[i] != hash2[i])                 return (char)i;         return '0';     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     char findTheDifference(string s, string t) {         int hash1[256] = {0}, hash2[256] = {0};         for(int i = 0; i < s.length(); i++)             hash1[s[i]]++;         for(int i = 0; i < t.length(); i++)             hash2[t[i]]++;         for(int i = 0; i < 256; i++)             if(hash1[i] != hash2[i])                 return (char)i;         return '0';     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/389. Find the Difference.cpp/Solution/findTheDifference(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "bool isSubsequence(string s, string t) {         int p = 0, q = 0, lens = s.length(), lent = t.length();         while(p < lens && q < lent) {             while(q < lent && s[p] != t[q]) q++;             if(s[p] == t[q]) {                 p++;                 q++;             }         }         return p == lens;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isSubsequence(string s, string t) {         int p = 0, q = 0, lens = s.length(), lent = t.length();         while(p < lens && q < lent) {             while(q < lent && s[p] != t[q]) q++;             if(s[p] == t[q]) {                 p++;                 q++;             }         }         return p == lens;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/392. Is Subsequence.cpp/Solution/isSubsequence(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "int findNthDigit(int n) {         long digit = 1, sum = 9;         while(n > digit * sum) {             n = n - digit * sum;             sum = sum * 10;             digit++;         }         int index = n % digit;         if(index == 0)             index = digit;         long num = pow(10, digit - 1);         num += (index == digit) ? (n / digit - 1) : (n / digit);         for(int i = index; i < digit; i++)             num = num / 10;         return num % 10;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findNthDigit(int n) {         long digit = 1, sum = 9;         while(n > digit * sum) {             n = n - digit * sum;             sum = sum * 10;             digit++;         }         int index = n % digit;         if(index == 0)             index = digit;         long num = pow(10, digit - 1);         num += (index == digit) ? (n / digit - 1) : (n / digit);         for(int i = index; i < digit; i++)             num = num / 10;         return num % 10;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/400. Nth Digit.cpp/Solution/findNthDigit(int)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> readBinaryWatch(int num) {         vector<string> result;         for(int h = 0; h < 12; h++) {             for(int m = 0; m < 60; m++) {                 bitset<10> b(h << 6 | m);                 if(b.count() == num) {                     string temp = to_string(h) + \":\";                     if(m < 10)                         temp += \"0\";                     temp += to_string(m);                     result.push_back(temp);                 }             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<string> readBinaryWatch(int num) {         vector<string> result;         for(int h = 0; h < 12; h++) {             for(int m = 0; m < 60; m++) {                 bitset<10> b(h << 6 | m);                 if(b.count() == num) {                     string temp = to_string(h) + \":\";                     if(m < 10)                         temp += \"0\";                     temp += to_string(m);                     result.push_back(temp);                 }             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/401. Binary Watch.cpp/Solution/readBinaryWatch(int)"
+    },
+    {
+        "f": [],
+        "fm": "string removeKdigits(string num, int k) {         string result = \"\";         stack<char> s;         for (int i = 0; i < num.size(); i++) {             while (k > 0 && !s.empty() && s.top() > num[i]) {                 k--;                 s.pop();             }             s.push(num[i]);         }         while (k > 0 && !s.empty()) {             k--;             s.pop();         }         while (!s.empty()) {             result = s.top() + result;             s.pop();         }         int index = 0;         while (result[index] == '0') index++;         result = result.substr(index);         if (result == \"\") return \"0\";         return result;              }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string removeKdigits(string num, int k) {         string result = \"\";         stack<char> s;         for (int i = 0; i < num.size(); i++) {             while (k > 0 && !s.empty() && s.top() > num[i]) {                 k--;                 s.pop();             }             s.push(num[i]);         }         while (k > 0 && !s.empty()) {             k--;             s.pop();         }         while (!s.empty()) {             result = s.top() + result;             s.pop();         }         int index = 0;         while (result[index] == '0') index++;         result = result.substr(index);         if (result == \"\") return \"0\";         return result;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/402. Remove K Digits.cpp/Solution/removeKdigits(string,int)"
+    },
+    {
+        "f": [
+            "int result = 0;"
+        ],
+        "fm": "int sumOfLeftLeaves(TreeNode* root) {         if(root == NULL)             return 0;         dfs(root, false);         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int result = 0;     int sumOfLeftLeaves(TreeNode* root) {         if(root == NULL)             return 0;         dfs(root, false);         return result;     }     void dfs(TreeNode* root, bool isLeft) {         if(root->left == NULL && root->right == NULL) {             if(isLeft == true)                 result += root->val;             return ;         }         if(root->left != NULL)             dfs(root->left, true);         if(root->right != NULL)             dfs(root->right, false);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/404. Sum of Left Leaves.cpp/Solution/sumOfLeftLeaves(TreeNode*)"
+    },
+    {
+        "f": [
+            "int result = 0;"
+        ],
+        "fm": "void dfs(TreeNode* root, bool isLeft) {         if(root->left == NULL && root->right == NULL) {             if(isLeft == true)                 result += root->val;             return ;         }         if(root->left != NULL)             dfs(root->left, true);         if(root->right != NULL)             dfs(root->right, false);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int result = 0;     int sumOfLeftLeaves(TreeNode* root) {         if(root == NULL)             return 0;         dfs(root, false);         return result;     }     void dfs(TreeNode* root, bool isLeft) {         if(root->left == NULL && root->right == NULL) {             if(isLeft == true)                 result += root->val;             return ;         }         if(root->left != NULL)             dfs(root->left, true);         if(root->right != NULL)             dfs(root->right, false);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/27/404. Sum of Left Leaves.cpp/Solution/dfs(TreeNode*,bool)"
+    }
+]

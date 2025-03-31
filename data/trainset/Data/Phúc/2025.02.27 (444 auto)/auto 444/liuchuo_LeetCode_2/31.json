@@ -1,0 +1,152 @@
+[
+    {
+        "f": [],
+        "fm": "bool isAnagram(string s, string t) {         int a[26] = {0};         if(s.length() != t.length())             return 0;         for(int i = 0; i < s.length(); i++) {             a[s[i] - 'a']++;         }         for(int i = 0; i < t.length(); i++) {             a[t[i] -'a']--;         }         for(int i = 0; i < 26; i++) {             if(a[i] != 0) {                 return 0;             }         }         return 1;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isAnagram(string s, string t) {         int a[26] = {0};         if(s.length() != t.length())             return 0;         for(int i = 0; i < s.length(); i++) {             a[s[i] - 'a']++;         }         for(int i = 0; i < t.length(); i++) {             a[t[i] -'a']--;         }         for(int i = 0; i < 26; i++) {             if(a[i] != 0) {                 return 0;             }         }         return 1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/242. Valid Anagram.cpp/Solution/isAnagram(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "void dfs(vector<string> &v, TreeNode *node, string s) {         if(node->left == NULL && node->right == NULL) {             v.push_back(s);             return ;         }         if(node->left != NULL) {             dfs(v, node->left, s + \"->\" + to_string(node->left->val));         }         if(node->right != NULL) {             dfs(v, node->right, s + \"->\" + to_string(node->right->val));         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void dfs(vector<string> &v, TreeNode *node, string s) {         if(node->left == NULL && node->right == NULL) {             v.push_back(s);             return ;         }         if(node->left != NULL) {             dfs(v, node->left, s + \"->\" + to_string(node->left->val));         }         if(node->right != NULL) {             dfs(v, node->right, s + \"->\" + to_string(node->right->val));         }     }          vector<string> binaryTreePaths(TreeNode* root) {         vector<string> v;         if(root == NULL) {             return v;         }         dfs(v, root, to_string(root->val));         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/257. Binary Tree Paths .cpp/Solution/dfs(vector<string>&,TreeNode*,string)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> binaryTreePaths(TreeNode* root) {         vector<string> v;         if(root == NULL) {             return v;         }         dfs(v, root, to_string(root->val));         return v;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void dfs(vector<string> &v, TreeNode *node, string s) {         if(node->left == NULL && node->right == NULL) {             v.push_back(s);             return ;         }         if(node->left != NULL) {             dfs(v, node->left, s + \"->\" + to_string(node->left->val));         }         if(node->right != NULL) {             dfs(v, node->right, s + \"->\" + to_string(node->right->val));         }     }          vector<string> binaryTreePaths(TreeNode* root) {         vector<string> v;         if(root == NULL) {             return v;         }         dfs(v, root, to_string(root->val));         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/257. Binary Tree Paths .cpp/Solution/binaryTreePaths(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "void dfs(vector<string> &v, TreeNode *node, string s) {         if(node->left == NULL && node->right == NULL) {             v.push_back(s);             return ;         }         if(node->left != NULL) {             dfs(v, node->left, s + \"->\" + to_string(node->left->val));         }         if(node->right != NULL) {             dfs(v, node->right, s + \"->\" + to_string(node->right->val));         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void dfs(vector<string> &v, TreeNode *node, string s) {         if(node->left == NULL && node->right == NULL) {             v.push_back(s);             return ;         }         if(node->left != NULL) {             dfs(v, node->left, s + \"->\" + to_string(node->left->val));         }         if(node->right != NULL) {             dfs(v, node->right, s + \"->\" + to_string(node->right->val));         }     }          vector<string> binaryTreePaths(TreeNode* root) {         vector<string> v;         if(root == NULL) {             return v;         }         dfs(v, root, to_string(root->val));         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/257. Binary Tree Paths.cpp/Solution/dfs(vector<string>&,TreeNode*,string)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> binaryTreePaths(TreeNode* root) {         vector<string> v;         if(root == NULL) {             return v;         }         dfs(v, root, to_string(root->val));         return v;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void dfs(vector<string> &v, TreeNode *node, string s) {         if(node->left == NULL && node->right == NULL) {             v.push_back(s);             return ;         }         if(node->left != NULL) {             dfs(v, node->left, s + \"->\" + to_string(node->left->val));         }         if(node->right != NULL) {             dfs(v, node->right, s + \"->\" + to_string(node->right->val));         }     }          vector<string> binaryTreePaths(TreeNode* root) {         vector<string> v;         if(root == NULL) {             return v;         }         dfs(v, root, to_string(root->val));         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/257. Binary Tree Paths.cpp/Solution/binaryTreePaths(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int addDigits(int num) {         return num - (num - 1) / 9 * 9;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int addDigits(int num) {         return num - (num - 1) / 9 * 9;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/258. Add Digits.cpp/Solution/addDigits(int)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> singleNumber(vector<int>& nums) {         sort(nums.begin(), nums.end());         vector<int> v(2);         int flag = 0;         for(int i = 0; i < nums.size() - 1; i = i + 2) {             if(nums[i] != nums[i + 1]) {                 v[0] = nums[i];                 for(int j = i + 1; j < nums.size() - 1; j = j + 2) {                     if(nums[j] != nums[j + 1]) {                         v[1] = nums[j];                         flag = 1;                         break;                     }                 }                 break;             }         }         if(flag == 0) {             v[1] = nums[nums.size() - 1];         }         return v;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> singleNumber(vector<int>& nums) {         sort(nums.begin(), nums.end());         vector<int> v(2);         int flag = 0;         for(int i = 0; i < nums.size() - 1; i = i + 2) {             if(nums[i] != nums[i + 1]) {                 v[0] = nums[i];                 for(int j = i + 1; j < nums.size() - 1; j = j + 2) {                     if(nums[j] != nums[j + 1]) {                         v[1] = nums[j];                         flag = 1;                         break;                     }                 }                 break;             }         }         if(flag == 0) {             v[1] = nums[nums.size() - 1];         }         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/260. Single Number III.cpp/Solution/singleNumber(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool isUgly(int num) {         if(num <= 0) {             return false;         }         int flag = 0;         while(num != 1) {             flag = 0;             if(num % 2 == 0) {                 num = num / 2;                 flag = 1;             }             if(num % 3 == 0) {                  num = num / 3;                  flag = 1;             }             if(num % 5 == 0) {                 num = num / 5;                 flag = 1;             }             if(flag == 0) {                 return false;             }         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isUgly(int num) {         if(num <= 0) {             return false;         }         int flag = 0;         while(num != 1) {             flag = 0;             if(num % 2 == 0) {                 num = num / 2;                 flag = 1;             }             if(num % 3 == 0) {                  num = num / 3;                  flag = 1;             }             if(num % 5 == 0) {                 num = num / 5;                 flag = 1;             }             if(flag == 0) {                 return false;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/263. Ugly Number.cpp/Solution/isUgly(int)"
+    },
+    {
+        "f": [],
+        "fm": "int numSquares(int n) {         vector<int> dp(n+1);         dp[1] = 1;         for(int i = 2; i <= n; i++) {             int temp = 99999999;             for(int j = 1; j * j <= i; j++) {                 if(j * j == i) {                     temp = 1;                     break;                 }                 temp = min(temp, dp[i-j*j] + 1);             }             dp[i] = temp;         }         return dp[n];     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numSquares(int n) {         vector<int> dp(n+1);         dp[1] = 1;         for(int i = 2; i <= n; i++) {             int temp = 99999999;             for(int j = 1; j * j <= i; j++) {                 if(j * j == i) {                     temp = 1;                     break;                 }                 temp = min(temp, dp[i-j*j] + 1);             }             dp[i] = temp;         }         return dp[n];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/279. Perfect Squares.cpp/Solution/numSquares(int)"
+    },
+    {
+        "f": [],
+        "fm": "void moveZeroes(vector<int>& nums) {         int len = nums.size();         for(int i = 0; i < len - 1; i++) {             if(nums[i] == 0) {                 for(int j = i + 1; j < len; j++) {                     if(nums[j] != 0) {                         swap(nums[i], nums[j]);                         break;                     }                 }             }         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void moveZeroes(vector<int>& nums) {         int len = nums.size();         for(int i = 0; i < len - 1; i++) {             if(nums[i] == 0) {                 for(int j = i + 1; j < len; j++) {                     if(nums[j] != 0) {                         swap(nums[i], nums[j]);                         break;                     }                 }             }         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/31/283. Move Zeroes.cpp/Solution/moveZeroes(vector<int>&)"
+    }
+]

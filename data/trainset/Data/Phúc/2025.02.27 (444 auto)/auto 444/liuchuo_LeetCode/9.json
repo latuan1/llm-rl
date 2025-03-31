@@ -1,0 +1,122 @@
+[
+    {
+        "f": [],
+        "fm": "int subarraySum(vector<int>& nums, int k) {         int n = nums.size();         vector<int> sums(n + 1, 0);         sums[0] = 0;         for (int i = 1; i <= n; i++) {             sums[i] = sums[i - 1] + nums[i - 1];         }         int count = 0;         for (int start = 0; start < n; start++) {             for (int end = start + 1; end <= n; end++) {                 if (sums[end] - sums[start] == k) count++;             }         }         return count;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int subarraySum(vector<int>& nums, int k) {         int n = nums.size();         vector<int> sums(n + 1, 0);         sums[0] = 0;         for (int i = 1; i <= n; i++) {             sums[i] = sums[i - 1] + nums[i - 1];         }         int count = 0;         for (int start = 0; start < n; start++) {             for (int end = start + 1; end <= n; end++) {                 if (sums[end] - sums[start] == k) count++;             }         }         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/560-subarray-sum-equals-k.cpp/Solution/subarraySum(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int arrayPairSum(vector<int>& nums) {         sort(nums.begin(), nums.end());         int sum = 0;         for (int i = 0; i < nums.size(); i = i + 2) {             sum += min(nums[i], nums[i + 1]);         }         return sum;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int arrayPairSum(vector<int>& nums) {         sort(nums.begin(), nums.end());         int sum = 0;         for (int i = 0; i < nums.size(); i = i + 2) {             sum += min(nums[i], nums[i + 1]);         }         return sum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/561-array-partition-i.cpp/Solution/arrayPairSum(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool isIdentical(TreeNode* a, TreeNode* b) {         if (a == nullptr && b == nullptr) {             return true;         } else if (a != nullptr && b != nullptr) {             return a->val == b->val && isIdentical(a->left, b->left) && isIdentical(a->right, b->right);         } else {             return false;         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isIdentical(TreeNode* a, TreeNode* b) {         if (a == nullptr && b == nullptr) {             return true;         } else if (a != nullptr && b != nullptr) {             return a->val == b->val && isIdentical(a->left, b->left) && isIdentical(a->right, b->right);         } else {             return false;         }     }          bool isSubtree(TreeNode* s, TreeNode* t) {         if (s == nullptr && t == nullptr) {             return true;         }          if (s == nullptr || t == nullptr) {             return false;         }         if (s->val == t->val) {             return isIdentical(s, t) || isSubtree(s->left, t) || isSubtree(s->right, t);         }         return isSubtree(s->left, t) || isSubtree(s->right, t);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/572-subtree-of-another-tree.cpp/Solution/isIdentical(TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool isSubtree(TreeNode* s, TreeNode* t) {         if (s == nullptr && t == nullptr) {             return true;         }          if (s == nullptr || t == nullptr) {             return false;         }         if (s->val == t->val) {             return isIdentical(s, t) || isSubtree(s->left, t) || isSubtree(s->right, t);         }         return isSubtree(s->left, t) || isSubtree(s->right, t);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isIdentical(TreeNode* a, TreeNode* b) {         if (a == nullptr && b == nullptr) {             return true;         } else if (a != nullptr && b != nullptr) {             return a->val == b->val && isIdentical(a->left, b->left) && isIdentical(a->right, b->right);         } else {             return false;         }     }          bool isSubtree(TreeNode* s, TreeNode* t) {         if (s == nullptr && t == nullptr) {             return true;         }          if (s == nullptr || t == nullptr) {             return false;         }         if (s->val == t->val) {             return isIdentical(s, t) || isSubtree(s->left, t) || isSubtree(s->right, t);         }         return isSubtree(s->left, t) || isSubtree(s->right, t);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/572-subtree-of-another-tree.cpp/Solution/isSubtree(TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {         if (!t1 && !t2) return NULL;         if (!t1 && t2) return t2;         if (t1 && !t2) return t1;         t1->val = t1->val + t2->val;         t1->left = mergeTrees(t1->left, t2->left);         t1->right = mergeTrees(t1->right, t2->right);         return t1;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {         if (!t1 && !t2) return NULL;         if (!t1 && t2) return t2;         if (t1 && !t2) return t1;         t1->val = t1->val + t2->val;         t1->left = mergeTrees(t1->left, t2->left);         t1->right = mergeTrees(t1->right, t2->right);         return t1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/617-merge-two-binary-trees.cpp/Solution/mergeTrees(TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "vector<vector<int>> imageSmoother(vector<vector<int>>& M) {         int rows = M.size();         int cols = M[0].size();         vector<vector<int>> neighbors = {{-1,-1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 0}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};         vector<vector<int>> result(rows, vector<int>(cols, 0));         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 int sum = 0;                 int num = 0;                 for (vector<int>& n : neighbors) {                     int x = i + n[0];                     int y = j + n[1];                     if (x >= 0 && y >= 0 && x < rows && y < cols) {                         sum += M[x][y];                         num++;                     }                 }                 result[i][j] = sum/num;             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<vector<int>> imageSmoother(vector<vector<int>>& M) {         int rows = M.size();         int cols = M[0].size();         vector<vector<int>> neighbors = {{-1,-1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 0}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};         vector<vector<int>> result(rows, vector<int>(cols, 0));         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 int sum = 0;                 int num = 0;                 for (vector<int>& n : neighbors) {                     int x = i + n[0];                     int y = j + n[1];                     if (x >= 0 && y >= 0 && x < rows && y < cols) {                         sum += M[x][y];                         num++;                     }                 }                 result[i][j] = sum/num;             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/661-image-smoother.cpp/Solution/imageSmoother(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> topKFrequent(vector<string>& words, int k) {                  map<string, int> counts;         for (string word : words) {             auto it = counts.find(word);             if (it != counts.end()) {                 it->second++;             } else {                 counts[word] = 1;             }         }                  priority_queue<KeyWithFreq, vector<KeyWithFreq>, function<bool(KeyWithFreq, KeyWithFreq)>>             min_heap([](const KeyWithFreq& a, const KeyWithFreq& b) {                 if (a.times < b.times) {                     return true;                 } else if (a.times == b.times) {                     if (a.key > b.key) {                         return true;                     }                  }                 return false;             });                  auto it = counts.begin();         while (it != counts.end()) {             min_heap.emplace(KeyWithFreq(it->first, it->second));             it++;         }                  vector<string> result;                  for (int i = 0; i < k; i++) {             result.push_back(min_heap.top().key);             min_heap.pop();         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     struct KeyWithFreq {         string key;         int times;         KeyWithFreq(string a, int b) : key(a), times(b) {};     };          vector<string> topKFrequent(vector<string>& words, int k) {                  map<string, int> counts;         for (string word : words) {             auto it = counts.find(word);             if (it != counts.end()) {                 it->second++;             } else {                 counts[word] = 1;             }         }                  priority_queue<KeyWithFreq, vector<KeyWithFreq>, function<bool(KeyWithFreq, KeyWithFreq)>>             min_heap([](const KeyWithFreq& a, const KeyWithFreq& b) {                 if (a.times < b.times) {                     return true;                 } else if (a.times == b.times) {                     if (a.key > b.key) {                         return true;                     }                  }                 return false;             });                  auto it = counts.begin();         while (it != counts.end()) {             min_heap.emplace(KeyWithFreq(it->first, it->second));             it++;         }                  vector<string> result;                  for (int i = 0; i < k; i++) {             result.push_back(min_heap.top().key);             min_heap.pop();         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/692-top-k-frequent-words.cpp/Solution/topKFrequent(vector<string>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int minCostClimbingStairs(vector<int>& cost) {         int steps = cost.size();         vector<int> minCost(steps, 0);         minCost[0] = cost[0];         minCost[1] = min(cost[0] + cost[1], cost[1]);         for (int i = 2; i < steps; i++) {             minCost[i] = cost[i] + min(minCost[i - 1], minCost[i - 2]);         }         return min(minCost[steps - 1], minCost[steps - 2]);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minCostClimbingStairs(vector<int>& cost) {         int steps = cost.size();         vector<int> minCost(steps, 0);         minCost[0] = cost[0];         minCost[1] = min(cost[0] + cost[1], cost[1]);         for (int i = 2; i < steps; i++) {             minCost[i] = cost[i] + min(minCost[i - 1], minCost[i - 2]);         }         return min(minCost[steps - 1], minCost[steps - 2]);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/9/746-min-cost-climbing-stairs.cpp/Solution/minCostClimbingStairs(vector<int>&)"
+    }
+]

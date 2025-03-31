@@ -1,0 +1,47 @@
+[
+    {
+        "f": [],
+        "fm": "vector<vector<int> > threeSum(vector<int> &num) {\r \t\tstd::sort(num.begin(), num.end());\r \t\tvector<vector<int>> result;\r \t\tfor (int i = 0 ; i < num.size() ; i++ )\r \t\t{\r \t\t\tint target = 0 - num[i];\r \t\t\tint start = i + 1, end = num.size() - 1;\r \t\t\twhile (start < end)\r \t\t\t{\r \t\t\t\tint sum = num[start] + num[end];\r \t\t\t\tif (sum == target)\r \t\t\t\t{\r \t\t\t\t\tvector<int> oneSolution;\r \t\t\t\t\toneSolution.push_back(num[i]);\r \t\t\t\t\toneSolution.push_back(num[start]);\r \t\t\t\t\toneSolution.push_back(num[end]);\r \t\t\t\t\tresult.push_back(oneSolution);\r \t\t\t\t\tstart++;\r \t\t\t\t\tend--;\r \t\t\t\t\twhile (start < num.size() && num[start] == num[start - 1]) start++;\r \t\t\t\t\twhile (end > 0 && num[end] == num[end + 1]) end--;\r \t\t\t\t}\r \r \t\t\t\tif (sum < target)\r \t\t\t\t{\r \t\t\t\t\tstart++;\r \t\t\t\t}\r \r \t\t\t\tif (sum > target)\r \t\t\t\t{\r \t\t\t\t\tend--;\r \t\t\t\t}\r \t\t\t}\r \r \t\t\twhile (i < num.size() - 1 && num[i] == num[i + 1]) i++;\r \t\t}\r \t\treturn result;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tvector<vector<int> > threeSum(vector<int> &num) {\r \t\tstd::sort(num.begin(), num.end());\r \t\tvector<vector<int>> result;\r \t\tfor (int i = 0 ; i < num.size() ; i++ )\r \t\t{\r \t\t\tint target = 0 - num[i];\r \t\t\tint start = i + 1, end = num.size() - 1;\r \t\t\twhile (start < end)\r \t\t\t{\r \t\t\t\tint sum = num[start] + num[end];\r \t\t\t\tif (sum == target)\r \t\t\t\t{\r \t\t\t\t\tvector<int> oneSolution;\r \t\t\t\t\toneSolution.push_back(num[i]);\r \t\t\t\t\toneSolution.push_back(num[start]);\r \t\t\t\t\toneSolution.push_back(num[end]);\r \t\t\t\t\tresult.push_back(oneSolution);\r \t\t\t\t\tstart++;\r \t\t\t\t\tend--;\r \t\t\t\t\twhile (start < num.size() && num[start] == num[start - 1]) start++;\r \t\t\t\t\twhile (end > 0 && num[end] == num[end + 1]) end--;\r \t\t\t\t}\r \r \t\t\t\tif (sum < target)\r \t\t\t\t{\r \t\t\t\t\tstart++;\r \t\t\t\t}\r \r \t\t\t\tif (sum > target)\r \t\t\t\t{\r \t\t\t\t\tend--;\r \t\t\t\t}\r \t\t\t}\r \r \t\t\twhile (i < num.size() - 1 && num[i] == num[i + 1]) i++;\r \t\t}\r \t\treturn result;\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual1\\3Sum.cpp\\Solution\\threeSum(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int threeSumClosest(vector<int> &num, int target) {\r \r     std::sort(num.begin(), num.end());\r     int len = num.size();\r     int minV = INT_MAX, record;\r     for (int i = 0; i < len; i++)\r     {\r       int start = i + 1, end = len - 1;\r       while (start < end)\r       {\r         int sum = num[i] + num[start] + num[end];\r         if (sum == target)\r         {\r           minV = 0;\r           record = sum;\r           break;\r         }\r         if (sum < target)\r         {\r           if (target - sum < minV)\r           {\r             minV = target - sum;\r             record = sum;\r           }\r           start++;\r         }\r         else\r         {\r           if (sum - target < minV)\r           {\r             minV = sum - target;\r             record = sum;\r           }\r           end--;\r         }\r       }\r       if (record == target) break;\r       while (i < len - 1 && num[i] == num[i + 1]) i++;\r     }\r     return record;\r   }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r   int threeSumClosest(vector<int> &num, int target) {\r \r     std::sort(num.begin(), num.end());\r     int len = num.size();\r     int minV = INT_MAX, record;\r     for (int i = 0; i < len; i++)\r     {\r       int start = i + 1, end = len - 1;\r       while (start < end)\r       {\r         int sum = num[i] + num[start] + num[end];\r         if (sum == target)\r         {\r           minV = 0;\r           record = sum;\r           break;\r         }\r         if (sum < target)\r         {\r           if (target - sum < minV)\r           {\r             minV = target - sum;\r             record = sum;\r           }\r           start++;\r         }\r         else\r         {\r           if (sum - target < minV)\r           {\r             minV = sum - target;\r             record = sum;\r           }\r           end--;\r         }\r       }\r       if (record == target) break;\r       while (i < len - 1 && num[i] == num[i + 1]) i++;\r     }\r     return record;\r   }\r \r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual1\\3Sum_Closest.cpp\\Solution\\threeSumClosest(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "string addBinary(string a, string b) {\r         int carry = 0;\r         string result;\r         for (\r             int i = a.size() - 1, j = b.size() - 1;\r             i >= 0 || j >= 0;\r             --i, --j\r         )\r         {\r             int ai = i >= 0 ? a[i] - '0' : 0;\r             int bj = j >= 0 ? b[j] - '0' : 0;\r             int val = (ai + bj + carry) % 2;\r             carry = (ai + bj + carry) / 2;\r             result.insert(result.begin(), val + '0');\r         }\r \r         if (carry == 1)\r         {\r             result.insert(result.begin(), '1');\r         }\r         return result;\r     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     string addBinary(string a, string b) {\r         int carry = 0;\r         string result;\r         for (\r             int i = a.size() - 1, j = b.size() - 1;\r             i >= 0 || j >= 0;\r             --i, --j\r         )\r         {\r             int ai = i >= 0 ? a[i] - '0' : 0;\r             int bj = j >= 0 ? b[j] - '0' : 0;\r             int val = (ai + bj + carry) % 2;\r             carry = (ai + bj + carry) / 2;\r             result.insert(result.begin(), val + '0');\r         }\r \r         if (carry == 1)\r         {\r             result.insert(result.begin(), '1');\r         }\r         return result;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual1\\Add_Binary.cpp\\Solution\\addBinary(string,string)"
+    }
+]

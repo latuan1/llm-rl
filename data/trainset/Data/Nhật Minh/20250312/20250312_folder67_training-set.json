@@ -1,0 +1,1955 @@
+[
+    {
+        "f": [],
+        "fm": "bool isOneBitCharacter(vector<int> &bits) {\r         int n = bits.size();\r         for(int i = 0; i < n; ++i ) {\r             if(i == n - 1 && bits[i] == 0)\r                 return true;\r             if(bits[i] == 1)\r                 ++i;\r         }\r         return false;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "717.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\717.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\717.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\717.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_67\\717.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "isOneBitCharacter(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "bits",
+                                    "virtual_name": "EXPECTED_bits",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)\\bits",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "bits",
+                                    "virtual_name": "bits",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)\\bits",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "bits_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)\\bits\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "642"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)\\RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_isOneBitCharacter_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_isOneBitCharacter_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\717.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> bits;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode bits */\nint bits_element0=642;\nbits.push_back(bits_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_isOneBitCharacter_vector_int_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->isOneBitCharacter(bits);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_67\\\\717.cpp\\\\Solution\\\\isOneBitCharacter(vector<int>&)\");\n\n\nvector<int> EXPECTED_bits;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\717.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> bits;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode bits */\nint bits_element0=642;\nbits.push_back(bits_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     bool isOneBitCharacter(vector<int> &bits) {\r         int n = bits.size();\r         for(int i = 0; i < n; ++i ) {\r             if(i == n - 1 && bits[i] == 0)\r                 return true;\r             if(bits[i] == 1)\r                 ++i;\r         }\r         return false;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\717.cpp\\Solution\\isOneBitCharacter(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findLength(vector<int> &A, vector<int> &B) {\r         int nA = A.size(), nB = B.size();\r         vector<vector<int>> dp(nA + 1, vector<int>(nB + 1, 0));\r         for (int j = nB - 1; j >= 0; --j)\r             dp[nA - 1][j] = (A[nA - 1] == B[j]);\r         int maxLength = 0;\r         for (int i = nA - 2; i >= 0; --i)\r             for (int j = nB - 1; j >= 0; --j) {\r                 if (A[i] == B[j])\r                     dp[i][j] = dp[i + 1][j + 1] + 1;\r                 maxLength = dp[i][j] > maxLength ? dp[i][j] : maxLength;\r             }\r         return maxLength;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "718.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\718.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\718.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\718.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_67\\718.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findLength(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "B",
+                                    "virtual_name": "EXPECTED_B",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\B",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\A\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "693"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\A\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "-302"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "B",
+                                    "virtual_name": "B",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\B",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "B_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\B\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "612"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findLength_vector_int_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_findLength_vector_int_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\718.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<int> B;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=693;\nA.push_back(A_element0);\nint A_element1=-302;\nA.push_back(A_element1);\n/* VectorDataNode B */\nint B_element0=612;\nB.push_back(B_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findLength_vector_int_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findLength(A,B);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_67\\\\718.cpp\\\\Solution\\\\findLength(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_A;\n\nvector<int> EXPECTED_B;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\718.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<int> B;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=693;\nA.push_back(A_element0);\nint A_element1=-302;\nA.push_back(A_element1);\n/* VectorDataNode B */\nint B_element0=612;\nB.push_back(B_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int findLength(vector<int> &A, vector<int> &B) {\r         int nA = A.size(), nB = B.size();\r         vector<vector<int>> dp(nA + 1, vector<int>(nB + 1, 0));\r         for (int j = nB - 1; j >= 0; --j)\r             dp[nA - 1][j] = (A[nA - 1] == B[j]);\r         int maxLength = 0;\r         for (int i = nA - 2; i >= 0; --i)\r             for (int j = nB - 1; j >= 0; --j) {\r                 if (A[i] == B[j])\r                     dp[i][j] = dp[i + 1][j + 1] + 1;\r                 maxLength = dp[i][j] > maxLength ? dp[i][j] : maxLength;\r             }\r         return maxLength;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\718.cpp\\Solution\\findLength(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int pivotIndex(vector<int> &nums) {\r         int n = nums.size();\r         if (n == 0)\r             return -1;\r         double sum = 0.0;\r         for (int i = 0; i < n; ++i)\r             sum += nums[i];\r         if ((sum - (nums[0] * 1.0)) == 0)\r             return 0;\r         for (int i = 1; i < n; ++i) {\r             if (nums[i - 1] * 1.0 == (sum - (nums[i] * 1.0)) / 2.0)\r                 return i;\r             nums[i] += nums[i - 1];\r         }\r         return -1;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "724.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\724.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\724.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\724.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_67\\724.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "pivotIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "907"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_pivotIndex_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_pivotIndex_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\724.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=907;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_pivotIndex_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->pivotIndex(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_67\\\\724.cpp\\\\Solution\\\\pivotIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\724.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=907;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "724.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\724.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\724.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\724.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_67\\724.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "pivotIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\nums\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "903"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_pivotIndex_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_pivotIndex_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\724.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=7;\nnums.push_back(nums_element0);\nint nums_element1=903;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_pivotIndex_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->pivotIndex(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_67\\\\724.cpp\\\\Solution\\\\pivotIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\724.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=7;\nnums.push_back(nums_element0);\nint nums_element1=903;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int pivotIndex(vector<int> &nums) {\r         int n = nums.size();\r         if (n == 0)\r             return -1;\r         double sum = 0.0;\r         for (int i = 0; i < n; ++i)\r             sum += nums[i];\r         if ((sum - (nums[0] * 1.0)) == 0)\r             return 0;\r         for (int i = 1; i < n; ++i) {\r             if (nums[i - 1] * 1.0 == (sum - (nums[i] * 1.0)) / 2.0)\r                 return i;\r             nums[i] += nums[i - 1];\r         }\r         return -1;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\724.cpp\\Solution\\pivotIndex(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "vector<ListNode *> splitListToParts(ListNode *root, int k) {\r         vector<ListNode *> ret;\r         unsigned int size = 0;\r         ListNode *head = root;\r         while (head) {\r             ++size;\r             head = head->next;\r         }\r         unsigned int part = k >= size ? 1 : size / k;\r         unsigned int left = k >= size ? 0 : size % k;\r         head = root;\r         while (head) {\r             int i = 1;\r             ListNode *tail = head;\r             while (i < part) {\r                 tail = tail->next;\r                 ++i;\r             }\r             if (left > 0) {\r                 tail = tail->next;\r                 --left;\r             }\r             ret.push_back(head);\r             head = tail->next;\r             tail->next = nullptr;\r         }\r         while (ret.size() < k)\r             ret.push_back(nullptr);\r         return ret;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "725.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\725.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "splitListToParts(ListNode*,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<ListNode*>",
+                            "realType": "vector<ListNode*>",
+                            "functionNode": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "EXPECTED_root",
+                                    "dataType": "ListNode*",
+                                    "realType": "ListNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\root",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "level": 1
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "root",
+                                    "dataType": "ListNode*",
+                                    "realType": "ListNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\root",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "level": 1,
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "root[0]",
+                                            "virtual_name": "root[0]",
+                                            "dataType": "ListNode",
+                                            "realType": "ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\root\\root[0]",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "root",
+                                                    "virtual_name": "root[0]",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\root\\root",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "rawType": "::ListNode",
+                                                    "selectedConstructor": "ListNode(int)",
+                                                    "variableType": "::ListNode",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "ListNode(int)",
+                                                            "virtual_name": "root[0]",
+                                                            "dataType": "::ListNode",
+                                                            "realType": "::ListNode",
+                                                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                    "name": "x",
+                                                                    "virtual_name": "root0_x",
+                                                                    "dataType": "int",
+                                                                    "realType": "int",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)\\x",
+                                                                    "correspondingType": "int",
+                                                                    "value": "468"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "val",
+                                                            "virtual_name": "root[0].val",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "next",
+                                                            "virtual_name": "root[0].next",
+                                                            "dataType": "ListNode*",
+                                                            "realType": "ListNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                            "level": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\k",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<ListNode*>",
+                                    "realType": "vector<ListNode*>",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)\\RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "ListNode*"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_splitListToParts_ListNodemul_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_splitListToParts_ListNodemul_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nstd::vector<ListNode*> AKA_VECTOR_INIT_root;\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint root0_x=468;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\splitListToParts(ListNode*,int)\\\\root\\\\AKA_VECTOR_INIT_root_0\\\\root\\\\ListNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_0 = new ::ListNode(root0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_root_0).next;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_0);\n\nListNode* root = AKA_VECTOR_INIT_root[0];\n\n\nint k=5;\nvector<ListNode*> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* NormalNumberDataNode k */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_splitListToParts_ListNodemul_int_random_4\");vector<ListNode*> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->splitListToParts(root,k);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_67\\\\725.cpp\\\\Solution\\\\splitListToParts(ListNode*,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nstd::vector<ListNode*> AKA_VECTOR_INIT_root;\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint root0_x=468;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\splitListToParts(ListNode*,int)\\\\root\\\\AKA_VECTOR_INIT_root_0\\\\root\\\\ListNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_0 = new ::ListNode(root0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_root_0).next;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_0);\n\nListNode* root = AKA_VECTOR_INIT_root[0];\n\n\nint k=5;\nvector<ListNode*> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* NormalNumberDataNode k */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     vector<ListNode *> splitListToParts(ListNode *root, int k) {\r         vector<ListNode *> ret;\r         unsigned int size = 0;\r         ListNode *head = root;\r         while (head) {\r             ++size;\r             head = head->next;\r         }\r         unsigned int part = k >= size ? 1 : size / k;\r         unsigned int left = k >= size ? 0 : size % k;\r         head = root;\r         while (head) {\r             int i = 1;\r             ListNode *tail = head;\r             while (i < part) {\r                 tail = tail->next;\r                 ++i;\r             }\r             if (left > 0) {\r                 tail = tail->next;\r                 --left;\r             }\r             ret.push_back(head);\r             head = tail->next;\r             tail->next = nullptr;\r         }\r         while (ret.size() < k)\r             ret.push_back(nullptr);\r         return ret;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\725.cpp\\Solution\\splitListToParts(ListNode*,int)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode() : val(0), next(nullptr) {}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "725.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\725.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___ListNode",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                    "dataType": "::ListNode",
+                                    "realType": "::ListNode",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___ListNode",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                            "dataType": "::ListNode",
+                                            "realType": "::ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "rawType": "::ListNode",
+                                            "selectedConstructor": "ListNode()",
+                                            "variableType": "::ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "ListNode()",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "next",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->next",
+                                                    "dataType": "ListNode*",
+                                                    "realType": "ListNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___ListNode",
+                                    "virtual_name": "AKA_INSTANCE___ListNode",
+                                    "dataType": "::ListNode",
+                                    "realType": "::ListNode",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___ListNode",
+                                            "virtual_name": "AKA_INSTANCE___ListNode",
+                                            "dataType": "::ListNode",
+                                            "realType": "::ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "rawType": "::ListNode",
+                                            "selectedConstructor": "ListNode()",
+                                            "variableType": "::ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "ListNode()",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "next",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode->next",
+                                                    "dataType": "ListNode*",
+                                                    "realType": "ListNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "ListNode()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode()"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_ListNode_random_0(void) {\n{\nAKA_test_case_name=\"ListNode_random_0\";\n\n// set up\n;\n\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode() */\nAKA_mark(\"<<PRE-CALLING>> Test ListNode_random_0\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode()|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode()\");AKA_fCall++;AKA_INSTANCE___ListNode = new ::ListNode();\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nAKA_INSTANCE___ListNode->next;\n\n\n\n\n\n\n\n/* error assertion */\n\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode() */\nAKA_mark(\"<<PRE-CALLING>>\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode()|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode()\");AKA_fCall++;auto EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode = new ::ListNode();\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nEXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->next;\n\n\n\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode() */\nAKA_mark(\"<<PRE-CALLING>> Test ListNode_random_0\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode()|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode()\");AKA_fCall++;AKA_INSTANCE___ListNode = new ::ListNode();\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nAKA_INSTANCE___ListNode->next;\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\725.cpp\\ListNode\\ListNode()"
+    },
+    {
+        "f": [],
+        "fm": "ListNode(int x) : val(x), next(nullptr) {}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "725.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\725.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___ListNode",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                    "dataType": "::ListNode",
+                                    "realType": "::ListNode",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___ListNode",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                            "dataType": "::ListNode",
+                                            "realType": "::ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "rawType": "::ListNode",
+                                            "selectedConstructor": "ListNode(int)",
+                                            "variableType": "::ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "ListNode(int)",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "next",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->next",
+                                                    "dataType": "ListNode*",
+                                                    "realType": "ListNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___ListNode",
+                                    "virtual_name": "AKA_INSTANCE___ListNode",
+                                    "dataType": "::ListNode",
+                                    "realType": "::ListNode",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___ListNode",
+                                            "virtual_name": "AKA_INSTANCE___ListNode",
+                                            "dataType": "::ListNode",
+                                            "realType": "::ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "rawType": "::ListNode",
+                                            "selectedConstructor": "ListNode(int)",
+                                            "variableType": "::ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "ListNode(int)",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "AKA_INSTANCE___ListNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "-117393092"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "next",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode->next",
+                                                    "dataType": "ListNode*",
+                                                    "realType": "ListNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "ListNode(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_ListNode_int_random_0(void) {\n{\nAKA_test_case_name=\"ListNode_int_random_0\";\n\n// set up\n;\n\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_x=-117393092;\nAKA_mark(\"<<PRE-CALLING>> Test ListNode_int_random_0\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int)\");AKA_fCall++;AKA_INSTANCE___ListNode = new ::ListNode(AKA_INSTANCE___ListNode_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nAKA_INSTANCE___ListNode->next;\n\n\n\n\n\n\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_x=-117393092;\nAKA_mark(\"<<PRE-CALLING>> Test ListNode_int_random_0\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int)\");AKA_fCall++;AKA_INSTANCE___ListNode = new ::ListNode(AKA_INSTANCE___ListNode_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nAKA_INSTANCE___ListNode->next;\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\725.cpp\\ListNode\\ListNode(int)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode(int x, ListNode *next) : val(x), next(next) {}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "725.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\725.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___ListNode",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                    "dataType": "::ListNode",
+                                    "realType": "::ListNode",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___ListNode",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                            "dataType": "::ListNode",
+                                            "realType": "::ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "rawType": "::ListNode",
+                                            "selectedConstructor": "ListNode(int,ListNode*)",
+                                            "variableType": "::ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "ListNode(int,ListNode*)",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "next",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode_next",
+                                                            "dataType": "ListNode*",
+                                                            "realType": "ListNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next",
+                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                            "level": 1
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "next",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___ListNode->next",
+                                                    "dataType": "ListNode*",
+                                                    "realType": "ListNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___ListNode",
+                                    "virtual_name": "AKA_INSTANCE___ListNode",
+                                    "dataType": "::ListNode",
+                                    "realType": "::ListNode",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___ListNode",
+                                            "virtual_name": "AKA_INSTANCE___ListNode",
+                                            "dataType": "::ListNode",
+                                            "realType": "::ListNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\AKA_INSTANCE___ListNode",
+                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                            "rawType": "::ListNode",
+                                            "selectedConstructor": "ListNode(int,ListNode*)",
+                                            "variableType": "::ListNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "ListNode(int,ListNode*)",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode",
+                                                    "dataType": "::ListNode",
+                                                    "realType": "::ListNode",
+                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "AKA_INSTANCE___ListNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "900454031"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "next",
+                                                            "virtual_name": "AKA_INSTANCE___ListNode_next",
+                                                            "dataType": "ListNode*",
+                                                            "realType": "ListNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next",
+                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                            "level": 1,
+                                                            "size": 2,
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.StructDataNode",
+                                                                    "name": "next[0]",
+                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[0]",
+                                                                    "dataType": "ListNode",
+                                                                    "realType": "ListNode",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next\\next[0]",
+                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                                                            "name": "next",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode_next[0]",
+                                                                            "dataType": "::ListNode",
+                                                                            "realType": "::ListNode",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next\\next",
+                                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                            "rawType": "::ListNode",
+                                                                            "selectedConstructor": "ListNode(int)",
+                                                                            "variableType": "::ListNode",
+                                                                            "children": [
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                                                    "name": "ListNode(int)",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[0]",
+                                                                                    "dataType": "::ListNode",
+                                                                                    "realType": "::ListNode",
+                                                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                                            "name": "x",
+                                                                                            "virtual_name": "AKA_INSTANCE___ListNode_next0_x",
+                                                                                            "dataType": "int",
+                                                                                            "realType": "int",
+                                                                                            "external": false,
+                                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)\\x",
+                                                                                            "correspondingType": "int",
+                                                                                            "value": "291407892"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                                    "name": "val",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[0].val",
+                                                                                    "dataType": "int",
+                                                                                    "realType": "int",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                                                    "correspondingType": "int",
+                                                                                    "value": "null"
+                                                                                },
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                                                    "name": "next",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[0].next",
+                                                                                    "dataType": "ListNode*",
+                                                                                    "realType": "ListNode*",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                                    "level": 1
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "com.dse.testdata.object.StructDataNode",
+                                                                    "name": "next[1]",
+                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[1]",
+                                                                    "dataType": "ListNode",
+                                                                    "realType": "ListNode",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next\\next[1]",
+                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                                                            "name": "next",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode_next[1]",
+                                                                            "dataType": "::ListNode",
+                                                                            "realType": "::ListNode",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next\\next",
+                                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                            "rawType": "::ListNode",
+                                                                            "selectedConstructor": "ListNode(int,ListNode*)",
+                                                                            "variableType": "::ListNode",
+                                                                            "children": [
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                                                    "name": "ListNode(int,ListNode*)",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[1]",
+                                                                                    "dataType": "::ListNode",
+                                                                                    "realType": "::ListNode",
+                                                                                    "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                                            "name": "x",
+                                                                                            "virtual_name": "AKA_INSTANCE___ListNode_next1_x",
+                                                                                            "dataType": "int",
+                                                                                            "realType": "int",
+                                                                                            "external": false,
+                                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\x",
+                                                                                            "correspondingType": "int",
+                                                                                            "value": "2124212107"
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                                                            "name": "next",
+                                                                                            "virtual_name": "AKA_INSTANCE___ListNode_next1_next",
+                                                                                            "dataType": "ListNode*",
+                                                                                            "realType": "ListNode*",
+                                                                                            "external": false,
+                                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next",
+                                                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                                            "level": 1
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                                    "name": "val",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[1].val",
+                                                                                    "dataType": "int",
+                                                                                    "realType": "int",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                                                    "correspondingType": "int",
+                                                                                    "value": "null"
+                                                                                },
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                                                    "name": "next",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next[1].next",
+                                                                                    "dataType": "ListNode*",
+                                                                                    "realType": "ListNode*",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                                    "level": 1
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "next",
+                                                    "virtual_name": "AKA_INSTANCE___ListNode->next",
+                                                    "dataType": "ListNode*",
+                                                    "realType": "ListNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                    "level": 1,
+                                                    "size": 2,
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.StructDataNode",
+                                                            "name": "next[0]",
+                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[0]",
+                                                            "dataType": "ListNode",
+                                                            "realType": "ListNode",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next\\next[0]",
+                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                                    "name": "next",
+                                                                    "virtual_name": "AKA_INSTANCE___ListNode->next[0]",
+                                                                    "dataType": "::ListNode",
+                                                                    "realType": "::ListNode",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next\\next",
+                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                    "rawType": "::ListNode",
+                                                                    "selectedConstructor": "ListNode(int)",
+                                                                    "variableType": "::ListNode",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                                            "name": "ListNode(int)",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[0]",
+                                                                            "dataType": "::ListNode",
+                                                                            "realType": "::ListNode",
+                                                                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)",
+                                                                            "children": [
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                                    "name": "x",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next0_x",
+                                                                                    "dataType": "int",
+                                                                                    "realType": "int",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int)\\x",
+                                                                                    "correspondingType": "int",
+                                                                                    "value": "291407892"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                            "name": "val",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[0].val",
+                                                                            "dataType": "int",
+                                                                            "realType": "int",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                                            "correspondingType": "int",
+                                                                            "value": "null"
+                                                                        },
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                                            "name": "next",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[0].next",
+                                                                            "dataType": "ListNode*",
+                                                                            "realType": "ListNode*",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                            "level": 1
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.StructDataNode",
+                                                            "name": "next[1]",
+                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[1]",
+                                                            "dataType": "ListNode",
+                                                            "realType": "ListNode",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next\\next[1]",
+                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                                    "name": "next",
+                                                                    "virtual_name": "AKA_INSTANCE___ListNode->next[1]",
+                                                                    "dataType": "::ListNode",
+                                                                    "realType": "::ListNode",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next\\next",
+                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                    "rawType": "::ListNode",
+                                                                    "selectedConstructor": "ListNode(int,ListNode*)",
+                                                                    "variableType": "::ListNode",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                                            "name": "ListNode(int,ListNode*)",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[1]",
+                                                                            "dataType": "::ListNode",
+                                                                            "realType": "::ListNode",
+                                                                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)",
+                                                                            "children": [
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                                    "name": "x",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next1_x",
+                                                                                    "dataType": "int",
+                                                                                    "realType": "int",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\x",
+                                                                                    "correspondingType": "int",
+                                                                                    "value": "2124212107"
+                                                                                },
+                                                                                {
+                                                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                                                    "name": "next",
+                                                                                    "virtual_name": "AKA_INSTANCE___ListNode_next1_next",
+                                                                                    "dataType": "ListNode*",
+                                                                                    "realType": "ListNode*",
+                                                                                    "external": false,
+                                                                                    "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)\\next",
+                                                                                    "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                                    "level": 1
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                            "name": "val",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[1].val",
+                                                                            "dataType": "int",
+                                                                            "realType": "int",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\val",
+                                                                            "correspondingType": "int",
+                                                                            "value": "null"
+                                                                        },
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                                            "name": "next",
+                                                                            "virtual_name": "AKA_INSTANCE___ListNode->next[1].next",
+                                                                            "dataType": "ListNode*",
+                                                                            "realType": "ListNode*",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_67\\725.cpp\\ListNode\\next",
+                                                                            "correspondingType": ".\\folder_67\\725.cpp\\ListNode",
+                                                                            "level": 1
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "ListNode(int,ListNode*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": ".\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_ListNode_int_ListNodemul_random_0(void) {\n{\nAKA_test_case_name=\"ListNode_int_ListNodemul_random_0\";\n\n// set up\n;\n\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode(int,ListNode*) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_x=900454031;\n/* PointerStructureDataNode next */\nstd::vector<ListNode*> AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next;\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next0_x=291407892;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int,ListNode*)\\\\next\\\\next[0]\\\\next\\\\ListNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_0 = new ::ListNode(AKA_INSTANCE___ListNode_next0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_0).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_0);\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int,ListNode*) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next1_x=2124212107;\n/* PointerStructureDataNode next */\nListNode* AKA_INSTANCE___ListNode_next1_next;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int,ListNode*)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int,ListNode*)\\\\next\\\\next[1]\\\\next\\\\ListNode(int,ListNode*)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_1 = new ::ListNode(AKA_INSTANCE___ListNode_next1_x,AKA_INSTANCE___ListNode_next1_next);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_1).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_1);\nListNode* AKA_INSTANCE___ListNode_next = AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next[0];\nAKA_mark(\"<<PRE-CALLING>> Test ListNode_int_ListNodemul_random_0\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int,ListNode*)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int,ListNode*)\");AKA_fCall++;AKA_INSTANCE___ListNode = new ::ListNode(AKA_INSTANCE___ListNode_x,AKA_INSTANCE___ListNode_next);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nstd::vector<ListNode*> AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next;\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next0_x=291407892;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\next\\\\next[0]\\\\next\\\\ListNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_0 = new ::ListNode(AKA_INSTANCE___ListNode_next0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_0).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_0);\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int,ListNode*) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next1_x=2124212107;\n/* PointerStructureDataNode next */\nListNode* AKA_INSTANCE___ListNode_next1_next;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int,ListNode*)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\next\\\\next[1]\\\\next\\\\ListNode(int,ListNode*)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_1 = new ::ListNode(AKA_INSTANCE___ListNode_next1_x,AKA_INSTANCE___ListNode_next1_next);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_1).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_1);\nAKA_INSTANCE___ListNode->next = AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next[0];\n\n\n\n\n\n\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubStructDataNode AKA_INSTANCE___ListNode */\n/* ConstructorDataNode ListNode(int,ListNode*) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_x=900454031;\n/* PointerStructureDataNode next */\nstd::vector<ListNode*> AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next;\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next0_x=291407892;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int,ListNode*)\\\\next\\\\next[0]\\\\next\\\\ListNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_0 = new ::ListNode(AKA_INSTANCE___ListNode_next0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_0).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_0);\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int,ListNode*) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next1_x=2124212107;\n/* PointerStructureDataNode next */\nListNode* AKA_INSTANCE___ListNode_next1_next;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int,ListNode*)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int,ListNode*)\\\\next\\\\next[1]\\\\next\\\\ListNode(int,ListNode*)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_1 = new ::ListNode(AKA_INSTANCE___ListNode_next1_x,AKA_INSTANCE___ListNode_next1_next);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_1).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next_1);\nListNode* AKA_INSTANCE___ListNode_next = AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_next[0];\nAKA_mark(\"<<PRE-CALLING>> Test ListNode_int_ListNodemul_random_0\");AKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int,ListNode*)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\ListNode(int,ListNode*)\");AKA_fCall++;AKA_INSTANCE___ListNode = new ::ListNode(AKA_INSTANCE___ListNode_x,AKA_INSTANCE___ListNode_next);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\nstd::vector<ListNode*> AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next;\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next0_x=291407892;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\next\\\\next[0]\\\\next\\\\ListNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_0 = new ::ListNode(AKA_INSTANCE___ListNode_next0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_0).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_0);\n/* SubStructDataNode next */\n/* ConstructorDataNode ListNode(int,ListNode*) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___ListNode_next1_x=2124212107;\n/* PointerStructureDataNode next */\nListNode* AKA_INSTANCE___ListNode_next1_next;\nAKA_mark(\"Calling: .\\\\folder_67\\\\725.cpp\\\\ListNode\\\\ListNode(int,ListNode*)|ROOT\\\\725.cpp\\\\GLOBAL\\\\AKA_INSTANCE___ListNode\\\\AKA_INSTANCE___ListNode\\\\next\\\\next[1]\\\\next\\\\ListNode(int,ListNode*)\");AKA_fCall++;auto AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_1 = new ::ListNode(AKA_INSTANCE___ListNode_next1_x,AKA_INSTANCE___ListNode_next1_next);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode next */\n(*AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_1).next;\nAKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next.push_back(AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next_1);\nAKA_INSTANCE___ListNode->next = AKA_VECTOR_INIT_AKA_INSTANCE___ListNode_POINT_TO_next[0];\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\725.cpp\\ListNode\\ListNode(int,ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> selfDividingNumbers(int left, int right) {\r         vector<int> ret;\r         for (int &num = left; num <= right; ++num) {\r             int i = num;\r             while (i > 0) {\r                 int j = i % 10;\r                 if (j == 0 || num % j != 0)\r                     break;\r                 i /= 10;\r             }\r             if (i == 0)\r                 ret.push_back(num);\r         }\r         return ret;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "728.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_67\\728.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\728.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_67\\728.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_67\\728.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "selfDividingNumbers(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "right",
+                                    "virtual_name": "EXPECTED_right",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)\\right",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "left",
+                                    "virtual_name": "EXPECTED_left",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)\\left",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "left",
+                                    "virtual_name": "left",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)\\left",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "right",
+                                    "virtual_name": "right",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)\\right",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)\\RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_selfDividingNumbers_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_selfDividingNumbers_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\728.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint left=4;\n\n\nint right=4;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode left */\n/* NormalNumberDataNode right */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_selfDividingNumbers_int_int_random_0\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->selfDividingNumbers(left,right);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_67\\\\728.cpp\\\\Solution\\\\selfDividingNumbers(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\728.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint left=4;\n\n\nint right=4;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode left */\n/* NormalNumberDataNode right */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     vector<int> selfDividingNumbers(int left, int right) {\r         vector<int> ret;\r         for (int &num = left; num <= right; ++num) {\r             int i = num;\r             while (i > 0) {\r                 int j = i % 10;\r                 if (j == 0 || num % j != 0)\r                     break;\r                 i /= 10;\r             }\r             if (i == 0)\r                 ret.push_back(num);\r         }\r         return ret;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_67\\728.cpp\\Solution\\selfDividingNumbers(int,int)"
+    }
+]

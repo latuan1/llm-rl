@@ -1,0 +1,2103 @@
+[
+    {
+        "f": [
+            "map<string, map<int, string>> m;"
+        ],
+        "fm": "TimeMap() {\r         m.clear();\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "981.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\981.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\TimeMap()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TimeMap",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap",
+                                    "dataType": "::TimeMap",
+                                    "realType": "::TimeMap",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                    "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___TimeMap",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap",
+                                            "dataType": "::TimeMap",
+                                            "realType": "::TimeMap",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                            "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                            "rawType": "::TimeMap",
+                                            "selectedConstructor": "TimeMap()",
+                                            "variableType": "::TimeMap",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TimeMap()",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap",
+                                                    "dataType": "::TimeMap",
+                                                    "realType": "::TimeMap",
+                                                    "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\TimeMap()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                    "name": "m",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap->m",
+                                                    "dataType": "map<string,map<int,string>>",
+                                                    "realType": "map<string,map<int,string>>",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, map<int,string>>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TimeMap",
+                                    "virtual_name": "AKA_INSTANCE___TimeMap",
+                                    "dataType": "::TimeMap",
+                                    "realType": "::TimeMap",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                    "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___TimeMap",
+                                            "virtual_name": "AKA_INSTANCE___TimeMap",
+                                            "dataType": "::TimeMap",
+                                            "realType": "::TimeMap",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                            "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                            "rawType": "::TimeMap",
+                                            "selectedConstructor": "TimeMap()",
+                                            "variableType": "::TimeMap",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TimeMap()",
+                                                    "virtual_name": "AKA_INSTANCE___TimeMap",
+                                                    "dataType": "::TimeMap",
+                                                    "realType": "::TimeMap",
+                                                    "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\TimeMap()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                    "name": "m",
+                                                    "virtual_name": "AKA_INSTANCE___TimeMap->m",
+                                                    "dataType": "map<string,map<int,string>>",
+                                                    "realType": "map<string,map<int,string>>",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, map<int,string>>",
+                                                    "size": 2,
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.stl.PairDataNode",
+                                                            "name": "element #0",
+                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element0",
+                                                            "dataType": "std::pair<string, map<int,string>>",
+                                                            "realType": "std::pair<string, map<int,string>>",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0",
+                                                            "correspondingType": "STLListBaseType",
+                                                            "templateArg": {
+                                                                "first": "string",
+                                                                "second": "map<int,string>"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                                    "name": "first",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->first",
+                                                                    "dataType": "string",
+                                                                    "realType": "string",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\first",
+                                                                    "correspondingType": "string",
+                                                                    "value": "1",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                                            "name": "first[0]",
+                                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->first[0]",
+                                                                            "dataType": "char",
+                                                                            "realType": "char",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\first\\first[0]",
+                                                                            "correspondingType": "char",
+                                                                            "value": "-79"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                                    "name": "second",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->second",
+                                                                    "dataType": "map<int,string>",
+                                                                    "realType": "map<int,string>",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\second",
+                                                                    "correspondingType": "STLListBaseType",
+                                                                    "templateArg": "std::pair<int, string>",
+                                                                    "size": 1
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.stl.PairDataNode",
+                                                            "name": "element #1",
+                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element1",
+                                                            "dataType": "std::pair<string, map<int,string>>",
+                                                            "realType": "std::pair<string, map<int,string>>",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #1",
+                                                            "correspondingType": "STLListBaseType",
+                                                            "templateArg": {
+                                                                "first": "string",
+                                                                "second": "map<int,string>"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                                    "name": "first",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element1->first",
+                                                                    "dataType": "string",
+                                                                    "realType": "string",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #1\\first",
+                                                                    "correspondingType": "string",
+                                                                    "value": "1",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                                            "name": "first[0]",
+                                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element1->first[0]",
+                                                                            "dataType": "char",
+                                                                            "realType": "char",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #1\\first\\first[0]",
+                                                                            "correspondingType": "char",
+                                                                            "value": "47"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                                    "name": "second",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element1->second",
+                                                                    "dataType": "map<int,string>",
+                                                                    "realType": "map<int,string>",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #1\\second",
+                                                                    "correspondingType": "STLListBaseType",
+                                                                    "templateArg": "std::pair<int, string>",
+                                                                    "size": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "TimeMap()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\TimeMap()"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TimeMap_TimeMap_random_0(void) {\n{\nAKA_test_case_name=\"TimeMap_TimeMap_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"<<PRE-CALLING>> Test TimeMap_TimeMap_random_0\");AKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element0;\n/* NormalStringDataNode first */\nchar* akaRandomName619912 = new char[2];akaRandomName619912[0] = -79;akaRandomName619912[1] = '\\0';AKA_INSTANCE___TimeMap_m_element0->first=akaRandomName619912;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element0);\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element1;\n/* NormalStringDataNode first */\nchar* akaRandomName552720 = new char[2];akaRandomName552720[0] = 47;akaRandomName552720[1] = '\\0';AKA_INSTANCE___TimeMap_m_element1->first=akaRandomName552720;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element1);\n\n\n\n\n\n\n\n/* error assertion */\n\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"<<PRE-CALLING>>\");AKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;auto EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\n\n\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"<<PRE-CALLING>> Test TimeMap_TimeMap_random_0\");AKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element0;\n/* NormalStringDataNode first */\nchar* akaRandomName328398 = new char[2];akaRandomName328398[0] = -79;akaRandomName328398[1] = '\\0';AKA_INSTANCE___TimeMap_m_element0->first=akaRandomName328398;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element0);\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element1;\n/* NormalStringDataNode first */\nchar* akaRandomName942545 = new char[2];akaRandomName942545[0] = 47;akaRandomName942545[1] = '\\0';AKA_INSTANCE___TimeMap_m_element1->first=akaRandomName942545;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element1);\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class TimeMap {\r public:\r     map<string, map<int, string>> m;\r \r     TimeMap() {\r         m.clear();\r     }\r \r     void set(string key, string value, int timestamp) {\r         m[key][timestamp] = value;\r     }\r \r     string get(string key, int timestamp) {\r         if (m.find(key) == m.end())\r             return \"\";\r         for (int i = timestamp; i >= 0; --i) {\r             if (m[key].find(i) != m[key].end())\r                 return m[key][i];\r         }\r         return \"\";\r     }\r };",
+        "c": [
+            "TimeMap() {\r\n        m.clear();\r\n    }"
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\981.cpp\\TimeMap\\TimeMap()"
+    },
+    {
+        "f": [
+            "map<string, map<int, string>> m;"
+        ],
+        "fm": "void set(string key, string value, int timestamp) {\r         m[key][timestamp] = value;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "981.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\981.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TimeMap",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap",
+                                    "dataType": "::TimeMap",
+                                    "realType": "::TimeMap",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                    "correspondingType": ".\\folder_97\\981.cpp\\TimeMap"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TimeMap",
+                                    "virtual_name": "AKA_INSTANCE___TimeMap",
+                                    "dataType": "::TimeMap",
+                                    "realType": "::TimeMap",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                    "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___TimeMap",
+                                            "virtual_name": "AKA_INSTANCE___TimeMap",
+                                            "dataType": "::TimeMap",
+                                            "realType": "::TimeMap",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                            "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                            "rawType": "::TimeMap",
+                                            "selectedConstructor": "TimeMap()",
+                                            "variableType": "::TimeMap",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TimeMap()",
+                                                    "virtual_name": "AKA_INSTANCE___TimeMap",
+                                                    "dataType": "::TimeMap",
+                                                    "realType": "::TimeMap",
+                                                    "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\TimeMap()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                    "name": "m",
+                                                    "virtual_name": "AKA_INSTANCE___TimeMap->m",
+                                                    "dataType": "map<string,map<int,string>>",
+                                                    "realType": "map<string,map<int,string>>",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, map<int,string>>",
+                                                    "size": 1,
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.stl.PairDataNode",
+                                                            "name": "element #0",
+                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element0",
+                                                            "dataType": "std::pair<string, map<int,string>>",
+                                                            "realType": "std::pair<string, map<int,string>>",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0",
+                                                            "correspondingType": "STLListBaseType",
+                                                            "templateArg": {
+                                                                "first": "string",
+                                                                "second": "map<int,string>"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                                    "name": "first",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->first",
+                                                                    "dataType": "string",
+                                                                    "realType": "string",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\first",
+                                                                    "correspondingType": "string",
+                                                                    "value": "1",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                                            "name": "first[0]",
+                                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->first[0]",
+                                                                            "dataType": "char",
+                                                                            "realType": "char",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\first\\first[0]",
+                                                                            "correspondingType": "char",
+                                                                            "value": "-60"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                                    "name": "second",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->second",
+                                                                    "dataType": "map<int,string>",
+                                                                    "realType": "map<int,string>",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\second",
+                                                                    "correspondingType": "STLListBaseType",
+                                                                    "templateArg": "std::pair<int, string>",
+                                                                    "size": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "set(string,string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "value",
+                                    "virtual_name": "EXPECTED_value",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\value",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "key",
+                                    "virtual_name": "EXPECTED_key",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\key",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "timestamp",
+                                    "virtual_name": "EXPECTED_timestamp",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\timestamp",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "key",
+                                    "virtual_name": "key",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\key",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "key[0]",
+                                            "virtual_name": "key[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\key\\key[0]",
+                                            "correspondingType": "char",
+                                            "value": "67"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "value",
+                                    "virtual_name": "value",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\value",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "value[0]",
+                                            "virtual_name": "value[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\value\\value[0]",
+                                            "correspondingType": "char",
+                                            "value": "-5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "timestamp",
+                                    "virtual_name": "timestamp",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)\\timestamp",
+                                    "correspondingType": "int",
+                                    "value": "1618751308"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TimeMap_set_string_string_int_random_0(void) {\n{\nAKA_test_case_name=\"TimeMap_set_string_string_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element0;\n/* NormalStringDataNode first */\nchar* akaRandomName90802 = new char[2];akaRandomName90802[0] = -60;akaRandomName90802[1] = '\\0';AKA_INSTANCE___TimeMap_m_element0->first=akaRandomName90802;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element0);\n\n\nchar* akaRandomName786554 = new char[2];akaRandomName786554[0] = 67;akaRandomName786554[1] = '\\0';string key=akaRandomName786554;\nchar* akaRandomName974198 = new char[2];akaRandomName974198[0] = -5;akaRandomName974198[1] = '\\0';string value=akaRandomName974198;\n\n\nint timestamp=1618751308;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode key */\n/* NormalStringDataNode value */\n/* NormalNumberDataNode timestamp */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TimeMap_set_string_string_int_random_0\");AKA_INSTANCE___TimeMap->set(key,value,timestamp);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\set(string,string,int)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element0;\n/* NormalStringDataNode first */\nchar* akaRandomName634987 = new char[2];akaRandomName634987[0] = -60;akaRandomName634987[1] = '\\0';AKA_INSTANCE___TimeMap_m_element0->first=akaRandomName634987;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element0);\n\n\nchar* akaRandomName467881 = new char[2];akaRandomName467881[0] = 67;akaRandomName467881[1] = '\\0';string key=akaRandomName467881;\nchar* akaRandomName297128 = new char[2];akaRandomName297128[0] = -5;akaRandomName297128[1] = '\\0';string value=akaRandomName297128;\n\n\nint timestamp=1618751308;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode key */\n/* NormalStringDataNode value */\n/* NormalNumberDataNode timestamp */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class TimeMap {\r public:\r     map<string, map<int, string>> m;\r \r     TimeMap() {\r         m.clear();\r     }\r \r     void set(string key, string value, int timestamp) {\r         m[key][timestamp] = value;\r     }\r \r     string get(string key, int timestamp) {\r         if (m.find(key) == m.end())\r             return \"\";\r         for (int i = timestamp; i >= 0; --i) {\r             if (m[key].find(i) != m[key].end())\r                 return m[key][i];\r         }\r         return \"\";\r     }\r };",
+        "c": [
+            "TimeMap() {\r\n        m.clear();\r\n    }"
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\981.cpp\\TimeMap\\set(string,string,int)"
+    },
+    {
+        "f": [
+            "map<string, map<int, string>> m;"
+        ],
+        "fm": "string get(string key, int timestamp) {\r         if (m.find(key) == m.end())\r             return \"\";\r         for (int i = timestamp; i >= 0; --i) {\r             if (m[key].find(i) != m[key].end())\r                 return m[key][i];\r         }\r         return \"\";\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "981.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\981.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TimeMap",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TimeMap",
+                                    "dataType": "::TimeMap",
+                                    "realType": "::TimeMap",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                    "correspondingType": ".\\folder_97\\981.cpp\\TimeMap"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TimeMap",
+                                    "virtual_name": "AKA_INSTANCE___TimeMap",
+                                    "dataType": "::TimeMap",
+                                    "realType": "::TimeMap",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                    "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___TimeMap",
+                                            "virtual_name": "AKA_INSTANCE___TimeMap",
+                                            "dataType": "::TimeMap",
+                                            "realType": "::TimeMap",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\AKA_INSTANCE___TimeMap",
+                                            "correspondingType": ".\\folder_97\\981.cpp\\TimeMap",
+                                            "rawType": "::TimeMap",
+                                            "selectedConstructor": "TimeMap()",
+                                            "variableType": "::TimeMap",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TimeMap()",
+                                                    "virtual_name": "AKA_INSTANCE___TimeMap",
+                                                    "dataType": "::TimeMap",
+                                                    "realType": "::TimeMap",
+                                                    "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\TimeMap()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                    "name": "m",
+                                                    "virtual_name": "AKA_INSTANCE___TimeMap->m",
+                                                    "dataType": "map<string,map<int,string>>",
+                                                    "realType": "map<string,map<int,string>>",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, map<int,string>>",
+                                                    "size": 1,
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.stl.PairDataNode",
+                                                            "name": "element #0",
+                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element0",
+                                                            "dataType": "std::pair<string, map<int,string>>",
+                                                            "realType": "std::pair<string, map<int,string>>",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0",
+                                                            "correspondingType": "STLListBaseType",
+                                                            "templateArg": {
+                                                                "first": "string",
+                                                                "second": "map<int,string>"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                                    "name": "first",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->first",
+                                                                    "dataType": "string",
+                                                                    "realType": "string",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\first",
+                                                                    "correspondingType": "string",
+                                                                    "value": "1",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                                            "name": "first[0]",
+                                                                            "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->first[0]",
+                                                                            "dataType": "char",
+                                                                            "realType": "char",
+                                                                            "external": false,
+                                                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\first\\first[0]",
+                                                                            "correspondingType": "char",
+                                                                            "value": "-4"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                                    "name": "second",
+                                                                    "virtual_name": "AKA_INSTANCE___TimeMap_m_element0->second",
+                                                                    "dataType": "map<int,string>",
+                                                                    "realType": "map<int,string>",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\m\\element #0\\second",
+                                                                    "correspondingType": "STLListBaseType",
+                                                                    "templateArg": "std::pair<int, string>",
+                                                                    "size": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "get(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "key",
+                                    "virtual_name": "EXPECTED_key",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)\\key",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "timestamp",
+                                    "virtual_name": "EXPECTED_timestamp",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)\\timestamp",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "key",
+                                    "virtual_name": "key",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)\\key",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "key[0]",
+                                            "virtual_name": "key[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)\\key\\key[0]",
+                                            "correspondingType": "char",
+                                            "value": "62"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "timestamp",
+                                    "virtual_name": "timestamp",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)\\timestamp",
+                                    "correspondingType": "int",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\981.cpp\\TimeMap\\get(string,int)\\RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TimeMap_get_string_int_random_0(void) {\n{\nAKA_test_case_name=\"TimeMap_get_string_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element0;\n/* NormalStringDataNode first */\nchar* akaRandomName39230 = new char[2];akaRandomName39230[0] = -4;akaRandomName39230[1] = '\\0';AKA_INSTANCE___TimeMap_m_element0->first=akaRandomName39230;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element0);\n\n\nchar* akaRandomName141286 = new char[2];akaRandomName141286[0] = 62;akaRandomName141286[1] = '\\0';string key=akaRandomName141286;\n\n\nint timestamp=0;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode key */\n/* NormalNumberDataNode timestamp */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TimeMap_get_string_int_random_0\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___TimeMap->get(key,timestamp);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\get(string,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___TimeMap */\n/* ConstructorDataNode TimeMap() */\nAKA_mark(\"Calling: .\\\\folder_97\\\\981.cpp\\\\TimeMap\\\\TimeMap()|ROOT\\\\981.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TimeMap\\\\AKA_INSTANCE___TimeMap\\\\TimeMap()\");AKA_fCall++;AKA_INSTANCE___TimeMap = new ::TimeMap();\n/* MapDataNode m */\nstd::pair<string, map<int,string>> AKA_INSTANCE___TimeMap_m_element0;\n/* NormalStringDataNode first */\nchar* akaRandomName452103 = new char[2];akaRandomName452103[0] = -4;akaRandomName452103[1] = '\\0';AKA_INSTANCE___TimeMap_m_element0->first=akaRandomName452103;\n/* MapDataNode second */\nAKA_INSTANCE___TimeMap->m.insert(AKA_INSTANCE___TimeMap_m_element0);\n\n\nchar* akaRandomName419857 = new char[2];akaRandomName419857[0] = 62;akaRandomName419857[1] = '\\0';string key=akaRandomName419857;\n\n\nint timestamp=0;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode key */\n/* NormalNumberDataNode timestamp */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class TimeMap {\r public:\r     map<string, map<int, string>> m;\r \r     TimeMap() {\r         m.clear();\r     }\r \r     void set(string key, string value, int timestamp) {\r         m[key][timestamp] = value;\r     }\r \r     string get(string key, int timestamp) {\r         if (m.find(key) == m.end())\r             return \"\";\r         for (int i = timestamp; i >= 0; --i) {\r             if (m[key].find(i) != m[key].end())\r                 return m[key][i];\r         }\r         return \"\";\r     }\r };",
+        "c": [
+            "TimeMap() {\r\n        m.clear();\r\n    }"
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\981.cpp\\TimeMap\\get(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int countTriplets(vector<int> &A) {\r         int total = 0;\r         int size = A.size();\r         for (int i = 0; i < size - 2; ++i) {\r             for (int j = i + 1; j < size - 1; ++j)\r                 for (int k = j + 1; k < size; ++k) {\r                     if (static_cast<int>(A[i] & A[j] & A[k]) == 0)\r                         total += 6;\r                 }\r         }\r         for (int i = 0; i < size; ++i) {\r             for (int j = 0; j < size; ++j) {\r                 if (i == j)\r                     continue;\r                 if (static_cast<int>(A[i] & A[i] & A[j]) == 0)\r                     total += 3;\r             }\r         }\r         for (int i = 0; i < size; ++i)\r             if (static_cast<int>(A[i] & A[i] & A[i] ) == 0)\r                 total += 1;\r \r         return total;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "982.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\982.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\982.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\982.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\982.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "countTriplets(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)\\A\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "-486"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)\\A\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "-469"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_countTriplets_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_countTriplets_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\982.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=-486;\nA.push_back(A_element0);\nint A_element1=-469;\nA.push_back(A_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_countTriplets_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->countTriplets(A);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\982.cpp\\\\Solution\\\\countTriplets(vector<int>&)\");\n\n\nvector<int> EXPECTED_A;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\982.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=-486;\nA.push_back(A_element0);\nint A_element1=-469;\nA.push_back(A_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int countTriplets(vector<int> &A) {\r         int total = 0;\r         int size = A.size();\r         for (int i = 0; i < size - 2; ++i) {\r             for (int j = i + 1; j < size - 1; ++j)\r                 for (int k = j + 1; k < size; ++k) {\r                     if (static_cast<int>(A[i] & A[j] & A[k]) == 0)\r                         total += 6;\r                 }\r         }\r         for (int i = 0; i < size; ++i) {\r             for (int j = 0; j < size; ++j) {\r                 if (i == j)\r                     continue;\r                 if (static_cast<int>(A[i] & A[i] & A[j]) == 0)\r                     total += 3;\r             }\r         }\r         for (int i = 0; i < size; ++i)\r             if (static_cast<int>(A[i] & A[i] & A[i] ) == 0)\r                 total += 1;\r \r         return total;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\982.cpp\\Solution\\countTriplets(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int mincostTickets(vector<int> &days, vector<int> &costs) {\r         int size = days.size();\r         if (size < 2)\r             return costs[0] * size;\r         vector<int> dp(366, 0);\r         int k = 0;\r         for (int i = 1; i < 366; ++i) {\r             if (k < size && days[k] == i) {\r                 dp[i] = min(dp[max(0, i - 1)] + costs[0], dp[max(0, i - 7)] + costs[1]);\r                 ++k;\r             } else {\r                 dp[i] = min(dp[i - 1], dp[max(0, i - 7)] + costs[1]);\r             }\r             dp[i] = min(dp[i], dp[max(0, i - 30)] + costs[2]);\r         }\r         return dp.back();\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "983.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\983.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\983.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\983.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\983.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "mincostTickets(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "costs",
+                                    "virtual_name": "EXPECTED_costs",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\costs",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "days",
+                                    "virtual_name": "EXPECTED_days",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "days",
+                                    "virtual_name": "days",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "days_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "-929"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "costs",
+                                    "virtual_name": "costs",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\costs",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "costs_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\costs\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "436"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_mincostTickets_vector_int_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_mincostTickets_vector_int_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\983.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> days;\nvector<int> costs;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode days */\nint days_element0=-929;\ndays.push_back(days_element0);\n/* VectorDataNode costs */\nint costs_element0=436;\ncosts.push_back(costs_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_mincostTickets_vector_int_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->mincostTickets(days,costs);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\983.cpp\\\\Solution\\\\mincostTickets(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_days;\n\nvector<int> EXPECTED_costs;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\983.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> days;\nvector<int> costs;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode days */\nint days_element0=-929;\ndays.push_back(days_element0);\n/* VectorDataNode costs */\nint costs_element0=436;\ncosts.push_back(costs_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "983.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\983.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\983.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\983.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\983.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "mincostTickets(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "days",
+                                    "virtual_name": "EXPECTED_days",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "costs",
+                                    "virtual_name": "EXPECTED_costs",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\costs",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "days",
+                                    "virtual_name": "days",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "days_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "23"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "days_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\days\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "927"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "costs",
+                                    "virtual_name": "costs",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\costs",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "costs_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\costs\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "-168"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_mincostTickets_vector_int_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_mincostTickets_vector_int_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\983.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> days;\nvector<int> costs;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode days */\nint days_element0=23;\ndays.push_back(days_element0);\nint days_element1=927;\ndays.push_back(days_element1);\n/* VectorDataNode costs */\nint costs_element0=-168;\ncosts.push_back(costs_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_mincostTickets_vector_int_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->mincostTickets(days,costs);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\983.cpp\\\\Solution\\\\mincostTickets(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_days;\n\nvector<int> EXPECTED_costs;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\983.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> days;\nvector<int> costs;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode days */\nint days_element0=23;\ndays.push_back(days_element0);\nint days_element1=927;\ndays.push_back(days_element1);\n/* VectorDataNode costs */\nint costs_element0=-168;\ncosts.push_back(costs_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int mincostTickets(vector<int> &days, vector<int> &costs) {\r         int size = days.size();\r         if (size < 2)\r             return costs[0] * size;\r         vector<int> dp(366, 0);\r         int k = 0;\r         for (int i = 1; i < 366; ++i) {\r             if (k < size && days[k] == i) {\r                 dp[i] = min(dp[max(0, i - 1)] + costs[0], dp[max(0, i - 7)] + costs[1]);\r                 ++k;\r             } else {\r                 dp[i] = min(dp[i - 1], dp[max(0, i - 7)] + costs[1]);\r             }\r             dp[i] = min(dp[i], dp[max(0, i - 30)] + costs[2]);\r         }\r         return dp.back();\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\983.cpp\\Solution\\mincostTickets(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "string strWithout3a3b(int A, int B) {\r         int n = A + B;\r         string a = \"a\", b = \"b\";\r         if (A < B) {\r             swap(A, B);\r             swap(a, b);\r         }\r         string ret;\r         while (n > 0) {\r             if (A >= B * 2) {\r                 ret += A > 1 ? (a + a) : A == 1 ? a : \"\";\r                 A -= A > 1 ? 2 : 1;\r             } else {\r                 ret += A > 0 ? a : \"\";\r                 A -= A > 0 ? 1 : 0;\r             }\r             ret += B > 0 ? b : \"\";\r             B -= B > 0 ? 1 : 0;\r             n = A + B;\r         }\r         return ret;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "984.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\984.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\984.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\984.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\984.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "strWithout3a3b(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\A",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "B",
+                                    "virtual_name": "EXPECTED_B",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\B",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\A",
+                                    "correspondingType": "int",
+                                    "value": "7"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "B",
+                                    "virtual_name": "B",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\B",
+                                    "correspondingType": "int",
+                                    "value": "7"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_strWithout3a3b_int_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_strWithout3a3b_int_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\984.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint A=7;\n\n\nint B=7;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode A */\n/* NormalNumberDataNode B */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_strWithout3a3b_int_int_random_4\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->strWithout3a3b(A,B);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\984.cpp\\\\Solution\\\\strWithout3a3b(int,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\984.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint A=7;\n\n\nint B=7;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode A */\n/* NormalNumberDataNode B */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "984.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\984.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\984.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\984.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\984.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "strWithout3a3b(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\A",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "B",
+                                    "virtual_name": "EXPECTED_B",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\B",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\A",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "B",
+                                    "virtual_name": "B",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\B",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)\\RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_strWithout3a3b_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_strWithout3a3b_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\984.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint A=4;\n\n\nint B=5;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode A */\n/* NormalNumberDataNode B */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_strWithout3a3b_int_int_random_2\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->strWithout3a3b(A,B);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\984.cpp\\\\Solution\\\\strWithout3a3b(int,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\984.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint A=4;\n\n\nint B=5;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode A */\n/* NormalNumberDataNode B */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     string strWithout3a3b(int A, int B) {\r         int n = A + B;\r         string a = \"a\", b = \"b\";\r         if (A < B) {\r             swap(A, B);\r             swap(a, b);\r         }\r         string ret;\r         while (n > 0) {\r             if (A >= B * 2) {\r                 ret += A > 1 ? (a + a) : A == 1 ? a : \"\";\r                 A -= A > 1 ? 2 : 1;\r             } else {\r                 ret += A > 0 ? a : \"\";\r                 A -= A > 0 ? 1 : 0;\r             }\r             ret += B > 0 ? b : \"\";\r             B -= B > 0 ? 1 : 0;\r             n = A + B;\r         }\r         return ret;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\984.cpp\\Solution\\strWithout3a3b(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> sumEvenAfterQueries(vector<int> &A, vector<vector<int>> &queries) {\r         vector<int> ret;\r         int sum = 0;\r         for (auto &a : A) {\r             if (a % 2 == 0)\r                 sum += a;\r         }\r         for (int i = 0; i < queries.size(); ++i) {\r             int &temp = A[queries[i][1]];\r             if (temp % 2 == 0)\r                 sum -= temp;\r             temp += queries[i][0];\r             if (temp % 2 == 0)\r                 sum += temp;\r             ret.push_back(sum);\r         }\r         return ret;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "985.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\985.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\985.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\985.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\985.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "queries",
+                                    "virtual_name": "EXPECTED_queries",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "688"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "610"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "queries",
+                                    "virtual_name": "queries",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "queries_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "queries_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #0\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-680"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "queries_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #0\\element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "90"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_sumEvenAfterQueries_vector_int_vector_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_sumEvenAfterQueries_vector_int_vector_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\985.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<vector<int>> queries;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=688;\nA.push_back(A_element0);\nint A_element1=610;\nA.push_back(A_element1);\n/* VectorDataNode queries */\nvector<int> queries_element0;\nint queries_element0_element0=-680;\nqueries_element0.push_back(queries_element0_element0);\nint queries_element0_element1=90;\nqueries_element0.push_back(queries_element0_element1);\nqueries.push_back(queries_element0);\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_sumEvenAfterQueries_vector_int_vector_vector_int_random_4\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->sumEvenAfterQueries(A,queries);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\985.cpp\\\\Solution\\\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\");\n\n\nvector<int> EXPECTED_A;\n\nvector<vector<int>> EXPECTED_queries;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\985.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<vector<int>> queries;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=688;\nA.push_back(A_element0);\nint A_element1=610;\nA.push_back(A_element1);\n/* VectorDataNode queries */\nvector<int> queries_element0;\nint queries_element0_element0=-680;\nqueries_element0.push_back(queries_element0_element0);\nint queries_element0_element1=90;\nqueries_element0.push_back(queries_element0_element1);\nqueries.push_back(queries_element0);\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "985.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_97\\985.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\985.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_97\\985.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_97\\985.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "queries",
+                                    "virtual_name": "EXPECTED_queries",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "92"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\A\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "-477"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "queries",
+                                    "virtual_name": "queries",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "queries_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "queries_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #0\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "662"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "queries_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #0\\element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-942"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "queries_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "queries_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\queries\\element #1\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "317"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\\RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_sumEvenAfterQueries_vector_int_vector_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_sumEvenAfterQueries_vector_int_vector_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\985.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<vector<int>> queries;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=92;\nA.push_back(A_element0);\nint A_element1=-477;\nA.push_back(A_element1);\n/* VectorDataNode queries */\nvector<int> queries_element0;\nint queries_element0_element0=662;\nqueries_element0.push_back(queries_element0_element0);\nint queries_element0_element1=-942;\nqueries_element0.push_back(queries_element0_element1);\nqueries.push_back(queries_element0);\nvector<int> queries_element1;\nint queries_element1_element0=317;\nqueries_element1.push_back(queries_element1_element0);\nqueries.push_back(queries_element1);\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_sumEvenAfterQueries_vector_int_vector_vector_int_random_0\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->sumEvenAfterQueries(A,queries);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_97\\\\985.cpp\\\\Solution\\\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)\");\n\n\nvector<int> EXPECTED_A;\n\nvector<vector<int>> EXPECTED_queries;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\985.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<vector<int>> queries;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=92;\nA.push_back(A_element0);\nint A_element1=-477;\nA.push_back(A_element1);\n/* VectorDataNode queries */\nvector<int> queries_element0;\nint queries_element0_element0=662;\nqueries_element0.push_back(queries_element0_element0);\nint queries_element0_element1=-942;\nqueries_element0.push_back(queries_element0_element1);\nqueries.push_back(queries_element0);\nvector<int> queries_element1;\nint queries_element1_element0=317;\nqueries_element1.push_back(queries_element1_element0);\nqueries.push_back(queries_element1);\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     vector<int> sumEvenAfterQueries(vector<int> &A, vector<vector<int>> &queries) {\r         vector<int> ret;\r         int sum = 0;\r         for (auto &a : A) {\r             if (a % 2 == 0)\r                 sum += a;\r         }\r         for (int i = 0; i < queries.size(); ++i) {\r             int &temp = A[queries[i][1]];\r             if (temp % 2 == 0)\r                 sum -= temp;\r             temp += queries[i][0];\r             if (temp % 2 == 0)\r                 sum += temp;\r             ret.push_back(sum);\r         }\r         return ret;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_97\\985.cpp\\Solution\\sumEvenAfterQueries(vector<int>&,vector<vector<int>>&)"
+    }
+]

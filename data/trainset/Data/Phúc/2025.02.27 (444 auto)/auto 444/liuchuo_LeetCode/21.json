@@ -1,0 +1,214 @@
+[
+    {
+        "f": [
+            "int result = 0;",
+            "vector<bool> visit;"
+        ],
+        "fm": "void dfs(int index) {         if (index == 1) {             result++;             return;         }         for (int i = 1; i < visit.size(); i++) {             if (visit[i] == false && (i % index == 0 || index % i == 0)) {                 visit[i] = true;                 dfs(index-1);                 visit[i] = false;             }         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int countArrangement(int N) {         visit.resize(N+1);         dfs(N);         return result;     } private:     int result = 0;     vector<bool> visit;     void dfs(int index) {         if (index == 1) {             result++;             return;         }         for (int i = 1; i < visit.size(); i++) {             if (visit[i] == false && (i % index == 0 || index % i == 0)) {                 visit[i] = true;                 dfs(index-1);                 visit[i] = false;             }         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/526. Beautiful Arrangement.cpp/Solution/dfs(int)"
+    },
+    {
+        "f": [
+            "vector<int> tree;"
+        ],
+        "fm": "int getMinimumDifference(TreeNode* root) {         inOrder(root);         int result = INT_MAX;         for (int i = 1; i < tree.size(); i++)             result = min(result, tree[i] - tree[i-1]);         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int getMinimumDifference(TreeNode* root) {         inOrder(root);         int result = INT_MAX;         for (int i = 1; i < tree.size(); i++)             result = min(result, tree[i] - tree[i-1]);         return result;     } private:     vector<int> tree;     void inOrder(TreeNode* root) {         if (root->left != NULL) inOrder(root->left);         tree.push_back(root->val);         if (root->right != NULL) inOrder(root->right);      } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/530. Minimum Absolute Difference in BST.cpp/Solution/getMinimumDifference(TreeNode*)"
+    },
+    {
+        "f": [
+            "vector<int> tree;"
+        ],
+        "fm": "void inOrder(TreeNode* root) {         if (root->left != NULL) inOrder(root->left);         tree.push_back(root->val);         if (root->right != NULL) inOrder(root->right);      }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int getMinimumDifference(TreeNode* root) {         inOrder(root);         int result = INT_MAX;         for (int i = 1; i < tree.size(); i++)             result = min(result, tree[i] - tree[i-1]);         return result;     } private:     vector<int> tree;     void inOrder(TreeNode* root) {         if (root->left != NULL) inOrder(root->left);         tree.push_back(root->val);         if (root->right != NULL) inOrder(root->right);      } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/530. Minimum Absolute Difference in BST.cpp/Solution/inOrder(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int findPairs(vector<int>& nums, int k) {         if (k < 0) return 0;         unordered_map<int, bool> m;         unordered_set<int> s;         for (int i = 0; i < nums.size(); i++) {             if (m[nums[i] - k]) s.insert(nums[i]);             if (m[nums[i] + k]) s.insert(nums[i] + k);             m[nums[i]] = true;         }         return s.size();     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findPairs(vector<int>& nums, int k) {         if (k < 0) return 0;         unordered_map<int, bool> m;         unordered_set<int> s;         for (int i = 0; i < nums.size(); i++) {             if (m[nums[i] - k]) s.insert(nums[i]);             if (m[nums[i] + k]) s.insert(nums[i] + k);             m[nums[i]] = true;         }         return s.size();     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/532. K-diff Pairs in an Array.cpp/Solution/findPairs(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "string complexNumberMultiply(string a, string b) {         char t[200];         int m, n, p, q;         sscanf(a.c_str(), \"%d+%di\", &m, &n);         sscanf(b.c_str(), \"%d+%di\", &p, &q);         sprintf(t, \"%d+%di\", (m*p-n*q), (n*p+m*q));         string ans = t;         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string complexNumberMultiply(string a, string b) {         char t[200];         int m, n, p, q;         sscanf(a.c_str(), \"%d+%di\", &m, &n);         sscanf(b.c_str(), \"%d+%di\", &p, &q);         sprintf(t, \"%d+%di\", (m*p-n*q), (n*p+m*q));         string ans = t;         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/537. Complex Number Multiplication.cpp/Solution/complexNumberMultiply(string,string)"
+    },
+    {
+        "f": [
+            "int sum = 0;"
+        ],
+        "fm": "TreeNode* convertBST(TreeNode* root) {         dfs(root);         return root;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     TreeNode* convertBST(TreeNode* root) {         dfs(root);         return root;     } private:     int sum = 0;     void dfs(TreeNode* root) {         if (root == NULL) return;         if (root->right != NULL) dfs(root->right);         sum += root->val;         root->val = sum;         if (root->left != NULL) dfs(root->left);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/538. Convert BST to Greater Tree.cpp/Solution/convertBST(TreeNode*)"
+    },
+    {
+        "f": [
+            "int sum = 0;"
+        ],
+        "fm": "void dfs(TreeNode* root) {         if (root == NULL) return;         if (root->right != NULL) dfs(root->right);         sum += root->val;         root->val = sum;         if (root->left != NULL) dfs(root->left);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     TreeNode* convertBST(TreeNode* root) {         dfs(root);         return root;     } private:     int sum = 0;     void dfs(TreeNode* root) {         if (root == NULL) return;         if (root->right != NULL) dfs(root->right);         sum += root->val;         root->val = sum;         if (root->left != NULL) dfs(root->left);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/538. Convert BST to Greater Tree.cpp/Solution/dfs(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "string reverseStr(string s, int k) {         for (int i = 0; i < s.length(); i+=2*k) {             int t = min((i + k), (int)s.length());             reverse(s.begin() + i, s.begin() + t);         }         return s;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string reverseStr(string s, int k) {         for (int i = 0; i < s.length(); i+=2*k) {             int t = min((i + k), (int)s.length());             reverse(s.begin() + i, s.begin() + t);         }         return s;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/541. Reverse String II.cpp/Solution/reverseStr(string,int)"
+    },
+    {
+        "f": [
+            "int ans = 0;"
+        ],
+        "fm": "int diameterOfBinaryTree(TreeNode* root) {         dfs(root);         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int diameterOfBinaryTree(TreeNode* root) {         dfs(root);         return ans;     } private:     int ans = 0;     int dfs(TreeNode* root) {         if (root == NULL) return 0;         int l = dfs(root->left), r = dfs(root->right);         ans = max(ans, l + r);         return max(l, r) + 1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/543. Diameter of Binary Tree.cpp/Solution/diameterOfBinaryTree(TreeNode*)"
+    },
+    {
+        "f": [
+            "int ans = 0;"
+        ],
+        "fm": "int dfs(TreeNode* root) {         if (root == NULL) return 0;         int l = dfs(root->left), r = dfs(root->right);         ans = max(ans, l + r);         return max(l, r) + 1;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int diameterOfBinaryTree(TreeNode* root) {         dfs(root);         return ans;     } private:     int ans = 0;     int dfs(TreeNode* root) {         if (root == NULL) return 0;         int l = dfs(root->left), r = dfs(root->right);         ans = max(ans, l + r);         return max(l, r) + 1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/543. Diameter of Binary Tree.cpp/Solution/dfs(TreeNode*)"
+    },
+    {
+        "f": [
+            "vector<int> father;"
+        ],
+        "fm": "int findCircleNum(vector<vector<int>>& M) {         int n = M.size(), cnt = M.size();         father.resize(n);         for (int i = 0; i < n; i++) father[i] = i;         for (int i = 0; i < n; i++) {             for (int j = i + 1; j < n; j++) {                 if (M[i][j] == 1) {                     int faA = findFather(i);                     int faB = findFather(j);                     if (faA != faB) {                         father[faA] = father[faB];                         cnt--;                     }                 }                              }         }         return cnt;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findCircleNum(vector<vector<int>>& M) {         int n = M.size(), cnt = M.size();         father.resize(n);         for (int i = 0; i < n; i++) father[i] = i;         for (int i = 0; i < n; i++) {             for (int j = i + 1; j < n; j++) {                 if (M[i][j] == 1) {                     int faA = findFather(i);                     int faB = findFather(j);                     if (faA != faB) {                         father[faA] = father[faB];                         cnt--;                     }                 }                              }         }         return cnt;     } private:     vector<int> father;     int findFather(int x) {         return x == father[x] ? x : findFather(father[x]);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/547. Friend Circles.cpp/Solution/findCircleNum(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool checkRecord(string s) {         return !regex_match(s, regex(\".*LLL.*|.*A.*A.*\"));     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool checkRecord(string s) {         return !regex_match(s, regex(\".*LLL.*|.*A.*A.*\"));     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/551. Student Attendance Record I.cpp/Solution/checkRecord(string)"
+    },
+    {
+        "f": [],
+        "fm": "string optimalDivision(vector<int>& nums) {         string ans = to_string(nums[0]);         if (nums.size() == 1) return ans;         if (nums.size() == 2) return ans + \"/\" + to_string(nums[1]);         ans = ans + \"/(\" + to_string(nums[1]);         for (int i = 2; i < nums.size(); i++) {             ans = ans + \"/\" + to_string(nums[i]);         }         return ans + \")\";     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string optimalDivision(vector<int>& nums) {         string ans = to_string(nums[0]);         if (nums.size() == 1) return ans;         if (nums.size() == 2) return ans + \"/\" + to_string(nums[1]);         ans = ans + \"/(\" + to_string(nums[1]);         for (int i = 2; i < nums.size(); i++) {             ans = ans + \"/\" + to_string(nums[i]);         }         return ans + \")\";     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/21/553. Optimal Division.cpp/Solution/optimalDivision(vector<int>&)"
+    }
+]

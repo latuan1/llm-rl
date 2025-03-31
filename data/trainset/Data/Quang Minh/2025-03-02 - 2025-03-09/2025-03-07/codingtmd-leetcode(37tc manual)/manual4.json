@@ -1,0 +1,162 @@
+[
+    {
+        "f": [],
+        "fm": "char *strStr(char *haystack, char *needle) {\r \t\tif (haystack == NULL || needle == NULL) return NULL;\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tif (nlen == 0) return haystack;\r \t\tif (hlen == 0 ) return NULL;\r \t\tint pattern[100000];\r \t\tGeneratePattern(needle, nlen, pattern);\r \t\treturn Match(haystack, needle, pattern);\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tchar *strStr(char *haystack, char *needle) {\r \t\tif (haystack == NULL || needle == NULL) return NULL;\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tif (nlen == 0) return haystack;\r \t\tif (hlen == 0 ) return NULL;\r \t\tint pattern[100000];\r \t\tGeneratePattern(needle, nlen, pattern);\r \t\treturn Match(haystack, needle, pattern);\r \t}\r \r \tvoid GeneratePattern(char* str, int len, int* pattern)\r \t{\r \t\tpattern[0] = -1;\r \t\tint k = -1;\r \t\tfor (int j = 1; j < len; j++)\r \t\t{\r \t\t\twhile (k > -1 && str[k + 1] != str[j])\r \t\t\t\tk = pattern[k];\r \t\t\tif (str[k + 1] == str[j])\r \t\t\t\tk++;\r \t\t\tpattern[j] = k;\r \t\t}\r \t}\r \r \tchar* Match(char* haystack, char* needle, int* pattern)\r \t{\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tint k = -1;\r \t\tfor (int j = 0; j < hlen; j++, haystack++)\r \t\t{\r \t\t\twhile (k > -1 && needle[k + 1] != *haystack)\r \t\t\t\tk = pattern[k];\r \t\t\tif (needle[k + 1] == *haystack)\r \t\t\t\tk++;\r \t\t\tif (k == nlen - 1)\r \t\t\t\treturn haystack - k;\r \t\t}\r \t\treturn NULL;\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\Implement_strStr().cpp\\Solution\\strStr(char*,char*)"
+    },
+    {
+        "f": [],
+        "fm": "void GeneratePattern(char* str, int len, int* pattern)\r \t{\r \t\tpattern[0] = -1;\r \t\tint k = -1;\r \t\tfor (int j = 1; j < len; j++)\r \t\t{\r \t\t\twhile (k > -1 && str[k + 1] != str[j])\r \t\t\t\tk = pattern[k];\r \t\t\tif (str[k + 1] == str[j])\r \t\t\t\tk++;\r \t\t\tpattern[j] = k;\r \t\t}\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tchar *strStr(char *haystack, char *needle) {\r \t\tif (haystack == NULL || needle == NULL) return NULL;\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tif (nlen == 0) return haystack;\r \t\tif (hlen == 0 ) return NULL;\r \t\tint pattern[100000];\r \t\tGeneratePattern(needle, nlen, pattern);\r \t\treturn Match(haystack, needle, pattern);\r \t}\r \r \tvoid GeneratePattern(char* str, int len, int* pattern)\r \t{\r \t\tpattern[0] = -1;\r \t\tint k = -1;\r \t\tfor (int j = 1; j < len; j++)\r \t\t{\r \t\t\twhile (k > -1 && str[k + 1] != str[j])\r \t\t\t\tk = pattern[k];\r \t\t\tif (str[k + 1] == str[j])\r \t\t\t\tk++;\r \t\t\tpattern[j] = k;\r \t\t}\r \t}\r \r \tchar* Match(char* haystack, char* needle, int* pattern)\r \t{\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tint k = -1;\r \t\tfor (int j = 0; j < hlen; j++, haystack++)\r \t\t{\r \t\t\twhile (k > -1 && needle[k + 1] != *haystack)\r \t\t\t\tk = pattern[k];\r \t\t\tif (needle[k + 1] == *haystack)\r \t\t\t\tk++;\r \t\t\tif (k == nlen - 1)\r \t\t\t\treturn haystack - k;\r \t\t}\r \t\treturn NULL;\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\Implement_strStr().cpp\\Solution\\GeneratePattern(char*,int,int*)"
+    },
+    {
+        "f": [],
+        "fm": "char* Match(char* haystack, char* needle, int* pattern)\r \t{\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tint k = -1;\r \t\tfor (int j = 0; j < hlen; j++, haystack++)\r \t\t{\r \t\t\twhile (k > -1 && needle[k + 1] != *haystack)\r \t\t\t\tk = pattern[k];\r \t\t\tif (needle[k + 1] == *haystack)\r \t\t\t\tk++;\r \t\t\tif (k == nlen - 1)\r \t\t\t\treturn haystack - k;\r \t\t}\r \t\treturn NULL;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tchar *strStr(char *haystack, char *needle) {\r \t\tif (haystack == NULL || needle == NULL) return NULL;\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tif (nlen == 0) return haystack;\r \t\tif (hlen == 0 ) return NULL;\r \t\tint pattern[100000];\r \t\tGeneratePattern(needle, nlen, pattern);\r \t\treturn Match(haystack, needle, pattern);\r \t}\r \r \tvoid GeneratePattern(char* str, int len, int* pattern)\r \t{\r \t\tpattern[0] = -1;\r \t\tint k = -1;\r \t\tfor (int j = 1; j < len; j++)\r \t\t{\r \t\t\twhile (k > -1 && str[k + 1] != str[j])\r \t\t\t\tk = pattern[k];\r \t\t\tif (str[k + 1] == str[j])\r \t\t\t\tk++;\r \t\t\tpattern[j] = k;\r \t\t}\r \t}\r \r \tchar* Match(char* haystack, char* needle, int* pattern)\r \t{\r \t\tint hlen = strlen(haystack);\r \t\tint nlen = strlen(needle);\r \t\tint k = -1;\r \t\tfor (int j = 0; j < hlen; j++, haystack++)\r \t\t{\r \t\t\twhile (k > -1 && needle[k + 1] != *haystack)\r \t\t\t\tk = pattern[k];\r \t\t\tif (needle[k + 1] == *haystack)\r \t\t\t\tk++;\r \t\t\tif (k == nlen - 1)\r \t\t\t\treturn haystack - k;\r \t\t}\r \t\treturn NULL;\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\Implement_strStr().cpp\\Solution\\Match(char*,char*,int*)"
+    },
+    {
+        "f": [],
+        "fm": "int lengthOfLastWord(const char *s) {\r         const char* pStart = s;\r         const char* pEnd = s;\r         const char* p = s;\r         const char* pre = s;\r \r         while (*p != '\\0')\r         {\r             if (*pre == ' ' && *p != ' ') pStart = p;\r             if (*pre != ' ' && *p == ' ') pEnd = p;\r \r             pre = p;\r             p++;\r         }\r \r         if (*pre != ' ' && *p == '\\0') pEnd = p;\r         return pEnd - pStart;\r     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int lengthOfLastWord(const char *s) {\r         const char* pStart = s;\r         const char* pEnd = s;\r         const char* p = s;\r         const char* pre = s;\r \r         while (*p != '\\0')\r         {\r             if (*pre == ' ' && *p != ' ') pStart = p;\r             if (*pre != ' ' && *p == ' ') pEnd = p;\r \r             pre = p;\r             p++;\r         }\r \r         if (*pre != ' ' && *p == '\\0') pEnd = p;\r         return pEnd - pStart;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\Length_of_Last_Word.cpp\\Solution\\lengthOfLastWord(char const*)"
+    },
+    {
+        "f": [],
+        "fm": "string longestPalindrome(string s) {\r     int len = s.size();\r     int P[len][len];\r     memset(P, 0, len * len * sizeof(int));\r     int maxL = 0, start = 0, end = 0;\r     for (int i = 0; i < s.size(); i++)\r     {\r       for (int j = 0; j < i; j++)\r       {\r         P[j][i] = (s[j] == s[i] && (i - j < 2 || P[j + 1][i - 1]));\r         if (P[j][i] && maxL < (i - j + 1))\r         {\r           maxL = i - j + 1;\r           start = j;\r           end = i;\r         }\r       }\r       P[i][i] = 1;\r     }\r     return s.substr(start, end - start + 1);\r   }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r   string longestPalindrome(string s) {\r     int len = s.size();\r     int P[len][len];\r     memset(P, 0, len * len * sizeof(int));\r     int maxL = 0, start = 0, end = 0;\r     for (int i = 0; i < s.size(); i++)\r     {\r       for (int j = 0; j < i; j++)\r       {\r         P[j][i] = (s[j] == s[i] && (i - j < 2 || P[j + 1][i - 1]));\r         if (P[j][i] && maxL < (i - j + 1))\r         {\r           maxL = i - j + 1;\r           start = j;\r           end = i;\r         }\r       }\r       P[i][i] = 1;\r     }\r     return s.substr(start, end - start + 1);\r   }\r \r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\Longest_Palindromic_Substring.cpp\\Solution\\longestPalindrome(string)"
+    },
+    {
+        "f": [],
+        "fm": "CacheEntry(int k, int v) : key(k), value(v) {}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\LRU_Cache.cpp\\LRUCache\\CacheEntry\\CacheEntry(int,int)"
+    },
+    {
+        "f": [
+            "unordered_map<int, list<CacheEntry>::iterator> m_map;",
+            "list<CacheEntry> m_LRU_cache;",
+            "int m_capacity;"
+        ],
+        "fm": "LRUCache(int capacity) {\r \t\tm_capacity = capacity;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class LRUCache {\r public:\r \tstruct CacheEntry\r \t{\r \tpublic:\r \t\tint key;\r \t\tint value;\r \t\tCacheEntry(int k, int v) : key(k), value(v) {}\r \t};\r \r \tLRUCache(int capacity) {\r \t\tm_capacity = capacity;\r \t}\r \r \tint get(int key) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t\treturn -1;\r \r \t\tMoveToHead(key);\r \t\treturn m_map[key]->value;\r \t}\r \r \tvoid set(int key, int value) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t{\r \t\t\tCacheEntry newItem(key, value);\r \t\t\tif (m_LRU_cache.size() >= m_capacity)\r \t\t\t{\r \t\t\t\t//remove from tail\r \t\t\t\tm_map.erase(m_LRU_cache.back().key);\r \t\t\t\tm_LRU_cache.pop_back();\r \t\t\t}\r \r \t\t\t// insert in head.\r \t\t\tm_LRU_cache.push_front(newItem);\r \t\t\tm_map[key] = m_LRU_cache.begin();\r \t\t\treturn;\r \t\t}\r \r \t\tm_map[key]->value = value;\r \t\tMoveToHead(key);\r \t}\r \r private:\r \tunordered_map<int, list<CacheEntry>::iterator> m_map;\r \tlist<CacheEntry> m_LRU_cache;\r \tint m_capacity;\r \r \tvoid MoveToHead(int key)\r \t{\r \t\t//Move key from current location to head\r \t\tauto updateEntry = *m_map[key];\r \t\tm_LRU_cache.erase(m_map[key]);\r \t\tm_LRU_cache.push_front(updateEntry);\r \t\tm_map[key] = m_LRU_cache.begin();\r \t}\r };",
+        "c": [
+            "LRUCache(int capacity) {\r\n\t\tm_capacity = capacity;\r\n\t}"
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\LRU_Cache.cpp\\LRUCache\\LRUCache(int)"
+    },
+    {
+        "f": [
+            "unordered_map<int, list<CacheEntry>::iterator> m_map;",
+            "list<CacheEntry> m_LRU_cache;",
+            "int m_capacity;"
+        ],
+        "fm": "int get(int key) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t\treturn -1;\r \r \t\tMoveToHead(key);\r \t\treturn m_map[key]->value;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class LRUCache {\r public:\r \tstruct CacheEntry\r \t{\r \tpublic:\r \t\tint key;\r \t\tint value;\r \t\tCacheEntry(int k, int v) : key(k), value(v) {}\r \t};\r \r \tLRUCache(int capacity) {\r \t\tm_capacity = capacity;\r \t}\r \r \tint get(int key) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t\treturn -1;\r \r \t\tMoveToHead(key);\r \t\treturn m_map[key]->value;\r \t}\r \r \tvoid set(int key, int value) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t{\r \t\t\tCacheEntry newItem(key, value);\r \t\t\tif (m_LRU_cache.size() >= m_capacity)\r \t\t\t{\r \t\t\t\t//remove from tail\r \t\t\t\tm_map.erase(m_LRU_cache.back().key);\r \t\t\t\tm_LRU_cache.pop_back();\r \t\t\t}\r \r \t\t\t// insert in head.\r \t\t\tm_LRU_cache.push_front(newItem);\r \t\t\tm_map[key] = m_LRU_cache.begin();\r \t\t\treturn;\r \t\t}\r \r \t\tm_map[key]->value = value;\r \t\tMoveToHead(key);\r \t}\r \r private:\r \tunordered_map<int, list<CacheEntry>::iterator> m_map;\r \tlist<CacheEntry> m_LRU_cache;\r \tint m_capacity;\r \r \tvoid MoveToHead(int key)\r \t{\r \t\t//Move key from current location to head\r \t\tauto updateEntry = *m_map[key];\r \t\tm_LRU_cache.erase(m_map[key]);\r \t\tm_LRU_cache.push_front(updateEntry);\r \t\tm_map[key] = m_LRU_cache.begin();\r \t}\r };",
+        "c": [
+            "LRUCache(int capacity) {\r\n\t\tm_capacity = capacity;\r\n\t}"
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\LRU_Cache.cpp\\LRUCache\\get(int)"
+    },
+    {
+        "f": [
+            "unordered_map<int, list<CacheEntry>::iterator> m_map;",
+            "list<CacheEntry> m_LRU_cache;",
+            "int m_capacity;"
+        ],
+        "fm": "void set(int key, int value) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t{\r \t\t\tCacheEntry newItem(key, value);\r \t\t\tif (m_LRU_cache.size() >= m_capacity)\r \t\t\t{\r \t\t\t\t//remove from tail\r \t\t\t\tm_map.erase(m_LRU_cache.back().key);\r \t\t\t\tm_LRU_cache.pop_back();\r \t\t\t}\r \r \t\t\t// insert in head.\r \t\t\tm_LRU_cache.push_front(newItem);\r \t\t\tm_map[key] = m_LRU_cache.begin();\r \t\t\treturn;\r \t\t}\r \r \t\tm_map[key]->value = value;\r \t\tMoveToHead(key);\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class LRUCache {\r public:\r \tstruct CacheEntry\r \t{\r \tpublic:\r \t\tint key;\r \t\tint value;\r \t\tCacheEntry(int k, int v) : key(k), value(v) {}\r \t};\r \r \tLRUCache(int capacity) {\r \t\tm_capacity = capacity;\r \t}\r \r \tint get(int key) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t\treturn -1;\r \r \t\tMoveToHead(key);\r \t\treturn m_map[key]->value;\r \t}\r \r \tvoid set(int key, int value) {\r \t\tif (m_map.find(key) == m_map.end())\r \t\t{\r \t\t\tCacheEntry newItem(key, value);\r \t\t\tif (m_LRU_cache.size() >= m_capacity)\r \t\t\t{\r \t\t\t\t//remove from tail\r \t\t\t\tm_map.erase(m_LRU_cache.back().key);\r \t\t\t\tm_LRU_cache.pop_back();\r \t\t\t}\r \r \t\t\t// insert in head.\r \t\t\tm_LRU_cache.push_front(newItem);\r \t\t\tm_map[key] = m_LRU_cache.begin();\r \t\t\treturn;\r \t\t}\r \r \t\tm_map[key]->value = value;\r \t\tMoveToHead(key);\r \t}\r \r private:\r \tunordered_map<int, list<CacheEntry>::iterator> m_map;\r \tlist<CacheEntry> m_LRU_cache;\r \tint m_capacity;\r \r \tvoid MoveToHead(int key)\r \t{\r \t\t//Move key from current location to head\r \t\tauto updateEntry = *m_map[key];\r \t\tm_LRU_cache.erase(m_map[key]);\r \t\tm_LRU_cache.push_front(updateEntry);\r \t\tm_map[key] = m_LRU_cache.begin();\r \t}\r };",
+        "c": [
+            "LRUCache(int capacity) {\r\n\t\tm_capacity = capacity;\r\n\t}"
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\LRU_Cache.cpp\\LRUCache\\set(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "bool isPalindrome(int x) {\r         if (x < 0) return false;\r         int div = 1;\r         while (x / div >= 10)\r             div *= 10;\r         while (x > 0)\r         {\r             int l = x / div;\r             int r = x % 10;\r             if (l != r) return false;\r             x = x % div / 10;\r             div /= 100;\r         }\r         return true;\r     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     bool isPalindrome(int x) {\r         if (x < 0) return false;\r         int div = 1;\r         while (x / div >= 10)\r             div *= 10;\r         while (x > 0)\r         {\r             int l = x / div;\r             int r = x % 10;\r             if (l != r) return false;\r             x = x % div / 10;\r             div /= 100;\r         }\r         return true;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual4\\Palindrome_Number.cpp\\Solution\\isPalindrome(int)"
+    }
+]

@@ -1,0 +1,1632 @@
+[
+    {
+        "f": [],
+        "fm": "int getMinDistance(vector<int>& nums, int target, int start) {         int ans = INT_MAX;         for (int i = 0; i < nums.size(); i++) {             if (nums[i] == target) {                 ans = min(ans, abs(i - start));             }         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1848. Minimum Distance to the Target Element.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/1848. Minimum Distance to the Target Element.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1848. Minimum Distance to the Target Element.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1848. Minimum Distance to the Target Element.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/1848. Minimum Distance to the Target Element.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "getMinDistance(vector<int>&,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "start",
+                                    "virtual_name": "EXPECTED_start",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/start",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/target",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1788034267"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/target",
+                                    "correspondingType": "int",
+                                    "value": "-1006578276"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "start",
+                                    "virtual_name": "start",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/start",
+                                    "correspondingType": "int",
+                                    "value": "49813930"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_getMinDistance_vector_int_int_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_getMinDistance_vector_int_int_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1848. Minimum Distance to the Target Element.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint target=-1006578276;\n\n\nint start=49813930;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1788034267;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode start */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_getMinDistance_vector_int_int_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->getMinDistance(nums,target,start);\nAKA_fCall++;AKA_mark(\"Return from: ./31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1848. Minimum Distance to the Target Element.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint target=-1006578276;\n\n\nint start=49813930;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1788034267;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode start */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int getMinDistance(vector<int>& nums, int target, int start) {         int ans = INT_MAX;         for (int i = 0; i < nums.size(); i++) {             if (nums[i] == target) {                 ans = min(ans, abs(i - start));             }         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/1848. Minimum Distance to the Target Element.cpp/Solution/getMinDistance(vector<int>&,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int getMinSwaps(string num, int k) {         string target(num);         for (int i = 0; i < k; ++i)             next_permutation(target.begin(), target.end());          int ans = 0, n = num.size();         for (int i = 0; i < n; ++i) {             if (num[i] != target[i]) {                 int j = i + 1;                 while (num[j] != target[i])                     j++;                 for (; j > i; --j)                     swap(num[j], num[j - 1]), ans++;             }         }          return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "getMinSwaps(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "EXPECTED_num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)/num",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)/num",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "num[0]",
+                                            "virtual_name": "num[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)/num/num[0]",
+                                            "correspondingType": "char",
+                                            "value": "-17"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "6"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_getMinSwaps_string_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_getMinSwaps_string_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName293222 = new char[2];akaRandomName293222[0] = -17;akaRandomName293222[1] = '\\0';string num=akaRandomName293222;\n\n\nint k=6;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_getMinSwaps_string_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->getMinSwaps(num,k);\nAKA_fCall++;AKA_mark(\"Return from: ./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName874513 = new char[2];akaRandomName874513[0] = -17;akaRandomName874513[1] = '\\0';string num=akaRandomName874513;\n\n\nint k=6;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int getMinSwaps(string num, int k) {         string target(num);         for (int i = 0; i < k; ++i)             next_permutation(target.begin(), target.end());          int ans = 0, n = num.size();         for (int i = 0; i < n; ++i) {             if (num[i] != target[i]) {                 int j = i + 1;                 while (num[j] != target[i])                     j++;                 for (; j > i; --j)                     swap(num[j], num[j - 1]), ans++;             }         }          return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number.cpp/Solution/getMinSwaps(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int getMinSwaps(string num, int k) {         string target = num;         while (k--) next_permutation(target.begin(), target.end());          int ans = 0, n = num.size();         for (int i = 0; i < n; i++) {             if (num[i] != target[i]) {                 for (int j = i + 1; j < n; j++) {                     if (target[j] == num[i]) {                         for (int k = j; k > i; k--) {                             swap(target[k], target[k - 1]);                         }                         ans += j - i;                         break;                     }                 }             }         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "getMinSwaps(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "EXPECTED_num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)/num",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)/num",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "num[0]",
+                                            "virtual_name": "num[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)/num/num[0]",
+                                            "correspondingType": "char",
+                                            "value": "10"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_getMinSwaps_string_int_random_5(void) {\n{\nAKA_test_case_name=\"Solution_getMinSwaps_string_int_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName168384 = new char[2];akaRandomName168384[0] = 10;akaRandomName168384[1] = '\\0';string num=akaRandomName168384;\n\n\nint k=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_getMinSwaps_string_int_random_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->getMinSwaps(num,k);\nAKA_fCall++;AKA_mark(\"Return from: ./31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName379716 = new char[2];akaRandomName379716[0] = 10;akaRandomName379716[1] = '\\0';string num=akaRandomName379716;\n\n\nint k=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int getMinSwaps(string num, int k) {         string target = num;         while (k--) next_permutation(target.begin(), target.end());          int ans = 0, n = num.size();         for (int i = 0; i < n; i++) {             if (num[i] != target[i]) {                 for (int j = i + 1; j < n; j++) {                     if (target[j] == num[i]) {                         for (int k = j; k > i; k--) {                             swap(target[k], target[k - 1]);                         }                         ans += j - i;                         break;                     }                 }             }         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number_1.cpp/Solution/getMinSwaps(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "string largestOddNumber(string num) {         for (int i = num.length() - 1; i >= 0; i--) {             if ((num[i] - '0') % 2) {                 return num.substr(0, i + 1);             }         }         return \"\";     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1903. Largest Odd Number in String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/1903. Largest Odd Number in String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1903. Largest Odd Number in String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1903. Largest Odd Number in String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/1903. Largest Odd Number in String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "largestOddNumber(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "EXPECTED_num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/num",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/num",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "num[0]",
+                                            "virtual_name": "num[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/num/num[0]",
+                                            "correspondingType": "char",
+                                            "value": "11"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_largestOddNumber_string_random_4(void) {\n{\nAKA_test_case_name=\"Solution_largestOddNumber_string_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1903. Largest Odd Number in String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName998128 = new char[2];akaRandomName998128[0] = 11;akaRandomName998128[1] = '\\0';string num=akaRandomName998128;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_largestOddNumber_string_random_4\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->largestOddNumber(num);\nAKA_fCall++;AKA_mark(\"Return from: ./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1903. Largest Odd Number in String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName326927 = new char[2];akaRandomName326927[0] = 11;akaRandomName326927[1] = '\\0';string num=akaRandomName326927;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1903. Largest Odd Number in String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/1903. Largest Odd Number in String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1903. Largest Odd Number in String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/1903. Largest Odd Number in String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/1903. Largest Odd Number in String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "largestOddNumber(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "EXPECTED_num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/num",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "num",
+                                    "virtual_name": "num",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/num",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "num[0]",
+                                            "virtual_name": "num[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/num/num[0]",
+                                            "correspondingType": "char",
+                                            "value": "118"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_largestOddNumber_string_random_2(void) {\n{\nAKA_test_case_name=\"Solution_largestOddNumber_string_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1903. Largest Odd Number in String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName93521 = new char[2];akaRandomName93521[0] = 118;akaRandomName93521[1] = '\\0';string num=akaRandomName93521;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_largestOddNumber_string_random_2\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->largestOddNumber(num);\nAKA_fCall++;AKA_mark(\"Return from: ./31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1903. Largest Odd Number in String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName22512 = new char[2];akaRandomName22512[0] = 118;akaRandomName22512[1] = '\\0';string num=akaRandomName22512;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode num */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     string largestOddNumber(string num) {         for (int i = num.length() - 1; i >= 0; i--) {             if ((num[i] - '0') % 2) {                 return num.substr(0, i + 1);             }         }         return \"\";     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/1903. Largest Odd Number in String.cpp/Solution/largestOddNumber(string)"
+    },
+    {
+        "f": [],
+        "fm": "int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {         typedef pair<int, int> PII;         vector<PII> v;         for (int i = 0; i < boxTypes.size(); ++i) {             v.emplace_back(boxTypes[i][1], boxTypes[i][0]);         }         sort(v.begin(), v.end(), greater<PII>());         int ans = 0;         for (int i = 0; i < v.size() && truckSize > 0; ++i) {             if (truckSize >= v[i].second) {                 ans += v[i].first * v[i].second;                 truckSize -= v[i].second;             } else {                 ans += v[i].first * truckSize;                 truckSize = 0;             }         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5641. Maximum Units on a Truck.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/5641. Maximum Units on a Truck.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5641. Maximum Units on a Truck.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5641. Maximum Units on a Truck.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/5641. Maximum Units on a Truck.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumUnits(vector<vector<int>>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "boxTypes",
+                                    "virtual_name": "EXPECTED_boxTypes",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "truckSize",
+                                    "virtual_name": "EXPECTED_truckSize",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/truckSize",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "boxTypes",
+                                    "virtual_name": "boxTypes",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "boxTypes_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "boxTypes_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "441861398"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "boxTypes_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "boxTypes_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1158107928"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "boxTypes_element1_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #1/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-2107817452"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "truckSize",
+                                    "virtual_name": "truckSize",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/truckSize",
+                                    "correspondingType": "int",
+                                    "value": "3"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumUnits_vector_vector_int_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_maximumUnits_vector_vector_int_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5641. Maximum Units on a Truck.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> boxTypes;\n\n\nint truckSize=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode boxTypes */\nvector<int> boxTypes_element0;\nint boxTypes_element0_element0=441861398;\nboxTypes_element0.push_back(boxTypes_element0_element0);\nboxTypes.push_back(boxTypes_element0);\nvector<int> boxTypes_element1;\nint boxTypes_element1_element0=-1158107928;\nboxTypes_element1.push_back(boxTypes_element1_element0);\nint boxTypes_element1_element1=-2107817452;\nboxTypes_element1.push_back(boxTypes_element1_element1);\nboxTypes.push_back(boxTypes_element1);\n/* NormalNumberDataNode truckSize */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumUnits_vector_vector_int_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumUnits(boxTypes,truckSize);\nAKA_fCall++;AKA_mark(\"Return from: ./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)\");\n\n\nvector<vector<int>> EXPECTED_boxTypes;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5641. Maximum Units on a Truck.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> boxTypes;\n\n\nint truckSize=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode boxTypes */\nvector<int> boxTypes_element0;\nint boxTypes_element0_element0=441861398;\nboxTypes_element0.push_back(boxTypes_element0_element0);\nboxTypes.push_back(boxTypes_element0);\nvector<int> boxTypes_element1;\nint boxTypes_element1_element0=-1158107928;\nboxTypes_element1.push_back(boxTypes_element1_element0);\nint boxTypes_element1_element1=-2107817452;\nboxTypes_element1.push_back(boxTypes_element1_element1);\nboxTypes.push_back(boxTypes_element1);\n/* NormalNumberDataNode truckSize */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5641. Maximum Units on a Truck.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/5641. Maximum Units on a Truck.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5641. Maximum Units on a Truck.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5641. Maximum Units on a Truck.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/5641. Maximum Units on a Truck.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumUnits(vector<vector<int>>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "boxTypes",
+                                    "virtual_name": "EXPECTED_boxTypes",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "truckSize",
+                                    "virtual_name": "EXPECTED_truckSize",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/truckSize",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "boxTypes",
+                                    "virtual_name": "boxTypes",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "boxTypes_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "boxTypes_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1001057993"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "boxTypes_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/boxTypes/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "1496810549"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "truckSize",
+                                    "virtual_name": "truckSize",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/truckSize",
+                                    "correspondingType": "int",
+                                    "value": "10"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumUnits_vector_vector_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_maximumUnits_vector_vector_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5641. Maximum Units on a Truck.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> boxTypes;\n\n\nint truckSize=10;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode boxTypes */\nvector<int> boxTypes_element0;\nint boxTypes_element0_element0=-1001057993;\nboxTypes_element0.push_back(boxTypes_element0_element0);\nint boxTypes_element0_element1=1496810549;\nboxTypes_element0.push_back(boxTypes_element0_element1);\nboxTypes.push_back(boxTypes_element0);\n/* NormalNumberDataNode truckSize */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumUnits_vector_vector_int_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumUnits(boxTypes,truckSize);\nAKA_fCall++;AKA_mark(\"Return from: ./31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)\");\n\n\nvector<vector<int>> EXPECTED_boxTypes;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5641. Maximum Units on a Truck.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> boxTypes;\n\n\nint truckSize=10;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode boxTypes */\nvector<int> boxTypes_element0;\nint boxTypes_element0_element0=-1001057993;\nboxTypes_element0.push_back(boxTypes_element0_element0);\nint boxTypes_element0_element1=1496810549;\nboxTypes_element0.push_back(boxTypes_element0_element1);\nboxTypes.push_back(boxTypes_element0);\n/* NormalNumberDataNode truckSize */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {         typedef pair<int, int> PII;         vector<PII> v;         for (int i = 0; i < boxTypes.size(); ++i) {             v.emplace_back(boxTypes[i][1], boxTypes[i][0]);         }         sort(v.begin(), v.end(), greater<PII>());         int ans = 0;         for (int i = 0; i < v.size() && truckSize > 0; ++i) {             if (truckSize >= v[i].second) {                 ans += v[i].first * v[i].second;                 truckSize -= v[i].second;             } else {                 ans += v[i].first * truckSize;                 truckSize = 0;             }         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/5641. Maximum Units on a Truck.cpp/Solution/maximumUnits(vector<vector<int>>&,int)"
+    },
+    {
+        "f": [
+            "const int MOD = 1e9 + 7;"
+        ],
+        "fm": "bool isPow(int x) {         return pow(2, (int)log2(x)) == x;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5642. Count Good Meals.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/5642. Count Good Meals.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/5642. Count Good Meals.cpp/Solution/isPow(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5642. Count Good Meals.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5642. Count Good Meals.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/5642. Count Good Meals.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "MOD",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->MOD",
+                                                    "dataType": "int const",
+                                                    "realType": "int const",
+                                                    "external": false,
+                                                    "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/MOD",
+                                                    "correspondingType": "int const",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "isPow(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./31/5642. Count Good Meals.cpp/Solution/isPow(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/isPow(int)/x",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/5642. Count Good Meals.cpp/Solution/isPow(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/isPow(int)/x",
+                                    "correspondingType": "int",
+                                    "value": "-2126286692"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./31/5642. Count Good Meals.cpp/Solution/isPow(int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_isPow_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_isPow_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5642. Count Good Meals.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* NormalNumberDataNode MOD */\n/* MOD : null value -> no code */\n\n\n\n\nint x=-2126286692;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_isPow_int_random_3\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->isPow(x);\nAKA_fCall++;AKA_mark(\"Return from: ./31/5642. Count Good Meals.cpp/Solution/isPow(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5642. Count Good Meals.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* NormalNumberDataNode MOD */\n/* MOD : null value -> no code */\n\n\n\n\nint x=-2126286692;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     const int MOD = 1e9 + 7;     bool isPow(int x) {         return pow(2, (int)log2(x)) == x;     }     int countPairs(vector<int>& deliciousness) {         sort(deliciousness.begin(), deliciousness.end());         long long ans = 0;         unordered_map<int, int> cnt;         for (int i = 0, j = 1; i < deliciousness.size(); i++) {             while (deliciousness[i] >= j) j *= 2;             ans = (ans + cnt[j - deliciousness[i]]) % MOD;             if (deliciousness[i] > 0 && isPow(deliciousness[i])) ans += cnt[0];             cnt[deliciousness[i]]++;         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/5642. Count Good Meals.cpp/Solution/isPow(int)"
+    },
+    {
+        "f": [],
+        "fm": "int minOperations(vector<int>& target, vector<int>& arr) {         int ans = 0;         unordered_map<int, int> pos;         for (int i = 0; i < target.size(); i++)             pos[target[i]] = i;         // a 维护 target 里面的数在 arr 里面出现的下标         // a 的最长上升子序列长度就是 target 和 arr 两者的最长公共子序列长度         vector<int> a;         for (auto x : arr) {             if (pos.count(x)) a.push_back(pos[x]);         }          int len = 0;         vector<int> q(a.size() + 1);         for (int i = 0; i < a.size(); i++) {             int l = 0, r = len;             while (l < r) {                 int mid = l + r + 1 >> 1;                 if (q[mid] < a[i])                     l = mid;                 else                     r = mid - 1;             }             len = max(len, r + 1);             q[r + 1] = a[i];         }         cout << endl;          return target.size() - len;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5644. Minimum Operations to Make a Subsequence.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./31/5644. Minimum Operations to Make a Subsequence.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minOperations(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/target",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "arr",
+                                    "virtual_name": "EXPECTED_arr",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/arr",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/target",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "target_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/target/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-910392195"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "target_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/target/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1723485342"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "arr",
+                                    "virtual_name": "arr",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/arr",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "arr_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/arr/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-2109207132"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minOperations_vector_int_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_minOperations_vector_int_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5644. Minimum Operations to Make a Subsequence.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> target;\nvector<int> arr;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode target */\nint target_element0=-910392195;\ntarget.push_back(target_element0);\nint target_element1=1723485342;\ntarget.push_back(target_element1);\n/* VectorDataNode arr */\nint arr_element0=-2109207132;\narr.push_back(arr_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minOperations_vector_int_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minOperations(target,arr);\nAKA_fCall++;AKA_mark(\"Return from: ./31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_target;\n\nvector<int> EXPECTED_arr;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5644. Minimum Operations to Make a Subsequence.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> target;\nvector<int> arr;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode target */\nint target_element0=-910392195;\ntarget.push_back(target_element0);\nint target_element1=1723485342;\ntarget.push_back(target_element1);\n/* VectorDataNode arr */\nint arr_element0=-2109207132;\narr.push_back(arr_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int minOperations(vector<int>& target, vector<int>& arr) {         int ans = 0;         unordered_map<int, int> pos;         for (int i = 0; i < target.size(); i++)             pos[target[i]] = i;         // a 维护 target 里面的数在 arr 里面出现的下标         // a 的最长上升子序列长度就是 target 和 arr 两者的最长公共子序列长度         vector<int> a;         for (auto x : arr) {             if (pos.count(x)) a.push_back(pos[x]);         }          int len = 0;         vector<int> q(a.size() + 1);         for (int i = 0; i < a.size(); i++) {             int l = 0, r = len;             while (l < r) {                 int mid = l + r + 1 >> 1;                 if (q[mid] < a[i])                     l = mid;                 else                     r = mid - 1;             }             len = max(len, r + 1);             q[r + 1] = a[i];         }         cout << endl;          return target.size() - len;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/31/5644. Minimum Operations to Make a Subsequence.cpp/Solution/minOperations(vector<int>&,vector<int>&)"
+    }
+]

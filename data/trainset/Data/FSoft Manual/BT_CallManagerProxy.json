@@ -1,0 +1,1351 @@
+[
+    {
+        "f": [
+            "BTSRV_CM_Tel_Func_LockInfo * telfunc_lockstsShm = NULL;"
+        ],
+        "fm": "EBTSRV_CM_ReturnCode TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo* param)\r {\r     EBTSRV_CM_ReturnCode ret = eBTSRV_CM_ReturnCode_FAILURE;\r \r \tif(NULL == param)\r \t{\r \t\tBTSRV_PUBLIC_LOG(ZONE_BT_INFO,__PRETTY_FUNCTION__,\"Param Error\");\r \t    return ret;\r \t}\r \t\r \tif(NULL != telfunc_lockstsShm)\r \t{\r \t\tmemcpy(param, &telfunc_lockstsShm, sizeof(BTSRV_CM_Tel_Func_LockInfo));\r \t\tBTSRV_PUBLIC_LOG(ZONE_BT_INFO,__PRETTY_FUNCTION__,\"Lock type [%d]\", telfunc_lockstsShm->type);\r \t\tret = eBTSRV_CM_ReturnCode_SUCCESS;\r \t}\r \telse\r \t{\r \t\tBTSRV_PUBLIC_LOG(ZONE_BT_INFO,__PRETTY_FUNCTION__,\"Error :Shared memory is not opend\");\r \t}\r     return ret;\r }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": true,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "EBTSRV_CM_ReturnCode",
+                            "realType": "_EBTSRV_CM_ReturnCode",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "param",
+                                    "virtual_name": "EXPECTED_param",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "param",
+                                    "virtual_name": "param",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "param[0]",
+                                            "virtual_name": "param[0]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param[0]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "param",
+                                                    "virtual_name": "param[0]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "param[0]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "param[0].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_BT",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "param[1]",
+                                            "virtual_name": "param[1]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param[1]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "param",
+                                                    "virtual_name": "param[1]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "param[1]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "param[1].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_NONE",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "param[2]",
+                                            "virtual_name": "param[2]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param[2]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "param",
+                                                    "virtual_name": "param[2]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "param[2]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "param[2].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_ALEXACALL",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.EnumDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "::_EBTSRV_CM_ReturnCode",
+                                    "realType": "_EBTSRV_CM_ReturnCode",
+                                    "external": false,
+                                    "valueIsSet": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\RETURN",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_ReturnCode"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_1(void) {\n{\nAKA_test_case_name=\"TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_1\";\n\n// set up\n;\ntelfunc_lockstsShm;\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_param;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_0\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_0);\ndelete AKA_VECTOR_INIT_param_0;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_1\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_1 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_1).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_NONE;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_1);\ndelete AKA_VECTOR_INIT_param_1;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_2\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_2 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_2).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_ALEXACALL;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_2);\ndelete AKA_VECTOR_INIT_param_2;\n\nBTSRV_CM_Tel_Func_LockInfo* param = AKA_VECTOR_INIT_param[0];\n\n::_EBTSRV_CM_ReturnCode AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode param */\n/* EnumDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_1\");_EBTSRV_CM_ReturnCode AKA_ACTUAL_OUTPUT=TelBLL_CM_ReadLockInfo(param);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "telfunc_lockstsShm;\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_param;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_0\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_0);\ndelete AKA_VECTOR_INIT_param_0;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_1\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_1 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_1).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_NONE;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_1);\ndelete AKA_VECTOR_INIT_param_1;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_2\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_2 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_2).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_ALEXACALL;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_2);\ndelete AKA_VECTOR_INIT_param_2;\n\nBTSRV_CM_Tel_Func_LockInfo* param = AKA_VECTOR_INIT_param[0];\n\n::_EBTSRV_CM_ReturnCode AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode param */\n/* EnumDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": true,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "EBTSRV_CM_ReturnCode",
+                            "realType": "_EBTSRV_CM_ReturnCode",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "param",
+                                    "virtual_name": "EXPECTED_param",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "param",
+                                    "virtual_name": "param",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 0
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.EnumDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "::_EBTSRV_CM_ReturnCode",
+                                    "realType": "_EBTSRV_CM_ReturnCode",
+                                    "external": false,
+                                    "valueIsSet": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\RETURN",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_ReturnCode"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_2(void) {\n{\nAKA_test_case_name=\"TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_2\";\n\n// set up\n;\n\ntelfunc_lockstsShm = nullptr;\n\n\nBTSRV_CM_Tel_Func_LockInfo* param = nullptr;\n\n::_EBTSRV_CM_ReturnCode AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode param */\n/* EnumDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_2\");_EBTSRV_CM_ReturnCode AKA_ACTUAL_OUTPUT=TelBLL_CM_ReadLockInfo(param);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\ntelfunc_lockstsShm = nullptr;\n\n\nBTSRV_CM_Tel_Func_LockInfo* param = nullptr;\n\n::_EBTSRV_CM_ReturnCode AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode param */\n/* EnumDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": true,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "telfunc_lockstsShm[0]",
+                                            "virtual_name": "telfunc_lockstsShm[0]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm[0]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "telfunc_lockstsShm",
+                                                    "virtual_name": "telfunc_lockstsShm[0]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "telfunc_lockstsShm[0]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "telfunc_lockstsShm[0].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_MAX",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "telfunc_lockstsShm[1]",
+                                            "virtual_name": "telfunc_lockstsShm[1]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm[1]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "telfunc_lockstsShm",
+                                                    "virtual_name": "telfunc_lockstsShm[1]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "telfunc_lockstsShm[1]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "telfunc_lockstsShm[1].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_BT",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "telfunc_lockstsShm[2]",
+                                            "virtual_name": "telfunc_lockstsShm[2]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm[2]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "telfunc_lockstsShm",
+                                                    "virtual_name": "telfunc_lockstsShm[2]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "telfunc_lockstsShm[2]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "telfunc_lockstsShm[2].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_ALEXACALL",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "EBTSRV_CM_ReturnCode",
+                            "realType": "_EBTSRV_CM_ReturnCode",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "param",
+                                    "virtual_name": "EXPECTED_param",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "param",
+                                    "virtual_name": "param",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "param[0]",
+                                            "virtual_name": "param[0]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param[0]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "param",
+                                                    "virtual_name": "param[0]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\param\\param",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "param[0]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "param[0].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_BT",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.EnumDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "::_EBTSRV_CM_ReturnCode",
+                                    "realType": "_EBTSRV_CM_ReturnCode",
+                                    "external": false,
+                                    "valueIsSet": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\RETURN",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_ReturnCode"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_0(void) {\n{\nAKA_test_case_name=\"TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_0\";\n\n// set up\n;\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_telfunc_lockstsShm;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_0\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_MAX;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_0);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_0;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_1\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_1 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_1).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_1);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_1;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_2\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_2 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_2).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_ALEXACALL;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_2);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_2;\n\ntelfunc_lockstsShm = AKA_VECTOR_INIT_telfunc_lockstsShm[0];\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_param;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_0\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_0);\ndelete AKA_VECTOR_INIT_param_0;\n\nBTSRV_CM_Tel_Func_LockInfo* param = AKA_VECTOR_INIT_param[0];\n\n::_EBTSRV_CM_ReturnCode AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode param */\n/* EnumDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TelBLL_CM_ReadLockInfo_BTSRV_CM_Tel_Func_LockInfomul_0\");_EBTSRV_CM_ReturnCode AKA_ACTUAL_OUTPUT=TelBLL_CM_ReadLockInfo(param);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "std::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_telfunc_lockstsShm;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_0\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_MAX;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_0);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_0;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_1\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_1 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_1).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_1);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_1;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_2\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_2 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_2).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_ALEXACALL;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_2);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_2;\n\ntelfunc_lockstsShm = AKA_VECTOR_INIT_telfunc_lockstsShm[0];\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_param;\n\n\n/* SubStructDataNode param */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)\\\\param\\\\AKA_VECTOR_INIT_param_0\\\\param\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_param_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_param_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_param.push_back(AKA_VECTOR_INIT_param_0);\ndelete AKA_VECTOR_INIT_param_0;\n\nBTSRV_CM_Tel_Func_LockInfo* param = AKA_VECTOR_INIT_param[0];\n\n::_EBTSRV_CM_ReturnCode AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode param */\n/* EnumDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "D:\\SVN\\03.Test\\AKAUT2025-327\\Source\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\TelBLL_CM_ReadLockInfo(BTSRV_CM_Tel_Func_LockInfo*)"
+    },
+    {
+        "f": [],
+        "fm": "void* BT_Service_CreateShm( char* shmPath )\r {\r     int32_t fd = -1;\r     int32_t ret = -1;\r     void* addr = NULL;\r     bool bCreate = false;\r \r     // ���L�������̍쐬\r     fd = shm_open( shmPath, O_RDWR, 0777 );\r     if( fd < 0 ) {\r         // �����ݎ�\r         if (ENOENT == errno) {\r             // ����\r             fd = shm_open( shmPath, O_CREAT | O_RDWR, 0777 );\r             if( fd < 0 ) {\r                 return NULL;\r             }\r             bCreate = true;\r             // ���L�������̃T�C�Y�ύX\r             ret = ftruncate( fd, sizeof(BTSRV_CM_Tel_Func_LockInfo));\r             if( ret < 0) {\r                 return NULL;\r             }\r         } else {\r             return NULL;\r         }\r     }\r \r     // ���L���������v���Z�X�̉��z��ԂɃ}�b�s���O\r     addr = mmap( 0, sizeof(BTSRV_CM_Tel_Func_LockInfo), PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0 );\r     if( addr == MAP_FAILED ) {\r         return NULL;\r     }\r \r     // �����������̓��������N���A����\r     if (bCreate) {\r         memset(addr,0x00, sizeof(BTSRV_CM_Tel_Func_LockInfo));\r     }\r \r     return addr;\r }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)",
+                            "paramExpectedOuputs": [],
+                            "level": "GLOBAL"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "BT_Service_CreateShm(char*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void*",
+                            "realType": "void*",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerCharacterDataNode",
+                                    "name": "shmPath",
+                                    "virtual_name": "EXPECTED_shmPath",
+                                    "dataType": "char*",
+                                    "realType": "char*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\shmPath",
+                                    "correspondingType": "",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerCharacterDataNode",
+                                    "name": "shmPath",
+                                    "virtual_name": "shmPath",
+                                    "dataType": "char*",
+                                    "realType": "char*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\shmPath",
+                                    "correspondingType": "",
+                                    "level": 1,
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "shmPath[0]",
+                                            "virtual_name": "shmPath[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\shmPath\\shmPath[0]",
+                                            "correspondingType": "char",
+                                            "value": "97"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "shmPath[1]",
+                                            "virtual_name": "shmPath[1]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\shmPath\\shmPath[1]",
+                                            "correspondingType": "char",
+                                            "value": "98"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "shmPath[2]",
+                                            "virtual_name": "shmPath[2]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\shmPath\\shmPath[2]",
+                                            "correspondingType": "char",
+                                            "value": "99"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "shmPath[3]",
+                                            "virtual_name": "shmPath[3]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\shmPath\\shmPath[3]",
+                                            "correspondingType": "char",
+                                            "value": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.VoidPointerDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "void*",
+                                    "realType": "void*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)\\RETURN"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_BT_Service_CreateShm_charmul_0(void) {\n{\nAKA_test_case_name=\"BT_Service_CreateShm_charmul_0\";\n\n// set up\n;\n\nchar AKA_ARRAY_INIT_shmPath[4];\n\nchar AKA_ARRAY_INIT_shmPath_0=97;\nAKA_ARRAY_INIT_shmPath[0] = AKA_ARRAY_INIT_shmPath_0;\n\nchar AKA_ARRAY_INIT_shmPath_1=98;\nAKA_ARRAY_INIT_shmPath[1] = AKA_ARRAY_INIT_shmPath_1;\n\nchar AKA_ARRAY_INIT_shmPath_2=99;\nAKA_ARRAY_INIT_shmPath[2] = AKA_ARRAY_INIT_shmPath_2;\n\nchar AKA_ARRAY_INIT_shmPath_3=0;\nAKA_ARRAY_INIT_shmPath[3] = AKA_ARRAY_INIT_shmPath_3;\n\nchar* shmPath = AKA_ARRAY_INIT_shmPath;\nvoid* AKA_EXPECTED_OUTPUT = ((void *)0);\n/* RootDataNode STATIC */\n/* PointerCharacterDataNode shmPath */\n/* VoidPointerDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test BT_Service_CreateShm_charmul_0\");void* AKA_ACTUAL_OUTPUT=BT_Service_CreateShm(shmPath);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_CreateShm(char*)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\nchar AKA_ARRAY_INIT_shmPath[4];\n\nchar AKA_ARRAY_INIT_shmPath_0=97;\nAKA_ARRAY_INIT_shmPath[0] = AKA_ARRAY_INIT_shmPath_0;\n\nchar AKA_ARRAY_INIT_shmPath_1=98;\nAKA_ARRAY_INIT_shmPath[1] = AKA_ARRAY_INIT_shmPath_1;\n\nchar AKA_ARRAY_INIT_shmPath_2=99;\nAKA_ARRAY_INIT_shmPath[2] = AKA_ARRAY_INIT_shmPath_2;\n\nchar AKA_ARRAY_INIT_shmPath_3=0;\nAKA_ARRAY_INIT_shmPath[3] = AKA_ARRAY_INIT_shmPath_3;\n\nchar* shmPath = AKA_ARRAY_INIT_shmPath;\nvoid* AKA_EXPECTED_OUTPUT = ((void *)0);\n/* RootDataNode STATIC */\n/* PointerCharacterDataNode shmPath */\n/* VoidPointerDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "D:\\SVN\\03.Test\\AKAUT2025-327\\Source\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_CreateShm(char*)"
+    },
+    {
+        "f": [
+            "BTSRV_CM_Tel_Func_LockInfo * telfunc_lockstsShm = NULL;"
+        ],
+        "fm": "void BT_Service_writeShm( BTSRV_CM_Tel_Func_LockInfo* data )\r {\r \tif(NULL != data)\r \t{\r \t\tif(NULL != telfunc_lockstsShm)\r \t\t{\r \t\t\tmemcpy(telfunc_lockstsShm, data, sizeof(BTSRV_CM_Tel_Func_LockInfo));\r \t\t\tBTSRV_PUBLIC_LOG(ZONE_BT_INFO,__PRETTY_FUNCTION__,\"Lock Status update to [%d]\", telfunc_lockstsShm->type);\r \t\t}\r \t\telse\r \t\t{\r \t\t\tBTSRV_PUBLIC_LOG(ZONE_BT_INFO,__PRETTY_FUNCTION__,\"Error :Shared memory is not opend\");\r \t\t}\r \t}\r }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": true,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "data",
+                                    "virtual_name": "EXPECTED_data",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "data",
+                                    "virtual_name": "data",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "data[0]",
+                                            "virtual_name": "data[0]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data\\data[0]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "data",
+                                                    "virtual_name": "data[0]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data\\data",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "data[0]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "data[0].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "valueIsSet": false,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_2(void) {\n{\nAKA_test_case_name=\"BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_2\";\n\n// set up\n;\n\ntelfunc_lockstsShm = nullptr;\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_data;\n\n\n/* SubStructDataNode data */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\\\data\\\\AKA_VECTOR_INIT_data_0\\\\data\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_data_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n\nAKA_VECTOR_INIT_data.push_back(AKA_VECTOR_INIT_data_0);\ndelete AKA_VECTOR_INIT_data_0;\n\nBTSRV_CM_Tel_Func_LockInfo* data = AKA_VECTOR_INIT_data[0];\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode data */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_2\");BT_Service_writeShm(data);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\ntelfunc_lockstsShm = nullptr;\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_data;\n\n\n/* SubStructDataNode data */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\\\data\\\\AKA_VECTOR_INIT_data_0\\\\data\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_data_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n\nAKA_VECTOR_INIT_data.push_back(AKA_VECTOR_INIT_data_0);\ndelete AKA_VECTOR_INIT_data_0;\n\nBTSRV_CM_Tel_Func_LockInfo* data = AKA_VECTOR_INIT_data[0];\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode data */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": true,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "data",
+                                    "virtual_name": "EXPECTED_data",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "data",
+                                    "virtual_name": "data",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_1(void) {\n{\nAKA_test_case_name=\"BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_1\";\n\n// set up\n;\n\ntelfunc_lockstsShm = nullptr;\n\n\nBTSRV_CM_Tel_Func_LockInfo* data = nullptr;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode data */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_1\");BT_Service_writeShm(data);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\ntelfunc_lockstsShm = nullptr;\n\n\nBTSRV_CM_Tel_Func_LockInfo* data = nullptr;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode data */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "BTSRV_CallManager_API.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.RootDataNode",
+                            "name": "SBF",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "level": "SBF"
+                        },
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "telfunc_lockstsShm",
+                                    "virtual_name": "telfunc_lockstsShm",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": true,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "telfunc_lockstsShm[0]",
+                                            "virtual_name": "telfunc_lockstsShm[0]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm[0]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "telfunc_lockstsShm",
+                                                    "virtual_name": "telfunc_lockstsShm[0]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "telfunc_lockstsShm[0]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "telfunc_lockstsShm[0].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_BT",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "telfunc_lockstsShm[1]",
+                                            "virtual_name": "telfunc_lockstsShm[1]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm[1]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "telfunc_lockstsShm",
+                                                    "virtual_name": "telfunc_lockstsShm[1]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\telfunc_lockstsShm\\telfunc_lockstsShm",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "telfunc_lockstsShm[1]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "telfunc_lockstsShm[1].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_MAX",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "data",
+                                    "virtual_name": "EXPECTED_data",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 0
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "data",
+                                    "virtual_name": "data",
+                                    "dataType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "realType": "BTSRV_CM_Tel_Func_LockInfo*",
+                                    "external": false,
+                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data",
+                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                    "level": 1,
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "data[0]",
+                                            "virtual_name": "data[0]",
+                                            "dataType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "realType": "BTSRV_CM_Tel_Func_LockInfo",
+                                            "external": false,
+                                            "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data\\data[0]",
+                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "data",
+                                                    "virtual_name": "data[0]",
+                                                    "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\data\\data",
+                                                    "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo",
+                                                    "rawType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "selectedConstructor": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                    "variableType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "BTSRV_CM_Tel_Func_LockInfo()",
+                                                            "virtual_name": "data[0]",
+                                                            "dataType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "realType": "::BTSRV_CM_Tel_Func_LockInfo",
+                                                            "functionNode": "\\BTSRV_CM_Tel_Func_LockInfo()"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.EnumDataNode",
+                                                            "name": "type",
+                                                            "virtual_name": "data[0].type",
+                                                            "dataType": "::_EBTSRV_CM_LockFuncType",
+                                                            "realType": "_EBTSRV_CM_LockFuncType",
+                                                            "external": false,
+                                                            "value": "eBTSRV_CM_LOCKTYPE_MAX",
+                                                            "valueIsSet": true,
+                                                            "correspondingVar": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\BTSRV_CM_Tel_Func_LockInfo\\type",
+                                                            "correspondingType": ".\\BT_CallManagerProxy\\header\\BTSRV_CallManager_API.h\\_EBTSRV_CM_LockFuncType"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_0(void) {\n{\nAKA_test_case_name=\"BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_0\";\n\n// set up\n;\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_telfunc_lockstsShm;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_0\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_0);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_0;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_1\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_1 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_1).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_MAX;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_1);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_1;\n\ntelfunc_lockstsShm = AKA_VECTOR_INIT_telfunc_lockstsShm[0];\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_data;\n\n\n/* SubStructDataNode data */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\\\data\\\\AKA_VECTOR_INIT_data_0\\\\data\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_data_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_data_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_MAX;\n\nAKA_VECTOR_INIT_data.push_back(AKA_VECTOR_INIT_data_0);\ndelete AKA_VECTOR_INIT_data_0;\n\nBTSRV_CM_Tel_Func_LockInfo* data = AKA_VECTOR_INIT_data[0];\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode data */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test BT_Service_writeShm_BTSRV_CM_Tel_Func_LockInfomul_0\");BT_Service_writeShm(data);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\BT_CallManagerProxy\\\\UUT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "std::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_telfunc_lockstsShm;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_0\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_BT;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_0);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_0;\n\n\n/* SubStructDataNode telfunc_lockstsShm */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\GLOBAL\\\\telfunc_lockstsShm\\\\AKA_VECTOR_INIT_telfunc_lockstsShm_1\\\\telfunc_lockstsShm\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_telfunc_lockstsShm_1 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_telfunc_lockstsShm_1).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_MAX;\n\nAKA_VECTOR_INIT_telfunc_lockstsShm.push_back(AKA_VECTOR_INIT_telfunc_lockstsShm_1);\ndelete AKA_VECTOR_INIT_telfunc_lockstsShm_1;\n\ntelfunc_lockstsShm = AKA_VECTOR_INIT_telfunc_lockstsShm[0];\n\nstd::vector<BTSRV_CM_Tel_Func_LockInfo*> AKA_VECTOR_INIT_data;\n\n\n/* SubStructDataNode data */\n/* ConstructorDataNode BTSRV_CM_Tel_Func_LockInfo() */\nAKA_mark(\"Calling: \\\\BTSRV_CM_Tel_Func_LockInfo()|ROOT\\\\BTSRV_CallManager_API.cpp\\\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)\\\\data\\\\AKA_VECTOR_INIT_data_0\\\\data\\\\BTSRV_CM_Tel_Func_LockInfo()\");AKA_fCall++;auto AKA_VECTOR_INIT_data_0 = new ::BTSRV_CM_Tel_Func_LockInfo();\n/* EnumDataNode type */\n(*AKA_VECTOR_INIT_data_0).type=::_EBTSRV_CM_LockFuncType::eBTSRV_CM_LOCKTYPE_MAX;\n\nAKA_VECTOR_INIT_data.push_back(AKA_VECTOR_INIT_data_0);\ndelete AKA_VECTOR_INIT_data_0;\n\nBTSRV_CM_Tel_Func_LockInfo* data = AKA_VECTOR_INIT_data[0];\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode data */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "D:\\SVN\\03.Test\\AKAUT2025-327\\Source\\BT_CallManagerProxy\\UUT\\BTSRV_CallManager_API.cpp\\BT_Service_writeShm(BTSRV_CM_Tel_Func_LockInfo*)"
+    }
+]

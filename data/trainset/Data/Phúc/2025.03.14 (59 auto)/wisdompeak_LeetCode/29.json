@@ -1,0 +1,1253 @@
+[
+    {
+        "f": [],
+        "fm": "int totalMoney(int n) {         int ans = 0;         for (int i = 0, j = 1; i < n; i++) {             ans += i % 7 + j;             if ((i + 1) % 7 == 0) j++;         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5633. Calculate Money in Leetcode Bank.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5633. Calculate Money in Leetcode Bank.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "totalMoney(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)/n",
+                                    "correspondingType": "int",
+                                    "value": "9"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_totalMoney_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_totalMoney_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5633. Calculate Money in Leetcode Bank.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint n=9;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_totalMoney_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->totalMoney(n);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5633. Calculate Money in Leetcode Bank.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint n=9;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int totalMoney(int n) {         int ans = 0;         for (int i = 0, j = 1; i < n; i++) {             ans += i % 7 + j;             if ((i + 1) % 7 == 0) j++;         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/29/5633. Calculate Money in Leetcode Bank.cpp/Solution/totalMoney(int)"
+    },
+    {
+        "f": [],
+        "fm": "int maximumGain(string s, int x, int y) {         int ans = 0;         int n = s.length();         if (x < y) {             swap(x, y);             for (int i = 0; i < n; i++) {                 if (s[i] == 'a')                     s[i] = 'b';                 else if (s[i] == 'b')                     s[i] = 'a';             }         }         // 默认 x > y         stack<char> stk;         for (int i = 0; i < n; i++) {             if (stk.size() && stk.top() == 'a' && s[i] == 'b') {                 ans += x;                 stk.pop();             } else {                 stk.push(s[i]);             }         }         s = \"\";         while (stk.size()) {             s += stk.top();             stk.pop();         }         n = s.length();         for (int i = 0; i < n; i++) {             if (stk.size() && stk.top() == 'a' && s[i] == 'b') {                 ans += y;                 stk.pop();             } else {                 stk.push(s[i]);             }         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5634. Maximum Score From Removing Substrings.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5634. Maximum Score From Removing Substrings.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumGain(string,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "EXPECTED_y",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/y",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/x",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/x",
+                                    "correspondingType": "int",
+                                    "value": "1372777196"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "y",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/y",
+                                    "correspondingType": "int",
+                                    "value": "-192445975"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumGain_string_int_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_maximumGain_string_int_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5634. Maximum Score From Removing Substrings.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName258985 = new char[2];akaRandomName258985[0] = 1;akaRandomName258985[1] = '\\0';string s=akaRandomName258985;\n\n\nint x=1372777196;\n\n\nint y=-192445975;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumGain_string_int_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumGain(s,x,y);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5634. Maximum Score From Removing Substrings.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName147652 = new char[2];akaRandomName147652[0] = 1;akaRandomName147652[1] = '\\0';string s=akaRandomName147652;\n\n\nint x=1372777196;\n\n\nint y=-192445975;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5634. Maximum Score From Removing Substrings.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5634. Maximum Score From Removing Substrings.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumGain(string,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "EXPECTED_y",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/y",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/x",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-23"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/x",
+                                    "correspondingType": "int",
+                                    "value": "-493767970"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "y",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/y",
+                                    "correspondingType": "int",
+                                    "value": "1430787275"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumGain_string_int_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_maximumGain_string_int_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5634. Maximum Score From Removing Substrings.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName733090 = new char[2];akaRandomName733090[0] = -23;akaRandomName733090[1] = '\\0';string s=akaRandomName733090;\n\n\nint x=-493767970;\n\n\nint y=1430787275;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumGain_string_int_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumGain(s,x,y);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5634. Maximum Score From Removing Substrings.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName135741 = new char[2];akaRandomName135741[0] = -23;akaRandomName135741[1] = '\\0';string s=akaRandomName135741;\n\n\nint x=-493767970;\n\n\nint y=1430787275;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int maximumGain(string s, int x, int y) {         int ans = 0;         int n = s.length();         if (x < y) {             swap(x, y);             for (int i = 0; i < n; i++) {                 if (s[i] == 'a')                     s[i] = 'b';                 else if (s[i] == 'b')                     s[i] = 'a';             }         }         // 默认 x > y         stack<char> stk;         for (int i = 0; i < n; i++) {             if (stk.size() && stk.top() == 'a' && s[i] == 'b') {                 ans += x;                 stk.pop();             } else {                 stk.push(s[i]);             }         }         s = \"\";         while (stk.size()) {             s += stk.top();             stk.pop();         }         n = s.length();         for (int i = 0; i < n; i++) {             if (stk.size() && stk.top() == 'a' && s[i] == 'b') {                 ans += y;                 stk.pop();             } else {                 stk.push(s[i]);             }         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/29/5634. Maximum Score From Removing Substrings.cpp/Solution/maximumGain(string,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "bool isV(char ch) {         string s = \"aeiouAEIOU\";         for (int i = 0; i < s.length(); i++) {             if (ch == s[i]) return true;         }         return false;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5637. Determine if String Halves Are Alike.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5637. Determine if String Halves Are Alike.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5637. Determine if String Halves Are Alike.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5637. Determine if String Halves Are Alike.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5637. Determine if String Halves Are Alike.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "isV(char)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                    "name": "ch",
+                                    "virtual_name": "EXPECTED_ch",
+                                    "dataType": "char",
+                                    "realType": "char",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)/ch",
+                                    "correspondingType": "char",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                    "name": "ch",
+                                    "virtual_name": "ch",
+                                    "dataType": "char",
+                                    "realType": "char",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)/ch",
+                                    "correspondingType": "char",
+                                    "value": "120"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_isV_char_random_4(void) {\n{\nAKA_test_case_name=\"Solution_isV_char_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5637. Determine if String Halves Are Alike.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\nchar ch=120;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalCharacterDataNode ch */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_isV_char_random_4\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->isV(ch);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5637. Determine if String Halves Are Alike.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\nchar ch=120;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalCharacterDataNode ch */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     bool isV(char ch) {         string s = \"aeiouAEIOU\";         for (int i = 0; i < s.length(); i++) {             if (ch == s[i]) return true;         }         return false;     }     bool halvesAreAlike(string s) {         int n = s.length();         int x = 0, y = 0;         for (int i = 0, j = n / 2; i < n / 2; i++, j++) {             x += isV(s[i]);             y += isV(s[j]);         }         return x == y;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/29/5637. Determine if String Halves Are Alike.cpp/Solution/isV(char)"
+    },
+    {
+        "f": [],
+        "fm": "bool halvesAreAlike(string s) {         int n = s.length();         int x = 0, y = 0;         for (int i = 0, j = n / 2; i < n / 2; i++, j++) {             x += isV(s[i]);             y += isV(s[j]);         }         return x == y;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5637. Determine if String Halves Are Alike.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5637. Determine if String Halves Are Alike.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5637. Determine if String Halves Are Alike.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5637. Determine if String Halves Are Alike.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5637. Determine if String Halves Are Alike.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "halvesAreAlike(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "15"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_halvesAreAlike_string_random_1(void) {\n{\nAKA_test_case_name=\"Solution_halvesAreAlike_string_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5637. Determine if String Halves Are Alike.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName857000 = new char[2];akaRandomName857000[0] = 15;akaRandomName857000[1] = '\\0';string s=akaRandomName857000;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_halvesAreAlike_string_random_1\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->halvesAreAlike(s);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5637. Determine if String Halves Are Alike.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName234838 = new char[2];akaRandomName234838[0] = 15;akaRandomName234838[1] = '\\0';string s=akaRandomName234838;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     bool isV(char ch) {         string s = \"aeiouAEIOU\";         for (int i = 0; i < s.length(); i++) {             if (ch == s[i]) return true;         }         return false;     }     bool halvesAreAlike(string s) {         int n = s.length();         int x = 0, y = 0;         for (int i = 0, j = n / 2; i < n / 2; i++, j++) {             x += isV(s[i]);             y += isV(s[j]);         }         return x == y;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/29/5637. Determine if String Halves Are Alike.cpp/Solution/halvesAreAlike(string)"
+    },
+    {
+        "f": [],
+        "fm": "int eatenApples(vector<int>& a, vector<int>& d) {         int n = a.size();         typedef pair<int, int> PII;         priority_queue<PII, vector<PII>, greater<PII>> pq;         int ans = 0;         for (int i = 1;; i++) {             if (i <= n) {                 pq.emplace(i + d[i - 1], a[i - 1]);             }             // 把所有过期的全部取出             while (pq.size() && pq.top().first <= i) pq.pop();             if (pq.empty() && i <= n) continue;             if (pq.empty()) break;             // 吃一个堆顶的苹果             ans++;             auto top = pq.top();             pq.pop();             top.second--;             if (top.second > 0) pq.push(top);             // cout << i << \" \" << top.first << \" \" << top.second << endl;             // cout << pq.size() << endl;         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5638. Maximum Number of Eaten Apples.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5638. Maximum Number of Eaten Apples.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "eatenApples(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "d",
+                                    "virtual_name": "EXPECTED_d",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "a_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a/element #0",
+                                            "correspondingType": "int",
+                                            "value": "168804719"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "a_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1427250439"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "d",
+                                    "virtual_name": "d",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "d_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1893868883"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "d_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-415395633"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "d_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d/element #2",
+                                            "correspondingType": "int",
+                                            "value": "213962295"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_eatenApples_vector_int_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_eatenApples_vector_int_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5638. Maximum Number of Eaten Apples.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> d;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=168804719;\na.push_back(a_element0);\nint a_element1=1427250439;\na.push_back(a_element1);\n/* VectorDataNode d */\nint d_element0=-1893868883;\nd.push_back(d_element0);\nint d_element1=-415395633;\nd.push_back(d_element1);\nint d_element2=213962295;\nd.push_back(d_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_eatenApples_vector_int_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->eatenApples(a,d);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_a;\n\nvector<int> EXPECTED_d;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5638. Maximum Number of Eaten Apples.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> d;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=168804719;\na.push_back(a_element0);\nint a_element1=1427250439;\na.push_back(a_element1);\n/* VectorDataNode d */\nint d_element0=-1893868883;\nd.push_back(d_element0);\nint d_element1=-415395633;\nd.push_back(d_element1);\nint d_element2=213962295;\nd.push_back(d_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5638. Maximum Number of Eaten Apples.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/5638. Maximum Number of Eaten Apples.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "eatenApples(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "d",
+                                    "virtual_name": "EXPECTED_d",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "a_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-229692959"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "a_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a/element #1",
+                                            "correspondingType": "int",
+                                            "value": "523077668"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "a_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/a/element #2",
+                                            "correspondingType": "int",
+                                            "value": "-2089837162"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "d",
+                                    "virtual_name": "d",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "d_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/d/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-541601598"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_eatenApples_vector_int_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_eatenApples_vector_int_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5638. Maximum Number of Eaten Apples.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> d;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=-229692959;\na.push_back(a_element0);\nint a_element1=523077668;\na.push_back(a_element1);\nint a_element2=-2089837162;\na.push_back(a_element2);\n/* VectorDataNode d */\nint d_element0=-541601598;\nd.push_back(d_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_eatenApples_vector_int_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->eatenApples(a,d);\nAKA_fCall++;AKA_mark(\"Return from: ./29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_a;\n\nvector<int> EXPECTED_d;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5638. Maximum Number of Eaten Apples.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> d;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=-229692959;\na.push_back(a_element0);\nint a_element1=523077668;\na.push_back(a_element1);\nint a_element2=-2089837162;\na.push_back(a_element2);\n/* VectorDataNode d */\nint d_element0=-541601598;\nd.push_back(d_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int eatenApples(vector<int>& a, vector<int>& d) {         int n = a.size();         typedef pair<int, int> PII;         priority_queue<PII, vector<PII>, greater<PII>> pq;         int ans = 0;         for (int i = 1;; i++) {             if (i <= n) {                 pq.emplace(i + d[i - 1], a[i - 1]);             }             // 把所有过期的全部取出             while (pq.size() && pq.top().first <= i) pq.pop();             if (pq.empty() && i <= n) continue;             if (pq.empty()) break;             // 吃一个堆顶的苹果             ans++;             auto top = pq.top();             pq.pop();             top.second--;             if (top.second > 0) pq.push(top);             // cout << i << \" \" << top.first << \" \" << top.second << endl;             // cout << pq.size() << endl;         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/29/5638. Maximum Number of Eaten Apples.cpp/Solution/eatenApples(vector<int>&,vector<int>&)"
+    }
+]

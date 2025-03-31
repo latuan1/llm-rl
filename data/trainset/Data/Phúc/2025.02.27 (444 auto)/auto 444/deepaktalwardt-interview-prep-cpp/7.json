@@ -1,0 +1,226 @@
+[
+    {
+        "f": [],
+        "fm": "int missingNumber(vector<int>& nums) {         int size = nums.size();         int expectedSum = size * (size + 1) / 2;                  int actualSum = 0;         for (int n : nums) {             actualSum += n;         }         return expectedSum - actualSum;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int missingNumber(vector<int>& nums) {         int size = nums.size();         int expectedSum = size * (size + 1) / 2;                  int actualSum = 0;         for (int n : nums) {             actualSum += n;         }         return expectedSum - actualSum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/268-missing-number.cpp/Solution/missingNumber(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findCelebrity(int n) {         int candidate = 0;         for (int i = 1; i < n; i++) {             if (knows(candidate, i)) {                 candidate = i;             }         }         for (int i = 0; i < n; i++) {             if (i == candidate) continue;             if (!knows(i, candidate) || knows(candidate, i)) {                 return -1;             }         }         return candidate;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findCelebrity(int n) {         int candidate = 0;         for (int i = 1; i < n; i++) {             if (knows(candidate, i)) {                 candidate = i;             }         }         for (int i = 0; i < n; i++) {             if (i == candidate) continue;             if (!knows(i, candidate) || knows(candidate, i)) {                 return -1;             }         }         return candidate;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/277-find-the-celebrity.cpp/Solution/findCelebrity(int)"
+    },
+    {
+        "f": [
+            "bool nextIsV1;",
+            "int idx;",
+            "vector<int> &v1;",
+            "vector<int> &v2;"
+        ],
+        "fm": "int next() {         int toReturn = nextIsV1 ?  v1[idx] : v2[idx];         if (nextIsV1) {             if (idx < v2.size()) {                 nextIsV1 = false;             } else {                 idx++;             }         } else {             if (++idx < v1.size()) {                 nextIsV1 = true;             }         }         return toReturn;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class ZigzagIterator { public:     ZigzagIterator(vector<int>& v1, vector<int>& v2) : v1(v1), v2(v2) {         if (v1.size() != 0) {             nextIsV1 = true;         } else {             nextIsV1 = false;         }         idx = 0;     }      int next() {         int toReturn = nextIsV1 ?  v1[idx] : v2[idx];         if (nextIsV1) {             if (idx < v2.size()) {                 nextIsV1 = false;             } else {                 idx++;             }         } else {             if (++idx < v1.size()) {                 nextIsV1 = true;             }         }         return toReturn;     }      bool hasNext() {         if (nextIsV1 && idx < v1.size()) {             return true;         } else if (!nextIsV1 && idx < v2.size()) {             return true;         }         return false;     } private:     bool nextIsV1;     int idx;     vector<int> &v1, &v2; };",
+        "c": [
+            "ZigzagIterator(vector<int>& v1, vector<int>& v2) : v1(v1), v2(v2) {\n        if (v1.size() != 0) {\n            nextIsV1 = true;\n        } else {\n            nextIsV1 = false;\n        }\n        idx = 0;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/281-zigzag-iterator.cpp/ZigzagIterator/next()"
+    },
+    {
+        "f": [
+            "bool nextIsV1;",
+            "int idx;",
+            "vector<int> &v1;",
+            "vector<int> &v2;"
+        ],
+        "fm": "bool hasNext() {         if (nextIsV1 && idx < v1.size()) {             return true;         } else if (!nextIsV1 && idx < v2.size()) {             return true;         }         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class ZigzagIterator { public:     ZigzagIterator(vector<int>& v1, vector<int>& v2) : v1(v1), v2(v2) {         if (v1.size() != 0) {             nextIsV1 = true;         } else {             nextIsV1 = false;         }         idx = 0;     }      int next() {         int toReturn = nextIsV1 ?  v1[idx] : v2[idx];         if (nextIsV1) {             if (idx < v2.size()) {                 nextIsV1 = false;             } else {                 idx++;             }         } else {             if (++idx < v1.size()) {                 nextIsV1 = true;             }         }         return toReturn;     }      bool hasNext() {         if (nextIsV1 && idx < v1.size()) {             return true;         } else if (!nextIsV1 && idx < v2.size()) {             return true;         }         return false;     } private:     bool nextIsV1;     int idx;     vector<int> &v1, &v2; };",
+        "c": [
+            "ZigzagIterator(vector<int>& v1, vector<int>& v2) : v1(v1), v2(v2) {\n        if (v1.size() != 0) {\n            nextIsV1 = true;\n        } else {\n            nextIsV1 = false;\n        }\n        idx = 0;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/281-zigzag-iterator.cpp/ZigzagIterator/hasNext()"
+    },
+    {
+        "f": [],
+        "fm": "void moveZeroes(vector<int>& nums) {         int slow = 0;         for (int fast = 0; fast < nums.size(); fast++) {             if (nums[fast] != 0) {                 nums[slow] = nums[fast];                 slow++;             }         }         while (slow < nums.size()) {             nums[slow] = 0;             slow++;         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void moveZeroes(vector<int>& nums) {         int slow = 0;         for (int fast = 0; fast < nums.size(); fast++) {             if (nums[fast] != 0) {                 nums[slow] = nums[fast];                 slow++;             }         }         while (slow < nums.size()) {             nums[slow] = 0;             slow++;         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/283-move-zeroes.cpp/Solution/moveZeroes(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "void wallsAndGates(vector<vector<int>>& rooms) {         int m = rooms.size();         if (m == 0) return;         int n = rooms[0].size();                  vector<vector<int>> diff = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};         queue<pair<int, int>> q;                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 if (rooms[i][j] == 0) {                     q.emplace(i, j);                 }             }         }         int steps = 0;         while (!q.empty()) {             int layerSize = q.size();             while (layerSize--) {                 pair<int, int> curr = q.front();                 q.pop();                 int i = curr.first;                 int j = curr.second;                 rooms[i][j] = steps;                 for (auto& d : diff) {                     int newi = i + d[0];                     int newj = j + d[1];                     if (newi >= 0 && newi < m && newj >= 0 && newj < n && rooms[newi][newj] == INT_MAX) {                         rooms[newi][newj] = min(rooms[newi][newj], steps);                         q.emplace(newi, newj);                     }                 }             }             steps++;         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void wallsAndGates(vector<vector<int>>& rooms) {         int m = rooms.size();         if (m == 0) return;         int n = rooms[0].size();                  vector<vector<int>> diff = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};         queue<pair<int, int>> q;                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 if (rooms[i][j] == 0) {                     q.emplace(i, j);                 }             }         }         int steps = 0;         while (!q.empty()) {             int layerSize = q.size();             while (layerSize--) {                 pair<int, int> curr = q.front();                 q.pop();                 int i = curr.first;                 int j = curr.second;                 rooms[i][j] = steps;                 for (auto& d : diff) {                     int newi = i + d[0];                     int newj = j + d[1];                     if (newi >= 0 && newi < m && newj >= 0 && newj < n && rooms[newi][newj] == INT_MAX) {                         rooms[newi][newj] = min(rooms[newi][newj], steps);                         q.emplace(newi, newj);                     }                 }             }             steps++;         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/286-walls-and-gates.cpp/Solution/wallsAndGates(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "void process(vector<vector<int>>& board, int m, int n, int i, int j, vector<vector<int>>& neighbors) {         int aliveNeighbors = 0;         for (vector<int>& N : neighbors) {             int newI = i + N[0];             int newJ = j + N[1];             if (newI >= 0 && newI < m && newJ >= 0 && newJ < n && (board[newI][newJ] == 1 || board[newI][newJ] == -2)) {                 aliveNeighbors++;             }         }         if (board[i][j] == 0) {             if (aliveNeighbors == 3) {                 board[i][j] = -1;             }         } else {             if (aliveNeighbors < 2 || aliveNeighbors > 3) {                 board[i][j] = -2;             }         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void process(vector<vector<int>>& board, int m, int n, int i, int j, vector<vector<int>>& neighbors) {         int aliveNeighbors = 0;         for (vector<int>& N : neighbors) {             int newI = i + N[0];             int newJ = j + N[1];             if (newI >= 0 && newI < m && newJ >= 0 && newJ < n && (board[newI][newJ] == 1 || board[newI][newJ] == -2)) {                 aliveNeighbors++;             }         }         if (board[i][j] == 0) {             if (aliveNeighbors == 3) {                 board[i][j] = -1;             }         } else {             if (aliveNeighbors < 2 || aliveNeighbors > 3) {                 board[i][j] = -2;             }         }     }      void gameOfLife(vector<vector<int>>& board) {         // 0, 1 remain unchancged         // 0 -> 1 encode with -1         // 1 -> 0 encode with -2         int m = board.size();         int n = board[0].size();         vector<vector<int>> neighbors = {{-1, 0}, {-1, -1}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, -1}, {1, 1}};                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 process(board, m, n, i, j, neighbors);             }         }                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 if (board[i][j] == -1) {                     board[i][j] = 1;                 } else if (board[i][j] == -2) {                     board[i][j] = 0;                 }             }         }              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/289-game-of-life.cpp/Solution/process(vector<vector<int>>&,int,int,int,int,vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "void gameOfLife(vector<vector<int>>& board) {         // 0, 1 remain unchancged         // 0 -> 1 encode with -1         // 1 -> 0 encode with -2         int m = board.size();         int n = board[0].size();         vector<vector<int>> neighbors = {{-1, 0}, {-1, -1}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, -1}, {1, 1}};                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 process(board, m, n, i, j, neighbors);             }         }                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 if (board[i][j] == -1) {                     board[i][j] = 1;                 } else if (board[i][j] == -2) {                     board[i][j] = 0;                 }             }         }              }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void process(vector<vector<int>>& board, int m, int n, int i, int j, vector<vector<int>>& neighbors) {         int aliveNeighbors = 0;         for (vector<int>& N : neighbors) {             int newI = i + N[0];             int newJ = j + N[1];             if (newI >= 0 && newI < m && newJ >= 0 && newJ < n && (board[newI][newJ] == 1 || board[newI][newJ] == -2)) {                 aliveNeighbors++;             }         }         if (board[i][j] == 0) {             if (aliveNeighbors == 3) {                 board[i][j] = -1;             }         } else {             if (aliveNeighbors < 2 || aliveNeighbors > 3) {                 board[i][j] = -2;             }         }     }      void gameOfLife(vector<vector<int>>& board) {         // 0, 1 remain unchancged         // 0 -> 1 encode with -1         // 1 -> 0 encode with -2         int m = board.size();         int n = board[0].size();         vector<vector<int>> neighbors = {{-1, 0}, {-1, -1}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, -1}, {1, 1}};                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 process(board, m, n, i, j, neighbors);             }         }                  for (int i = 0; i < m; i++) {             for (int j = 0; j < n; j++) {                 if (board[i][j] == -1) {                     board[i][j] = 1;                 } else if (board[i][j] == -2) {                     board[i][j] = 0;                 }             }         }              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/289-game-of-life.cpp/Solution/gameOfLife(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "void preOrder(TreeNode* root, string& s) {         if (!root) {             s += \"x,\";             return;         }         s += to_string(root->val);         s += ',';         preOrder(root->left, s);         preOrder(root->right, s);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Codec { public:          void preOrder(TreeNode* root, string& s) {         if (!root) {             s += \"x,\";             return;         }         s += to_string(root->val);         s += ',';         preOrder(root->left, s);         preOrder(root->right, s);     }      // Encodes a tree to a single string.     string serialize(TreeNode* root) {         if (!root) return \"\";         string toReturn = \"\";         preOrder(root, toReturn);         return toReturn;     }      // Decodes your encoded data to tree.     TreeNode* deserialize(string data) {         int n = data.size();         if (n == 0) return NULL;         vector<int> dVec;         int i = 0;         int j = 0;         while (i < n) {             if (data[j] == 'x') {                 dVec.push_back(INT_MIN);                 j += 2;                 i = j;                 continue;             }             if (data[j] == ',') {                 dVec.push_back(stoi(data.substr(i, j - i)));                 i = ++j;             } else {                 j++;             }         }         stack<pair<TreeNode*, int>> s;         TreeNode* root = new TreeNode(dVec[0]);         s.emplace(root, 0);         for (int i = 1; i < dVec.size(); i++) {              TreeNode* p = nullptr;             if (dVec[i] != INT_MIN) {                 p = new TreeNode(dVec[i]);             }             if (s.top().second == 0) {                 s.top().first->left = p;                 s.top().second = 1;             } else if (s.top().second == 1) {                 s.top().first->right = p;                 s.pop();             }              if (p) {                 s.emplace(p, 0);             }         }         return root;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/297-serialize-and-deserialize-binary-tree.cpp/Codec/preOrder(TreeNode*,string&)"
+    },
+    {
+        "f": [],
+        "fm": "string serialize(TreeNode* root) {         if (!root) return \"\";         string toReturn = \"\";         preOrder(root, toReturn);         return toReturn;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Codec { public:          void preOrder(TreeNode* root, string& s) {         if (!root) {             s += \"x,\";             return;         }         s += to_string(root->val);         s += ',';         preOrder(root->left, s);         preOrder(root->right, s);     }      // Encodes a tree to a single string.     string serialize(TreeNode* root) {         if (!root) return \"\";         string toReturn = \"\";         preOrder(root, toReturn);         return toReturn;     }      // Decodes your encoded data to tree.     TreeNode* deserialize(string data) {         int n = data.size();         if (n == 0) return NULL;         vector<int> dVec;         int i = 0;         int j = 0;         while (i < n) {             if (data[j] == 'x') {                 dVec.push_back(INT_MIN);                 j += 2;                 i = j;                 continue;             }             if (data[j] == ',') {                 dVec.push_back(stoi(data.substr(i, j - i)));                 i = ++j;             } else {                 j++;             }         }         stack<pair<TreeNode*, int>> s;         TreeNode* root = new TreeNode(dVec[0]);         s.emplace(root, 0);         for (int i = 1; i < dVec.size(); i++) {              TreeNode* p = nullptr;             if (dVec[i] != INT_MIN) {                 p = new TreeNode(dVec[i]);             }             if (s.top().second == 0) {                 s.top().first->left = p;                 s.top().second = 1;             } else if (s.top().second == 1) {                 s.top().first->right = p;                 s.pop();             }              if (p) {                 s.emplace(p, 0);             }         }         return root;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/297-serialize-and-deserialize-binary-tree.cpp/Codec/serialize(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "TreeNode* deserialize(string data) {         int n = data.size();         if (n == 0) return NULL;         vector<int> dVec;         int i = 0;         int j = 0;         while (i < n) {             if (data[j] == 'x') {                 dVec.push_back(INT_MIN);                 j += 2;                 i = j;                 continue;             }             if (data[j] == ',') {                 dVec.push_back(stoi(data.substr(i, j - i)));                 i = ++j;             } else {                 j++;             }         }         stack<pair<TreeNode*, int>> s;         TreeNode* root = new TreeNode(dVec[0]);         s.emplace(root, 0);         for (int i = 1; i < dVec.size(); i++) {              TreeNode* p = nullptr;             if (dVec[i] != INT_MIN) {                 p = new TreeNode(dVec[i]);             }             if (s.top().second == 0) {                 s.top().first->left = p;                 s.top().second = 1;             } else if (s.top().second == 1) {                 s.top().first->right = p;                 s.pop();             }              if (p) {                 s.emplace(p, 0);             }         }         return root;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Codec { public:          void preOrder(TreeNode* root, string& s) {         if (!root) {             s += \"x,\";             return;         }         s += to_string(root->val);         s += ',';         preOrder(root->left, s);         preOrder(root->right, s);     }      // Encodes a tree to a single string.     string serialize(TreeNode* root) {         if (!root) return \"\";         string toReturn = \"\";         preOrder(root, toReturn);         return toReturn;     }      // Decodes your encoded data to tree.     TreeNode* deserialize(string data) {         int n = data.size();         if (n == 0) return NULL;         vector<int> dVec;         int i = 0;         int j = 0;         while (i < n) {             if (data[j] == 'x') {                 dVec.push_back(INT_MIN);                 j += 2;                 i = j;                 continue;             }             if (data[j] == ',') {                 dVec.push_back(stoi(data.substr(i, j - i)));                 i = ++j;             } else {                 j++;             }         }         stack<pair<TreeNode*, int>> s;         TreeNode* root = new TreeNode(dVec[0]);         s.emplace(root, 0);         for (int i = 1; i < dVec.size(); i++) {              TreeNode* p = nullptr;             if (dVec[i] != INT_MIN) {                 p = new TreeNode(dVec[i]);             }             if (s.top().second == 0) {                 s.top().first->left = p;                 s.top().second = 1;             } else if (s.top().second == 1) {                 s.top().first->right = p;                 s.pop();             }              if (p) {                 s.emplace(p, 0);             }         }         return root;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/297-serialize-and-deserialize-binary-tree.cpp/Codec/deserialize(string)"
+    },
+    {
+        "f": [],
+        "fm": "string getHint(string secret, string guess) {         int bulls = 0;         int cows = 0;         for (int i = 0; i < secret.size(); i++) {             if (secret[i] == guess[i]) {                 secret[i] = '$';                 guess[i] = '$';                 bulls++;             }         }         for (int k = 0; k < secret.size(); k++) {             if (secret[k] == '$') continue;             int idx = guess.find_first_of(secret[k], 0);             if (idx != string::npos) {                 cows++;                 guess[idx] = '!';             }         }         return to_string(bulls) + \"A\" + to_string(cows) + \"B\";     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string getHint(string secret, string guess) {         int bulls = 0;         int cows = 0;         for (int i = 0; i < secret.size(); i++) {             if (secret[i] == guess[i]) {                 secret[i] = '$';                 guess[i] = '$';                 bulls++;             }         }         for (int k = 0; k < secret.size(); k++) {             if (secret[k] == '$') continue;             int idx = guess.find_first_of(secret[k], 0);             if (idx != string::npos) {                 cows++;                 guess[idx] = '!';             }         }         return to_string(bulls) + \"A\" + to_string(cows) + \"B\";     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/299-bulls-and-cows.cpp/Solution/getHint(string,string)"
+    },
+    {
+        "f": [
+            "vector<vector<int>> & matrix;",
+            "int rows;",
+            "int cols;"
+        ],
+        "fm": "void update(int row, int col, int val) {         matrix[row][col] = val;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class NumMatrix { public:     NumMatrix(vector<vector<int>>& matrix) : matrix(matrix) {         this->rows = matrix.size();         if (this->rows != 0) this->cols = matrix[0].size();     }          void update(int row, int col, int val) {         matrix[row][col] = val;     }          int sumRegion(int row1, int col1, int row2, int col2) {         int sum = 0;         for (int i = row1; i <= row2; i++) {             for (int j = col1; j <= col2; j++) {                 sum += matrix[i][j];             }         }         return sum;     }      private:     vector<vector<int>>& matrix;     int rows;     int cols; };",
+        "c": [
+            "NumMatrix(vector<vector<int>>& matrix) : matrix(matrix) {\n        this->rows = matrix.size();\n        if (this->rows != 0) this->cols = matrix[0].size();\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/308-range-sum-query-2d-mutable.cpp/NumMatrix/update(int,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int coinChange(vector<int>& coins, int amount) {         vector<int> minWays(amount + 1, 1000); // 1000 is arbitrary high number, so that 1 + minWays[amt - denom] doesn't overflow. INT_MAX will overflow.         minWays[0] = 0;         for (int& denom : coins) {             for (int amt = 0; amt < minWays.size(); amt++) {                 if (denom <= amt) {                     minWays[amt]= min(minWays[amt], 1 + minWays[amt - denom]);                 }             }         }         return minWays[minWays.size() - 1] != 1000 ? minWays[minWays.size() - 1] : -1;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int coinChange(vector<int>& coins, int amount) {         vector<int> minWays(amount + 1, 1000); // 1000 is arbitrary high number, so that 1 + minWays[amt - denom] doesn't overflow. INT_MAX will overflow.         minWays[0] = 0;         for (int& denom : coins) {             for (int amt = 0; amt < minWays.size(); amt++) {                 if (denom <= amt) {                     minWays[amt]= min(minWays[amt], 1 + minWays[amt - denom]);                 }             }         }         return minWays[minWays.size() - 1] != 1000 ? minWays[minWays.size() - 1] : -1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/7/322-coin-change.cpp/Solution/coinChange(vector<int>&,int)"
+    }
+]

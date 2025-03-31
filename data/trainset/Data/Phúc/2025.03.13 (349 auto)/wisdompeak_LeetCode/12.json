@@ -1,0 +1,2241 @@
+[
+    {
+        "f": [],
+        "fm": "bool check(string A, vector<vector<int>>&table)     {         int i=0;         for (char ch:A)         {             auto iter = lower_bound(table[ch-'a'].begin(),table[ch-'a'].end(),i);             if (iter==table[ch-'a'].end()) return false;             i = *iter+1;         }         return true;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "792.Number-of-Matching-Subsequences_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/792.Number-of-Matching-Subsequences_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "check(string,vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/A",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "table",
+                                    "virtual_name": "EXPECTED_table",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/A",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "A[0]",
+                                            "virtual_name": "A[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/A/A[0]",
+                                            "correspondingType": "char",
+                                            "value": "-36"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "table",
+                                    "virtual_name": "table",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "table_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "table_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "1717864071"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "table_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "1897043212"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "table_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "table_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/table/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "326550706"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_check_string_vector_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_check_string_vector_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/792.Number-of-Matching-Subsequences_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName154652 = new char[2];akaRandomName154652[0] = -36;akaRandomName154652[1] = '\\0';string A=akaRandomName154652;\nvector<vector<int>> table;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode A */\n/* VectorDataNode table */\nvector<int> table_element0;\nint table_element0_element0=1717864071;\ntable_element0.push_back(table_element0_element0);\nint table_element0_element1=1897043212;\ntable_element0.push_back(table_element0_element1);\ntable.push_back(table_element0);\nvector<int> table_element1;\nint table_element1_element0=326550706;\ntable_element1.push_back(table_element1_element0);\ntable.push_back(table_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_check_string_vector_vector_int_random_3\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->check(A,table);\nAKA_fCall++;AKA_mark(\"Return from: ./12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_table;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/792.Number-of-Matching-Subsequences_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName705953 = new char[2];akaRandomName705953[0] = -36;akaRandomName705953[1] = '\\0';string A=akaRandomName705953;\nvector<vector<int>> table;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode A */\n/* VectorDataNode table */\nvector<int> table_element0;\nint table_element0_element0=1717864071;\ntable_element0.push_back(table_element0_element0);\nint table_element0_element1=1897043212;\ntable_element0.push_back(table_element0_element1);\ntable.push_back(table_element0);\nvector<int> table_element1;\nint table_element1_element0=326550706;\ntable_element1.push_back(table_element1_element0);\ntable.push_back(table_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numMatchingSubseq(string S, vector<string>& words)      {         auto table = vector<vector<int>>(26);         for (int i=0; i<S.size(); i++)             table[S[i]-'a'].push_back(i);                  int count = 0;         for (auto str:words)         {             if (str.size()>S.size()) continue;             if (check(str,table)) count++;         }                      return count;     }          bool check(string A, vector<vector<int>>&table)     {         int i=0;         for (char ch:A)         {             auto iter = lower_bound(table[ch-'a'].begin(),table[ch-'a'].end(),i);             if (iter==table[ch-'a'].end()) return false;             i = *iter+1;         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/792.Number-of-Matching-Subsequences_v1.cpp/Solution/check(string,vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int numMatchingSubseq(string S, vector<string>& words)      {         int m = S.size();         S = \"#\"+S;         int next[m+1][26];                  for (int k=0; k<26; k++)             next[m][k] = -1;         for (int i=m; i>=1; i--)         {             for (int k=0; k<26; k++)                 next[i-1][k] = next[i][k];             next[i-1][S[i]-'a'] = i;         }                  int ret = 0;         for (auto word: words)         {             int flag = 1;             int i = 0;             for (auto ch: word)             {                 i = next[i][ch-'a'];                 if (i==-1)                 {                     flag = 0;                     break;                 }                             }             if (flag) ret++;         }         return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "792.Number-of-Matching-Subsequences_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numMatchingSubseq(string,vector<string>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "EXPECTED_words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/S",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "47"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "words_element0",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words/element #0",
+                                            "correspondingType": "string",
+                                            "value": "2",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #0[0]",
+                                                    "virtual_name": "words_element0[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words/element #0/element #0[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "108"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numMatchingSubseq_string_vector_string_random_2(void) {\n{\nAKA_test_case_name=\"Solution_numMatchingSubseq_string_vector_string_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/792.Number-of-Matching-Subsequences_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName358554 = new char[2];akaRandomName358554[0] = 47;akaRandomName358554[1] = '\\0';string S=akaRandomName358554;\nvector<string> words;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* VectorDataNode words */\nchar* akaRandomName255811 = new char[2];akaRandomName255811[0] = 108;akaRandomName255811[1] = '\\0';string words_element0=akaRandomName255811;\nwords.push_back(words_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numMatchingSubseq_string_vector_string_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numMatchingSubseq(S,words);\nAKA_fCall++;AKA_mark(\"Return from: ./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)\");\n\n\nvector<string> EXPECTED_words;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/792.Number-of-Matching-Subsequences_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName248889 = new char[2];akaRandomName248889[0] = 47;akaRandomName248889[1] = '\\0';string S=akaRandomName248889;\nvector<string> words;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* VectorDataNode words */\nchar* akaRandomName942867 = new char[2];akaRandomName942867[0] = 108;akaRandomName942867[1] = '\\0';string words_element0=akaRandomName942867;\nwords.push_back(words_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "792.Number-of-Matching-Subsequences_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numMatchingSubseq(string,vector<string>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "EXPECTED_words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/S",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "97"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "words_element0",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words/element #0",
+                                            "correspondingType": "string",
+                                            "value": "1",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #0[0]",
+                                                    "virtual_name": "words_element0[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/words/element #0/element #0[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "70"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numMatchingSubseq_string_vector_string_random_4(void) {\n{\nAKA_test_case_name=\"Solution_numMatchingSubseq_string_vector_string_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/792.Number-of-Matching-Subsequences_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName385596 = new char[2];akaRandomName385596[0] = 97;akaRandomName385596[1] = '\\0';string S=akaRandomName385596;\nvector<string> words;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* VectorDataNode words */\nchar* akaRandomName617096 = new char[2];akaRandomName617096[0] = 70;akaRandomName617096[1] = '\\0';string words_element0=akaRandomName617096;\nwords.push_back(words_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numMatchingSubseq_string_vector_string_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numMatchingSubseq(S,words);\nAKA_fCall++;AKA_mark(\"Return from: ./12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)\");\n\n\nvector<string> EXPECTED_words;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/792.Number-of-Matching-Subsequences_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName313666 = new char[2];akaRandomName313666[0] = 97;akaRandomName313666[1] = '\\0';string S=akaRandomName313666;\nvector<string> words;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* VectorDataNode words */\nchar* akaRandomName639837 = new char[2];akaRandomName639837[0] = 70;akaRandomName639837[1] = '\\0';string words_element0=akaRandomName639837;\nwords.push_back(words_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numMatchingSubseq(string S, vector<string>& words)      {         int m = S.size();         S = \"#\"+S;         int next[m+1][26];                  for (int k=0; k<26; k++)             next[m][k] = -1;         for (int i=m; i>=1; i--)         {             for (int k=0; k<26; k++)                 next[i-1][k] = next[i][k];             next[i-1][S[i]-'a'] = i;         }                  int ret = 0;         for (auto word: words)         {             int flag = 1;             int i = 0;             for (auto ch: word)             {                 i = next[i][ch-'a'];                 if (i==-1)                 {                     flag = 0;                     break;                 }                             }             if (flag) ret++;         }         return ret;             }     };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/792.Number-of-Matching-Subsequences_v2.cpp/Solution/numMatchingSubseq(string,vector<string>&)"
+    },
+    {
+        "f": [],
+        "fm": "int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker)      {         vector<pair<int,int>>tasks;         for (int i=0; i<difficulty.size(); i++)             tasks.push_back({difficulty[i],profit[i]});                  sort(tasks.begin(),tasks.end());                  int MAX = tasks[0].second;         for (int i=1; i<tasks.size(); i++)         {             tasks[i].second = max(tasks[i].second,MAX);             MAX = tasks[i].second;         }                          int sum = 0;         for (int x:worker)         {             auto iter = upper_bound(tasks.begin(),tasks.end(),make_pair(x,INT_MAX));             if (iter!=tasks.begin())             {                 iter = prev(iter,1);                 sum+=iter->second;             }         }         return sum;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "826.Most-Profit-Assigning-Work.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/826.Most-Profit-Assigning-Work.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/826.Most-Profit-Assigning-Work.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/826.Most-Profit-Assigning-Work.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/826.Most-Profit-Assigning-Work.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "difficulty",
+                                    "virtual_name": "EXPECTED_difficulty",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/difficulty",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "worker",
+                                    "virtual_name": "EXPECTED_worker",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/worker",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "profit",
+                                    "virtual_name": "EXPECTED_profit",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/profit",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "difficulty",
+                                    "virtual_name": "difficulty",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/difficulty",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "difficulty_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/difficulty/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-150323780"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "difficulty_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/difficulty/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-187453815"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "profit",
+                                    "virtual_name": "profit",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/profit",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "profit_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/profit/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-2056740982"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "worker",
+                                    "virtual_name": "worker",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/worker",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "worker_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/worker/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-602850553"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "worker_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/worker/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-10282641"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxProfitAssignment_vector_int_vector_int_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_maxProfitAssignment_vector_int_vector_int_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/826.Most-Profit-Assigning-Work.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> difficulty;\nvector<int> profit;\nvector<int> worker;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode difficulty */\nint difficulty_element0=-150323780;\ndifficulty.push_back(difficulty_element0);\nint difficulty_element1=-187453815;\ndifficulty.push_back(difficulty_element1);\n/* VectorDataNode profit */\nint profit_element0=-2056740982;\nprofit.push_back(profit_element0);\n/* VectorDataNode worker */\nint worker_element0=-602850553;\nworker.push_back(worker_element0);\nint worker_element1=-10282641;\nworker.push_back(worker_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxProfitAssignment_vector_int_vector_int_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxProfitAssignment(difficulty,profit,worker);\nAKA_fCall++;AKA_mark(\"Return from: ./12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_difficulty;\n\nvector<int> EXPECTED_profit;\n\nvector<int> EXPECTED_worker;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/826.Most-Profit-Assigning-Work.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> difficulty;\nvector<int> profit;\nvector<int> worker;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode difficulty */\nint difficulty_element0=-150323780;\ndifficulty.push_back(difficulty_element0);\nint difficulty_element1=-187453815;\ndifficulty.push_back(difficulty_element1);\n/* VectorDataNode profit */\nint profit_element0=-2056740982;\nprofit.push_back(profit_element0);\n/* VectorDataNode worker */\nint worker_element0=-602850553;\nworker.push_back(worker_element0);\nint worker_element1=-10282641;\nworker.push_back(worker_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker)      {         vector<pair<int,int>>tasks;         for (int i=0; i<difficulty.size(); i++)             tasks.push_back({difficulty[i],profit[i]});                  sort(tasks.begin(),tasks.end());                  int MAX = tasks[0].second;         for (int i=1; i<tasks.size(); i++)         {             tasks[i].second = max(tasks[i].second,MAX);             MAX = tasks[i].second;         }                          int sum = 0;         for (int x:worker)         {             auto iter = upper_bound(tasks.begin(),tasks.end(),make_pair(x,INT_MAX));             if (iter!=tasks.begin())             {                 iter = prev(iter,1);                 sum+=iter->second;             }         }         return sum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/826.Most-Profit-Assigning-Work.cpp/Solution/maxProfitAssignment(vector<int>&,vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int uniqueLetterString(string s)      {         int n = s.size();         vector<vector<int>>pos(26); // pos[k]: the pos of letter k so far (by i-th)                  int ret = 0;         for (int i=0; i<n; i++)         {             pos[s[i]-'A'].push_back(i);             for (int k=0; k<26; k++)             {                 if (pos[k].size()>=2)                 {                     int m = pos[k].size();                     ret += pos[k][m-1] - pos[k][m-2];                 }                 else if (pos[k].size()==1)                 {                     ret += pos[k][0]+1;                 }             }         }         return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "uniqueLetterString(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "108"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_uniqueLetterString_string_random_2(void) {\n{\nAKA_test_case_name=\"Solution_uniqueLetterString_string_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName558244 = new char[2];akaRandomName558244[0] = 108;akaRandomName558244[1] = '\\0';string s=akaRandomName558244;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_uniqueLetterString_string_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->uniqueLetterString(s);\nAKA_fCall++;AKA_mark(\"Return from: ./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName660087 = new char[2];akaRandomName660087[0] = 108;akaRandomName660087[1] = '\\0';string s=akaRandomName660087;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int uniqueLetterString(string s)      {         int n = s.size();         vector<vector<int>>pos(26); // pos[k]: the pos of letter k so far (by i-th)                  int ret = 0;         for (int i=0; i<n; i++)         {             pos[s[i]-'A'].push_back(i);             for (int k=0; k<26; k++)             {                 if (pos[k].size()>=2)                 {                     int m = pos[k].size();                     ret += pos[k][m-1] - pos[k][m-2];                 }                 else if (pos[k].size()==1)                 {                     ret += pos[k][0]+1;                 }             }         }         return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v1.cpp/Solution/uniqueLetterString(string)"
+    },
+    {
+        "f": [],
+        "fm": "int uniqueLetterString(string s)      {         int n = s.size();         vector<vector<int>>pos(26);           for (int k=0; k<26; k++)             pos[k].push_back(-1);         for (int i=0; i<n; i++)                 pos[s[i]-'A'].push_back(i);         for (int i=0; i<n; i++)                 pos[s[i]-'A'].push_back(n);          int ret = 0;         for (int k=0; k<26; k++)             for (int i=1; i<pos[k].size()-1; i++)             {                 ret += (pos[k][i]-pos[k][i-1])*(pos[k][i+1]-pos[k][i]);             }          return ret;         }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "uniqueLetterString(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-107"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_uniqueLetterString_string_random_8(void) {\n{\nAKA_test_case_name=\"Solution_uniqueLetterString_string_random_8\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName636122 = new char[2];akaRandomName636122[0] = -107;akaRandomName636122[1] = '\\0';string s=akaRandomName636122;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_uniqueLetterString_string_random_8\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->uniqueLetterString(s);\nAKA_fCall++;AKA_mark(\"Return from: ./12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName319890 = new char[2];akaRandomName319890[0] = -107;akaRandomName319890[1] = '\\0';string s=akaRandomName319890;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int uniqueLetterString(string s)      {         int n = s.size();         vector<vector<int>>pos(26);           for (int k=0; k<26; k++)             pos[k].push_back(-1);         for (int i=0; i<n; i++)                 pos[s[i]-'A'].push_back(i);         for (int i=0; i<n; i++)                 pos[s[i]-'A'].push_back(n);          int ret = 0;         for (int k=0; k<26; k++)             for (int i=1; i<pos[k].size()-1; i++)             {                 ret += (pos[k][i]-pos[k][i-1])*(pos[k][i+1]-pos[k][i]);             }          return ret;         } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String_v2.cpp/Solution/uniqueLetterString(string)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> advantageCount(vector<int>& A, vector<int>& B)      {         int n = A.size();         vector<pair<int,int>>BB;         for (int i=0; i<n; i++)             BB.push_back({B[i],i});         sort(BB.begin(), BB.end());         sort(A.begin(), A.end());                  int j=0;         vector<int>rets(n,-1);         for (int i=0; i<n; i++)         {             while (j<n && A[j]<=BB[i].first)                 j++;             if (j<n)             {                 rets[BB[i].second] = A[j];                 A[j] = -1;             }                         }                  j = 0;         for (int i=0; i<n; i++)         {             if (rets[i]!=-1) continue;             while (j<n && A[j]==-1) j++;             rets[i] = A[j];             j++;         }         return rets;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "870.Advantage-Shuffle.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/870.Advantage-Shuffle.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/870.Advantage-Shuffle.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/870.Advantage-Shuffle.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/870.Advantage-Shuffle.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "advantageCount(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "B",
+                                    "virtual_name": "EXPECTED_B",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/B",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/A/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1722476673"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/A/element #1",
+                                            "correspondingType": "int",
+                                            "value": "227842833"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "B",
+                                    "virtual_name": "B",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/B",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "B_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/B/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1647369346"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "B_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/B/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1356441285"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_advantageCount_vector_int_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_advantageCount_vector_int_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/870.Advantage-Shuffle.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<int> B;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=1722476673;\nA.push_back(A_element0);\nint A_element1=227842833;\nA.push_back(A_element1);\n/* VectorDataNode B */\nint B_element0=1647369346;\nB.push_back(B_element0);\nint B_element1=1356441285;\nB.push_back(B_element1);\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_advantageCount_vector_int_vector_int_random_1\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->advantageCount(A,B);\nAKA_fCall++;AKA_mark(\"Return from: ./12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_A;\n\nvector<int> EXPECTED_B;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/870.Advantage-Shuffle.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\nvector<int> B;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=1722476673;\nA.push_back(A_element0);\nint A_element1=227842833;\nA.push_back(A_element1);\n/* VectorDataNode B */\nint B_element0=1647369346;\nB.push_back(B_element0);\nint B_element1=1356441285;\nB.push_back(B_element1);\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> advantageCount(vector<int>& A, vector<int>& B)      {         int n = A.size();         vector<pair<int,int>>BB;         for (int i=0; i<n; i++)             BB.push_back({B[i],i});         sort(BB.begin(), BB.end());         sort(A.begin(), A.end());                  int j=0;         vector<int>rets(n,-1);         for (int i=0; i<n; i++)         {             while (j<n && A[j]<=BB[i].first)                 j++;             if (j<n)             {                 rets[BB[i].second] = A[j];                 A[j] = -1;             }                         }                  j = 0;         for (int i=0; i<n; i++)         {             if (rets[i]!=-1) continue;             while (j<n && A[j]==-1) j++;             rets[i] = A[j];             j++;         }         return rets;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/870.Advantage-Shuffle.cpp/Solution/advantageCount(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations)      {         if (startFuel>=target) return 0;                  stations.push_back({target,0});                  int stationID = 0;         int curFuel = startFuel;         priority_queue<int>pq;         int count = 0;                  while (stationID<stations.size())         {             if (curFuel>=stations[stationID][0])             {                 pq.push(stations[stationID][1]);                 stationID++;                             }             else             {                 while (curFuel<stations[stationID][0] && pq.size()>0)                 {                     curFuel+=pq.top();                     pq.pop();                     count+=1;                 }                                  if (curFuel<stations[stationID][0] && pq.size()==0)                     return -1;             }         }                  return count;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "871.Minimum-Number-of-Refueling-Stops.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minRefuelStops(int,int,vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "stations",
+                                    "virtual_name": "EXPECTED_stations",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/target",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "startFuel",
+                                    "virtual_name": "EXPECTED_startFuel",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/startFuel",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/target",
+                                    "correspondingType": "int",
+                                    "value": "-496951613"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "startFuel",
+                                    "virtual_name": "startFuel",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/startFuel",
+                                    "correspondingType": "int",
+                                    "value": "10"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "stations",
+                                    "virtual_name": "stations",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "stations_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "stations_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-955894830"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "stations_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-1546345828"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minRefuelStops_int_int_vector_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_minRefuelStops_int_int_vector_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/871.Minimum-Number-of-Refueling-Stops.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint target=-496951613;\n\n\nint startFuel=10;\nvector<vector<int>> stations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode startFuel */\n/* VectorDataNode stations */\nvector<int> stations_element0;\nint stations_element0_element0=-955894830;\nstations_element0.push_back(stations_element0_element0);\nint stations_element0_element1=-1546345828;\nstations_element0.push_back(stations_element0_element1);\nstations.push_back(stations_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minRefuelStops_int_int_vector_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minRefuelStops(target,startFuel,stations);\nAKA_fCall++;AKA_mark(\"Return from: ./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_stations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/871.Minimum-Number-of-Refueling-Stops.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint target=-496951613;\n\n\nint startFuel=10;\nvector<vector<int>> stations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode startFuel */\n/* VectorDataNode stations */\nvector<int> stations_element0;\nint stations_element0_element0=-955894830;\nstations_element0.push_back(stations_element0_element0);\nint stations_element0_element1=-1546345828;\nstations_element0.push_back(stations_element0_element1);\nstations.push_back(stations_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "871.Minimum-Number-of-Refueling-Stops.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minRefuelStops(int,int,vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "startFuel",
+                                    "virtual_name": "EXPECTED_startFuel",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/startFuel",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/target",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "stations",
+                                    "virtual_name": "EXPECTED_stations",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/target",
+                                    "correspondingType": "int",
+                                    "value": "1073314104"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "startFuel",
+                                    "virtual_name": "startFuel",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/startFuel",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "stations",
+                                    "virtual_name": "stations",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "stations_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "stations_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-715783634"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "stations_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-2027109324"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "stations_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "stations_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/stations/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1965582160"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minRefuelStops_int_int_vector_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_minRefuelStops_int_int_vector_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/871.Minimum-Number-of-Refueling-Stops.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint target=1073314104;\n\n\nint startFuel=1;\nvector<vector<int>> stations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode startFuel */\n/* VectorDataNode stations */\nvector<int> stations_element0;\nint stations_element0_element0=-715783634;\nstations_element0.push_back(stations_element0_element0);\nint stations_element0_element1=-2027109324;\nstations_element0.push_back(stations_element0_element1);\nstations.push_back(stations_element0);\nvector<int> stations_element1;\nint stations_element1_element0=-1965582160;\nstations_element1.push_back(stations_element1_element0);\nstations.push_back(stations_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minRefuelStops_int_int_vector_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minRefuelStops(target,startFuel,stations);\nAKA_fCall++;AKA_mark(\"Return from: ./12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_stations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/871.Minimum-Number-of-Refueling-Stops.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint target=1073314104;\n\n\nint startFuel=1;\nvector<vector<int>> stations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode startFuel */\n/* VectorDataNode stations */\nvector<int> stations_element0;\nint stations_element0_element0=-715783634;\nstations_element0.push_back(stations_element0_element0);\nint stations_element0_element1=-2027109324;\nstations_element0.push_back(stations_element0_element1);\nstations.push_back(stations_element0);\nvector<int> stations_element1;\nint stations_element1_element0=-1965582160;\nstations_element1.push_back(stations_element1_element0);\nstations.push_back(stations_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations)      {         if (startFuel>=target) return 0;                  stations.push_back({target,0});                  int stationID = 0;         int curFuel = startFuel;         priority_queue<int>pq;         int count = 0;                  while (stationID<stations.size())         {             if (curFuel>=stations[stationID][0])             {                 pq.push(stations[stationID][1]);                 stationID++;                             }             else             {                 while (curFuel<stations[stationID][0] && pq.size()>0)                 {                     curFuel+=pq.top();                     pq.pop();                     count+=1;                 }                                  if (curFuel<stations[stationID][0] && pq.size()==0)                     return -1;             }         }                  return count;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/871.Minimum-Number-of-Refueling-Stops.cpp/Solution/minRefuelStops(int,int,vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int numRescueBoats(vector<int>& people, int limit)      {         sort(people.begin(), people.end());         int i=0, j=people.size()-1;         int count = 0;         while (i<=j)         {             if (people[i]+people[j]<=limit)                 i++;             j--;             count++;         }         return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "881.Boats-to-Save-People_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/881.Boats-to-Save-People_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/881.Boats-to-Save-People_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/881.Boats-to-Save-People_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/881.Boats-to-Save-People_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numRescueBoats(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "people",
+                                    "virtual_name": "EXPECTED_people",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "limit",
+                                    "virtual_name": "EXPECTED_limit",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/limit",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "people",
+                                    "virtual_name": "people",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "people_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people/element #0",
+                                            "correspondingType": "int",
+                                            "value": "104572009"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "people_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1659066224"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "limit",
+                                    "virtual_name": "limit",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/limit",
+                                    "correspondingType": "int",
+                                    "value": "-21542151"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numRescueBoats_vector_int_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_numRescueBoats_vector_int_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/881.Boats-to-Save-People_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> people;\n\n\nint limit=-21542151;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode people */\nint people_element0=104572009;\npeople.push_back(people_element0);\nint people_element1=1659066224;\npeople.push_back(people_element1);\n/* NormalNumberDataNode limit */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numRescueBoats_vector_int_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numRescueBoats(people,limit);\nAKA_fCall++;AKA_mark(\"Return from: ./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_people;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/881.Boats-to-Save-People_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> people;\n\n\nint limit=-21542151;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode people */\nint people_element0=104572009;\npeople.push_back(people_element0);\nint people_element1=1659066224;\npeople.push_back(people_element1);\n/* NormalNumberDataNode limit */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "881.Boats-to-Save-People_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./12/881.Boats-to-Save-People_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/881.Boats-to-Save-People_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./12/881.Boats-to-Save-People_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./12/881.Boats-to-Save-People_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numRescueBoats(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "people",
+                                    "virtual_name": "EXPECTED_people",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "limit",
+                                    "virtual_name": "EXPECTED_limit",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/limit",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "people",
+                                    "virtual_name": "people",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "people_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people/element #0",
+                                            "correspondingType": "int",
+                                            "value": "996046594"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "people_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/people/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-2019380626"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "limit",
+                                    "virtual_name": "limit",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/limit",
+                                    "correspondingType": "int",
+                                    "value": "-326091958"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numRescueBoats_vector_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_numRescueBoats_vector_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/881.Boats-to-Save-People_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> people;\n\n\nint limit=-326091958;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode people */\nint people_element0=996046594;\npeople.push_back(people_element0);\nint people_element1=-2019380626;\npeople.push_back(people_element1);\n/* NormalNumberDataNode limit */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numRescueBoats_vector_int_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numRescueBoats(people,limit);\nAKA_fCall++;AKA_mark(\"Return from: ./12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_people;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/881.Boats-to-Save-People_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> people;\n\n\nint limit=-326091958;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode people */\nint people_element0=996046594;\npeople.push_back(people_element0);\nint people_element1=-2019380626;\npeople.push_back(people_element1);\n/* NormalNumberDataNode limit */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numRescueBoats(vector<int>& people, int limit)      {         sort(people.begin(), people.end());         int i=0, j=people.size()-1;         int count = 0;         while (i<=j)         {             if (people[i]+people[j]<=limit)                 i++;             j--;             count++;         }         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/12/881.Boats-to-Save-People_v1.cpp/Solution/numRescueBoats(vector<int>&,int)"
+    }
+]

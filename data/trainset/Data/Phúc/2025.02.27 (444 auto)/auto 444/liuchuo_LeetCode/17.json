@@ -1,0 +1,266 @@
+[
+    {
+        "f": [
+            "bool flag = false;",
+            "vector<vector<bool>> visit;",
+            "vector<vector<char>> board;",
+            "string word = \"\";",
+            "int dir[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};",
+            "int m;",
+            "int n;"
+        ],
+        "fm": "bool exist(vector<vector<char>>& board, string word) {         if (board.size() == 0) return word == \"\";         m = board.size(), n = board[0].size();         this->word = word;         this->board = board;         visit.resize(m, vector<bool>(n));         for (int j = 0; j < m; j++) {             for (int k = 0; k < n; k++) {                 if (board[j][k] == word[0]) {                     visit[j][k] = true;                     dfs(j, k, 0);                     visit[j][k] = false;                 }             }         }         return flag;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     bool flag = false;     vector<vector<bool>> visit;     vector<vector<char>> board;     string word = \"\";     int dir[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};     int m, n; public:     bool exist(vector<vector<char>>& board, string word) {         if (board.size() == 0) return word == \"\";         m = board.size(), n = board[0].size();         this->word = word;         this->board = board;         visit.resize(m, vector<bool>(n));         for (int j = 0; j < m; j++) {             for (int k = 0; k < n; k++) {                 if (board[j][k] == word[0]) {                     visit[j][k] = true;                     dfs(j, k, 0);                     visit[j][k] = false;                 }             }         }         return flag;     }          void dfs(int x, int y, int index) {         if (flag == true) return ;         if (index == word.length() - 1) {             flag = true;             return ;         }         for (int i = 0; i < 4; i++) {             int tx = x + dir[i][0], ty = y + dir[i][1];             if (tx >= 0 && tx < m && ty >= 0 && ty < n && board[tx][ty] == word[index + 1] && visit[tx][ty] == false) {                 visit[tx][ty] = true;                 dfs(tx, ty, index + 1);                 visit[tx][ty] = false;             }         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/079. Word Search.cpp/Solution/exist(vector<vector<char>>&,string)"
+    },
+    {
+        "f": [
+            "bool flag = false;",
+            "vector<vector<bool>> visit;",
+            "vector<vector<char>> board;",
+            "string word = \"\";",
+            "int dir[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};",
+            "int m;",
+            "int n;"
+        ],
+        "fm": "void dfs(int x, int y, int index) {         if (flag == true) return ;         if (index == word.length() - 1) {             flag = true;             return ;         }         for (int i = 0; i < 4; i++) {             int tx = x + dir[i][0], ty = y + dir[i][1];             if (tx >= 0 && tx < m && ty >= 0 && ty < n && board[tx][ty] == word[index + 1] && visit[tx][ty] == false) {                 visit[tx][ty] = true;                 dfs(tx, ty, index + 1);                 visit[tx][ty] = false;             }         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     bool flag = false;     vector<vector<bool>> visit;     vector<vector<char>> board;     string word = \"\";     int dir[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};     int m, n; public:     bool exist(vector<vector<char>>& board, string word) {         if (board.size() == 0) return word == \"\";         m = board.size(), n = board[0].size();         this->word = word;         this->board = board;         visit.resize(m, vector<bool>(n));         for (int j = 0; j < m; j++) {             for (int k = 0; k < n; k++) {                 if (board[j][k] == word[0]) {                     visit[j][k] = true;                     dfs(j, k, 0);                     visit[j][k] = false;                 }             }         }         return flag;     }          void dfs(int x, int y, int index) {         if (flag == true) return ;         if (index == word.length() - 1) {             flag = true;             return ;         }         for (int i = 0; i < 4; i++) {             int tx = x + dir[i][0], ty = y + dir[i][1];             if (tx >= 0 && tx < m && ty >= 0 && ty < n && board[tx][ty] == word[index + 1] && visit[tx][ty] == false) {                 visit[tx][ty] = true;                 dfs(tx, ty, index + 1);                 visit[tx][ty] = false;             }         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/079. Word Search.cpp/Solution/dfs(int,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int removeDuplicates(vector<int>& nums) {         if(nums.empty())             return 0;         int len = 1;         vector<int> v(nums.size());         int cnt = 1;         v[0] = nums[0];         for(int i = 1; i < nums.size(); i++) {             if(nums[i] == nums[i - 1]) {                 cnt++;             } else {                 cnt = 1;             }             if(cnt <= 2) {                 v[len++] = nums[i];             }         }         for(int i = 0; i < len; i++) {             nums[i] = v[i];         }         return len;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int removeDuplicates(vector<int>& nums) {         if(nums.empty())             return 0;         int len = 1;         vector<int> v(nums.size());         int cnt = 1;         v[0] = nums[0];         for(int i = 1; i < nums.size(); i++) {             if(nums[i] == nums[i - 1]) {                 cnt++;             } else {                 cnt = 1;             }             if(cnt <= 2) {                 v[len++] = nums[i];             }         }         for(int i = 0; i < len; i++) {             nums[i] = v[i];         }         return len;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/080. Remove Duplicates from Sorted Array II.cpp/Solution/removeDuplicates(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode* deleteDuplicates(ListNode* head) {         if (head == NULL || head->next == NULL) return head;         ListNode* p = head->next;         if (p->val != head->val) {             head->next = deleteDuplicates(p);             return head;         } else {             while (p != NULL && p->val == head->val) p = p->next;             return deleteDuplicates(p);         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* deleteDuplicates(ListNode* head) {         if (head == NULL || head->next == NULL) return head;         ListNode* p = head->next;         if (p->val != head->val) {             head->next = deleteDuplicates(p);             return head;         } else {             while (p != NULL && p->val == head->val) p = p->next;             return deleteDuplicates(p);         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/082. Remove Duplicates from Sorted List II .cpp/Solution/deleteDuplicates(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode* deleteDuplicates(ListNode* head) {         if(head == NULL || head->next == NULL) {             return head;         }         ListNode *p = head;         while(p != NULL &&  p->next != NULL) {             while (p->next != NULL && p->next->val == p->val) {                     p->next = p->next->next;             }             p = p->next;         }         return head;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* deleteDuplicates(ListNode* head) {         if(head == NULL || head->next == NULL) {             return head;         }         ListNode *p = head;         while(p != NULL &&  p->next != NULL) {             while (p->next != NULL && p->next->val == p->val) {                     p->next = p->next->next;             }             p = p->next;         }         return head;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/083. Remove Duplicates from Sorted List.cpp/Solution/deleteDuplicates(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {         int index = m + n - 1;         int aindex = m - 1;         int bindex = n - 1;         while(aindex >= 0 && bindex >= 0) {             if(nums1[aindex] > nums2[bindex]) {                 nums1[index--] = nums1[aindex--];             } else {                 nums1[index--] = nums2[bindex--];             }         }         while(bindex >= 0) {             nums1[index--] = nums2[bindex--];         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {         int index = m + n - 1;         int aindex = m - 1;         int bindex = n - 1;         while(aindex >= 0 && bindex >= 0) {             if(nums1[aindex] > nums2[bindex]) {                 nums1[index--] = nums1[aindex--];             } else {                 nums1[index--] = nums2[bindex--];             }         }         while(bindex >= 0) {             nums1[index--] = nums2[bindex--];         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/088. Merge Sorted Array .cpp/Solution/merge(vector<int>&,int,vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "vector<vector<int>> subsetsWithDup(vector<int>& nums) {         sort(nums.begin(), nums.end());         int len = nums.size();         int maxn = pow(2, len);         vector<vector<int>> result(maxn);         for (int i = 0; i < len; i++) {             for (int j = 0; j < maxn; j++) {                 if ((j >> i) & 1)                     result[j].push_back(nums[i]);             }         }         set<vector<int>> s;         for (int i = 0; i < result.size(); i++)             s.insert(result[i]);         result.resize(0);         for (auto it = s.begin(); it != s.end(); it++)             result.push_back(*it);         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<vector<int>> subsetsWithDup(vector<int>& nums) {         sort(nums.begin(), nums.end());         int len = nums.size();         int maxn = pow(2, len);         vector<vector<int>> result(maxn);         for (int i = 0; i < len; i++) {             for (int j = 0; j < maxn; j++) {                 if ((j >> i) & 1)                     result[j].push_back(nums[i]);             }         }         set<vector<int>> s;         for (int i = 0; i < result.size(); i++)             s.insert(result[i]);         result.resize(0);         for (auto it = s.begin(); it != s.end(); it++)             result.push_back(*it);         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/090. Subsets II.cpp/Solution/subsetsWithDup(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int check(char a) {         return a != '0';     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int check(char a) {         return a != '0';     }     int func(char a, char b) {         return a == '1' || a == '2' && b <= '6';     }     int numDecodings(string s) {         int len = s.length();         vector<int> dp(len, 0);         if(len == 0 || s[0] == '0')              return 0;         if(len == 1)             return check(s[0]);         dp[0] = 1;         dp[1] = check(s[1]) + func(s[0], s[1]);         for(int i = 2; i < len; i++) {             if(check(s[i]))                  dp[i] = dp[i-1];             if(func(s[i-1], s[i]))                  dp[i] += dp[i-2];         }         return dp[len-1];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/091. Decode Ways.cpp/Solution/check(char)"
+    },
+    {
+        "f": [],
+        "fm": "int func(char a, char b) {         return a == '1' || a == '2' && b <= '6';     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int check(char a) {         return a != '0';     }     int func(char a, char b) {         return a == '1' || a == '2' && b <= '6';     }     int numDecodings(string s) {         int len = s.length();         vector<int> dp(len, 0);         if(len == 0 || s[0] == '0')              return 0;         if(len == 1)             return check(s[0]);         dp[0] = 1;         dp[1] = check(s[1]) + func(s[0], s[1]);         for(int i = 2; i < len; i++) {             if(check(s[i]))                  dp[i] = dp[i-1];             if(func(s[i-1], s[i]))                  dp[i] += dp[i-2];         }         return dp[len-1];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/091. Decode Ways.cpp/Solution/func(char,char)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> restoreIpAddresses(string s) {         vector<string> result;         int len = s.length();         for (int i = 1; i <= 3 && i <= len - 3; i++) {             for (int j = 1; j <= 3 && j <= len - i - 2; j++) {                 for (int k = 1; k <= 3 && k <= len - i - j - 1; k++) {                     string s1 = s.substr(0, i), s2 = s.substr(i, j), s3 = s.substr(i + j, k), s4 = s.substr(i + j + k, len);                     if (isValid(s1) && isValid(s2) && isValid(s3) && isValid(s4))                          result.push_back(s1 + \".\" + s2 + \".\" + s3 + \".\" + s4);                 }             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<string> restoreIpAddresses(string s) {         vector<string> result;         int len = s.length();         for (int i = 1; i <= 3 && i <= len - 3; i++) {             for (int j = 1; j <= 3 && j <= len - i - 2; j++) {                 for (int k = 1; k <= 3 && k <= len - i - j - 1; k++) {                     string s1 = s.substr(0, i), s2 = s.substr(i, j), s3 = s.substr(i + j, k), s4 = s.substr(i + j + k, len);                     if (isValid(s1) && isValid(s2) && isValid(s3) && isValid(s4))                          result.push_back(s1 + \".\" + s2 + \".\" + s3 + \".\" + s4);                 }             }         }         return result;     }     bool isValid(string s) {         return (s.length() >= 1 && s.length() <= 3 && (s[0] != '0' || s.length() == 1) && stoi(s) <= 255);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/093. Restore IP Addresses.cpp/Solution/restoreIpAddresses(string)"
+    },
+    {
+        "f": [],
+        "fm": "bool isValid(string s) {         return (s.length() >= 1 && s.length() <= 3 && (s[0] != '0' || s.length() == 1) && stoi(s) <= 255);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<string> restoreIpAddresses(string s) {         vector<string> result;         int len = s.length();         for (int i = 1; i <= 3 && i <= len - 3; i++) {             for (int j = 1; j <= 3 && j <= len - i - 2; j++) {                 for (int k = 1; k <= 3 && k <= len - i - j - 1; k++) {                     string s1 = s.substr(0, i), s2 = s.substr(i, j), s3 = s.substr(i + j, k), s4 = s.substr(i + j + k, len);                     if (isValid(s1) && isValid(s2) && isValid(s3) && isValid(s4))                          result.push_back(s1 + \".\" + s2 + \".\" + s3 + \".\" + s4);                 }             }         }         return result;     }     bool isValid(string s) {         return (s.length() >= 1 && s.length() <= 3 && (s[0] != '0' || s.length() == 1) && stoi(s) <= 255);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/093. Restore IP Addresses.cpp/Solution/isValid(string)"
+    },
+    {
+        "f": [
+            "vector<int> result;"
+        ],
+        "fm": "vector<int> inorderTraversal(TreeNode* root) {         dfs(root);         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> result;     vector<int> inorderTraversal(TreeNode* root) {         dfs(root);         return result;     }     void dfs(TreeNode* root) {         if(root == NULL) return ;         dfs(root->left);         result.push_back(root->val);         dfs(root->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/094. Binary Tree Inorder Traversal.cpp/Solution/inorderTraversal(TreeNode*)"
+    },
+    {
+        "f": [
+            "vector<int> result;"
+        ],
+        "fm": "void dfs(TreeNode* root) {         if(root == NULL) return ;         dfs(root->left);         result.push_back(root->val);         dfs(root->right);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> result;     vector<int> inorderTraversal(TreeNode* root) {         dfs(root);         return result;     }     void dfs(TreeNode* root) {         if(root == NULL) return ;         dfs(root->left);         result.push_back(root->val);         dfs(root->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/094. Binary Tree Inorder Traversal.cpp/Solution/dfs(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int numTrees(int n) {         vector<int> v(n+1);         v[0] = 1;         for(int i = 1; i <= n; i++) {             v[i] = 0;             if(i <= 2) {                 v[i] = i;             } else {                 for(int j = 1; j <= i; j++) {                     v[i] += v[j-1] * v[i-j];                 }             }         }         return v[n];     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numTrees(int n) {         vector<int> v(n+1);         v[0] = 1;         for(int i = 1; i <= n; i++) {             v[i] = 0;             if(i <= 2) {                 v[i] = i;             } else {                 for(int j = 1; j <= i; j++) {                     v[i] += v[j-1] * v[i-j];                 }             }         }         return v[n];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/096. Unique Binary Search Trees.cpp/Solution/numTrees(int)"
+    },
+    {
+        "f": [
+            "vector<int> v;"
+        ],
+        "fm": "bool isValidBST(TreeNode* root) {         if(root == NULL ||(root->left == NULL && root->right == NULL)) return true;         inorder(root);         for(int i = 1; i < v.size(); i++)             if(v[i] <= v[i-1]) return false;         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     vector<int> v; public:     bool isValidBST(TreeNode* root) {         if(root == NULL ||(root->left == NULL && root->right == NULL)) return true;         inorder(root);         for(int i = 1; i < v.size(); i++)             if(v[i] <= v[i-1]) return false;         return true;     }     void inorder(TreeNode* root) {         if(root == NULL) return;         inorder(root->left);         v.push_back(root->val);         inorder(root->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/098. Validate Binary Search Tree.cpp/Solution/isValidBST(TreeNode*)"
+    },
+    {
+        "f": [
+            "vector<int> v;"
+        ],
+        "fm": "void inorder(TreeNode* root) {         if(root == NULL) return;         inorder(root->left);         v.push_back(root->val);         inorder(root->right);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     vector<int> v; public:     bool isValidBST(TreeNode* root) {         if(root == NULL ||(root->left == NULL && root->right == NULL)) return true;         inorder(root);         for(int i = 1; i < v.size(); i++)             if(v[i] <= v[i-1]) return false;         return true;     }     void inorder(TreeNode* root) {         if(root == NULL) return;         inorder(root->left);         v.push_back(root->val);         inorder(root->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/17/098. Validate Binary Search Tree.cpp/Solution/inorder(TreeNode*)"
+    }
+]

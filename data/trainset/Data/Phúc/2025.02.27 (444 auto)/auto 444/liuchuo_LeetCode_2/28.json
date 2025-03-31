@@ -1,0 +1,62 @@
+[
+    {
+        "f": [],
+        "fm": "int countNumbersWithUniqueDigits(int n) {         if(n == 0) return 1;         int result = 10, cnt = 9;         for(int i = 2; i <= n; i++) {             cnt *= (11 - i);             result += cnt;         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int countNumbersWithUniqueDigits(int n) {         if(n == 0) return 1;         int result = 10, cnt = 9;         for(int i = 2; i <= n; i++) {             cnt *= (11 - i);             result += cnt;         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/28/357. Count Numbers with Unique Digits.cpp/Solution/countNumbersWithUniqueDigits(int)"
+    },
+    {
+        "f": [],
+        "fm": "bool canMeasureWater(int x, int y, int z) {         return z == 0 || (x + y >= z && z % gcd(x, y) == 0);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool canMeasureWater(int x, int y, int z) {         return z == 0 || (x + y >= z && z % gcd(x, y) == 0);     } private:     int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/28/365. Water and Jug Problem.cpp/Solution/canMeasureWater(int,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool canMeasureWater(int x, int y, int z) {         return z == 0 || (x + y >= z && z % gcd(x, y) == 0);     } private:     int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/28/365. Water and Jug Problem.cpp/Solution/gcd(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int getSum(int a, int b) {         int carry = (a & b) << 1;         int result = (a ^ b);         while(carry != 0) {             int temp = carry;             carry = (result & temp) << 1;             result = result ^ temp;         };         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int getSum(int a, int b) {         int carry = (a & b) << 1;         int result = (a ^ b);         while(carry != 0) {             int temp = carry;             carry = (result & temp) << 1;             result = result ^ temp;         };         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/28/371. Sum of Two Integers.cpp/Solution/getSum(int,int)"
+    }
+]

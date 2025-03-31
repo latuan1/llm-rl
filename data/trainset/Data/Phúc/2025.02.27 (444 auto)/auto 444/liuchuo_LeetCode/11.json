@@ -1,0 +1,152 @@
+[
+    {
+        "f": [],
+        "fm": "vector<int> twoSum(vector<int>& nums, int target) {         vector<int> v(2);         for(int i = 0; i < nums.size(); i++) {             for(int j = i + 1; j < nums.size(); j++) {                 if(nums[i] + nums[j] == target) {                     v[0] = i;                     v[1] = j;                 }             }         }         return v;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> twoSum(vector<int>& nums, int target) {         vector<int> v(2);         for(int i = 0; i < nums.size(); i++) {             for(int j = i + 1; j < nums.size(); j++) {                 if(nums[i] + nums[j] == target) {                     v[0] = i;                     v[1] = j;                 }             }         }         return v;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/001. Two Sum.cpp/Solution/twoSum(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode* ListNodaddTwoNumbers(ListNode* l1, ListNode* l2) {         ListNode *h = new ListNode(0);         ListNode *p = h;         int temp = 0;         while(l1 != NULL && l2 != NULL) {             p->next = new ListNode((temp + l1->val + l2->val) % 10);             temp = (temp + l1->val + l2->val) / 10;             p = p->next;             l1 = l1->next;             l2 = l2->next;         }         while(l1 != NULL) {             p->next = new ListNode((temp + l1->val) % 10);             temp = (temp + l1->val) / 10;             p = p->next;             l1 = l1->next;         }         while(l2 != NULL) {             p->next = new ListNode((temp + l2->val) % 10);             temp = (temp + l2->val) / 10;             p = p->next;             l2 = l2->next;         }         if(temp) {             p->next = new ListNode(1);         }         return h->next;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* ListNodaddTwoNumbers(ListNode* l1, ListNode* l2) {         ListNode *h = new ListNode(0);         ListNode *p = h;         int temp = 0;         while(l1 != NULL && l2 != NULL) {             p->next = new ListNode((temp + l1->val + l2->val) % 10);             temp = (temp + l1->val + l2->val) / 10;             p = p->next;             l1 = l1->next;             l2 = l2->next;         }         while(l1 != NULL) {             p->next = new ListNode((temp + l1->val) % 10);             temp = (temp + l1->val) / 10;             p = p->next;             l1 = l1->next;         }         while(l2 != NULL) {             p->next = new ListNode((temp + l2->val) % 10);             temp = (temp + l2->val) / 10;             p = p->next;             l2 = l2->next;         }         if(temp) {             p->next = new ListNode(1);         }         return h->next;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/002. Add Two Numbers.cpp/Solution/ListNodaddTwoNumbers(ListNode*,ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int lengthOfLongestSubstring(string s) {         int i = 0, j = 0, len = s.length();         int maxlen = 0;         int book[256] = {0};         while(j < len) {             if(book[s[j]] == 1) {                 maxlen = max(maxlen, j - i);                 while(s[i] != s[j]) {                     book[s[i]] = 0;                     i++;                 }                 i++;             } else {                 book[s[j]] = 1;             }             j++;         }         maxlen = max(maxlen, j - i);         return maxlen;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int lengthOfLongestSubstring(string s) {         int i = 0, j = 0, len = s.length();         int maxlen = 0;         int book[256] = {0};         while(j < len) {             if(book[s[j]] == 1) {                 maxlen = max(maxlen, j - i);                 while(s[i] != s[j]) {                     book[s[i]] = 0;                     i++;                 }                 i++;             } else {                 book[s[j]] = 1;             }             j++;         }         maxlen = max(maxlen, j - i);         return maxlen;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/003. Longest Substring Without Repeating Characters.cpp/Solution/lengthOfLongestSubstring(string)"
+    },
+    {
+        "f": [],
+        "fm": "string longestPalindrome(string s) {         int len = s.length();         if (len == 0) return \"\";         string result = s.substr(0, 1);         for (int i = 0; i <= len - 2; i++) {             string temp = midToSide(s, i, i);             if (temp.length() > result.length())                 result = temp;             temp = midToSide(s, i, i + 1);             if (temp.length() > result.length())                 result = temp;         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string longestPalindrome(string s) {         int len = s.length();         if (len == 0) return \"\";         string result = s.substr(0, 1);         for (int i = 0; i <= len - 2; i++) {             string temp = midToSide(s, i, i);             if (temp.length() > result.length())                 result = temp;             temp = midToSide(s, i, i + 1);             if (temp.length() > result.length())                 result = temp;         }         return result;     }          string midToSide(string s, int left, int right) {         while (left >= 0 && right <= s.length() - 1 && s[left] == s[right]) {             left--;              right++;         }         return s.substr(left + 1, right - left - 1);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/005. Longest Palindromic Substring.cpp/Solution/longestPalindrome(string)"
+    },
+    {
+        "f": [],
+        "fm": "string convert(string s, int numRows) {         string t[numRows];         string ans;         int i = 0;         while(i < s.length()) {             for(int j = 0; j < numRows && i < s.length(); j++)                 t[j] += s[i++];             for(int k = numRows - 2; k > 0 && i < s.length(); k--)                 t[k] += s[i++];         }         for(int j = 0; j < numRows; j++) {             ans += t[j];         }         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string convert(string s, int numRows) {         string t[numRows];         string ans;         int i = 0;         while(i < s.length()) {             for(int j = 0; j < numRows && i < s.length(); j++)                 t[j] += s[i++];             for(int k = numRows - 2; k > 0 && i < s.length(); k--)                 t[k] += s[i++];         }         for(int j = 0; j < numRows; j++) {             ans += t[j];         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/006. ZigZag Conversion.cpp/Solution/convert(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int reverse(int x) {         string s = to_string(x);         if(s[0] == '-')             std::reverse(s.begin() + 1, s.end());         else             std::reverse(s.begin(), s.end());         long long int temp = stoll(s);         if(temp > 2147483647 || temp < -2147483648)             return 0;         return (int)temp;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int reverse(int x) {         string s = to_string(x);         if(s[0] == '-')             std::reverse(s.begin() + 1, s.end());         else             std::reverse(s.begin(), s.end());         long long int temp = stoll(s);         if(temp > 2147483647 || temp < -2147483648)             return 0;         return (int)temp;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/007. Reverse Integer.cpp/Solution/reverse(int)"
+    },
+    {
+        "f": [],
+        "fm": "int myAtoi(string str) {         if(str.length() == 0)             return 0;         int i = 0, flag = 1;         while(isspace(str[i])) {             i++;         }         if(str[i] == '+' || str[i] == '-') {             if(str[i] == '-')                 flag = 0;             i++;         }         str = str.substr(i);         for(int j = 0; j < str.length(); j++) {             if(!isdigit(str[j])) {                 str = str.substr(0, j);                 break;             }         }         if(str.length() == 0)             return 0;         if(str.length() > 10) {             if(flag == 0)                 return -2147483648;             else                 return 2147483647;         }         long long int ans = stoll(str);         if(flag == 0)             ans = 0 - ans;         if(ans > 2147483647) {             return 2147483647;         } else if (ans < -2147483648) {             return -2147483648;         } else {             return (int)ans;         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int myAtoi(string str) {         if(str.length() == 0)             return 0;         int i = 0, flag = 1;         while(isspace(str[i])) {             i++;         }         if(str[i] == '+' || str[i] == '-') {             if(str[i] == '-')                 flag = 0;             i++;         }         str = str.substr(i);         for(int j = 0; j < str.length(); j++) {             if(!isdigit(str[j])) {                 str = str.substr(0, j);                 break;             }         }         if(str.length() == 0)             return 0;         if(str.length() > 10) {             if(flag == 0)                 return -2147483648;             else                 return 2147483647;         }         long long int ans = stoll(str);         if(flag == 0)             ans = 0 - ans;         if(ans > 2147483647) {             return 2147483647;         } else if (ans < -2147483648) {             return -2147483648;         } else {             return (int)ans;         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/008. String to Integer (atoi).cpp/Solution/myAtoi(string)"
+    },
+    {
+        "f": [],
+        "fm": "bool isPalindrome(int x) {         if(x < 0)             return false;         int len = 1;         while(x / len >= 10) {             len = len * 10;         }         while(x) {             int left = x / len;             int right = x % 10;             if(left != right) {                 return false;             }             x = x % len;             x = x / 10;             len = len / 100;         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isPalindrome(int x) {         if(x < 0)             return false;         int len = 1;         while(x / len >= 10) {             len = len * 10;         }         while(x) {             int left = x / len;             int right = x % 10;             if(left != right) {                 return false;             }             x = x % len;             x = x / 10;             len = len / 100;         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/009. Palindrome Number.cpp/Solution/isPalindrome(int)"
+    },
+    {
+        "f": [],
+        "fm": "int maxArea(vector<int>& height) {         int left = 0, right = height.size() - 1, area = 0;         while(left < right) {             area = max(area, min(height[left], height[right]) * (right - left));             if(height[left] < height[right])                 left++;             else                 right--;         }         return area;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxArea(vector<int>& height) {         int left = 0, right = height.size() - 1, area = 0;         while(left < right) {             area = max(area, min(height[left], height[right]) * (right - left));             if(height[left] < height[right])                 left++;             else                 right--;         }         return area;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/011. Container With Most Water.cpp/Solution/maxArea(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "string intToRoman(int num) {         string result = \"\";         int a[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};         string b[] = {\"M\", \"CM\", \"D\", \"CD\", \"C\", \"XC\", \"L\", \"XL\", \"X\", \"IX\", \"V\", \"IV\", \"I\"};         int index = 0, cnt;         while(num > 0) {             cnt = num / a[index];             while(cnt--)                 result += b[index];             num = num % a[index];             index++;         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string intToRoman(int num) {         string result = \"\";         int a[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};         string b[] = {\"M\", \"CM\", \"D\", \"CD\", \"C\", \"XC\", \"L\", \"XL\", \"X\", \"IX\", \"V\", \"IV\", \"I\"};         int index = 0, cnt;         while(num > 0) {             cnt = num / a[index];             while(cnt--)                 result += b[index];             num = num % a[index];             index++;         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/11/012. Integer to Roman.cpp/Solution/intToRoman(int)"
+    }
+]

@@ -1,0 +1,1754 @@
+[
+    {
+        "f": [
+            "long long M = 1e9+7;"
+        ],
+        "fm": "int maxNiceDivisors(int primeFactors)      {         if (primeFactors==1) return 1;         if (primeFactors==2) return 2;         if (primeFactors==3) return 3;         if (primeFactors==4) return 4;         int a,b;         if (primeFactors%3==0)         {             a = primeFactors/3;             b = 0;         }         else if (primeFactors%3==2)         {             a = (primeFactors-2)/3;             b = 1;         }         else         {             a = (primeFactors-4)/3;             b = 2;         }         long long ret = 1;         ret = ret * quickMul(3, a) % M;         ret = ret * quickMul(2, b) % M;         return ret;      }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_0(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_0\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_1(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_1\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "3"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_2(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_2\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 3,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_3(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_3\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=4;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=4;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 4,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "6"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_4(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_4\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=6;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=6;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 5,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "8"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_5(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_5\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=8;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=8;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 6,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxNiceDivisors(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "EXPECTED_primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "primeFactors",
+                                    "virtual_name": "primeFactors",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/primeFactors",
+                                    "correspondingType": "int",
+                                    "value": "7"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxNiceDivisors_int_manual_6(void) {\n{\nAKA_test_case_name=\"Solution_maxNiceDivisors_int_manual_6\";\n\n// set up\n;\n\n\n\n\n\nint primeFactors=7;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxNiceDivisors_int_manual_6\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxNiceDivisors(primeFactors);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint primeFactors=7;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode primeFactors */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxNiceDivisors(int primeFactors)      {         if (primeFactors==1) return 1;         if (primeFactors==2) return 2;         if (primeFactors==3) return 3;         if (primeFactors==4) return 4;         int a,b;         if (primeFactors%3==0)         {             a = primeFactors/3;             b = 0;         }         else if (primeFactors%3==2)         {             a = (primeFactors-2)/3;             b = 1;         }         else         {             a = (primeFactors-4)/3;             b = 2;         }         long long ret = 1;         ret = ret * quickMul(3, a) % M;         ret = ret * quickMul(2, b) % M;         return ret;      }      long long M = 1e9+7;      long long quickMul(long long x, long long N) {         if (N == 0) {             return 1.0;         }         long long y = quickMul(x, N / 2);         return N % 2 == 0 ? y * y % M: y * y * x % M;     } };",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/maxNiceDivisors(int)"
+    },
+    {
+        "f": [
+            "long long M = 1e9+7;"
+        ],
+        "fm": "long long quickMul(long long x, long long N) {         if (N == 0) {             return 1.0;         }         long long y = quickMul(x, N / 2);         return N % 2 == 0 ? y * y % M: y * y * x % M;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "quickMul(long long,long long)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/N",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/x",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/x",
+                                    "correspondingType": "long long",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/N",
+                                    "correspondingType": "long long",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_quickMul_long_long_long_long_manual_0(void) {\n{\nAKA_test_case_name=\"Solution_quickMul_long_long_long_long_manual_0\";\n\n// set up\n;\n\n\n\n\n\nlong long x=1;\n\n\nlong long N=0;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_quickMul_long_long_long_long_manual_0\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->quickMul(x,N);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nlong long x=1;\n\n\nlong long N=0;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "quickMul(long long,long long)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/x",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/N",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/x",
+                                    "correspondingType": "long long",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/N",
+                                    "correspondingType": "long long",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_quickMul_long_long_long_long_manual_1(void) {\n{\nAKA_test_case_name=\"Solution_quickMul_long_long_long_long_manual_1\";\n\n// set up\n;\n\n\n\n\n\nlong long x=2;\n\n\nlong long N=4;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_quickMul_long_long_long_long_manual_1\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->quickMul(x,N);\nAKA_fCall++;AKA_mark(\"Return from: ./04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nlong long x=2;\n\n\nlong long N=4;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxNiceDivisors(int primeFactors)      {         if (primeFactors==1) return 1;         if (primeFactors==2) return 2;         if (primeFactors==3) return 3;         if (primeFactors==4) return 4;         int a,b;         if (primeFactors%3==0)         {             a = primeFactors/3;             b = 0;         }         else if (primeFactors%3==2)         {             a = (primeFactors-2)/3;             b = 1;         }         else         {             a = (primeFactors-4)/3;             b = 2;         }         long long ret = 1;         ret = ret * quickMul(3, a) % M;         ret = ret * quickMul(2, b) % M;         return ret;      }      long long M = 1e9+7;      long long quickMul(long long x, long long N) {         if (N == 0) {             return 1.0;         }         long long y = quickMul(x, N / 2);         return N % 2 == 0 ? y * y % M: y * y * x % M;     } };",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/04/1808.Maximize-Number-of-Nice-Divisors.cpp/Solution/quickMul(long long,long long)"
+    },
+    {
+        "f": [],
+        "fm": "int distMoney(int money, int children)      {         if (money < children) return -1;         if (money==4 && children==1) return -1;         if (money > children * 8) return children-1;                  int d = money - children;         int k = d / 7;         int r = d % 7;                  if (r==3 && (children-k)==1)             return k-1;         else             return k;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "distMoney(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "EXPECTED_money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "EXPECTED_children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_distMoney_int_int_manual_1(void) {\n{\nAKA_test_case_name=\"Solution_distMoney_int_int_manual_1\";\n\n// set up\n;\n\n\n\n\n\nint money=4;\n\n\nint children=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_distMoney_int_int_manual_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->distMoney(money,children);\nAKA_fCall++;AKA_mark(\"Return from: ./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint money=4;\n\n\nint children=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "distMoney(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "EXPECTED_money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "EXPECTED_children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_distMoney_int_int_manual_0(void) {\n{\nAKA_test_case_name=\"Solution_distMoney_int_int_manual_0\";\n\n// set up\n;\n\n\n\n\n\nint money=1;\n\n\nint children=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_distMoney_int_int_manual_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->distMoney(money,children);\nAKA_fCall++;AKA_mark(\"Return from: ./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint money=1;\n\n\nint children=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "distMoney(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "EXPECTED_money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "EXPECTED_children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "110"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "100"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_distMoney_int_int_manual_3(void) {\n{\nAKA_test_case_name=\"Solution_distMoney_int_int_manual_3\";\n\n// set up\n;\n\n\n\n\n\nint money=110;\n\n\nint children=100;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_distMoney_int_int_manual_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->distMoney(money,children);\nAKA_fCall++;AKA_mark(\"Return from: ./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint money=110;\n\n\nint children=100;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 3,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "distMoney(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "EXPECTED_children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "EXPECTED_money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "10"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_distMoney_int_int_manual_2(void) {\n{\nAKA_test_case_name=\"Solution_distMoney_int_int_manual_2\";\n\n// set up\n;\n\n\n\n\n\nint money=10;\n\n\nint children=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_distMoney_int_int_manual_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->distMoney(money,children);\nAKA_fCall++;AKA_mark(\"Return from: ./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint money=10;\n\n\nint children=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 4,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "distMoney(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "EXPECTED_children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "EXPECTED_money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_distMoney_int_int_manual_5(void) {\n{\nAKA_test_case_name=\"Solution_distMoney_int_int_manual_5\";\n\n// set up\n;\n\n\n\n\n\nint money=4;\n\n\nint children=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_distMoney_int_int_manual_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->distMoney(money,children);\nAKA_fCall++;AKA_mark(\"Return from: ./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint money=4;\n\n\nint children=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 5,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "distMoney(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "EXPECTED_children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "EXPECTED_money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "money",
+                                    "virtual_name": "money",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/money",
+                                    "correspondingType": "int",
+                                    "value": "12"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "children",
+                                    "virtual_name": "children",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/children",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_distMoney_int_int_manual_4(void) {\n{\nAKA_test_case_name=\"Solution_distMoney_int_int_manual_4\";\n\n// set up\n;\n\n\n\n\n\nint money=12;\n\n\nint children=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_distMoney_int_int_manual_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->distMoney(money,children);\nAKA_fCall++;AKA_mark(\"Return from: ./04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint money=12;\n\n\nint children=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode money */\n/* NormalNumberDataNode children */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int distMoney(int money, int children)      {         if (money < children) return -1;         if (money==4 && children==1) return -1;         if (money > children * 8) return children-1;                  int d = money - children;         int k = d / 7;         int r = d % 7;                  if (r==3 && (children-k)==1)             return k-1;         else             return k;              } };",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/04/2591.Distribute-Money-to-Maximum-Children.cpp/Solution/distMoney(int,int)"
+    }
+]

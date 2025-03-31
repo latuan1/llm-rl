@@ -1,0 +1,145 @@
+[
+    {
+        "f": [],
+        "fm": "int countComponents(int n, vector<vector<int>>& edges) {         unordered_map<int, vector<int>> graph;         unordered_map<int, bool> visited;         for (int i = 0; i < n; i++) {             graph[i] = {};             visited[i] = false;         }         for (vector<int> v : edges) {             int from = v[0];             int to = v[1];             graph[from].push_back(to);             graph[to].push_back(from);         }         int result = 0;         int numVisited = 0;                  auto it = graph.begin();                  while (numVisited < n) {             int node = it->first;             if (!visited[node]) {                 queue<int> q;                 q.emplace(node);                 while (!q.empty()) {                     int currNode = q.front();                     q.pop();                     visited[currNode] = true;                     numVisited++;                     for (int neighbor : it->second) {                         if (!visited[neighbor]) {                             q.emplace(neighbor);                         }                     }                 }                 result++;             }             it++;         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int countComponents(int n, vector<vector<int>>& edges) {         unordered_map<int, vector<int>> graph;         unordered_map<int, bool> visited;         for (int i = 0; i < n; i++) {             graph[i] = {};             visited[i] = false;         }         for (vector<int> v : edges) {             int from = v[0];             int to = v[1];             graph[from].push_back(to);             graph[to].push_back(from);         }         int result = 0;         int numVisited = 0;                  auto it = graph.begin();                  while (numVisited < n) {             int node = it->first;             if (!visited[node]) {                 queue<int> q;                 q.emplace(node);                 while (!q.empty()) {                     int currNode = q.front();                     q.pop();                     visited[currNode] = true;                     numVisited++;                     for (int neighbor : it->second) {                         if (!visited[neighbor]) {                             q.emplace(neighbor);                         }                     }                 }                 result++;             }             it++;         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/323-components-in-undirected-graph.cpp/Solution/countComponents(int,vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> topKFrequent(vector<int>& nums, int k) {                  unordered_map<int, int> counts;                  for (int a : nums) {             auto it = counts.find(a);             if (it != counts.end()) {                 it->second++;             } else {                 counts[a] = 1;             }         }                  priority_queue<KeyWithFreq, vector<KeyWithFreq>, function<bool(KeyWithFreq, KeyWithFreq)>>              min_heap([](const KeyWithFreq &a, const KeyWithFreq &b) { return a.times <= b.times; });                  auto it = counts.begin();         while (it != counts.end()) {             min_heap.emplace(KeyWithFreq(it->first, it->second));             it++;         }                  vector<int> result;                  for (int i = 0; i < k; i++) {             result.push_back(min_heap.top().key);             min_heap.pop();         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     struct KeyWithFreq {         int key;         int times;         KeyWithFreq(int a, int b) : key(a), times(b) {};     };          vector<int> topKFrequent(vector<int>& nums, int k) {                  unordered_map<int, int> counts;                  for (int a : nums) {             auto it = counts.find(a);             if (it != counts.end()) {                 it->second++;             } else {                 counts[a] = 1;             }         }                  priority_queue<KeyWithFreq, vector<KeyWithFreq>, function<bool(KeyWithFreq, KeyWithFreq)>>              min_heap([](const KeyWithFreq &a, const KeyWithFreq &b) { return a.times <= b.times; });                  auto it = counts.begin();         while (it != counts.end()) {             min_heap.emplace(KeyWithFreq(it->first, it->second));             it++;         }                  vector<int> result;                  for (int i = 0; i < k; i++) {             result.push_back(min_heap.top().key);             min_heap.pop();         }         return result;     }  };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/347-top-k-frequent-elements.cpp/Solution/topKFrequent(vector<int>&,int)"
+    },
+    {
+        "f": [
+            "unordered_map<string, int> stream;"
+        ],
+        "fm": "bool shouldPrintMessage(int timestamp, string message) {         auto it = stream.find(message);         if (it != stream.end()) {             if (timestamp - it->second >= 10) {                 it->second = timestamp;                 return true;             } else {                 return false;             }         } else {             stream[message] = timestamp;             return true;         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Logger { public:     /** Initialize your data structure here. */     unordered_map<string, int> stream;          Logger() {              }     /** Returns true if the message should be printed in the given timestamp, otherwise returns false.         If this method returns false, the message will not be printed.         The timestamp is in seconds granularity. */     bool shouldPrintMessage(int timestamp, string message) {         auto it = stream.find(message);         if (it != stream.end()) {             if (timestamp - it->second >= 10) {                 it->second = timestamp;                 return true;             } else {                 return false;             }         } else {             stream[message] = timestamp;             return true;         }     } };",
+        "c": [
+            "Logger() {\n        \n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/359-logger-rate-limiter.cpp/Logger/shouldPrintMessage(int,string)"
+    },
+    {
+        "f": [],
+        "fm": "string decodeString(string s) {         stack<string> decodedStack;         stack<int> numStack;         decodedStack.push(\"\");         int numBegin = -1;         for (int i = 0; i < s.size(); i++) {             if (isdigit(s[i]) && numBegin == -1) {                 numBegin = i;             } else if (s[i] == '[') {                 numStack.push(stoi(s.substr(numBegin, i - numBegin)));                 numBegin = -1;                 decodedStack.push(\"\");             } else if (s[i] == ']') {                 string decodedString;                 for (int j = 0; j < numStack.top(); j++) {                     decodedString += decodedStack.top();                 }                 decodedStack.pop();                 numStack.pop();                 decodedStack.top() += decodedString;             } else if (numBegin == -1) {                 decodedStack.top() += s[i];             }         }         return decodedStack.top();     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:         string decodeString(string s) {         stack<string> decodedStack;         stack<int> numStack;         decodedStack.push(\"\");         int numBegin = -1;         for (int i = 0; i < s.size(); i++) {             if (isdigit(s[i]) && numBegin == -1) {                 numBegin = i;             } else if (s[i] == '[') {                 numStack.push(stoi(s.substr(numBegin, i - numBegin)));                 numBegin = -1;                 decodedStack.push(\"\");             } else if (s[i] == ']') {                 string decodedString;                 for (int j = 0; j < numStack.top(); j++) {                     decodedString += decodedStack.top();                 }                 decodedStack.pop();                 numStack.pop();                 decodedStack.top() += decodedString;             } else if (numBegin == -1) {                 decodedStack.top() += s[i];             }         }         return decodedStack.top();     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/394-decode-string.cpp/Solution/decodeString(string)"
+    },
+    {
+        "f": [
+            "unordered_map<string, vector<pair<string, double>>> m;",
+            "unordered_map<string, bool> v;"
+        ],
+        "fm": "double dfs(string start, string end) {         double result = -1.0;         for (auto it = v.begin(); it != v.end(); it++) it->second = false;         stack<pair<string, double>> s;         s.push(make_pair(start, 1.0));         while (!s.empty()) {             pair<string, double> curr = s.top();             s.pop();             v[curr.first] = true;             for (auto& p : m[curr.first]) {                 if (p.first == end) {                     return curr.second * p.second;                 }                 if (!v[p.first]) {                     s.push(make_pair(p.first, curr.second * p.second));                 }             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     unordered_map<string, vector<pair<string, double>>> m;     unordered_map<string, bool> v;          double dfs(string start, string end) {         double result = -1.0;         for (auto it = v.begin(); it != v.end(); it++) it->second = false;         stack<pair<string, double>> s;         s.push(make_pair(start, 1.0));         while (!s.empty()) {             pair<string, double> curr = s.top();             s.pop();             v[curr.first] = true;             for (auto& p : m[curr.first]) {                 if (p.first == end) {                     return curr.second * p.second;                 }                 if (!v[p.first]) {                     s.push(make_pair(p.first, curr.second * p.second));                 }             }         }         return result;     }          vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {                  // Building graph         for (vector<string>& e : equations) {             if (m.find(e[0]) == m.end()) {                 m[e[0]] = {make_pair(e[0], 1.0)};                 v[e[0]] = false;             }             if (m.find(e[1]) == m.end()) {                 m[e[1]] = {make_pair(e[1], 1.0)};                 v[e[1]] = false;             }         }         for (int i = 0; i < equations.size(); i++) {             vector<string>& e = equations[i];             m[e[0]].push_back(make_pair(e[1], values[i]));             m[e[1]].push_back(make_pair(e[0], 1.0 / values[i]));         }                  for (auto it = m.begin(); it != m.end(); it++) {             cout << it->first << \": \";             for (auto p : it->second) {                 cout << p.first << \", \" << p.second << \"; \";             }             cout << endl;         }                  vector<double> result;                  // Iterate over queries         for (vector<string>& q : queries) {             if (m.find(q[0]) != m.end() && m.find(q[1]) != m.end()) {                 double factor = dfs(q[0], q[1]);                 result.push_back(factor);             } else {                 result.push_back(-1.0);             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/399-evaluate-division.cpp/Solution/dfs(string,string)"
+    },
+    {
+        "f": [
+            "unordered_map<string, vector<pair<string, double>>> m;",
+            "unordered_map<string, bool> v;"
+        ],
+        "fm": "vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {                  // Building graph         for (vector<string>& e : equations) {             if (m.find(e[0]) == m.end()) {                 m[e[0]] = {make_pair(e[0], 1.0)};                 v[e[0]] = false;             }             if (m.find(e[1]) == m.end()) {                 m[e[1]] = {make_pair(e[1], 1.0)};                 v[e[1]] = false;             }         }         for (int i = 0; i < equations.size(); i++) {             vector<string>& e = equations[i];             m[e[0]].push_back(make_pair(e[1], values[i]));             m[e[1]].push_back(make_pair(e[0], 1.0 / values[i]));         }                  for (auto it = m.begin(); it != m.end(); it++) {             cout << it->first << \": \";             for (auto p : it->second) {                 cout << p.first << \", \" << p.second << \"; \";             }             cout << endl;         }                  vector<double> result;                  // Iterate over queries         for (vector<string>& q : queries) {             if (m.find(q[0]) != m.end() && m.find(q[1]) != m.end()) {                 double factor = dfs(q[0], q[1]);                 result.push_back(factor);             } else {                 result.push_back(-1.0);             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     unordered_map<string, vector<pair<string, double>>> m;     unordered_map<string, bool> v;          double dfs(string start, string end) {         double result = -1.0;         for (auto it = v.begin(); it != v.end(); it++) it->second = false;         stack<pair<string, double>> s;         s.push(make_pair(start, 1.0));         while (!s.empty()) {             pair<string, double> curr = s.top();             s.pop();             v[curr.first] = true;             for (auto& p : m[curr.first]) {                 if (p.first == end) {                     return curr.second * p.second;                 }                 if (!v[p.first]) {                     s.push(make_pair(p.first, curr.second * p.second));                 }             }         }         return result;     }          vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {                  // Building graph         for (vector<string>& e : equations) {             if (m.find(e[0]) == m.end()) {                 m[e[0]] = {make_pair(e[0], 1.0)};                 v[e[0]] = false;             }             if (m.find(e[1]) == m.end()) {                 m[e[1]] = {make_pair(e[1], 1.0)};                 v[e[1]] = false;             }         }         for (int i = 0; i < equations.size(); i++) {             vector<string>& e = equations[i];             m[e[0]].push_back(make_pair(e[1], values[i]));             m[e[1]].push_back(make_pair(e[0], 1.0 / values[i]));         }                  for (auto it = m.begin(); it != m.end(); it++) {             cout << it->first << \": \";             for (auto p : it->second) {                 cout << p.first << \", \" << p.second << \"; \";             }             cout << endl;         }                  vector<double> result;                  // Iterate over queries         for (vector<string>& q : queries) {             if (m.find(q[0]) != m.end() && m.find(q[1]) != m.end()) {                 double factor = dfs(q[0], q[1]);                 result.push_back(factor);             } else {                 result.push_back(-1.0);             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/399-evaluate-division.cpp/Solution/calcEquation(vector<vector<string>>&,vector<double>&,vector<vector<string>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findLonelyPixel(vector<vector<char>>& picture) {         int rows = picture.size();         if (rows == 0) return 0;         int cols = picture[0].size();         vector<int> blackRows(rows, 0);         vector<int> blackCols(cols, 0);         int result = 0;         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (picture[i][j] == 'B') {                     blackRows[i]++;                     blackCols[j]++;                 }             }         }         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (picture[i][j] == 'B' && blackRows[i] == 1 && blackCols[j] == 1) {                     result++;                 }             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findLonelyPixel(vector<vector<char>>& picture) {         int rows = picture.size();         if (rows == 0) return 0;         int cols = picture[0].size();         vector<int> blackRows(rows, 0);         vector<int> blackCols(cols, 0);         int result = 0;         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (picture[i][j] == 'B') {                     blackRows[i]++;                     blackCols[j]++;                 }             }         }         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (picture[i][j] == 'B' && blackRows[i] == 1 && blackCols[j] == 1) {                     result++;                 }             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/531-lonely-pixel-i.cpp/Solution/findLonelyPixel(vector<vector<char>>&)"
+    },
+    {
+        "f": [],
+        "fm": "string reverseStr(string s, int k) {         if (k == 1) return s;         for (int i = 0; i < s.size(); i += 2*k) {             int firstIdx = i;             int lastIdx = i + k - 1 < s.size() ? i + k - 1 : s.size() - 1;             while (firstIdx < lastIdx) {                 swap(s, firstIdx++, lastIdx--);             }         }         return s;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     void swap(string& s, int i, int j) {         char tmp = s[i];         s[i] = s[j];         s[j] = tmp;     }          string reverseStr(string s, int k) {         if (k == 1) return s;         for (int i = 0; i < s.size(); i += 2*k) {             int firstIdx = i;             int lastIdx = i + k - 1 < s.size() ? i + k - 1 : s.size() - 1;             while (firstIdx < lastIdx) {                 swap(s, firstIdx++, lastIdx--);             }         }         return s;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/541-reverse-string-ii.cpp/Solution/reverseStr(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "bool checkRecord(string s) {         int countA = 0;         int countConsecL = 0;         for (int i = 0; i < s.size(); i++) {             if (s[i] == 'P') {                 countConsecL = 0;                 continue;             }             if (s[i] == 'L') {                 countConsecL++;                 if (countConsecL > 2) return false;             } else if (s[i] == 'A') {                 countA++;                 countConsecL = 0;                 if (countA > 1) return false;             }         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool checkRecord(string s) {         int countA = 0;         int countConsecL = 0;         for (int i = 0; i < s.size(); i++) {             if (s[i] == 'P') {                 countConsecL = 0;                 continue;             }             if (s[i] == 'L') {                 countConsecL++;                 if (countConsecL > 2) return false;             } else if (s[i] == 'A') {                 countA++;                 countConsecL = 0;                 if (countA > 1) return false;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/8/551-student-attendance-record-i.cpp/Solution/checkRecord(string)"
+    }
+]

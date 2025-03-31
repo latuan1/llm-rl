@@ -1,0 +1,2077 @@
+[
+    {
+        "f": [],
+        "fm": "int getWinner(vector<int>& arr, int k)      {         int curMax = arr[0];         int times = 0;         for (int i=1; i<arr.size(); i++)         {             if (arr[i]>curMax)             {                 curMax = arr[i];                 times = 1;             }             else             {                 times+=1;             }             if (times == k) return curMax;         }         return curMax;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1535.Find-the-Winner-of-an-Array-Game.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "getWinner(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "arr",
+                                    "virtual_name": "EXPECTED_arr",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/arr",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "arr",
+                                    "virtual_name": "arr",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/arr",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "arr_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/arr/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1631766155"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "arr_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/arr/element #1",
+                                            "correspondingType": "int",
+                                            "value": "372742972"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "-1734568290"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_getWinner_vector_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_getWinner_vector_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1535.Find-the-Winner-of-an-Array-Game.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> arr;\n\n\nint k=-1734568290;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode arr */\nint arr_element0=1631766155;\narr.push_back(arr_element0);\nint arr_element1=372742972;\narr.push_back(arr_element1);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_getWinner_vector_int_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->getWinner(arr,k);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_arr;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1535.Find-the-Winner-of-an-Array-Game.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> arr;\n\n\nint k=-1734568290;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode arr */\nint arr_element0=1631766155;\narr.push_back(arr_element0);\nint arr_element1=372742972;\narr.push_back(arr_element1);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int getWinner(vector<int>& arr, int k)      {         int curMax = arr[0];         int times = 0;         for (int i=1; i<arr.size(); i++)         {             if (arr[i]>curMax)             {                 curMax = arr[i];                 times = 1;             }             else             {                 times+=1;             }             if (times == k) return curMax;         }         return curMax;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1535.Find-the-Winner-of-an-Array-Game.cpp/Solution/getWinner(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int minSwaps(vector<vector<int>>& grid)      {         int n = grid.size();         vector<int>zeros(n);         for (int i=0; i<n; i++)         {             int count = 0;             for (int j=n-1; j>=0; j--)             {                 if (grid[i][j]!=0)                     break;                 count++;             }             zeros[i] = count;                     }                  int count = 0;         for (int i=0; i<n-1; i++)         {             int num = n-1-i;             int j = i;             for (; j<n; j++)             {                 if (zeros[j]>=num)                     break;             }             if (j==n) return -1;             count += j-i;             int temp = zeros[j];             for (int k=j; k>i; k--)                 zeros[k] = zeros[k-1];             zeros[i] = temp;         }                  return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minSwaps(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "EXPECTED_grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "grid_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1878691671"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "426523088"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minSwaps_vector_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_minSwaps_vector_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=-1878691671;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=426523088;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minSwaps_vector_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minSwaps(grid);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_grid;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=-1878691671;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=426523088;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minSwaps(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "EXPECTED_grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "grid_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-798056998"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "475006715"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "grid_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1973855562"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "grid_element2",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #2",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element2_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #2/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "999284014"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element2_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #2/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-2140541947"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "grid_element2_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/grid/element #2/element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "-1948349517"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minSwaps_vector_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_minSwaps_vector_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=-798056998;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=475006715;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\nvector<int> grid_element1;\nint grid_element1_element0=-1973855562;\ngrid_element1.push_back(grid_element1_element0);\ngrid.push_back(grid_element1);\nvector<int> grid_element2;\nint grid_element2_element0=999284014;\ngrid_element2.push_back(grid_element2_element0);\nint grid_element2_element1=-2140541947;\ngrid_element2.push_back(grid_element2_element1);\nint grid_element2_element2=-1948349517;\ngrid_element2.push_back(grid_element2_element2);\ngrid.push_back(grid_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minSwaps_vector_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minSwaps(grid);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_grid;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=-798056998;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=475006715;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\nvector<int> grid_element1;\nint grid_element1_element0=-1973855562;\ngrid_element1.push_back(grid_element1_element0);\ngrid.push_back(grid_element1);\nvector<int> grid_element2;\nint grid_element2_element0=999284014;\ngrid_element2.push_back(grid_element2_element0);\nint grid_element2_element1=-2140541947;\ngrid_element2.push_back(grid_element2_element1);\nint grid_element2_element2=-1948349517;\ngrid_element2.push_back(grid_element2_element2);\ngrid.push_back(grid_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minSwaps(vector<vector<int>>& grid)      {         int n = grid.size();         vector<int>zeros(n);         for (int i=0; i<n; i++)         {             int count = 0;             for (int j=n-1; j>=0; j--)             {                 if (grid[i][j]!=0)                     break;                 count++;             }             zeros[i] = count;                     }                  int count = 0;         for (int i=0; i<n-1; i++)         {             int num = n-1-i;             int j = i;             for (; j<n; j++)             {                 if (zeros[j]>=num)                     break;             }             if (j==n) return -1;             count += j-i;             int temp = zeros[j];             for (int k=j; k>i; k--)                 zeros[k] = zeros[k-1];             zeros[i] = temp;         }                  return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1536.Minimum-Swaps-to-Arrange-a-Binary-Grid.cpp/Solution/minSwaps(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool canConvertString(string s, string t, int k)      {         if (s.size()!=t.size()) return false;         int n = s.size();         vector<int>count(26);                  for (int i=0; i<n; i++)                     count[(t[i]-s[i]+26)%26] += 1;                                  int ret = 0;         for (int i=1; i<26; i++)                 {             if (count[i]>=1)                 ret = max(ret, (count[i]-1)*26+i);                 }         return ret<=k;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1540.Can-Convert-String-in-K-Moves.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1540.Can-Convert-String-in-K-Moves.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "canConvertString(string,string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "t",
+                                    "virtual_name": "EXPECTED_t",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/t",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "62"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "t",
+                                    "virtual_name": "t",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/t",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "t[0]",
+                                            "virtual_name": "t[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/t/t[0]",
+                                            "correspondingType": "char",
+                                            "value": "77"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "1370155429"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_canConvertString_string_string_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_canConvertString_string_string_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1540.Can-Convert-String-in-K-Moves.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName506727 = new char[2];akaRandomName506727[0] = 62;akaRandomName506727[1] = '\\0';string s=akaRandomName506727;\nchar* akaRandomName956408 = new char[2];akaRandomName956408[0] = 77;akaRandomName956408[1] = '\\0';string t=akaRandomName956408;\n\n\nint k=1370155429;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalStringDataNode t */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_canConvertString_string_string_int_random_1\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->canConvertString(s,t,k);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1540.Can-Convert-String-in-K-Moves.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName964185 = new char[2];akaRandomName964185[0] = 62;akaRandomName964185[1] = '\\0';string s=akaRandomName964185;\nchar* akaRandomName772905 = new char[2];akaRandomName772905[0] = 77;akaRandomName772905[1] = '\\0';string t=akaRandomName772905;\n\n\nint k=1370155429;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalStringDataNode t */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool canConvertString(string s, string t, int k)      {         if (s.size()!=t.size()) return false;         int n = s.size();         vector<int>count(26);                  for (int i=0; i<n; i++)                     count[(t[i]-s[i]+26)%26] += 1;                                  int ret = 0;         for (int i=1; i<26; i++)                 {             if (count[i]>=1)                 ret = max(ret, (count[i]-1)*26+i);                 }         return ret<=k;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1540.Can-Convert-String-in-K-Moves.cpp/Solution/canConvertString(string,string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int minInsertions(string s)      {         int count = 0;         int ret = 0;         for (int i=0; i<s.size(); i++)         {             if (s[i]=='(')                 count++;             else             {                 if (i+1<s.size() && s[i+1]==')')                 {                     count--;                     i++;                 }                 else                 {                     count--;                     ret++;                 }             }             if (count<0)             {                 ret++;                 count=0;             }         }         return ret + count*2;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minInsertions(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "120"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minInsertions_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_minInsertions_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName163762 = new char[2];akaRandomName163762[0] = 120;akaRandomName163762[1] = '\\0';string s=akaRandomName163762;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minInsertions_string_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minInsertions(s);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName442814 = new char[2];akaRandomName442814[0] = 120;akaRandomName442814[1] = '\\0';string s=akaRandomName442814;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minInsertions(string s)      {         int count = 0;         int ret = 0;         for (int i=0; i<s.size(); i++)         {             if (s[i]=='(')                 count++;             else             {                 if (i+1<s.size() && s[i+1]==')')                 {                     count--;                     i++;                 }                 else                 {                     count--;                     ret++;                 }             }             if (count<0)             {                 ret++;                 count=0;             }         }         return ret + count*2;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1541.Minimum-Insertions-to-Balance-a-Parentheses-String.cpp/Solution/minInsertions(string)"
+    },
+    {
+        "f": [],
+        "fm": "int maxBoxesInWarehouse(vector<int>& boxes, vector<int>& warehouse)      {         sort(boxes.begin(), boxes.end());         reverse(boxes.begin(), boxes.end());                  int count = 0;         int j = 0;         for (int box: boxes)         {             if (j==warehouse.size()) break;             if (box <= warehouse[j])             {                 j++;                 count++;             }                         }         return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1564.Put-Boxes-Into-the-Warehouse-I.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxBoxesInWarehouse(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "warehouse",
+                                    "virtual_name": "EXPECTED_warehouse",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/warehouse",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "boxes",
+                                    "virtual_name": "EXPECTED_boxes",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/boxes",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "boxes",
+                                    "virtual_name": "boxes",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/boxes",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "boxes_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/boxes/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-545367873"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "boxes_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/boxes/element #1",
+                                            "correspondingType": "int",
+                                            "value": "463635323"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "boxes_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/boxes/element #2",
+                                            "correspondingType": "int",
+                                            "value": "-1614878469"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "warehouse",
+                                    "virtual_name": "warehouse",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/warehouse",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "warehouse_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/warehouse/element #0",
+                                            "correspondingType": "int",
+                                            "value": "435840188"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "warehouse_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/warehouse/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-1355363728"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "warehouse_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/warehouse/element #2",
+                                            "correspondingType": "int",
+                                            "value": "43465750"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxBoxesInWarehouse_vector_int_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_maxBoxesInWarehouse_vector_int_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1564.Put-Boxes-Into-the-Warehouse-I.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> boxes;\nvector<int> warehouse;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode boxes */\nint boxes_element0=-545367873;\nboxes.push_back(boxes_element0);\nint boxes_element1=463635323;\nboxes.push_back(boxes_element1);\nint boxes_element2=-1614878469;\nboxes.push_back(boxes_element2);\n/* VectorDataNode warehouse */\nint warehouse_element0=435840188;\nwarehouse.push_back(warehouse_element0);\nint warehouse_element1=-1355363728;\nwarehouse.push_back(warehouse_element1);\nint warehouse_element2=43465750;\nwarehouse.push_back(warehouse_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxBoxesInWarehouse_vector_int_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxBoxesInWarehouse(boxes,warehouse);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_boxes;\n\nvector<int> EXPECTED_warehouse;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1564.Put-Boxes-Into-the-Warehouse-I.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> boxes;\nvector<int> warehouse;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode boxes */\nint boxes_element0=-545367873;\nboxes.push_back(boxes_element0);\nint boxes_element1=463635323;\nboxes.push_back(boxes_element1);\nint boxes_element2=-1614878469;\nboxes.push_back(boxes_element2);\n/* VectorDataNode warehouse */\nint warehouse_element0=435840188;\nwarehouse.push_back(warehouse_element0);\nint warehouse_element1=-1355363728;\nwarehouse.push_back(warehouse_element1);\nint warehouse_element2=43465750;\nwarehouse.push_back(warehouse_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxBoxesInWarehouse(vector<int>& boxes, vector<int>& warehouse)      {         sort(boxes.begin(), boxes.end());         reverse(boxes.begin(), boxes.end());                  int count = 0;         int j = 0;         for (int box: boxes)         {             if (j==warehouse.size()) break;             if (box <= warehouse[j])             {                 j++;                 count++;             }                         }         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1564.Put-Boxes-Into-the-Warehouse-I.cpp/Solution/maxBoxesInWarehouse(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int getMaxLen(vector<int>& nums)      {         int ret = 0;          for (int i=0; i<nums.size(); i++)         {             if (nums[i]==0) continue;             int j = i;             int count = 0;             int firstNeg = -1;              while (j<nums.size() && nums[j]!=0)             {                 count += (nums[j]<0);                 if (count % 2 ==0)                     ret = max(ret, j-i+1);                 else if (firstNeg!=-1)                     ret = max(ret, j-firstNeg);                  if (firstNeg==-1 && nums[j]<0)                     firstNeg = j;                 j++;             }             i = j;         }         return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "getMaxLen(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-248670862"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-1470630012"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums/element #2",
+                                            "correspondingType": "int",
+                                            "value": "-748934295"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_getMaxLen_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_getMaxLen_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-248670862;\nnums.push_back(nums_element0);\nint nums_element1=-1470630012;\nnums.push_back(nums_element1);\nint nums_element2=-748934295;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_getMaxLen_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->getMaxLen(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-248670862;\nnums.push_back(nums_element0);\nint nums_element1=-1470630012;\nnums.push_back(nums_element1);\nint nums_element2=-748934295;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "getMaxLen(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "242725449"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_getMaxLen_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_getMaxLen_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=242725449;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_getMaxLen_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->getMaxLen(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=242725449;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int getMaxLen(vector<int>& nums)      {         int ret = 0;          for (int i=0; i<nums.size(); i++)         {             if (nums[i]==0) continue;             int j = i;             int count = 0;             int firstNeg = -1;              while (j<nums.size() && nums[j]!=0)             {                 count += (nums[j]<0);                 if (count % 2 ==0)                     ret = max(ret, j-i+1);                 else if (firstNeg!=-1)                     ret = max(ret, j-firstNeg);                  if (firstNeg==-1 && nums[j]<0)                     firstNeg = j;                 j++;             }             i = j;         }         return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1567.Maximum-Length-of-Subarray-With-Positive-Product.cpp/Solution/getMaxLen(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int minCost(string s, vector<int>& cost)      {         int ret = 0;         for (int i=0; i<s.size();)         {             int j=i;             int maxValue = 0;             int sum = 0;             while (j<s.size() && s[j]==s[i])             {                 sum += cost[j];                 maxValue = max(maxValue, cost[j]);                 j++;             }             ret += sum - maxValue;             i = j;         }         return ret;      }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minCost(string,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "cost",
+                                    "virtual_name": "EXPECTED_cost",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/cost",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/s",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-35"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "cost",
+                                    "virtual_name": "cost",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/cost",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "cost_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/cost/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-287570265"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minCost_string_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_minCost_string_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName899772 = new char[2];akaRandomName899772[0] = -35;akaRandomName899772[1] = '\\0';string s=akaRandomName899772;\nvector<int> cost;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* VectorDataNode cost */\nint cost_element0=-287570265;\ncost.push_back(cost_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minCost_string_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minCost(s,cost);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)\");\n\n\nvector<int> EXPECTED_cost;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName355644 = new char[2];akaRandomName355644[0] = -35;akaRandomName355644[1] = '\\0';string s=akaRandomName355644;\nvector<int> cost;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* VectorDataNode cost */\nint cost_element0=-287570265;\ncost.push_back(cost_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minCost(string s, vector<int>& cost)      {         int ret = 0;         for (int i=0; i<s.size();)         {             int j=i;             int maxValue = 0;             int sum = 0;             while (j<s.size() && s[j]==s[i])             {                 sum += cost[j];                 maxValue = max(maxValue, cost[j]);                 j++;             }             ret += sum - maxValue;             i = j;         }         return ret;      } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters.cpp/Solution/minCost(string,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int minimumDeletions(string s)      {         int n = s.size();          vector<int>pre(n);                 pre[0] = (s[0]=='b');         for (int i=1; i<n; i++)             pre[i] = pre[i-1] + (s[i]=='b');                  vector<int>suf(n);         suf[n-1] = (s[n-1]=='a');         for (int i=n-2; i>=0; i--)             suf[i] = suf[i+1] + (s[i]=='a');                  int ret = min(pre[n-1], suf[0]);         for (int i=0; i<n-1; i++)             ret = min(ret, pre[i] + suf[i+1]);                  return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1653.Minimum-Deletions-to-Make-String-Balanced.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minimumDeletions(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "20"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minimumDeletions_string_random_1(void) {\n{\nAKA_test_case_name=\"Solution_minimumDeletions_string_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName209754 = new char[2];akaRandomName209754[0] = 20;akaRandomName209754[1] = '\\0';string s=akaRandomName209754;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minimumDeletions_string_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minimumDeletions(s);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName817791 = new char[2];akaRandomName817791[0] = 20;akaRandomName817791[1] = '\\0';string s=akaRandomName817791;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minimumDeletions(string s)      {         int n = s.size();          vector<int>pre(n);                 pre[0] = (s[0]=='b');         for (int i=1; i<n; i++)             pre[i] = pre[i-1] + (s[i]=='b');                  vector<int>suf(n);         suf[n-1] = (s[n-1]=='a');         for (int i=n-2; i>=0; i--)             suf[i] = suf[i+1] + (s[i]=='a');                  int ret = min(pre[n-1], suf[0]);         for (int i=0; i<n-1; i++)             ret = min(ret, pre[i] + suf[i+1]);                  return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1653.Minimum-Deletions-to-Make-String-Balanced.cpp/Solution/minimumDeletions(string)"
+    },
+    {
+        "f": [],
+        "fm": "bool closeStrings(string word1, string word2)      {         unordered_set<char>Set1;         unordered_set<char>Set2;          vector<int>a(26,0);         vector<int>b(26,0);         for (auto ch:word1)         {             a[ch-'a']+=1;             Set1.insert(ch);         }                     for (auto ch:word2)         {             b[ch-'a']+=1;             Set2.insert(ch);         }                      sort(a.begin(), a.end());         sort(b.begin(), b.end());         return a==b && Set1==Set2;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1657.Determine-if-Two-Strings-Are-Close.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "closeStrings(string,string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "word1",
+                                    "virtual_name": "EXPECTED_word1",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/word1",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "word2",
+                                    "virtual_name": "EXPECTED_word2",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/word2",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "word1",
+                                    "virtual_name": "word1",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/word1",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "word1[0]",
+                                            "virtual_name": "word1[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/word1/word1[0]",
+                                            "correspondingType": "char",
+                                            "value": "-2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "word2",
+                                    "virtual_name": "word2",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/word2",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "word2[0]",
+                                            "virtual_name": "word2[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/word2/word2[0]",
+                                            "correspondingType": "char",
+                                            "value": "19"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_closeStrings_string_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_closeStrings_string_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1657.Determine-if-Two-Strings-Are-Close.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName229220 = new char[2];akaRandomName229220[0] = -2;akaRandomName229220[1] = '\\0';string word1=akaRandomName229220;\nchar* akaRandomName108165 = new char[2];akaRandomName108165[0] = 19;akaRandomName108165[1] = '\\0';string word2=akaRandomName108165;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode word1 */\n/* NormalStringDataNode word2 */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_closeStrings_string_string_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->closeStrings(word1,word2);\nAKA_fCall++;AKA_mark(\"Return from: ./15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1657.Determine-if-Two-Strings-Are-Close.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName578197 = new char[2];akaRandomName578197[0] = -2;akaRandomName578197[1] = '\\0';string word1=akaRandomName578197;\nchar* akaRandomName266169 = new char[2];akaRandomName266169[0] = 19;akaRandomName266169[1] = '\\0';string word2=akaRandomName266169;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode word1 */\n/* NormalStringDataNode word2 */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool closeStrings(string word1, string word2)      {         unordered_set<char>Set1;         unordered_set<char>Set2;          vector<int>a(26,0);         vector<int>b(26,0);         for (auto ch:word1)         {             a[ch-'a']+=1;             Set1.insert(ch);         }                     for (auto ch:word2)         {             b[ch-'a']+=1;             Set2.insert(ch);         }                      sort(a.begin(), a.end());         sort(b.begin(), b.end());         return a==b && Set1==Set2;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/15/1657.Determine-if-Two-Strings-Are-Close.cpp/Solution/closeStrings(string,string)"
+    }
+]

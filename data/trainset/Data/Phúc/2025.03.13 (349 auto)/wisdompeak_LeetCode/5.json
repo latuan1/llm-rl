@@ -1,0 +1,1970 @@
+[
+    {
+        "f": [],
+        "fm": "int countSubarrays(vector<int>& nums, int k)      {         for (auto& x: nums)         {             if (x>k) x=1;             else if (x==k) x=0;             else x=-1;         }                  unordered_map<int, int>oddSum;         unordered_map<int, int>evenSum;                  evenSum[0] = 1;                  int sum = 0;         int ret = 0;         for (int i=0; i<nums.size(); i++)         {             sum += nums[i];             if (i%2==0)             {                 ret += evenSum[sum-0];                 ret += oddSum[sum-1];                 oddSum[sum] += 1;             }             else             {                 ret += oddSum[sum-0];                 ret += evenSum[sum-1];                 evenSum[sum] += 1;             }         }                  return ret;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2488.Count-Subarrays-With-Median-K.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2488.Count-Subarrays-With-Median-K.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "countSubarrays(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1569228278"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-942591592"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/nums/element #2",
+                                            "correspondingType": "int",
+                                            "value": "1347910696"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "106322952"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_countSubarrays_vector_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_countSubarrays_vector_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2488.Count-Subarrays-With-Median-K.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=106322952;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1569228278;\nnums.push_back(nums_element0);\nint nums_element1=-942591592;\nnums.push_back(nums_element1);\nint nums_element2=1347910696;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_countSubarrays_vector_int_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->countSubarrays(nums,k);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2488.Count-Subarrays-With-Median-K.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=106322952;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1569228278;\nnums.push_back(nums_element0);\nint nums_element1=-942591592;\nnums.push_back(nums_element1);\nint nums_element2=1347910696;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int countSubarrays(vector<int>& nums, int k)      {         for (auto& x: nums)         {             if (x>k) x=1;             else if (x==k) x=0;             else x=-1;         }                  unordered_map<int, int>oddSum;         unordered_map<int, int>evenSum;                  evenSum[0] = 1;                  int sum = 0;         int ret = 0;         for (int i=0; i<nums.size(); i++)         {             sum += nums[i];             if (i%2==0)             {                 ret += evenSum[sum-0];                 ret += oddSum[sum-1];                 oddSum[sum] += 1;             }             else             {                 ret += oddSum[sum-0];                 ret += evenSum[sum-1];                 evenSum[sum] += 1;             }         }                  return ret;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2488.Count-Subarrays-With-Median-K.cpp/Solution/countSubarrays(vector<int>&,int)"
+    },
+    {
+        "f": [
+            "map<pair<LL,LL>, int> Map;"
+        ],
+        "fm": "long long fixedRatio(string s, int num1, int num2)      {         Map[{0,0}] = 1;         LL a = 0, b = 0;         LL ret = 0;         for (auto ch: s)         {             if (ch=='0') a++;             else b++;              LL k = min(a/num1, b/num2);             LL x = a-k*num1, y = b-k*num2;              if (Map.find({x,y})!=Map.end())                             ret += Map[{x,y}];                          Map[{x,y}] += 1;                         }          return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2489.Number-of-Substrings-With-Fixed-Ratio.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.MapDataNode",
+                                                    "name": "Map",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Map",
+                                                    "dataType": "map<pair<LL,LL>,int>",
+                                                    "realType": "map<pair<long long,long long>,int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/Map",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<pair<long long,long long>, int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "fixedRatio(string,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "num2",
+                                    "virtual_name": "EXPECTED_num2",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/num2",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "num1",
+                                    "virtual_name": "EXPECTED_num1",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/num1",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-75"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "num1",
+                                    "virtual_name": "num1",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/num1",
+                                    "correspondingType": "int",
+                                    "value": "1650962261"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "num2",
+                                    "virtual_name": "num2",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/num2",
+                                    "correspondingType": "int",
+                                    "value": "-699850079"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_fixedRatio_string_int_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_fixedRatio_string_int_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* MapDataNode Map */\n\n\nchar* akaRandomName37601 = new char[2];akaRandomName37601[0] = -75;akaRandomName37601[1] = '\\0';string s=akaRandomName37601;\n\n\nint num1=1650962261;\n\n\nint num2=-699850079;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode num1 */\n/* NormalNumberDataNode num2 */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_fixedRatio_string_int_int_random_3\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->fixedRatio(s,num1,num2);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* MapDataNode Map */\n\n\nchar* akaRandomName742055 = new char[2];akaRandomName742055[0] = -75;akaRandomName742055[1] = '\\0';string s=akaRandomName742055;\n\n\nint num1=1650962261;\n\n\nint num2=-699850079;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode num1 */\n/* NormalNumberDataNode num2 */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     map<pair<LL,LL>, int>Map; public:     long long fixedRatio(string s, int num1, int num2)      {         Map[{0,0}] = 1;         LL a = 0, b = 0;         LL ret = 0;         for (auto ch: s)         {             if (ch=='0') a++;             else b++;              LL k = min(a/num1, b/num2);             LL x = a-k*num1, y = b-k*num2;              if (Map.find({x,y})!=Map.end())                             ret += Map[{x,y}];                          Map[{x,y}] += 1;                         }          return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2489.Number-of-Substrings-With-Fixed-Ratio.cpp/Solution/fixedRatio(string,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "long long beautifulSubarrays(vector<int>& nums)      {         unordered_map<int,long long>Map;         Map[0] = 1;         int state = 0;         long long ret = 0;         for (int i=0; i<nums.size(); i++)         {             int x = nums[i];             for (int k=0; k<31; k++)             {                 int t = ((x>>k)&1) + ((state>>k)&1);                  t = t%2;                 state = state - (((state>>k)&1)<<k) + (t<<k);             }             ret += Map[state];             Map[state] += 1;                     }                  return ret;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2588.Count-the-Number-of-Beautiful-Subarrays.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "beautifulSubarrays(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "2100960835"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_beautifulSubarrays_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_beautifulSubarrays_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=2100960835;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_beautifulSubarrays_vector_int_random_3\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->beautifulSubarrays(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=2100960835;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long beautifulSubarrays(vector<int>& nums)      {         unordered_map<int,long long>Map;         Map[0] = 1;         int state = 0;         long long ret = 0;         for (int i=0; i<nums.size(); i++)         {             int x = nums[i];             for (int k=0; k<31; k++)             {                 int t = ((x>>k)&1) + ((state>>k)&1);                  t = t%2;                 state = state - (((state>>k)&1)<<k) + (t<<k);             }             ret += Map[state];             Map[state] += 1;                     }                  return ret;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2588.Count-the-Number-of-Beautiful-Subarrays.cpp/Solution/beautifulSubarrays(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "long long beautifulSubarrays(vector<int>& nums)      {         unordered_map<int, LL>Map;          // Map[state] : how many times of state there have been         Map[0] = 1;          int state = 0;         LL ret = 0;         for (int i=0; i<nums.size(); i++)         {             state = state ^ nums[i];             ret += Map[state];             Map[state] += 1;         }          return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "beautifulSubarrays(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1619627154"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_beautifulSubarrays_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_beautifulSubarrays_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1619627154;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_beautifulSubarrays_vector_int_random_1\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->beautifulSubarrays(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1619627154;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long beautifulSubarrays(vector<int>& nums)      {         unordered_map<int, LL>Map;          // Map[state] : how many times of state there have been         Map[0] = 1;          int state = 0;         LL ret = 0;         for (int i=0; i<nums.size(); i++)         {             state = state ^ nums[i];             ret += Map[state];             Map[state] += 1;         }          return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2588.Count-the-Number-of-Beautiful-Subarrays_v2.cpp/Solution/beautifulSubarrays(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "long long countInterestingSubarrays(vector<int>& nums, int modulo, int k)      {         int n = nums.size();         int count = 0;         unordered_map<int,LL>Map;         Map[0]+=1;         LL ret = 0;                  for (int i=0; i<n; i++)         {             count += ((nums[i]%modulo)==k);             int m = count % modulo;             int kk = (m-k+modulo)%modulo;                          ret += Map[kk];             Map[m] += 1;         }                  return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2845.Count-of-Interesting-Subarrays.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2845.Count-of-Interesting-Subarrays.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "countInterestingSubarrays(vector<int>&,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "modulo",
+                                    "virtual_name": "EXPECTED_modulo",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/modulo",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1681965565"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "64553815"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "modulo",
+                                    "virtual_name": "modulo",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/modulo",
+                                    "correspondingType": "int",
+                                    "value": "-180890956"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "-24886861"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_countInterestingSubarrays_vector_int_int_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_countInterestingSubarrays_vector_int_int_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2845.Count-of-Interesting-Subarrays.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint modulo=-180890956;\n\n\nint k=-24886861;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1681965565;\nnums.push_back(nums_element0);\nint nums_element1=64553815;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode modulo */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_countInterestingSubarrays_vector_int_int_int_random_3\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->countInterestingSubarrays(nums,modulo,k);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2845.Count-of-Interesting-Subarrays.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint modulo=-180890956;\n\n\nint k=-24886861;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1681965565;\nnums.push_back(nums_element0);\nint nums_element1=64553815;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode modulo */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long countInterestingSubarrays(vector<int>& nums, int modulo, int k)      {         int n = nums.size();         int count = 0;         unordered_map<int,LL>Map;         Map[0]+=1;         LL ret = 0;                  for (int i=0; i<n; i++)         {             count += ((nums[i]%modulo)==k);             int m = count % modulo;             int kk = (m-k+modulo)%modulo;                          ret += Map[kk];             Map[m] += 1;         }                  return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2845.Count-of-Interesting-Subarrays.cpp/Solution/countInterestingSubarrays(vector<int>&,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int minSizeSubarray(vector<int>& nums, int target)      {         LL total  = accumulate(nums.begin(), nums.end(), 0LL);          int n = nums.size();         for (int i=0; i<n; i++)             nums.push_back(nums[i]);          vector<LL>presum(2*n, 0);         presum[0] = nums[0];         for (int i=1; i<2*n; i++)             presum[i] = presum[i-1] +  nums[i];          LL ret = INT_MAX/2;          unordered_map<LL, int>Map; // presum module, index         Map[0] = -1;         for (int i=0; i<2*n; i++)         {             LL r = ((presum[i] - target) % total + total) % total;              if (Map.find(r)!=Map.end())             {                 int j = Map[r];                 LL k = ((j==-1? 0: presum[j]) - presum[i] + target) / total;                 ret = min(ret, i-j+k*n);             }              Map[presum[i]%total] = i;         }          if (ret == INT_MAX/2) return -1;         else return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2875.Minimum-Size-Subarray-in-Infinite-Array.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minSizeSubarray(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)/target",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1210749115"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)/target",
+                                    "correspondingType": "int",
+                                    "value": "1438588647"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minSizeSubarray_vector_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_minSizeSubarray_vector_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint target=1438588647;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1210749115;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minSizeSubarray_vector_int_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minSizeSubarray(nums,target);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint target=1438588647;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1210749115;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minSizeSubarray(vector<int>& nums, int target)      {         LL total  = accumulate(nums.begin(), nums.end(), 0LL);          int n = nums.size();         for (int i=0; i<n; i++)             nums.push_back(nums[i]);          vector<LL>presum(2*n, 0);         presum[0] = nums[0];         for (int i=1; i<2*n; i++)             presum[i] = presum[i-1] +  nums[i];          LL ret = INT_MAX/2;          unordered_map<LL, int>Map; // presum module, index         Map[0] = -1;         for (int i=0; i<2*n; i++)         {             LL r = ((presum[i] - target) % total + total) % total;              if (Map.find(r)!=Map.end())             {                 int j = Map[r];                 LL k = ((j==-1? 0: presum[j]) - presum[i] + target) / total;                 ret = min(ret, i-j+k*n);             }              Map[presum[i]%total] = i;         }          if (ret == INT_MAX/2) return -1;         else return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2875.Minimum-Size-Subarray-in-Infinite-Array.cpp/Solution/minSizeSubarray(vector<int>&,int)"
+    },
+    {
+        "f": [
+            "unordered_set<char> Set = {'a','e','i','o','u' };"
+        ],
+        "fm": "vector<int>Eratosthenes(int n)     {         vector<int>q(n+1,0);         vector<int>primes;         for (int i=2; i<=sqrt(n); i++)         {             if (q[i]==1) continue;             int j=i*2;             while (j<=n)             {                 q[j]=1;                 j+=i;             }         }                 for (int i=2; i<=n; i++)         {             if (q[i]==0)                 primes.push_back(i);                         }         return primes;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2949.Count-Beautiful-Substrings-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2949.Count-Beautiful-Substrings-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedSetDataNode",
+                                                    "name": "Set",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Set",
+                                                    "dataType": "unordered_set<char>",
+                                                    "realType": "unordered_set<char>",
+                                                    "external": false,
+                                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Set",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "char"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "Eratosthenes(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)/n",
+                                    "correspondingType": "int",
+                                    "value": "9"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_Eratosthenes_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_Eratosthenes_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\n\n\nint n=9;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_Eratosthenes_int_random_0\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->Eratosthenes(n);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\n\n\nint n=9;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     unordered_set<char>Set = {'a','e','i','o','u' };      public:     vector<int>Eratosthenes(int n)     {         vector<int>q(n+1,0);         vector<int>primes;         for (int i=2; i<=sqrt(n); i++)         {             if (q[i]==1) continue;             int j=i*2;             while (j<=n)             {                 q[j]=1;                 j+=i;             }         }                 for (int i=2; i<=n; i++)         {             if (q[i]==0)                 primes.push_back(i);                         }         return primes;     }      long long beautifulSubstrings(string s, int k)      {         vector<int>primes = Eratosthenes(k);         int m = 1;         for (int p:primes)         {             int count = 0;             while (k%p==0)             {                 count++;                 k/=p;             }             if (count!=0 && count%2==1)                 m *= pow(p, (count+1)/2);             else if (count!=0 && count%2==0)                 m *= pow(p, count/2);         }         m*=2;          int n = s.size();         s.insert(s.begin(), '#');         int ret = 0;                  map<int, unordered_map<int,int>>Map;         Map[0][0]=1;                  int count = 0;                  for (int i=1; i<=n; i++)         {             if (Set.find(s[i])!=Set.end())                 count++;             else                 count--;              if (Map.find(count)!=Map.end() && Map[count].find(i%m)!=Map[count].end())                 ret += Map[count][i%m];                          Map[count][i%m]+=1;         }                  return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Eratosthenes(int)"
+    },
+    {
+        "f": [
+            "unordered_set<char> Set = {'a','e','i','o','u' };"
+        ],
+        "fm": "long long beautifulSubstrings(string s, int k)      {         vector<int>primes = Eratosthenes(k);         int m = 1;         for (int p:primes)         {             int count = 0;             while (k%p==0)             {                 count++;                 k/=p;             }             if (count!=0 && count%2==1)                 m *= pow(p, (count+1)/2);             else if (count!=0 && count%2==0)                 m *= pow(p, count/2);         }         m*=2;          int n = s.size();         s.insert(s.begin(), '#');         int ret = 0;                  map<int, unordered_map<int,int>>Map;         Map[0][0]=1;                  int count = 0;                  for (int i=1; i<=n; i++)         {             if (Set.find(s[i])!=Set.end())                 count++;             else                 count--;              if (Map.find(count)!=Map.end() && Map[count].find(i%m)!=Map[count].end())                 ret += Map[count][i%m];                          Map[count][i%m]+=1;         }                  return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2949.Count-Beautiful-Substrings-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2949.Count-Beautiful-Substrings-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedSetDataNode",
+                                                    "name": "Set",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Set",
+                                                    "dataType": "unordered_set<char>",
+                                                    "realType": "unordered_set<char>",
+                                                    "external": false,
+                                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Set",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "char"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "beautifulSubstrings(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "3"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_beautifulSubstrings_string_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_beautifulSubstrings_string_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\nchar* akaRandomName544551 = new char[2];akaRandomName544551[0] = -3;akaRandomName544551[1] = '\\0';string s=akaRandomName544551;\n\n\nint k=3;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_beautifulSubstrings_string_int_random_4\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->beautifulSubstrings(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\nchar* akaRandomName687706 = new char[2];akaRandomName687706[0] = -3;akaRandomName687706[1] = '\\0';string s=akaRandomName687706;\n\n\nint k=3;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2949.Count-Beautiful-Substrings-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2949.Count-Beautiful-Substrings-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedSetDataNode",
+                                                    "name": "Set",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Set",
+                                                    "dataType": "unordered_set<char>",
+                                                    "realType": "unordered_set<char>",
+                                                    "external": false,
+                                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Set",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "char"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "beautifulSubstrings(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "9"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_beautifulSubstrings_string_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_beautifulSubstrings_string_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\nchar* akaRandomName757848 = new char[2];akaRandomName757848[0] = 4;akaRandomName757848[1] = '\\0';string s=akaRandomName757848;\n\n\nint k=9;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_beautifulSubstrings_string_int_random_0\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->beautifulSubstrings(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\nchar* akaRandomName877326 = new char[2];akaRandomName877326[0] = 4;akaRandomName877326[1] = '\\0';string s=akaRandomName877326;\n\n\nint k=9;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2949.Count-Beautiful-Substrings-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2949.Count-Beautiful-Substrings-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedSetDataNode",
+                                                    "name": "Set",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Set",
+                                                    "dataType": "unordered_set<char>",
+                                                    "realType": "unordered_set<char>",
+                                                    "external": false,
+                                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/Set",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "char"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "beautifulSubstrings(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "101"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_beautifulSubstrings_string_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_beautifulSubstrings_string_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\nchar* akaRandomName588617 = new char[2];akaRandomName588617[0] = 101;akaRandomName588617[1] = '\\0';string s=akaRandomName588617;\n\n\nint k=0;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_beautifulSubstrings_string_int_random_2\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->beautifulSubstrings(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2949.Count-Beautiful-Substrings-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedSetDataNode Set */\n\n\nchar* akaRandomName245006 = new char[2];akaRandomName245006[0] = 101;akaRandomName245006[1] = '\\0';string s=akaRandomName245006;\n\n\nint k=0;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     unordered_set<char>Set = {'a','e','i','o','u' };      public:     vector<int>Eratosthenes(int n)     {         vector<int>q(n+1,0);         vector<int>primes;         for (int i=2; i<=sqrt(n); i++)         {             if (q[i]==1) continue;             int j=i*2;             while (j<=n)             {                 q[j]=1;                 j+=i;             }         }                 for (int i=2; i<=n; i++)         {             if (q[i]==0)                 primes.push_back(i);                         }         return primes;     }      long long beautifulSubstrings(string s, int k)      {         vector<int>primes = Eratosthenes(k);         int m = 1;         for (int p:primes)         {             int count = 0;             while (k%p==0)             {                 count++;                 k/=p;             }             if (count!=0 && count%2==1)                 m *= pow(p, (count+1)/2);             else if (count!=0 && count%2==0)                 m *= pow(p, count/2);         }         m*=2;          int n = s.size();         s.insert(s.begin(), '#');         int ret = 0;                  map<int, unordered_map<int,int>>Map;         Map[0][0]=1;                  int count = 0;                  for (int i=1; i<=n; i++)         {             if (Set.find(s[i])!=Set.end())                 count++;             else                 count--;              if (Map.find(count)!=Map.end() && Map[count].find(i%m)!=Map[count].end())                 ret += Map[count][i%m];                          Map[count][i%m]+=1;         }                  return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2949.Count-Beautiful-Substrings-II.cpp/Solution/beautifulSubstrings(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int countDivisibleSubstrings(string word)      {         int n = word.size();         word = \"#\"+word;         vector<int>presum(n+1);         for (int i=1; i<=n; i++)             presum[i] = presum[i-1] + ((word[i]-'a'+1)/3+1);          map<int, map<int,int>>Map;         for (int m=1; m<=9; m++)             Map[m][0] = 1;          int ret = 0;         for (int j=1; j<=n; j++)         {             for (int m = 1; m <=9; m++)             {                 int key = presum[j] - m*j;                 if (Map.find(m)!=Map.end() && Map[m].find(key)!=Map[m].end())                     ret += Map[m][key];                 Map[m][key]+=1;             }         }          return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2950.Number-of-Divisible-Substrings.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./5/2950.Number-of-Divisible-Substrings.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "countDivisibleSubstrings(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "word",
+                                    "virtual_name": "EXPECTED_word",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)/word",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "word",
+                                    "virtual_name": "word",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)/word",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "word[0]",
+                                            "virtual_name": "word[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)/word/word[0]",
+                                            "correspondingType": "char",
+                                            "value": "108"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_countDivisibleSubstrings_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_countDivisibleSubstrings_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2950.Number-of-Divisible-Substrings.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName721202 = new char[2];akaRandomName721202[0] = 108;akaRandomName721202[1] = '\\0';string word=akaRandomName721202;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode word */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_countDivisibleSubstrings_string_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->countDivisibleSubstrings(word);\nAKA_fCall++;AKA_mark(\"Return from: ./5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2950.Number-of-Divisible-Substrings.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName246530 = new char[2];akaRandomName246530[0] = 108;akaRandomName246530[1] = '\\0';string word=akaRandomName246530;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode word */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int countDivisibleSubstrings(string word)      {         int n = word.size();         word = \"#\"+word;         vector<int>presum(n+1);         for (int i=1; i<=n; i++)             presum[i] = presum[i-1] + ((word[i]-'a'+1)/3+1);          map<int, map<int,int>>Map;         for (int m=1; m<=9; m++)             Map[m][0] = 1;          int ret = 0;         for (int j=1; j<=n; j++)         {             for (int m = 1; m <=9; m++)             {                 int key = presum[j] - m*j;                 if (Map.find(m)!=Map.end() && Map[m].find(key)!=Map[m].end())                     ret += Map[m][key];                 Map[m][key]+=1;             }         }          return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/5/2950.Number-of-Divisible-Substrings.cpp/Solution/countDivisibleSubstrings(string)"
+    }
+]

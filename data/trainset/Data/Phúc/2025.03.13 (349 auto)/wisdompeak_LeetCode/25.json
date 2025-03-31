@@ -1,0 +1,2103 @@
+[
+    {
+        "f": [],
+        "fm": "int findMinimumTime(vector<vector<int>>& tasks)      {         sort(tasks.begin(), tasks.end(), [](vector<int>&a, vector<int>&b){             return a[1] < b[1];         });          vector<int>time(2005);         for (int i=0; i<tasks.size(); i++)         {             int start = tasks[i][0], end = tasks[i][1], duration = tasks[i][2];             int overlap = 0;             for (int t=start; t<=end; t++)                 overlap += (time[t]==1);              if (overlap >= duration) continue;             int diff = duration - overlap;             for (int t=end; t>=start; t--)             {                 if (time[t]==0)                 {                     time[t] = 1;                     diff--;                 }                 if (diff == 0)                     break;             }         }          int ret = 0;         for (int t=0; t<=2000; t++)             ret += (time[t]==1);         return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findMinimumTime(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "tasks",
+                                    "virtual_name": "EXPECTED_tasks",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "tasks",
+                                    "virtual_name": "tasks",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "tasks_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "tasks_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "774271883"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "tasks_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-1700164766"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "tasks_element0_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0/element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "1389320835"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findMinimumTime_vector_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_findMinimumTime_vector_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> tasks;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode tasks */\nvector<int> tasks_element0;\nint tasks_element0_element0=774271883;\ntasks_element0.push_back(tasks_element0_element0);\nint tasks_element0_element1=-1700164766;\ntasks_element0.push_back(tasks_element0_element1);\nint tasks_element0_element2=1389320835;\ntasks_element0.push_back(tasks_element0_element2);\ntasks.push_back(tasks_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findMinimumTime_vector_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findMinimumTime(tasks);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_tasks;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> tasks;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode tasks */\nvector<int> tasks_element0;\nint tasks_element0_element0=774271883;\ntasks_element0.push_back(tasks_element0_element0);\nint tasks_element0_element1=-1700164766;\ntasks_element0.push_back(tasks_element0_element1);\nint tasks_element0_element2=1389320835;\ntasks_element0.push_back(tasks_element0_element2);\ntasks.push_back(tasks_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findMinimumTime(vector<vector<int>>& tasks)      {         sort(tasks.begin(), tasks.end(), [](vector<int>&a, vector<int>&b){             return a[1] < b[1];         });          vector<int>time(2005);         for (int i=0; i<tasks.size(); i++)         {             int start = tasks[i][0], end = tasks[i][1], duration = tasks[i][2];             int overlap = 0;             for (int t=start; t<=end; t++)                 overlap += (time[t]==1);              if (overlap >= duration) continue;             int diff = duration - overlap;             for (int t=end; t>=start; t--)             {                 if (time[t]==0)                 {                     time[t] = 1;                     diff--;                 }                 if (diff == 0)                     break;             }         }          int ret = 0;         for (int t=0; t<=2000; t++)             ret += (time[t]==1);         return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2589.Minimum-Time-to-Complete-All-Tasks_v1.cpp/Solution/findMinimumTime(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findMinimumTime(vector<vector<int>>& tasks)      {         sort(tasks.begin(), tasks.end(), [](vector<int>&a, vector<int>&b){             return a[1] < b[1];         });          vector<AI3>arr;            arr.push_back({-2,-1,0});          for (int i=0; i<tasks.size(); i++)         {             int start = tasks[i][0], end = tasks[i][1], duration = tasks[i][2];              auto iter = lower_bound(arr.begin(), arr.end(), AI3({start,0,0}));             iter = prev(iter);              int overlap;             if ((*iter)[1] < start)                 overlap = arr.back()[2] - (*iter)[2];             else                 overlap = arr.back()[2] - (*iter)[2] + abs((*iter)[1] - start + 1);              int diff = duration - overlap;             int cur = end;             while (diff > 0)             {                 if (abs(arr.back()[1] - cur) < diff)                 {                     diff -= abs(arr.back()[1] - cur);                     cur = arr.back()[0] - 1;                     arr.pop_back();                 }                 else                 {                     arr.push_back({cur-diff+1, end, arr.back()[2] + end-(cur-diff)});                     diff = 0;                 }             }         }          return arr.back()[2];     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findMinimumTime(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "tasks",
+                                    "virtual_name": "EXPECTED_tasks",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "tasks",
+                                    "virtual_name": "tasks",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "tasks_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "tasks_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "777883995"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "tasks_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-844740108"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "tasks_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "tasks_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1344011788"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "tasks_element1_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/tasks/element #1/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-2115418211"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findMinimumTime_vector_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_findMinimumTime_vector_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> tasks;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode tasks */\nvector<int> tasks_element0;\nint tasks_element0_element0=777883995;\ntasks_element0.push_back(tasks_element0_element0);\nint tasks_element0_element1=-844740108;\ntasks_element0.push_back(tasks_element0_element1);\ntasks.push_back(tasks_element0);\nvector<int> tasks_element1;\nint tasks_element1_element0=-1344011788;\ntasks_element1.push_back(tasks_element1_element0);\nint tasks_element1_element1=-2115418211;\ntasks_element1.push_back(tasks_element1_element1);\ntasks.push_back(tasks_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findMinimumTime_vector_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findMinimumTime(tasks);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_tasks;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> tasks;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode tasks */\nvector<int> tasks_element0;\nint tasks_element0_element0=777883995;\ntasks_element0.push_back(tasks_element0_element0);\nint tasks_element0_element1=-844740108;\ntasks_element0.push_back(tasks_element0_element1);\ntasks.push_back(tasks_element0);\nvector<int> tasks_element1;\nint tasks_element1_element0=-1344011788;\ntasks_element1.push_back(tasks_element1_element0);\nint tasks_element1_element1=-2115418211;\ntasks_element1.push_back(tasks_element1_element1);\ntasks.push_back(tasks_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findMinimumTime(vector<vector<int>>& tasks)      {         sort(tasks.begin(), tasks.end(), [](vector<int>&a, vector<int>&b){             return a[1] < b[1];         });          vector<AI3>arr;            arr.push_back({-2,-1,0});          for (int i=0; i<tasks.size(); i++)         {             int start = tasks[i][0], end = tasks[i][1], duration = tasks[i][2];              auto iter = lower_bound(arr.begin(), arr.end(), AI3({start,0,0}));             iter = prev(iter);              int overlap;             if ((*iter)[1] < start)                 overlap = arr.back()[2] - (*iter)[2];             else                 overlap = arr.back()[2] - (*iter)[2] + abs((*iter)[1] - start + 1);              int diff = duration - overlap;             int cur = end;             while (diff > 0)             {                 if (abs(arr.back()[1] - cur) < diff)                 {                     diff -= abs(arr.back()[1] - cur);                     cur = arr.back()[0] - 1;                     arr.pop_back();                 }                 else                 {                     arr.push_back({cur-diff+1, end, arr.back()[2] + end-(cur-diff)});                     diff = 0;                 }             }         }          return arr.back()[2];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2589.Minimum-Time-to-Complete-All-Tasks_v2.cpp/Solution/findMinimumTime(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findSmallestInteger(vector<int>& nums, int value)      {         vector<int>count(value);                  for (int& x: nums)         {             x = ((x%value)+value) % value;             count[x] += 1;         }                  int min_count = INT_MAX;         int k;                  for (int i=0; i<value; i++)         {             if (count[i]<min_count)             {                 min_count = count[i];                 k = i;             }                     }                  return min_count*value + k;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findSmallestInteger(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "value",
+                                    "virtual_name": "EXPECTED_value",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/value",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "2082765341"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1874187401"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/nums/element #2",
+                                            "correspondingType": "int",
+                                            "value": "1150221575"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "value",
+                                    "virtual_name": "value",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/value",
+                                    "correspondingType": "int",
+                                    "value": "10"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findSmallestInteger_vector_int_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_findSmallestInteger_vector_int_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint value=10;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=2082765341;\nnums.push_back(nums_element0);\nint nums_element1=1874187401;\nnums.push_back(nums_element1);\nint nums_element2=1150221575;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode value */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findSmallestInteger_vector_int_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findSmallestInteger(nums,value);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint value=10;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=2082765341;\nnums.push_back(nums_element0);\nint nums_element1=1874187401;\nnums.push_back(nums_element1);\nint nums_element2=1150221575;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode value */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findSmallestInteger(vector<int>& nums, int value)      {         vector<int>count(value);                  for (int& x: nums)         {             x = ((x%value)+value) % value;             count[x] += 1;         }                  int min_count = INT_MAX;         int k;                  for (int i=0; i<value; i++)         {             if (count[i]<min_count)             {                 min_count = count[i];                 k = i;             }                     }                  return min_count*value + k;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2598.Smallest-Missing-Non-negative-Integer-After-Operations.cpp/Solution/findSmallestInteger(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "string smallestBeautifulString(string s, int k)      {         string original = s;         int n = s.size();         int flag = 0;         for (int i=n-1; i>=0; i--)         {             for (char ch=s[i]+1; ch<'a'+k; ch++)             {                 if (!checkOK(s, i, ch)) continue;                 s[i] = ch;                  for (int j=i+1; j<n; j++)                 {                     for (char c='a'; c<'a'+k; c++)                     {                         if (checkOK(s, j, c))                         {                             s[j] = c;                             break;                         }                     }                 }                  flag = 1;                 break;             }             if (flag) break;         }          if (s==original) return \"\";         return s;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2663.Lexicographically-Smallest-Beautiful-String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "smallestBeautifulString(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-63"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "8"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_smallestBeautifulString_string_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_smallestBeautifulString_string_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2663.Lexicographically-Smallest-Beautiful-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName729984 = new char[2];akaRandomName729984[0] = -63;akaRandomName729984[1] = '\\0';string s=akaRandomName729984;\n\n\nint k=8;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_smallestBeautifulString_string_int_random_1\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->smallestBeautifulString(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2663.Lexicographically-Smallest-Beautiful-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName609838 = new char[2];akaRandomName609838[0] = -63;akaRandomName609838[1] = '\\0';string s=akaRandomName609838;\n\n\nint k=8;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string smallestBeautifulString(string s, int k)      {         string original = s;         int n = s.size();         int flag = 0;         for (int i=n-1; i>=0; i--)         {             for (char ch=s[i]+1; ch<'a'+k; ch++)             {                 if (!checkOK(s, i, ch)) continue;                 s[i] = ch;                  for (int j=i+1; j<n; j++)                 {                     for (char c='a'; c<'a'+k; c++)                     {                         if (checkOK(s, j, c))                         {                             s[j] = c;                             break;                         }                     }                 }                  flag = 1;                 break;             }             if (flag) break;         }          if (s==original) return \"\";         return s;     }      bool checkOK(string&s, int i, char ch)     {         if (i>=1 && s[i-1]==ch) return false;         if (i>=2 && s[i-2]==ch) return false;         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/smallestBeautifulString(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "bool checkOK(string&s, int i, char ch)     {         if (i>=1 && s[i-1]==ch) return false;         if (i>=2 && s[i-2]==ch) return false;         return true;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2663.Lexicographically-Smallest-Beautiful-String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "checkOK(string&,int,char)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/s",
+                                    "correspondingType": "string&",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                    "name": "ch",
+                                    "virtual_name": "EXPECTED_ch",
+                                    "dataType": "char",
+                                    "realType": "char",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/ch",
+                                    "correspondingType": "char",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "i",
+                                    "virtual_name": "EXPECTED_i",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/i",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/s",
+                                    "correspondingType": "string&",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "36"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "i",
+                                    "virtual_name": "i",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/i",
+                                    "correspondingType": "int",
+                                    "value": "-2045787784"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                    "name": "ch",
+                                    "virtual_name": "ch",
+                                    "dataType": "char",
+                                    "realType": "char",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/ch",
+                                    "correspondingType": "char",
+                                    "value": "-115"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_checkOK_string_int_char_random_2(void) {\n{\nAKA_test_case_name=\"Solution_checkOK_string_int_char_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2663.Lexicographically-Smallest-Beautiful-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName67626 = new char[2];akaRandomName67626[0] = 36;akaRandomName67626[1] = '\\0';string s=akaRandomName67626;\n\n\nint i=-2045787784;\n\nchar ch=-115;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode i */\n/* NormalCharacterDataNode ch */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_checkOK_string_int_char_random_2\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->checkOK(s,i,ch);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2663.Lexicographically-Smallest-Beautiful-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName510692 = new char[2];akaRandomName510692[0] = 36;akaRandomName510692[1] = '\\0';string s=akaRandomName510692;\n\n\nint i=-2045787784;\n\nchar ch=-115;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode i */\n/* NormalCharacterDataNode ch */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string smallestBeautifulString(string s, int k)      {         string original = s;         int n = s.size();         int flag = 0;         for (int i=n-1; i>=0; i--)         {             for (char ch=s[i]+1; ch<'a'+k; ch++)             {                 if (!checkOK(s, i, ch)) continue;                 s[i] = ch;                  for (int j=i+1; j<n; j++)                 {                     for (char c='a'; c<'a'+k; c++)                     {                         if (checkOK(s, j, c))                         {                             s[j] = c;                             break;                         }                     }                 }                  flag = 1;                 break;             }             if (flag) break;         }          if (s==original) return \"\";         return s;     }      bool checkOK(string&s, int i, char ch)     {         if (i>=1 && s[i-1]==ch) return false;         if (i>=2 && s[i-2]==ch) return false;         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2663.Lexicographically-Smallest-Beautiful-String.cpp/Solution/checkOK(string&,int,char)"
+    },
+    {
+        "f": [],
+        "fm": "long long minimumCost(string s)      {         int n = s.size();         long long ret = 0;         for (int i=1; i<n; i++)         {             if (s[i-1]!=s[i])                 ret += min(i, n-i);         }         return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minimumCost(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "38"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minimumCost_string_random_1(void) {\n{\nAKA_test_case_name=\"Solution_minimumCost_string_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName341767 = new char[2];akaRandomName341767[0] = 38;akaRandomName341767[1] = '\\0';string s=akaRandomName341767;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minimumCost_string_random_1\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minimumCost(s);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName948551 = new char[2];akaRandomName948551[0] = 38;akaRandomName948551[1] = '\\0';string s=akaRandomName948551;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long minimumCost(string s)      {         int n = s.size();         long long ret = 0;         for (int i=1; i<n; i++)         {             if (s[i-1]!=s[i])                 ret += min(i, n-i);         }         return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v1.cpp/Solution/minimumCost(string)"
+    },
+    {
+        "f": [],
+        "fm": "long long minimumCost(string s)      {         LL ret1 = solve(s);         for (int i=0; i<s.size(); i++)             if (s[i]=='1')                 s[i]='0';             else                 s[i]='1';         LL ret2 = solve(s);         return min(ret1,ret2);     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minimumCost(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-92"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minimumCost_string_random_2(void) {\n{\nAKA_test_case_name=\"Solution_minimumCost_string_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName872451 = new char[2];akaRandomName872451[0] = -92;akaRandomName872451[1] = '\\0';string s=akaRandomName872451;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minimumCost_string_random_2\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minimumCost(s);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName74188 = new char[2];akaRandomName74188[0] = -92;akaRandomName74188[1] = '\\0';string s=akaRandomName74188;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long minimumCost(string s)      {         LL ret1 = solve(s);         for (int i=0; i<s.size(); i++)             if (s[i]=='1')                 s[i]='0';             else                 s[i]='1';         LL ret2 = solve(s);         return min(ret1,ret2);     }          LL solve(string s)     {         int total = 0;         int n = s.size();         for (int i=0; i<n; i++)             total += (s[i]=='1');                  vector<LL>left(n);         int lastOne = -1;         LL sum = 0;         for (int i=0; i<n; i++)         {             if (s[i]=='0')             {                 left[i] = sum;                 continue;                             }                          if (i>=1 && s[i-1]=='1')                 sum = sum+1;             else                 sum += (i+1) + i;              left[i] = sum;             lastOne = i;         }                  vector<LL>right(n);         lastOne = n;         sum = 0;         for (int i=n-1; i>=0; i--)         {             if (s[i]=='0')             {                 right[i] = sum;                 continue;                             }                          if (i+1<n && s[i+1]=='1')                 sum  = sum+1;             else                 sum += (n-i) + (n-i-1);             right[i] = sum;             lastOne = i;         }                  LL ret = right[0];         for (int i=0; i<n-1; i++)             ret = min(ret, left[i]+right[i+1]);         return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/minimumCost(string)"
+    },
+    {
+        "f": [],
+        "fm": "LL solve(string s)     {         int total = 0;         int n = s.size();         for (int i=0; i<n; i++)             total += (s[i]=='1');                  vector<LL>left(n);         int lastOne = -1;         LL sum = 0;         for (int i=0; i<n; i++)         {             if (s[i]=='0')             {                 left[i] = sum;                 continue;                             }                          if (i>=1 && s[i-1]=='1')                 sum = sum+1;             else                 sum += (i+1) + i;              left[i] = sum;             lastOne = i;         }                  vector<LL>right(n);         lastOne = n;         sum = 0;         for (int i=n-1; i>=0; i--)         {             if (s[i]=='0')             {                 right[i] = sum;                 continue;                             }                          if (i+1<n && s[i+1]=='1')                 sum  = sum+1;             else                 sum += (n-i) + (n-i-1);             right[i] = sum;             lastOne = i;         }                  LL ret = right[0];         for (int i=0; i<n-1; i++)             ret = min(ret, left[i]+right[i+1]);         return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "solve(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "LL",
+                            "realType": "long long",
+                            "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)/RETURN",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_solve_string_random_3(void) {\n{\nAKA_test_case_name=\"Solution_solve_string_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName739717 = new char[2];akaRandomName739717[0] = 9;akaRandomName739717[1] = '\\0';string s=akaRandomName739717;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_solve_string_random_3\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->solve(s);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName331163 = new char[2];akaRandomName331163[0] = 9;akaRandomName331163[1] = '\\0';string s=akaRandomName331163;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long minimumCost(string s)      {         LL ret1 = solve(s);         for (int i=0; i<s.size(); i++)             if (s[i]=='1')                 s[i]='0';             else                 s[i]='1';         LL ret2 = solve(s);         return min(ret1,ret2);     }          LL solve(string s)     {         int total = 0;         int n = s.size();         for (int i=0; i<n; i++)             total += (s[i]=='1');                  vector<LL>left(n);         int lastOne = -1;         LL sum = 0;         for (int i=0; i<n; i++)         {             if (s[i]=='0')             {                 left[i] = sum;                 continue;                             }                          if (i>=1 && s[i-1]=='1')                 sum = sum+1;             else                 sum += (i+1) + i;              left[i] = sum;             lastOne = i;         }                  vector<LL>right(n);         lastOne = n;         sum = 0;         for (int i=n-1; i>=0; i--)         {             if (s[i]=='0')             {                 right[i] = sum;                 continue;                             }                          if (i+1<n && s[i+1]=='1')                 sum  = sum+1;             else                 sum += (n-i) + (n-i-1);             right[i] = sum;             lastOne = i;         }                  LL ret = right[0];         for (int i=0; i<n-1; i++)             ret = min(ret, left[i]+right[i+1]);         return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2712.Minimum-Cost-to-Make-All-Characters-Equal_v2.cpp/Solution/solve(string)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> goodSubsetofBinaryMatrix(vector<vector<int>>& grid)      {         int m = grid.size(), n = grid[0].size();         unordered_map<int,vector<int>>Map;         for (int i=0; i<m; i++)         {             int state = 0;             for (int j=0; j<n; j++)                 if (grid[i][j])                     state += (1<<j);             Map[state].push_back(i);             if (state == 0)                 return {i};                             }                  for (int i=0; i<m; i++)         {             int state = 0;             for (int j=0; j<n; j++)                 if (grid[i][j])                     state += (1<<j);                          for (int s = 0; s<(1<<5); s++)             {                 int flag = 1;                 for (int j=0; j<n; j++)                 {                     if (grid[i][j]==1 && ((s>>j)&1))                     {                         flag = 0;                         break;                     }                 }                 if (flag==0) continue;                 if (Map[s].size()==0) continue;                                  for (int k: Map[s])                 {                     if (k!=i)                     {                         vector<int>rets({i,k});                         sort(rets.begin(), rets.end());                         return rets;                     }                 }             }                     }                  return {};     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2732.Find-a-Good-Subset-of-the-Matrix.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "EXPECTED_grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "grid_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "344172555"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "1522855008"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "grid_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "655072183"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "grid_element2",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #2",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element2_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #2/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1019234746"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element2_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #2/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-1209541845"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_goodSubsetofBinaryMatrix_vector_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_goodSubsetofBinaryMatrix_vector_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2732.Find-a-Good-Subset-of-the-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=344172555;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=1522855008;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\nvector<int> grid_element1;\nint grid_element1_element0=655072183;\ngrid_element1.push_back(grid_element1_element0);\ngrid.push_back(grid_element1);\nvector<int> grid_element2;\nint grid_element2_element0=-1019234746;\ngrid_element2.push_back(grid_element2_element0);\nint grid_element2_element1=-1209541845;\ngrid_element2.push_back(grid_element2_element1);\ngrid.push_back(grid_element2);\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_goodSubsetofBinaryMatrix_vector_vector_int_random_3\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->goodSubsetofBinaryMatrix(grid);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_grid;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2732.Find-a-Good-Subset-of-the-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=344172555;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=1522855008;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\nvector<int> grid_element1;\nint grid_element1_element0=655072183;\ngrid_element1.push_back(grid_element1_element0);\ngrid.push_back(grid_element1);\nvector<int> grid_element2;\nint grid_element2_element0=-1019234746;\ngrid_element2.push_back(grid_element2_element0);\nint grid_element2_element1=-1209541845;\ngrid_element2.push_back(grid_element2_element1);\ngrid.push_back(grid_element2);\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2732.Find-a-Good-Subset-of-the-Matrix.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "EXPECTED_grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "grid",
+                                    "virtual_name": "grid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "grid_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "14059529"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-1972617973"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "grid_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "grid_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1913230296"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "grid_element1_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #1/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "764497575"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "grid_element1_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/grid/element #1/element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "-1878829682"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_goodSubsetofBinaryMatrix_vector_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_goodSubsetofBinaryMatrix_vector_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2732.Find-a-Good-Subset-of-the-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=14059529;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=-1972617973;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\nvector<int> grid_element1;\nint grid_element1_element0=-1913230296;\ngrid_element1.push_back(grid_element1_element0);\nint grid_element1_element1=764497575;\ngrid_element1.push_back(grid_element1_element1);\nint grid_element1_element2=-1878829682;\ngrid_element1.push_back(grid_element1_element2);\ngrid.push_back(grid_element1);\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_goodSubsetofBinaryMatrix_vector_vector_int_random_0\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->goodSubsetofBinaryMatrix(grid);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_grid;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2732.Find-a-Good-Subset-of-the-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> grid;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode grid */\nvector<int> grid_element0;\nint grid_element0_element0=14059529;\ngrid_element0.push_back(grid_element0_element0);\nint grid_element0_element1=-1972617973;\ngrid_element0.push_back(grid_element0_element1);\ngrid.push_back(grid_element0);\nvector<int> grid_element1;\nint grid_element1_element0=-1913230296;\ngrid_element1.push_back(grid_element1_element0);\nint grid_element1_element1=764497575;\ngrid_element1.push_back(grid_element1_element1);\nint grid_element1_element2=-1878829682;\ngrid_element1.push_back(grid_element1_element2);\ngrid.push_back(grid_element1);\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> goodSubsetofBinaryMatrix(vector<vector<int>>& grid)      {         int m = grid.size(), n = grid[0].size();         unordered_map<int,vector<int>>Map;         for (int i=0; i<m; i++)         {             int state = 0;             for (int j=0; j<n; j++)                 if (grid[i][j])                     state += (1<<j);             Map[state].push_back(i);             if (state == 0)                 return {i};                             }                  for (int i=0; i<m; i++)         {             int state = 0;             for (int j=0; j<n; j++)                 if (grid[i][j])                     state += (1<<j);                          for (int s = 0; s<(1<<5); s++)             {                 int flag = 1;                 for (int j=0; j<n; j++)                 {                     if (grid[i][j]==1 && ((s>>j)&1))                     {                         flag = 0;                         break;                     }                 }                 if (flag==0) continue;                 if (Map[s].size()==0) continue;                                  for (int k: Map[s])                 {                     if (k!=i)                     {                         vector<int>rets({i,k});                         sort(rets.begin(), rets.end());                         return rets;                     }                 }             }                     }                  return {};     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2732.Find-a-Good-Subset-of-the-Matrix.cpp/Solution/goodSubsetofBinaryMatrix(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int longestString(int x, int y, int z)      {         int t = x+y+z-max(0, (max(x,y)-min(x,y)-1));         return t*2;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2745.Construct-the-Longest-New-String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./25/2745.Construct-the-Longest-New-String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2745.Construct-the-Longest-New-String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./25/2745.Construct-the-Longest-New-String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./25/2745.Construct-the-Longest-New-String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "longestString(int,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "z",
+                                    "virtual_name": "EXPECTED_z",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/z",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/x",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "EXPECTED_y",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/y",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/x",
+                                    "correspondingType": "int",
+                                    "value": "-1098474841"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "y",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/y",
+                                    "correspondingType": "int",
+                                    "value": "-1723884871"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "z",
+                                    "virtual_name": "z",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/z",
+                                    "correspondingType": "int",
+                                    "value": "-203321078"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_longestString_int_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_longestString_int_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2745.Construct-the-Longest-New-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint x=-1098474841;\n\n\nint y=-1723884871;\n\n\nint z=-203321078;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n/* NormalNumberDataNode z */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_longestString_int_int_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->longestString(x,y,z);\nAKA_fCall++;AKA_mark(\"Return from: ./25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2745.Construct-the-Longest-New-String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint x=-1098474841;\n\n\nint y=-1723884871;\n\n\nint z=-203321078;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n/* NormalNumberDataNode z */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int longestString(int x, int y, int z)      {         int t = x+y+z-max(0, (max(x,y)-min(x,y)-1));         return t*2;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/25/2745.Construct-the-Longest-New-String.cpp/Solution/longestString(int,int,int)"
+    }
+]

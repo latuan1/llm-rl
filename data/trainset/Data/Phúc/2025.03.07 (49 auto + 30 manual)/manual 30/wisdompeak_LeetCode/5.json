@@ -1,0 +1,2333 @@
+[
+    {
+        "f": [],
+        "fm": "static bool cmp(pair<int,int>&a, pair<int,int>&b)     {         if (a.first!=b.first)             return a.first <b.first;         else             return a.second > b.second;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "056.Merge-Intervals.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/056.Merge-Intervals.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/056.Merge-Intervals.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/056.Merge-Intervals.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "cmp(pair<int,int>&,pair<int,int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_a",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "EXPECTED_a.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/first",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "EXPECTED_a.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "b",
+                                    "virtual_name": "EXPECTED_b",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "EXPECTED_b.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/first",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "EXPECTED_b.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "a.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/first",
+                                            "correspondingType": "int",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "a.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "b",
+                                    "virtual_name": "b",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "b.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/first",
+                                            "correspondingType": "int",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "b.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_cmp_pair_int_int_pair_int_int_manual_0(void) {\n{\nAKA_test_case_name=\"Solution_cmp_pair_int_int_pair_int_int_manual_0\";\n\n// set up\n;\n\n\n\npair<int, int> a;\n\n/* NormalNumberDataNode first */\na.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\npair<int, int> b;\n\n/* NormalNumberDataNode first */\nb.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PairDataNode a */\n/* NormalNumberDataNode first */\na.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* PairDataNode b */\n/* NormalNumberDataNode first */\nb.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_cmp_pair_int_int_pair_int_int_manual_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->cmp(a,b);\nAKA_fCall++;AKA_mark(\"Return from: ./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)\");\n\n\npair<int, int> EXPECTED_a;\n\n/* NormalNumberDataNode first */\n/* first : null value -> no code */\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\npair<int, int> EXPECTED_b;\n\n/* NormalNumberDataNode first */\n/* first : null value -> no code */\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\npair<int, int> a;\n\n/* NormalNumberDataNode first */\na.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\npair<int, int> b;\n\n/* NormalNumberDataNode first */\nb.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PairDataNode a */\n/* NormalNumberDataNode first */\na.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* PairDataNode b */\n/* NormalNumberDataNode first */\nb.first=2;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "056.Merge-Intervals.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/056.Merge-Intervals.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/056.Merge-Intervals.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/056.Merge-Intervals.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "cmp(pair<int,int>&,pair<int,int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "b",
+                                    "virtual_name": "EXPECTED_b",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "EXPECTED_b.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/first",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "EXPECTED_b.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_a",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "EXPECTED_a.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/first",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "EXPECTED_a.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "a.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/first",
+                                            "correspondingType": "int",
+                                            "value": "-1"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "a.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/a/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.PairDataNode",
+                                    "name": "b",
+                                    "virtual_name": "b",
+                                    "dataType": "pair<int, int>",
+                                    "realType": "pair<int,int>&",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": {
+                                        "first": "int",
+                                        "second": "int"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "first",
+                                            "virtual_name": "b.first",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/first",
+                                            "correspondingType": "int",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "second",
+                                            "virtual_name": "b.second",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/b/second",
+                                            "correspondingType": "int",
+                                            "value": "null"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_cmp_pair_int_int_pair_int_int_manual_1(void) {\n{\nAKA_test_case_name=\"Solution_cmp_pair_int_int_pair_int_int_manual_1\";\n\n// set up\n;\n\n\n\npair<int, int> a;\n\n/* NormalNumberDataNode first */\na.first=-1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\npair<int, int> b;\n\n/* NormalNumberDataNode first */\nb.first=1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PairDataNode a */\n/* NormalNumberDataNode first */\na.first=-1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* PairDataNode b */\n/* NormalNumberDataNode first */\nb.first=1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_cmp_pair_int_int_pair_int_int_manual_1\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->cmp(a,b);\nAKA_fCall++;AKA_mark(\"Return from: ./05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)\");\n\n\npair<int, int> EXPECTED_a;\n\n/* NormalNumberDataNode first */\n/* first : null value -> no code */\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\npair<int, int> EXPECTED_b;\n\n/* NormalNumberDataNode first */\n/* first : null value -> no code */\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\npair<int, int> a;\n\n/* NormalNumberDataNode first */\na.first=-1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\npair<int, int> b;\n\n/* NormalNumberDataNode first */\nb.first=1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PairDataNode a */\n/* NormalNumberDataNode first */\na.first=-1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* PairDataNode b */\n/* NormalNumberDataNode first */\nb.first=1;\n/* NormalNumberDataNode second */\n/* second : null value -> no code */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     static bool cmp(pair<int,int>&a, pair<int,int>&b)     {         if (a.first!=b.first)             return a.first <b.first;         else             return a.second > b.second;     } public:     vector<vector<int>> merge(vector<vector<int>>& intervals)      {         vector<pair<int,int>>diff;         for (auto& interval: intervals)         {             diff.push_back({interval[0], 1});             diff.push_back({interval[1], -1});         }          sort(diff.begin(), diff.end(), cmp);                  vector<vector<int>>rets;         int start = 0, end = 0;            int sum = 0;         for (int i=0; i<diff.size(); i++)         {                         if (sum==0 && diff[i].second > 0)             {                 start = diff[i].first;                             }             else if (sum > 0 && sum + diff[i].second == 0)             {                 end = diff[i].first;                 rets.push_back({start,end});             }             sum += diff[i].second;                     }          return rets;     } };",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/05/056.Merge-Intervals.cpp/Solution/cmp(pair<int,int>&,pair<int,int>&)"
+    },
+    {
+        "f": [
+            "LL M = 1e9+7;"
+        ],
+        "fm": "LL quickMul(LL x, LL N)      {         if (N == 0) return 1;         LL y = quickMul(x, N / 2);         return N % 2 == 0 ? (y * y % M) : (y * y % M * x % M);     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "quickMul(LL,LL)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "LL",
+                            "realType": "long long",
+                            "functionNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/N",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/x",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/x",
+                                    "correspondingType": "LL",
+                                    "value": "3"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/N",
+                                    "correspondingType": "LL",
+                                    "value": "16"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/RETURN",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_quickMul_LL_LL_manual_1(void) {\n{\nAKA_test_case_name=\"Solution_quickMul_LL_LL_manual_1\";\n\n// set up\n;\n\n\n\n\n\nLL x=3;\n\n\nLL N=16;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_quickMul_LL_LL_manual_1\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->quickMul(x,N);\nAKA_fCall++;AKA_mark(\"Return from: ./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nLL x=3;\n\n\nLL N=16;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "quickMul(LL,LL)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "LL",
+                            "realType": "long long",
+                            "functionNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/N",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/x",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/x",
+                                    "correspondingType": "LL",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/N",
+                                    "correspondingType": "LL",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)/RETURN",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_quickMul_LL_LL_manual_0(void) {\n{\nAKA_test_case_name=\"Solution_quickMul_LL_LL_manual_0\";\n\n// set up\n;\n\n\n\n\n\nLL x=1;\n\n\nLL N=0;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_quickMul_LL_LL_manual_0\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->quickMul(x,N);\nAKA_fCall++;AKA_mark(\"Return from: ./05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nLL x=1;\n\n\nLL N=0;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     LL M = 1e9+7; public:         LL quickMul(LL x, LL N)      {         if (N == 0) return 1;         LL y = quickMul(x, N / 2);         return N % 2 == 0 ? (y * y % M) : (y * y % M * x % M);     }              int minNonZeroProduct(int p)      {         LL a = (1ll<<(p-1)) - 1;         LL x = ((1ll<<p)-1) % M;                 LL ret = quickMul(x-1, a) * x % M;          return ret;     } };",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/05/1969.Minimum-Non-Zero-Product-of-the-Array-Elements.cpp/Solution/quickMul(LL,LL)"
+    },
+    {
+        "f": [
+            "LL M = 1e9+7;"
+        ],
+        "fm": "int numberOfWays(int startPos, int endPos, int k)      {                 LL offset = k;                  if (abs(endPos-startPos)>k) return 0;                  vector<vector<LL>>dp(k+1, vector<LL>(2*k+10, 0));         dp[0][0+offset] = 1;                  for (int t=1; t<=k; t++)                     for (int p = -k; p<=k; p++)             {                 if (p-1 >= -k)                     dp[t][p+offset] = (dp[t][p+offset] + dp[t-1][p-1+offset]) % M;                 if (p+1 <= k)                     dp[t][p+offset] = (dp[t][p+offset] + dp[t-1][p+1+offset]) % M;             }                                              return dp[k][abs(endPos - startPos) + offset];     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "M",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_M",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/M",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "M",
+                                    "virtual_name": "M",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": true,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/M",
+                                    "correspondingType": "LL",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numberOfWays(int,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "endPos",
+                                    "virtual_name": "EXPECTED_endPos",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/endPos",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "startPos",
+                                    "virtual_name": "EXPECTED_startPos",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/startPos",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "startPos",
+                                    "virtual_name": "startPos",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/startPos",
+                                    "correspondingType": "int",
+                                    "value": "443786679"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "endPos",
+                                    "virtual_name": "endPos",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/endPos",
+                                    "correspondingType": "int",
+                                    "value": "-1085592756"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "9"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numberOfWays_int_int_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_numberOfWays_int_int_int_random_4\";\n\n// set up\n;\n\n\n M=0;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint startPos=443786679;\n\n\nint endPos=-1085592756;\n\n\nint k=9;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode startPos */\n/* NormalNumberDataNode endPos */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numberOfWays_int_int_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numberOfWays(startPos,endPos,k);\nAKA_fCall++;AKA_mark(\"Return from: ./05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n M=0;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint startPos=443786679;\n\n\nint endPos=-1085592756;\n\n\nint k=9;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode startPos */\n/* NormalNumberDataNode endPos */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numberOfWays(int startPos, int endPos, int k)      {                 LL offset = k;                  if (abs(endPos-startPos)>k) return 0;                  vector<vector<LL>>dp(k+1, vector<LL>(2*k+10, 0));         dp[0][0+offset] = 1;                  for (int t=1; t<=k; t++)                     for (int p = -k; p<=k; p++)             {                 if (p-1 >= -k)                     dp[t][p+offset] = (dp[t][p+offset] + dp[t-1][p-1+offset]) % M;                 if (p+1 <= k)                     dp[t][p+offset] = (dp[t][p+offset] + dp[t-1][p+1+offset]) % M;             }                                              return dp[k][abs(endPos - startPos) + offset];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/05/2400.Number-of-Ways-to-Reach-a-Position-After-Exactly-k-Steps_v1.cpp/Solution/numberOfWays(int,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int flipLights(int n, int m)      {                 if (m==0) { return 1; }                  if (n==1)         {             if (m>=1) { return 2; }         }         if (n==2)         {             if (m==1) { return 3; }             if (m>=2) { return 4; }         }         if (n>=3)         {             if (m==1) { return 4; }             if (m==2) { return 7; }             if (m>=3) { return 8; }         }                  return 0; // invalid value for n or m                          }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_5(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_5\";\n\n// set up\n;\n\n\n\n\n\nint n=5;\n\n\nint m=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=5;\n\n\nint m=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_4(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_4\";\n\n// set up\n;\n\n\n\n\n\nint n=5;\n\n\nint m=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=5;\n\n\nint m=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "-1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_10(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_10\";\n\n// set up\n;\n\n\n\n\n\nint n=1;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_10\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=1;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 3,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_3(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_3\";\n\n// set up\n;\n\n\n\n\n\nint n=2;\n\n\nint m=4;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=2;\n\n\nint m=4;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 4,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_2(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_2\";\n\n// set up\n;\n\n\n\n\n\nint n=2;\n\n\nint m=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=2;\n\n\nint m=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 5,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "-1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_9(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_9\";\n\n// set up\n;\n\n\n\n\n\nint n=2;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_9\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=2;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 6,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "-1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_8(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_8\";\n\n// set up\n;\n\n\n\n\n\nint n=5;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_8\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=5;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 7,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "-1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "-1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_7(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_7\";\n\n// set up\n;\n\n\n\n\n\nint n=-1;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_7\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=-1;\n\n\nint m=-1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 8,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_6(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_6\";\n\n// set up\n;\n\n\n\n\n\nint n=5;\n\n\nint m=5;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_6\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=5;\n\n\nint m=5;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 9,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "10"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_1(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_1\";\n\n// set up\n;\n\n\n\n\n\nint n=1;\n\n\nint m=10;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=1;\n\n\nint m=10;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 10,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "672.Bulb-Switcher-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./05/672.Bulb-Switcher-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./05/672.Bulb-Switcher-II.cpp/Solution"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flipLights(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "EXPECTED_m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "m",
+                                    "virtual_name": "m",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/m",
+                                    "correspondingType": "int",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flipLights_int_int_manual_0(void) {\n{\nAKA_test_case_name=\"Solution_flipLights_int_int_manual_0\";\n\n// set up\n;\n\n\n\n\n\nint n=0;\n\n\nint m=0;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flipLights_int_int_manual_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flipLights(n,m);\nAKA_fCall++;AKA_mark(\"Return from: ./05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n\n\n\nint n=0;\n\n\nint m=0;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode m */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": false,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int flipLights(int n, int m)      {                 if (m==0) { return 1; }                  if (n==1)         {             if (m>=1) { return 2; }         }         if (n==2)         {             if (m==1) { return 3; }             if (m>=2) { return 4; }         }         if (n>=3)         {             if (m==1) { return 4; }             if (m==2) { return 7; }             if (m>=3) { return 8; }         }                  return 0; // invalid value for n or m                          } };",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/manual/05/672.Bulb-Switcher-II.cpp/Solution/flipLights(int,int)"
+    }
+]

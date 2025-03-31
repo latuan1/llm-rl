@@ -1,0 +1,2219 @@
+[
+    {
+        "f": [],
+        "fm": "int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target)      {         int m = matrix.size(), n = matrix[0].size();         int count = 0;                  for (int i=0; i<m; i++)         {             vector<int>row(n);             for (int t=i; t<m; t++)             {                 for (int j=0; j<n; j++)                     row[j] += matrix[t][j];                                  unordered_map<int,int>Map;                 Map[0] = 1;                 int presum = 0;                 for (int j=0; j<n; j++)                 {                     presum += row[j];                     count += Map[presum - target];                     Map[presum]+=1;                 }             }                     }         return count;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1074.Number-of-Submatrices-That-Sum-to-Target.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numSubmatrixSumTarget(vector<vector<int>>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "matrix",
+                                    "virtual_name": "EXPECTED_matrix",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/matrix",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/target",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "matrix",
+                                    "virtual_name": "matrix",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/matrix",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "matrix_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/matrix/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "matrix_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/matrix/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1249167831"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "matrix_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/matrix/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-337693642"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "matrix_element0_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/matrix/element #0/element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "-45586147"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/target",
+                                    "correspondingType": "int",
+                                    "value": "-382227824"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numSubmatrixSumTarget_vector_vector_int_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_numSubmatrixSumTarget_vector_vector_int_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> matrix;\n\n\nint target=-382227824;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode matrix */\nvector<int> matrix_element0;\nint matrix_element0_element0=-1249167831;\nmatrix_element0.push_back(matrix_element0_element0);\nint matrix_element0_element1=-337693642;\nmatrix_element0.push_back(matrix_element0_element1);\nint matrix_element0_element2=-45586147;\nmatrix_element0.push_back(matrix_element0_element2);\nmatrix.push_back(matrix_element0);\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numSubmatrixSumTarget_vector_vector_int_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numSubmatrixSumTarget(matrix,target);\nAKA_fCall++;AKA_mark(\"Return from: ./3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)\");\n\n\nvector<vector<int>> EXPECTED_matrix;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> matrix;\n\n\nint target=-382227824;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode matrix */\nvector<int> matrix_element0;\nint matrix_element0_element0=-1249167831;\nmatrix_element0.push_back(matrix_element0_element0);\nint matrix_element0_element1=-337693642;\nmatrix_element0.push_back(matrix_element0_element1);\nint matrix_element0_element2=-45586147;\nmatrix_element0.push_back(matrix_element0_element2);\nmatrix.push_back(matrix_element0);\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target)      {         int m = matrix.size(), n = matrix[0].size();         int count = 0;                  for (int i=0; i<m; i++)         {             vector<int>row(n);             for (int t=i; t<m; t++)             {                 for (int j=0; j<n; j++)                     row[j] += matrix[t][j];                                  unordered_map<int,int>Map;                 Map[0] = 1;                 int presum = 0;                 for (int j=0; j<n; j++)                 {                     presum += row[j];                     count += Map[presum - target];                     Map[presum]+=1;                 }             }                     }         return count;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/1074.Number-of-Submatrices-That-Sum-to-Target.cpp/Solution/numSubmatrixSumTarget(vector<vector<int>>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int findTheLongestSubstring(string s)      {         vector<int>count(5,0);         unordered_map<int,int>Map;         Map[0] = -1;                  int ret = 0;                  for (int i=0; i<s.size(); i++)         {             if (s[i]=='a')                 count[0] = (count[0]+1)%2;             if (s[i]=='e')                 count[1] = (count[1]+1)%2;             if (s[i]=='i')                 count[2] = (count[2]+1)%2;             if (s[i]=='o')                 count[3] = (count[3]+1)%2;             if (s[i]=='u')                 count[4] = (count[4]+1)%2;                          int code = 0;             for (int i=0; i<5; i++)                 code = code*2 + count[i];                          if (Map.find(code)!=Map.end())                 ret = max(ret, i-Map[code]);             else                 Map[code] = i;         }                  return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findTheLongestSubstring(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "86"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findTheLongestSubstring_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_findTheLongestSubstring_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName90173 = new char[2];akaRandomName90173[0] = 86;akaRandomName90173[1] = '\\0';string s=akaRandomName90173;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findTheLongestSubstring_string_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findTheLongestSubstring(s);\nAKA_fCall++;AKA_mark(\"Return from: ./3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName630928 = new char[2];akaRandomName630928[0] = 86;akaRandomName630928[1] = '\\0';string s=akaRandomName630928;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findTheLongestSubstring(string s)      {         vector<int>count(5,0);         unordered_map<int,int>Map;         Map[0] = -1;                  int ret = 0;                  for (int i=0; i<s.size(); i++)         {             if (s[i]=='a')                 count[0] = (count[0]+1)%2;             if (s[i]=='e')                 count[1] = (count[1]+1)%2;             if (s[i]=='i')                 count[2] = (count[2]+1)%2;             if (s[i]=='o')                 count[3] = (count[3]+1)%2;             if (s[i]=='u')                 count[4] = (count[4]+1)%2;                          int code = 0;             for (int i=0; i<5; i++)                 code = code*2 + count[i];                          if (Map.find(code)!=Map.end())                 ret = max(ret, i-Map[code]);             else                 Map[code] = i;         }                  return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts.cpp/Solution/findTheLongestSubstring(string)"
+    },
+    {
+        "f": [
+            "unordered_map<string, string> short2long;",
+            "unordered_map<string, string> long2short;",
+            "string dict;"
+        ],
+        "fm": "string encode(string longUrl)      {         if (long2short.find(longUrl)!=long2short.end())             return \"http://tinyurl.com/\"+long2short[longUrl];                  string s;         for (int i=0; i<6; i++)             s+= dict[rand()%62];                  long2short[longUrl]=s;         short2long[s]=longUrl;                  return \"http://tinyurl.com/\"+s;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "535.Encode and Decode TinyURL.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/535.Encode and Decode TinyURL.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/535.Encode and Decode TinyURL.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/535.Encode and Decode TinyURL.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/535.Encode and Decode TinyURL.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "short2long",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->short2long",
+                                                    "dataType": "unordered_map<string,string>",
+                                                    "realType": "unordered_map<string,string>",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/short2long",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, string>"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "long2short",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->long2short",
+                                                    "dataType": "unordered_map<string,string>",
+                                                    "realType": "unordered_map<string,string>",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/long2short",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, string>"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                    "name": "dict",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->dict",
+                                                    "dataType": "string",
+                                                    "realType": "string",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/dict",
+                                                    "correspondingType": "string",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "encode(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "longUrl",
+                                    "virtual_name": "EXPECTED_longUrl",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)/longUrl",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "longUrl",
+                                    "virtual_name": "longUrl",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)/longUrl",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "longUrl[0]",
+                                            "virtual_name": "longUrl[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)/longUrl/longUrl[0]",
+                                            "correspondingType": "char",
+                                            "value": "112"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_encode_string_random_2(void) {\n{\nAKA_test_case_name=\"Solution_encode_string_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: ./3/535.Encode and Decode TinyURL.cpp/Solution/Solution()|ROOT/535.Encode and Decode TinyURL.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedMapDataNode short2long */\n/* UnorderedMapDataNode long2short */\n/* NormalStringDataNode dict */\nAKA_INSTANCE___Solution->dict=\"\";\n\n\nchar* akaRandomName920768 = new char[2];akaRandomName920768[0] = 112;akaRandomName920768[1] = '\\0';string longUrl=akaRandomName920768;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode longUrl */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_encode_string_random_2\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->encode(longUrl);\nAKA_fCall++;AKA_mark(\"Return from: ./3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: ./3/535.Encode and Decode TinyURL.cpp/Solution/Solution()|ROOT/535.Encode and Decode TinyURL.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedMapDataNode short2long */\n/* UnorderedMapDataNode long2short */\n/* NormalStringDataNode dict */\nAKA_INSTANCE___Solution->dict=\"\";\n\n\nchar* akaRandomName15923 = new char[2];akaRandomName15923[0] = 112;akaRandomName15923[1] = '\\0';string longUrl=akaRandomName15923;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode longUrl */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     unordered_map<string, string> short2long, long2short;     string dict;      public:     Solution()     {         dict = \"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\";         short2long.clear();         long2short.clear();         srand(time(NULL));     }          // Encodes a URL to a shortened URL.     string encode(string longUrl)      {         if (long2short.find(longUrl)!=long2short.end())             return \"http://tinyurl.com/\"+long2short[longUrl];                  string s;         for (int i=0; i<6; i++)             s+= dict[rand()%62];                  long2short[longUrl]=s;         short2long[s]=longUrl;                  return \"http://tinyurl.com/\"+s;     }      // Decodes a shortened URL to its original URL.     string decode(string shortUrl)      {         string randStr = shortUrl.substr(shortUrl.find_last_of(\"/\") + 1);         string longUrl;                  if (short2long.find(randStr)!=short2long.end())             longUrl = short2long[randStr];         else             longUrl = shortUrl;                  return longUrl;     } };",
+        "c": [
+            "Solution()\n    {\n        dict = \"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n        short2long.clear();\n        long2short.clear();\n        srand(time(NULL));\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/535.Encode and Decode TinyURL.cpp/Solution/encode(string)"
+    },
+    {
+        "f": [
+            "unordered_map<string, string> short2long;",
+            "unordered_map<string, string> long2short;",
+            "string dict;"
+        ],
+        "fm": "string decode(string shortUrl)      {         string randStr = shortUrl.substr(shortUrl.find_last_of(\"/\") + 1);         string longUrl;                  if (short2long.find(randStr)!=short2long.end())             longUrl = short2long[randStr];         else             longUrl = shortUrl;                  return longUrl;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "535.Encode and Decode TinyURL.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/535.Encode and Decode TinyURL.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/535.Encode and Decode TinyURL.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/535.Encode and Decode TinyURL.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/535.Encode and Decode TinyURL.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "short2long",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->short2long",
+                                                    "dataType": "unordered_map<string,string>",
+                                                    "realType": "unordered_map<string,string>",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/short2long",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, string>"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "long2short",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->long2short",
+                                                    "dataType": "unordered_map<string,string>",
+                                                    "realType": "unordered_map<string,string>",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/long2short",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<string, string>"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                    "name": "dict",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->dict",
+                                                    "dataType": "string",
+                                                    "realType": "string",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/dict",
+                                                    "correspondingType": "string",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "decode(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "shortUrl",
+                                    "virtual_name": "EXPECTED_shortUrl",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)/shortUrl",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "shortUrl",
+                                    "virtual_name": "shortUrl",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)/shortUrl",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "shortUrl[0]",
+                                            "virtual_name": "shortUrl[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)/shortUrl/shortUrl[0]",
+                                            "correspondingType": "char",
+                                            "value": "42"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_decode_string_random_3(void) {\n{\nAKA_test_case_name=\"Solution_decode_string_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: ./3/535.Encode and Decode TinyURL.cpp/Solution/Solution()|ROOT/535.Encode and Decode TinyURL.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedMapDataNode short2long */\n/* UnorderedMapDataNode long2short */\n/* NormalStringDataNode dict */\nAKA_INSTANCE___Solution->dict=\"\";\n\n\nchar* akaRandomName194634 = new char[2];akaRandomName194634[0] = 42;akaRandomName194634[1] = '\\0';string shortUrl=akaRandomName194634;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode shortUrl */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_decode_string_random_3\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->decode(shortUrl);\nAKA_fCall++;AKA_mark(\"Return from: ./3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: ./3/535.Encode and Decode TinyURL.cpp/Solution/Solution()|ROOT/535.Encode and Decode TinyURL.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* UnorderedMapDataNode short2long */\n/* UnorderedMapDataNode long2short */\n/* NormalStringDataNode dict */\nAKA_INSTANCE___Solution->dict=\"\";\n\n\nchar* akaRandomName692848 = new char[2];akaRandomName692848[0] = 42;akaRandomName692848[1] = '\\0';string shortUrl=akaRandomName692848;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode shortUrl */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     unordered_map<string, string> short2long, long2short;     string dict;      public:     Solution()     {         dict = \"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\";         short2long.clear();         long2short.clear();         srand(time(NULL));     }          // Encodes a URL to a shortened URL.     string encode(string longUrl)      {         if (long2short.find(longUrl)!=long2short.end())             return \"http://tinyurl.com/\"+long2short[longUrl];                  string s;         for (int i=0; i<6; i++)             s+= dict[rand()%62];                  long2short[longUrl]=s;         short2long[s]=longUrl;                  return \"http://tinyurl.com/\"+s;     }      // Decodes a shortened URL to its original URL.     string decode(string shortUrl)      {         string randStr = shortUrl.substr(shortUrl.find_last_of(\"/\") + 1);         string longUrl;                  if (short2long.find(randStr)!=short2long.end())             longUrl = short2long[randStr];         else             longUrl = shortUrl;                  return longUrl;     } };",
+        "c": [
+            "Solution()\n    {\n        dict = \"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n        short2long.clear();\n        long2short.clear();\n        srand(time(NULL));\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/535.Encode and Decode TinyURL.cpp/Solution/decode(string)"
+    },
+    {
+        "f": [],
+        "fm": "int findLHS(vector<int>& nums)      {         map<int,int>Map;         for (int i=0; i<nums.size(); i++)             Map[nums[i]]++;                  int lastFreq=0;         int lastNum;         int result=0;         for (auto a:Map)         {             if (lastFreq==0)             {                 lastNum=a.first;                 lastFreq=a.second;             }             else             {                 if (lastNum+1==a.first)                     result = max(result,lastFreq+a.second);                 lastNum = a.first;                 lastFreq = a.second;             }         }                  return result;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "594.Longest Harmonious Subsequence.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/594.Longest Harmonious Subsequence.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/594.Longest Harmonious Subsequence.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/594.Longest Harmonious Subsequence.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/594.Longest Harmonious Subsequence.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findLHS(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "404364664"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "626120974"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)/nums/element #2",
+                                            "correspondingType": "int",
+                                            "value": "1991682649"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findLHS_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_findLHS_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/594.Longest Harmonious Subsequence.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=404364664;\nnums.push_back(nums_element0);\nint nums_element1=626120974;\nnums.push_back(nums_element1);\nint nums_element2=1991682649;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findLHS_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findLHS(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/594.Longest Harmonious Subsequence.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=404364664;\nnums.push_back(nums_element0);\nint nums_element1=626120974;\nnums.push_back(nums_element1);\nint nums_element2=1991682649;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findLHS(vector<int>& nums)      {         map<int,int>Map;         for (int i=0; i<nums.size(); i++)             Map[nums[i]]++;                  int lastFreq=0;         int lastNum;         int result=0;         for (auto a:Map)         {             if (lastFreq==0)             {                 lastNum=a.first;                 lastFreq=a.second;             }             else             {                 if (lastNum+1==a.first)                     result = max(result,lastFreq+a.second);                 lastNum = a.first;                 lastFreq = a.second;             }         }                  return result;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/594.Longest Harmonious Subsequence.cpp/Solution/findLHS(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "string crackSafe(int n, int k)      {         string ans;         ans.assign(n-1,'0');         unordered_map<string,int>record;                  int total = pow(k,n);                  for (int i=0; i<total; i++)         {             string temp = ans.substr(ans.size()-(n-1),(n-1));             record[temp] = (record[temp]+1)%k;;             ans+= '0'+record[temp];         }         return ans;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "753.Cracking-the-Safe.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/753.Cracking-the-Safe.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/753.Cracking-the-Safe.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/753.Cracking-the-Safe.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/753.Cracking-the-Safe.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "crackSafe(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)/n",
+                                    "correspondingType": "int",
+                                    "value": "561038063"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "-1280432578"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_crackSafe_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_crackSafe_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/753.Cracking-the-Safe.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint n=561038063;\n\n\nint k=-1280432578;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode k */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_crackSafe_int_int_random_2\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->crackSafe(n,k);\nAKA_fCall++;AKA_mark(\"Return from: ./3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/753.Cracking-the-Safe.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint n=561038063;\n\n\nint k=-1280432578;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode n */\n/* NormalNumberDataNode k */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string crackSafe(int n, int k)      {         string ans;         ans.assign(n-1,'0');         unordered_map<string,int>record;                  int total = pow(k,n);                  for (int i=0; i<total; i++)         {             string temp = ans.substr(ans.size()-(n-1),(n-1));             record[temp] = (record[temp]+1)%k;;             ans+= '0'+record[temp];         }         return ans;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/753.Cracking-the-Safe.cpp/Solution/crackSafe(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "string encode(string s)     {         int num = 0;         unordered_map<char, int>Map;         string ret;         for (auto ch: s)         {             if (Map.find(ch)!=Map.end())                 ret+=to_string(Map[ch]);             else             {                 Map[ch] = num;                 ret+=to_string(num);                 num++;             }                     }         return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "890.Find-and-Replace-Pattern.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/890.Find-and-Replace-Pattern.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/890.Find-and-Replace-Pattern.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/890.Find-and-Replace-Pattern.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/890.Find-and-Replace-Pattern.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "encode(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-94"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_encode_string_random_4(void) {\n{\nAKA_test_case_name=\"Solution_encode_string_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/890.Find-and-Replace-Pattern.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName525130 = new char[2];akaRandomName525130[0] = -94;akaRandomName525130[1] = '\\0';string s=akaRandomName525130;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_encode_string_random_4\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->encode(s);\nAKA_fCall++;AKA_mark(\"Return from: ./3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/890.Find-and-Replace-Pattern.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName752437 = new char[2];akaRandomName752437[0] = -94;akaRandomName752437[1] = '\\0';string s=akaRandomName752437;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string encode(string s)     {         int num = 0;         unordered_map<char, int>Map;         string ret;         for (auto ch: s)         {             if (Map.find(ch)!=Map.end())                 ret+=to_string(Map[ch]);             else             {                 Map[ch] = num;                 ret+=to_string(num);                 num++;             }                     }         return ret;     }              vector<string> findAndReplacePattern(vector<string>& words, string pattern)      {         string p = encode(pattern);         vector<string>rets;                  for (auto word: words)         {             string t = encode(word);             if(t==p)                 rets.push_back(word);                         }         return rets;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/890.Find-and-Replace-Pattern.cpp/Solution/encode(string)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> findAndReplacePattern(vector<string>& words, string pattern)      {         string p = encode(pattern);         vector<string>rets;                  for (auto word: words)         {             string t = encode(word);             if(t==p)                 rets.push_back(word);                         }         return rets;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "890.Find-and-Replace-Pattern.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/890.Find-and-Replace-Pattern.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/890.Find-and-Replace-Pattern.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/890.Find-and-Replace-Pattern.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/890.Find-and-Replace-Pattern.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findAndReplacePattern(vector<string>&,string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<string>",
+                            "realType": "vector<string>",
+                            "functionNode": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "pattern",
+                                    "virtual_name": "EXPECTED_pattern",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/pattern",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "EXPECTED_words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "words_element0",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/words/element #0",
+                                            "correspondingType": "string",
+                                            "value": "1",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #0[0]",
+                                                    "virtual_name": "words_element0[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/words/element #0/element #0[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "94"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "pattern",
+                                    "virtual_name": "pattern",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/pattern",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "pattern[0]",
+                                            "virtual_name": "pattern[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/pattern/pattern[0]",
+                                            "correspondingType": "char",
+                                            "value": "58"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>",
+                                    "external": false,
+                                    "correspondingVar": "./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findAndReplacePattern_vector_string_string_random_2(void) {\n{\nAKA_test_case_name=\"Solution_findAndReplacePattern_vector_string_string_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/890.Find-and-Replace-Pattern.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<string> words;\nchar* akaRandomName821945 = new char[2];akaRandomName821945[0] = 58;akaRandomName821945[1] = '\\0';string pattern=akaRandomName821945;\nvector<string> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode words */\nchar* akaRandomName312594 = new char[2];akaRandomName312594[0] = 94;akaRandomName312594[1] = '\\0';string words_element0=akaRandomName312594;\nwords.push_back(words_element0);\n/* NormalStringDataNode pattern */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findAndReplacePattern_vector_string_string_random_2\");vector<string> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findAndReplacePattern(words,pattern);\nAKA_fCall++;AKA_mark(\"Return from: ./3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)\");\n\n\nvector<string> EXPECTED_words;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/890.Find-and-Replace-Pattern.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<string> words;\nchar* akaRandomName407667 = new char[2];akaRandomName407667[0] = 58;akaRandomName407667[1] = '\\0';string pattern=akaRandomName407667;\nvector<string> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode words */\nchar* akaRandomName401004 = new char[2];akaRandomName401004[0] = 94;akaRandomName401004[1] = '\\0';string words_element0=akaRandomName401004;\nwords.push_back(words_element0);\n/* NormalStringDataNode pattern */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string encode(string s)     {         int num = 0;         unordered_map<char, int>Map;         string ret;         for (auto ch: s)         {             if (Map.find(ch)!=Map.end())                 ret+=to_string(Map[ch]);             else             {                 Map[ch] = num;                 ret+=to_string(num);                 num++;             }                     }         return ret;     }              vector<string> findAndReplacePattern(vector<string>& words, string pattern)      {         string p = encode(pattern);         vector<string>rets;                  for (auto word: words)         {             string t = encode(word);             if(t==p)                 rets.push_back(word);                         }         return rets;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/890.Find-and-Replace-Pattern.cpp/Solution/findAndReplacePattern(vector<string>&,string)"
+    },
+    {
+        "f": [],
+        "fm": "int numSubarraysWithSum(vector<int>& A, int S)      {         unordered_map<int,int>Map;         Map[0] = 1;         int sum = 0, ret = 0;         for (int i=0; i<A.size(); i++)         {             sum += A[i];             if (Map.find(sum-S)!=Map.end())                 ret+=Map[sum-S];             Map[sum]+=1;         }         return ret;      }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "930.Binary-Subarrays-With-Sum.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/930.Binary-Subarrays-With-Sum.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numSubarraysWithSum(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/S",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-632606670"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-1838350483"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/S",
+                                    "correspondingType": "int",
+                                    "value": "244000129"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numSubarraysWithSum_vector_int_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_numSubarraysWithSum_vector_int_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/930.Binary-Subarrays-With-Sum.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint S=244000129;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=-632606670;\nA.push_back(A_element0);\nint A_element1=-1838350483;\nA.push_back(A_element1);\n/* NormalNumberDataNode S */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numSubarraysWithSum_vector_int_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numSubarraysWithSum(A,S);\nAKA_fCall++;AKA_mark(\"Return from: ./3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_A;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/930.Binary-Subarrays-With-Sum.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint S=244000129;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=-632606670;\nA.push_back(A_element0);\nint A_element1=-1838350483;\nA.push_back(A_element1);\n/* NormalNumberDataNode S */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numSubarraysWithSum(vector<int>& A, int S)      {         unordered_map<int,int>Map;         Map[0] = 1;         int sum = 0, ret = 0;         for (int i=0; i<A.size(); i++)         {             sum += A[i];             if (Map.find(sum-S)!=Map.end())                 ret+=Map[sum-S];             Map[sum]+=1;         }         return ret;      } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/930.Binary-Subarrays-With-Sum.cpp/Solution/numSubarraysWithSum(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int numSubarraysWithSum(vector<int>& A, int S)      {                int n = A.size();         vector<int>postZeros(n);         int count = 0;         for (int i=n-1; i>=0; i--)         {             postZeros[i] = count;             if (A[i]==0)                             count++;                         else                 count = 0;         }                  int j = 0, sum = 0;         int ret = 0;         for (int i=0; i<n; i++)         {             while (j<=i || (j<n && sum < S))             {                 sum += A[j];                 j++;             }                          if (sum==S)                 ret += postZeros[j-1]+1;             sum -= A[i];          }                  return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "930.Binary-Subarrays-With-Sum_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numSubarraysWithSum(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/S",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-514110778"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #1",
+                                            "correspondingType": "int",
+                                            "value": "181832645"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "A_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #2",
+                                            "correspondingType": "int",
+                                            "value": "-1991351193"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/S",
+                                    "correspondingType": "int",
+                                    "value": "8"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numSubarraysWithSum_vector_int_int_random_5(void) {\n{\nAKA_test_case_name=\"Solution_numSubarraysWithSum_vector_int_int_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/930.Binary-Subarrays-With-Sum_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint S=8;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=-514110778;\nA.push_back(A_element0);\nint A_element1=181832645;\nA.push_back(A_element1);\nint A_element2=-1991351193;\nA.push_back(A_element2);\n/* NormalNumberDataNode S */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numSubarraysWithSum_vector_int_int_random_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numSubarraysWithSum(A,S);\nAKA_fCall++;AKA_mark(\"Return from: ./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_A;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/930.Binary-Subarrays-With-Sum_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint S=8;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=-514110778;\nA.push_back(A_element0);\nint A_element1=181832645;\nA.push_back(A_element1);\nint A_element2=-1991351193;\nA.push_back(A_element2);\n/* NormalNumberDataNode S */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "930.Binary-Subarrays-With-Sum_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numSubarraysWithSum(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/S",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #0",
+                                            "correspondingType": "int",
+                                            "value": "8606061"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "A_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1393717446"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "A_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/A/element #2",
+                                            "correspondingType": "int",
+                                            "value": "-964113486"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/S",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numSubarraysWithSum_vector_int_int_random_7(void) {\n{\nAKA_test_case_name=\"Solution_numSubarraysWithSum_vector_int_int_random_7\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/930.Binary-Subarrays-With-Sum_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint S=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=8606061;\nA.push_back(A_element0);\nint A_element1=1393717446;\nA.push_back(A_element1);\nint A_element2=-964113486;\nA.push_back(A_element2);\n/* NormalNumberDataNode S */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numSubarraysWithSum_vector_int_int_random_7\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numSubarraysWithSum(A,S);\nAKA_fCall++;AKA_mark(\"Return from: ./3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_A;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/930.Binary-Subarrays-With-Sum_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint S=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=8606061;\nA.push_back(A_element0);\nint A_element1=1393717446;\nA.push_back(A_element1);\nint A_element2=-964113486;\nA.push_back(A_element2);\n/* NormalNumberDataNode S */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int numSubarraysWithSum(vector<int>& A, int S)      {                int n = A.size();         vector<int>postZeros(n);         int count = 0;         for (int i=n-1; i>=0; i--)         {             postZeros[i] = count;             if (A[i]==0)                             count++;                         else                 count = 0;         }                  int j = 0, sum = 0;         int ret = 0;         for (int i=0; i<n; i++)         {             while (j<=i || (j<n && sum < S))             {                 sum += A[j];                 j++;             }                          if (sum==S)                 ret += postZeros[j-1]+1;             sum -= A[i];          }                  return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/930.Binary-Subarrays-With-Sum_v2.cpp/Solution/numSubarraysWithSum(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int subarraysDivByK(vector<int>& nums, int k) {         unordered_map<int,int>Map;         Map[0] = 1;                  int r = 0;         int count = 0;         for (int i=0; i<nums.size(); i++)         {                         r = ((r + nums[i]) % k + k) % k;             count += Map[r];             Map[r]++;         }         return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "974.Subarray-Sums-Divisible-by-K.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./3/974.Subarray-Sums-Divisible-by-K.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "subarraysDivByK(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1901372371"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "841611053"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_subarraysDivByK_vector_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_subarraysDivByK_vector_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/974.Subarray-Sums-Divisible-by-K.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=841611053;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1901372371;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_subarraysDivByK_vector_int_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->subarraysDivByK(nums,k);\nAKA_fCall++;AKA_mark(\"Return from: ./3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/974.Subarray-Sums-Divisible-by-K.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=841611053;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1901372371;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int subarraysDivByK(vector<int>& nums, int k) {         unordered_map<int,int>Map;         Map[0] = 1;                  int r = 0;         int count = 0;         for (int i=0; i<nums.size(); i++)         {                         r = ((r + nums[i]) % k + k) % k;             count += Map[r];             Map[r]++;         }         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/3/974.Subarray-Sums-Divisible-by-K.cpp/Solution/subarraysDivByK(vector<int>&,int)"
+    }
+]

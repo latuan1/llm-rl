@@ -1,0 +1,133 @@
+[
+    {
+        "f": [],
+        "fm": "vector<vector<int> > levelOrder(TreeNode *root) {\r \t\tvector<vector<int> > result;\r \t\tif (root == NULL) return result;\r \t\tqueue<TreeNode*> nodeQ;\r \t\tnodeQ.push(root);\r \t\tint nextLevelCnt = 0, currentLevelCnt = 1;\r \t\tvector<int> layer;\r \t\tint visitedCnt = 0;\r \t\twhile (nodeQ.size() != 0)\r \t\t{\r \t\t\tTreeNode* node = nodeQ.front();\r \t\t\tnodeQ.pop();\r \t\t\tvisitedCnt++;\r \t\t\tlayer.push_back(node->val);\r \t\t\tif (node->left != NULL)\r \t\t\t{\r \t\t\t\tnodeQ.push(node->left);\r \t\t\t\tnextLevelCnt++;\r \t\t\t}\r \t\t\tif (node->right != NULL)\r \t\t\t{\r \t\t\t\tnodeQ.push(node->right);\r \t\t\t\tnextLevelCnt++;\r \t\t\t}\r \t\t\tif (visitedCnt == currentLevelCnt)\r \t\t\t{\r \t\t\t\tvisitedCnt = 0;\r \t\t\t\tcurrentLevelCnt = nextLevelCnt;\r \t\t\t\tnextLevelCnt = 0;\r \t\t\t\tresult.push_back(layer);\r \t\t\t\tlayer.clear();\r \t\t\t}\r \t\t}\r \t\treturn result;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tvector<vector<int> > levelOrder(TreeNode *root) {\r \t\tvector<vector<int> > result;\r \t\tif (root == NULL) return result;\r \t\tqueue<TreeNode*> nodeQ;\r \t\tnodeQ.push(root);\r \t\tint nextLevelCnt = 0, currentLevelCnt = 1;\r \t\tvector<int> layer;\r \t\tint visitedCnt = 0;\r \t\twhile (nodeQ.size() != 0)\r \t\t{\r \t\t\tTreeNode* node = nodeQ.front();\r \t\t\tnodeQ.pop();\r \t\t\tvisitedCnt++;\r \t\t\tlayer.push_back(node->val);\r \t\t\tif (node->left != NULL)\r \t\t\t{\r \t\t\t\tnodeQ.push(node->left);\r \t\t\t\tnextLevelCnt++;\r \t\t\t}\r \t\t\tif (node->right != NULL)\r \t\t\t{\r \t\t\t\tnodeQ.push(node->right);\r \t\t\t\tnextLevelCnt++;\r \t\t\t}\r \t\t\tif (visitedCnt == currentLevelCnt)\r \t\t\t{\r \t\t\t\tvisitedCnt = 0;\r \t\t\t\tcurrentLevelCnt = nextLevelCnt;\r \t\t\t\tnextLevelCnt = 0;\r \t\t\t\tresult.push_back(layer);\r \t\t\t\tlayer.clear();\r \t\t\t}\r \t\t}\r \t\treturn result;\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Binary_Tree_Level_Order_Traversal.cpp\\Solution\\levelOrder(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "TreeNode(int x) : val(x), left(NULL), right(NULL) {}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Binary_Tree_Level_Order_Traversal.cpp\\TreeNode\\TreeNode(int)"
+    },
+    {
+        "f": [],
+        "fm": "UndirectedGraphNode(int x) : label(x) {}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Clone_Graph.cpp\\UndirectedGraphNode\\UndirectedGraphNode(int)"
+    },
+    {
+        "f": [],
+        "fm": "UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {\r \t\tif (node == NULL) return NULL;\r \t\tunordered_map<UndirectedGraphNode *, UndirectedGraphNode *> nodeMap;\r \t\tqueue<UndirectedGraphNode *> visit;\r \t\tvisit.push(node);\r \t\tUndirectedGraphNode * nodeCopy = new UndirectedGraphNode(node->label);\r \t\tnodeMap[node] = nodeCopy;\r \t\twhile (visit.size() > 0)\r \t\t{\r \t\t\tUndirectedGraphNode * cur = visit.front();\r \t\t\tvisit.pop();\r \t\t\tfor (int i = 0; i < cur->neighbors.size(); ++i)\r \t\t\t{\r \t\t\t\tUndirectedGraphNode * neighb = cur->neighbors[i];\r \t\t\t\tif (nodeMap.find(neighb) == nodeMap.end())\r \t\t\t\t{\r \t\t\t\t\t// no copy of neighbor node yet. create one and link with the copy of cur\r \t\t\t\t\tUndirectedGraphNode* neighbCopy = new UndirectedGraphNode(neighb->label);\r \t\t\t\t\tnodeMap[cur]->neighbors.push_back(neighbCopy);\r \t\t\t\t\tnodeMap[neighb] = neighbCopy;\r \t\t\t\t\tvisit.push(neighb);\r \t\t\t\t}\r \t\t\t\telse\r \t\t\t\t{\r \t\t\t\t\t// already a copy there. link it with the copy of cur\r \t\t\t\t\tnodeMap[cur]->neighbors.push_back(nodeMap[neighb]);\r \t\t\t\t}\r \t\t\t}\r \t\t}\r \r \t\treturn nodeCopy;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tUndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {\r \t\tif (node == NULL) return NULL;\r \t\tunordered_map<UndirectedGraphNode *, UndirectedGraphNode *> nodeMap;\r \t\tqueue<UndirectedGraphNode *> visit;\r \t\tvisit.push(node);\r \t\tUndirectedGraphNode * nodeCopy = new UndirectedGraphNode(node->label);\r \t\tnodeMap[node] = nodeCopy;\r \t\twhile (visit.size() > 0)\r \t\t{\r \t\t\tUndirectedGraphNode * cur = visit.front();\r \t\t\tvisit.pop();\r \t\t\tfor (int i = 0; i < cur->neighbors.size(); ++i)\r \t\t\t{\r \t\t\t\tUndirectedGraphNode * neighb = cur->neighbors[i];\r \t\t\t\tif (nodeMap.find(neighb) == nodeMap.end())\r \t\t\t\t{\r \t\t\t\t\t// no copy of neighbor node yet. create one and link with the copy of cur\r \t\t\t\t\tUndirectedGraphNode* neighbCopy = new UndirectedGraphNode(neighb->label);\r \t\t\t\t\tnodeMap[cur]->neighbors.push_back(neighbCopy);\r \t\t\t\t\tnodeMap[neighb] = neighbCopy;\r \t\t\t\t\tvisit.push(neighb);\r \t\t\t\t}\r \t\t\t\telse\r \t\t\t\t{\r \t\t\t\t\t// already a copy there. link it with the copy of cur\r \t\t\t\t\tnodeMap[cur]->neighbors.push_back(nodeMap[neighb]);\r \t\t\t\t}\r \t\t\t}\r \t\t}\r \r \t\treturn nodeCopy;\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Clone_Graph.cpp\\Solution\\cloneGraph(UndirectedGraphNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int numDecodings(string s) {\r \t\tif (s.empty() || s[0] == '0') return 0;\r \t\tif (s.size() == 1) return check(s[0]);\r \t\tint fn = 0, fn_1 = 0, fn_2 = 1;\r \t\tfn_1 = (check(s[0]) * check(s[1])) + check(s[0], s[1]);\r \t\tfor (int i = 2; i < s.size(); i++)\r \t\t{\r \t\t\tif (check(s[i])) fn += fn_1;\r \t\t\tif (check(s[i - 1], s[i])) fn += fn_2;\r \t\t\tif (fn == 0)\r \t\t\t\treturn 0;\r \t\t\tfn_2 = fn_1;\r \t\t\tfn_1 = fn;\r \t\t\tfn = 0;\r \t\t}\r \t\treturn fn_1;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tint numDecodings(string s) {\r \t\tif (s.empty() || s[0] == '0') return 0;\r \t\tif (s.size() == 1) return check(s[0]);\r \t\tint fn = 0, fn_1 = 0, fn_2 = 1;\r \t\tfn_1 = (check(s[0]) * check(s[1])) + check(s[0], s[1]);\r \t\tfor (int i = 2; i < s.size(); i++)\r \t\t{\r \t\t\tif (check(s[i])) fn += fn_1;\r \t\t\tif (check(s[i - 1], s[i])) fn += fn_2;\r \t\t\tif (fn == 0)\r \t\t\t\treturn 0;\r \t\t\tfn_2 = fn_1;\r \t\t\tfn_1 = fn;\r \t\t\tfn = 0;\r \t\t}\r \t\treturn fn_1;\r \t}\r \r \tint check(char one)\r \t{\r \t\treturn (one != '0') ? 1 : 0;\r \t}\r \t\r \tint check(char one, char two)\r \t{\r \t\treturn (one == '1' || (one == '2' && two <= '6')) ? 1 : 0;\r \t}\r \r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Decode_Ways.cpp\\Solution\\numDecodings(string)"
+    },
+    {
+        "f": [],
+        "fm": "int check(char one)\r \t{\r \t\treturn (one != '0') ? 1 : 0;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tint numDecodings(string s) {\r \t\tif (s.empty() || s[0] == '0') return 0;\r \t\tif (s.size() == 1) return check(s[0]);\r \t\tint fn = 0, fn_1 = 0, fn_2 = 1;\r \t\tfn_1 = (check(s[0]) * check(s[1])) + check(s[0], s[1]);\r \t\tfor (int i = 2; i < s.size(); i++)\r \t\t{\r \t\t\tif (check(s[i])) fn += fn_1;\r \t\t\tif (check(s[i - 1], s[i])) fn += fn_2;\r \t\t\tif (fn == 0)\r \t\t\t\treturn 0;\r \t\t\tfn_2 = fn_1;\r \t\t\tfn_1 = fn;\r \t\t\tfn = 0;\r \t\t}\r \t\treturn fn_1;\r \t}\r \r \tint check(char one)\r \t{\r \t\treturn (one != '0') ? 1 : 0;\r \t}\r \t\r \tint check(char one, char two)\r \t{\r \t\treturn (one == '1' || (one == '2' && two <= '6')) ? 1 : 0;\r \t}\r \r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Decode_Ways.cpp\\Solution\\check(char)"
+    },
+    {
+        "f": [],
+        "fm": "int check(char one, char two)\r \t{\r \t\treturn (one == '1' || (one == '2' && two <= '6')) ? 1 : 0;\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tint numDecodings(string s) {\r \t\tif (s.empty() || s[0] == '0') return 0;\r \t\tif (s.size() == 1) return check(s[0]);\r \t\tint fn = 0, fn_1 = 0, fn_2 = 1;\r \t\tfn_1 = (check(s[0]) * check(s[1])) + check(s[0], s[1]);\r \t\tfor (int i = 2; i < s.size(); i++)\r \t\t{\r \t\t\tif (check(s[i])) fn += fn_1;\r \t\t\tif (check(s[i - 1], s[i])) fn += fn_2;\r \t\t\tif (fn == 0)\r \t\t\t\treturn 0;\r \t\t\tfn_2 = fn_1;\r \t\t\tfn_1 = fn;\r \t\t\tfn = 0;\r \t\t}\r \t\treturn fn_1;\r \t}\r \r \tint check(char one)\r \t{\r \t\treturn (one != '0') ? 1 : 0;\r \t}\r \t\r \tint check(char one, char two)\r \t{\r \t\treturn (one == '1' || (one == '2' && two <= '6')) ? 1 : 0;\r \t}\r \r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Decode_Ways.cpp\\Solution\\check(char,char)"
+    },
+    {
+        "f": [],
+        "fm": "int numDistinct(string S, string T) {\r \t\tint match[200];\r \t\tif (S.size() < T.size()) return 0;\r \t\tmatch[0] = 1;\r \t\tfor (int i = 1; i <= T.size(); i++)\r \t\t\tmatch[i] = 0;\r \t\tfor (int i = 1; i <= S.size(); i ++)\r \t\t\tfor (int j = T.size(); j >= 1; j--)\r \t\t\t\tif (S[i - 1] == T[j - 1])\r \t\t\t\t\tmatch[j] += match[j - 1];\r \t\treturn match[T.size()];\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tint numDistinct(string S, string T) {\r \t\tint match[200];\r \t\tif (S.size() < T.size()) return 0;\r \t\tmatch[0] = 1;\r \t\tfor (int i = 1; i <= T.size(); i++)\r \t\t\tmatch[i] = 0;\r \t\tfor (int i = 1; i <= S.size(); i ++)\r \t\t\tfor (int j = T.size(); j >= 1; j--)\r \t\t\t\tif (S[i - 1] == T[j - 1])\r \t\t\t\t\tmatch[j] += match[j - 1];\r \t\treturn match[T.size()];\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Distinct_Subsequences.cpp\\Solution\\numDistinct(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "int minDistance(string word1, string word2) {\r \t\tif (word1.size() < word2.size())\r \t\t\tword1.swap(word2);\r \t\tint * matchUp = new int[20000];\r \t\tint* matchDown = new int[20000];\r \t\tfor (int i = 0; i <= word2.size(); i++)\r \t\t{\r \t\t\tmatchUp[i] = 0;\r \t\t\tmatchDown[i] = i;\r \t\t}\r \t\tfor (int i = 1; i <= word1.size(); i++)\r \t\t{\r \t\t\tmatchUp[0] = i;\r \t\t\tfor (int j = 1; j <= word2.size(); j++)\r \t\t\t{\r \t\t\t\tif (word1[i - 1] == word2[j - 1])\r \t\t\t\t{\r \t\t\t\t\tmatchUp[j] = matchDown[j - 1];\r \t\t\t\t}\r \t\t\t\telse\r \t\t\t\t{\r \t\t\t\t\tmatchUp[j] = min(matchDown[j], matchDown[j - 1]);\r \t\t\t\t\tmatchUp[j] = min(matchUp[j], matchUp[j - 1]) + 1;\r \t\t\t\t}\r \t\t\t}\r \t\t\tint* temp = matchUp;\r \t\t\tmatchUp = matchDown;\r \t\t\tmatchDown = temp;\r \t\t}\r \t\treturn matchDown[word2.size()];\r \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r \tint minDistance(string word1, string word2) {\r \t\tif (word1.size() < word2.size())\r \t\t\tword1.swap(word2);\r \t\tint * matchUp = new int[20000];\r \t\tint* matchDown = new int[20000];\r \t\tfor (int i = 0; i <= word2.size(); i++)\r \t\t{\r \t\t\tmatchUp[i] = 0;\r \t\t\tmatchDown[i] = i;\r \t\t}\r \t\tfor (int i = 1; i <= word1.size(); i++)\r \t\t{\r \t\t\tmatchUp[0] = i;\r \t\t\tfor (int j = 1; j <= word2.size(); j++)\r \t\t\t{\r \t\t\t\tif (word1[i - 1] == word2[j - 1])\r \t\t\t\t{\r \t\t\t\t\tmatchUp[j] = matchDown[j - 1];\r \t\t\t\t}\r \t\t\t\telse\r \t\t\t\t{\r \t\t\t\t\tmatchUp[j] = min(matchDown[j], matchDown[j - 1]);\r \t\t\t\t\tmatchUp[j] = min(matchUp[j], matchUp[j - 1]) + 1;\r \t\t\t\t}\r \t\t\t}\r \t\t\tint* temp = matchUp;\r \t\t\tmatchUp = matchDown;\r \t\t\tmatchDown = temp;\r \t\t}\r \t\treturn matchDown[word2.size()];\r \t}\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "D:\\prj-data\\codingtmd_leetcode\\src\\manual2\\Edit_Distance.cpp\\Solution\\minDistance(string,string)"
+    }
+]

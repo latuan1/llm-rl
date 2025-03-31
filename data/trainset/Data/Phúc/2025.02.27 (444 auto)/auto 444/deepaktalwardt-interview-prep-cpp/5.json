@@ -1,0 +1,182 @@
+[
+    {
+        "f": [],
+        "fm": "bool wordBreak(string s, vector<string>& wordDict) {         unordered_set<string> dict(wordDict.begin(), wordDict.end());         int n = s.size();         vector<bool> canBeSegmented(n + 1, false);         canBeSegmented[0] = true;         for (int i = 1; i <= n; i++) {             for (int j = 0; j < i; j++) {                 if (canBeSegmented[j]) {                     string sub = s.substr(j, i - j);                     if (dict.find(sub) != dict.end()) {                         canBeSegmented[i] = true;                         break;                     }                 }             }         }         return canBeSegmented[n];     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool wordBreak(string s, vector<string>& wordDict) {         unordered_set<string> dict(wordDict.begin(), wordDict.end());         int n = s.size();         vector<bool> canBeSegmented(n + 1, false);         canBeSegmented[0] = true;         for (int i = 1; i <= n; i++) {             for (int j = 0; j < i; j++) {                 if (canBeSegmented[j]) {                     string sub = s.substr(j, i - j);                     if (dict.find(sub) != dict.end()) {                         canBeSegmented[i] = true;                         break;                     }                 }             }         }         return canBeSegmented[n];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/139-word-break.cpp/Solution/wordBreak(string,vector<string>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool hasCycle(ListNode *head) {         if (head == NULL || head->next == NULL) {             return false;         }         ListNode* fast = head->next;         ListNode* slow = head;         while (slow != fast) {             if (fast == NULL || fast->next == NULL) {                 return false;             }             fast = fast->next->next;             slow = slow->next;         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool hasCycle(ListNode *head) {         if (head == NULL || head->next == NULL) {             return false;         }         ListNode* fast = head->next;         ListNode* slow = head;         while (slow != fast) {             if (fast == NULL || fast->next == NULL) {                 return false;             }             fast = fast->next->next;             slow = slow->next;         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/141-linked-list-cycle.cpp/Solution/hasCycle(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int lengthOfLongestSubstringTwoDistinct(string s) {         unordered_map<char, int> uniqueChars;         int longest = 0;         int N = s.size();         if (N <= 2) return N;         int left = 0;         int right = 0;         while (right < N) {             if (uniqueChars.size() <= 2) {                 uniqueChars[s[right]] = right;             }             if (uniqueChars.size() == 3) {                 auto it = min_element(uniqueChars.begin(), uniqueChars.end(),                                       [](const auto& l, const auto& r) {                                          return l.second < r.second;                                      });                 int leftmost = it->second;                 uniqueChars.erase(s[leftmost]);                 left = leftmost + 1;             }             longest = max(longest, right - left + 1);             right++;         }         return longest;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int lengthOfLongestSubstringTwoDistinct(string s) {         unordered_map<char, int> uniqueChars;         int longest = 0;         int N = s.size();         if (N <= 2) return N;         int left = 0;         int right = 0;         while (right < N) {             if (uniqueChars.size() <= 2) {                 uniqueChars[s[right]] = right;             }             if (uniqueChars.size() == 3) {                 auto it = min_element(uniqueChars.begin(), uniqueChars.end(),                                       [](const auto& l, const auto& r) {                                          return l.second < r.second;                                      });                 int leftmost = it->second;                 uniqueChars.erase(s[leftmost]);                 left = leftmost + 1;             }             longest = max(longest, right - left + 1);             right++;         }         return longest;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/159-longest-substring-with-two-distinct-chars.cpp/Solution/lengthOfLongestSubstringTwoDistinct(string)"
+    },
+    {
+        "f": [],
+        "fm": "bool isOneEditDistance(string s, string t) {         if (s.length() == 0 && t.length() == 0) return false;         if (s.length() == 0 && t.length() == 1 || t.length() == 0 && s.length() == 1) return true;         int lenDiff = s.length() - t.length();         if (abs(lenDiff) > 1) return false;                  int equal = 0; // default: s and t are of equal length         if (s.length() > t.length()) {             equal = -1; // s is longer         } else if (s.length() < t.length()) {             equal = 1; // t is longer         }                  auto it1 = s.begin();         auto it2 = t.begin();                  int numDiff = 0;                  while (it1 != s.end() && it2 != s.end()) {             if (*it1 == *it2) {                 it1++;                 it2++;             } else {                 numDiff++;                 if (equal == 0) {                     it1++;                     it2++;                 } else if (equal == -1) {                     it1++;                 } else if (equal == 1) {                     it2++;                 }                 if (numDiff > 1) {                     return false;                 }                              }         }         if (numDiff == 1 || numDiff == 0 && (it1 != s.end() || it2 != t.end())) {             return true;         }         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isOneEditDistance(string s, string t) {         if (s.length() == 0 && t.length() == 0) return false;         if (s.length() == 0 && t.length() == 1 || t.length() == 0 && s.length() == 1) return true;         int lenDiff = s.length() - t.length();         if (abs(lenDiff) > 1) return false;                  int equal = 0; // default: s and t are of equal length         if (s.length() > t.length()) {             equal = -1; // s is longer         } else if (s.length() < t.length()) {             equal = 1; // t is longer         }                  auto it1 = s.begin();         auto it2 = t.begin();                  int numDiff = 0;                  while (it1 != s.end() && it2 != s.end()) {             if (*it1 == *it2) {                 it1++;                 it2++;             } else {                 numDiff++;                 if (equal == 0) {                     it1++;                     it2++;                 } else if (equal == -1) {                     it1++;                 } else if (equal == 1) {                     it2++;                 }                 if (numDiff > 1) {                     return false;                 }                              }         }         if (numDiff == 1 || numDiff == 0 && (it1 != s.end() || it2 != t.end())) {             return true;         }         return false;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/161-one-edit-distance.cpp/Solution/isOneEditDistance(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "int rob(vector<int>& nums) {         int len = nums.size();         if (len == 0) {             return 0;         }         if (len == 1) {             return nums[0];         }         int prevPrev = nums[0];         int prev = max(nums[0], nums[1]);         for (int i = 2; i < len; i++) {             int curr = max(prev, nums[i] + prevPrev);             prevPrev = prev;             prev = curr;         }         return prev;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int rob(vector<int>& nums) {         int len = nums.size();         if (len == 0) {             return 0;         }         if (len == 1) {             return nums[0];         }         int prevPrev = nums[0];         int prev = max(nums[0], nums[1]);         for (int i = 2; i < len; i++) {             int curr = max(prev, nums[i] + prevPrev);             prevPrev = prev;             prev = curr;         }         return prev;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/198-house-robber.cpp/Solution/rob(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int exploreIsland(int i, int j, vector<vector<char>>& grid, vector<vector<bool>>& visited) {         int result = 0;         int rows = grid.size();         int cols = 0;         if (rows > 0) cols = grid[0].size();         queue<vector<int>> q;         q.push({i, j});         while (!q.empty()) {             vector<int> front = q.front();             q.pop();             i = front[0];             j = front[1];             if (visited[i][j]) continue;             visited[i][j] = true;             if (grid[i][j] == '1') {                 result = 1;                 if ((i-1 >= 0) && !visited[i-1][j]) q.push({i-1, j});                 if ((i+1 < rows) && !visited[i+1][j]) q.push({i+1, j});                 if ((j-1 >= 0) && !visited[i][j-1]) q.push({i, j-1});                 if ((j+1 < cols) && !visited[i][j+1]) q.push({i, j+1});             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int exploreIsland(int i, int j, vector<vector<char>>& grid, vector<vector<bool>>& visited) {         int result = 0;         int rows = grid.size();         int cols = 0;         if (rows > 0) cols = grid[0].size();         queue<vector<int>> q;         q.push({i, j});         while (!q.empty()) {             vector<int> front = q.front();             q.pop();             i = front[0];             j = front[1];             if (visited[i][j]) continue;             visited[i][j] = true;             if (grid[i][j] == '1') {                 result = 1;                 if ((i-1 >= 0) && !visited[i-1][j]) q.push({i-1, j});                 if ((i+1 < rows) && !visited[i+1][j]) q.push({i+1, j});                 if ((j-1 >= 0) && !visited[i][j-1]) q.push({i, j-1});                 if ((j+1 < cols) && !visited[i][j+1]) q.push({i, j+1});             }         }         return result;     }          int numIslands(vector<vector<char>>& grid) {         int result = 0;         int rows = grid.size();         int cols = 0;         if (rows > 0) cols = grid[0].size();         vector<vector<bool>> visited(rows, vector<bool>(cols, false));         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (visited[i][j]) continue;                 if (grid[i][j] == '1') {                     result += exploreIsland(i, j, grid, visited);                 } else {                     visited[i][j] = true;                 }             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/200-number-of-islands.cpp/Solution/exploreIsland(int,int,vector<vector<char>>&,vector<vector<bool>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int numIslands(vector<vector<char>>& grid) {         int result = 0;         int rows = grid.size();         int cols = 0;         if (rows > 0) cols = grid[0].size();         vector<vector<bool>> visited(rows, vector<bool>(cols, false));         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (visited[i][j]) continue;                 if (grid[i][j] == '1') {                     result += exploreIsland(i, j, grid, visited);                 } else {                     visited[i][j] = true;                 }             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int exploreIsland(int i, int j, vector<vector<char>>& grid, vector<vector<bool>>& visited) {         int result = 0;         int rows = grid.size();         int cols = 0;         if (rows > 0) cols = grid[0].size();         queue<vector<int>> q;         q.push({i, j});         while (!q.empty()) {             vector<int> front = q.front();             q.pop();             i = front[0];             j = front[1];             if (visited[i][j]) continue;             visited[i][j] = true;             if (grid[i][j] == '1') {                 result = 1;                 if ((i-1 >= 0) && !visited[i-1][j]) q.push({i-1, j});                 if ((i+1 < rows) && !visited[i+1][j]) q.push({i+1, j});                 if ((j-1 >= 0) && !visited[i][j-1]) q.push({i, j-1});                 if ((j+1 < cols) && !visited[i][j+1]) q.push({i, j+1});             }         }         return result;     }          int numIslands(vector<vector<char>>& grid) {         int result = 0;         int rows = grid.size();         int cols = 0;         if (rows > 0) cols = grid[0].size();         vector<vector<bool>> visited(rows, vector<bool>(cols, false));         for (int i = 0; i < rows; i++) {             for (int j = 0; j < cols; j++) {                 if (visited[i][j]) continue;                 if (grid[i][j] == '1') {                     result += exploreIsland(i, j, grid, visited);                 } else {                     visited[i][j] = true;                 }             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/200-number-of-islands.cpp/Solution/numIslands(vector<vector<char>>&)"
+    },
+    {
+        "f": [],
+        "fm": "ListNode* reverseList(ListNode* head) {         ListNode* p1 = nullptr;         ListNode* p2 = head;         while (p2 != nullptr) {             ListNode* p3 = p2->next;             p2->next = p1;             p1 = p2;             p2 = p3;         }         return p1;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     ListNode* reverseList(ListNode* head) {         ListNode* p1 = nullptr;         ListNode* p2 = head;         while (p2 != nullptr) {             ListNode* p3 = p2->next;             p2->next = p1;             p1 = p2;             p2 = p3;         }         return p1;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/206-reverse-linked-list.cpp/Solution/reverseList(ListNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool dfs(int i, vector<bool>& visited, unordered_set<int>& visiting, unordered_map<int, vector<int>>& graph) {         if (visiting.find(i) != visiting.end()) return false;         visiting.emplace(i);         for (int n : graph[i]) {             if (!visited[i]) {                 bool finishPossible = dfs(n, visited, visiting, graph);                 if (!finishPossible) return false;             }         }         visited[i] = true;         visiting.erase(i);         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool dfs(int i, vector<bool>& visited, unordered_set<int>& visiting, unordered_map<int, vector<int>>& graph) {         if (visiting.find(i) != visiting.end()) return false;         visiting.emplace(i);         for (int n : graph[i]) {             if (!visited[i]) {                 bool finishPossible = dfs(n, visited, visiting, graph);                 if (!finishPossible) return false;             }         }         visited[i] = true;         visiting.erase(i);         return true;     }          bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {         unordered_map<int, vector<int>> graph;         for (const vector<int>& prereq : prerequisites) {             auto it = graph.find(prereq[0]);             if (it != graph.end()) {                 (it->second).push_back(prereq[1]);             } else {                 graph[prereq[0]] = {prereq[1]};             }         }                  vector<bool> visited(numCourses, false);         unordered_set<int> visiting;                  for (int i = 0; i < numCourses; i++) {             if (!visited[i]) {                 bool finishPossible = dfs(i, visited, visiting, graph);                 if (!finishPossible) return false;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/207-course-schedule.cpp/Solution/dfs(int,vector<bool>&,unordered_set<int>&,unordered_map<int,vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {         unordered_map<int, vector<int>> graph;         for (const vector<int>& prereq : prerequisites) {             auto it = graph.find(prereq[0]);             if (it != graph.end()) {                 (it->second).push_back(prereq[1]);             } else {                 graph[prereq[0]] = {prereq[1]};             }         }                  vector<bool> visited(numCourses, false);         unordered_set<int> visiting;                  for (int i = 0; i < numCourses; i++) {             if (!visited[i]) {                 bool finishPossible = dfs(i, visited, visiting, graph);                 if (!finishPossible) return false;             }         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool dfs(int i, vector<bool>& visited, unordered_set<int>& visiting, unordered_map<int, vector<int>>& graph) {         if (visiting.find(i) != visiting.end()) return false;         visiting.emplace(i);         for (int n : graph[i]) {             if (!visited[i]) {                 bool finishPossible = dfs(n, visited, visiting, graph);                 if (!finishPossible) return false;             }         }         visited[i] = true;         visiting.erase(i);         return true;     }          bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {         unordered_map<int, vector<int>> graph;         for (const vector<int>& prereq : prerequisites) {             auto it = graph.find(prereq[0]);             if (it != graph.end()) {                 (it->second).push_back(prereq[1]);             } else {                 graph[prereq[0]] = {prereq[1]};             }         }                  vector<bool> visited(numCourses, false);         unordered_set<int> visiting;                  for (int i = 0; i < numCourses; i++) {             if (!visited[i]) {                 bool finishPossible = dfs(i, visited, visiting, graph);                 if (!finishPossible) return false;             }         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/207-course-schedule.cpp/Solution/canFinish(int,vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findKthLargest(vector<int>& nums, int k) {         priority_queue<int, vector<int>, greater<int>> min_heap;         for (int i = 0; i < nums.size(); i++) {             if (i < k) {                 min_heap.emplace(nums[i]);             } else {                 if (nums[i] > min_heap.top()) {                     min_heap.pop();                     min_heap.emplace(nums[i]);                 }             }         }         return min_heap.top();     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findKthLargest(vector<int>& nums, int k) {         priority_queue<int, vector<int>, greater<int>> min_heap;         for (int i = 0; i < nums.size(); i++) {             if (i < k) {                 min_heap.emplace(nums[i]);             } else {                 if (nums[i] > min_heap.top()) {                     min_heap.pop();                     min_heap.emplace(nums[i]);                 }             }         }         return min_heap.top();     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/215-kth-largest-element-in-array.cpp/Solution/findKthLargest(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int maximalSquare(vector<vector<char>>& matrix) {         int rows = matrix.size();         if (rows == 0) return 0;         int cols = matrix[0].size();         vector<vector<int>> maxSquareCorner(rows + 1, vector<int>(cols + 1, 0));         int result = 0;         for (int i = 1; i <= rows; i++) {             for (int j = 1; j <= cols; j++) {                 if (matrix[i - 1][j - 1] == '1') {                     maxSquareCorner[i][j] = min(maxSquareCorner[i - 1][j - 1], min(maxSquareCorner[i - 1][j], maxSquareCorner[i][j - 1])) + 1;                     result = max(result, maxSquareCorner[i][j]);                 }             }         }         return result * result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maximalSquare(vector<vector<char>>& matrix) {         int rows = matrix.size();         if (rows == 0) return 0;         int cols = matrix[0].size();         vector<vector<int>> maxSquareCorner(rows + 1, vector<int>(cols + 1, 0));         int result = 0;         for (int i = 1; i <= rows; i++) {             for (int j = 1; j <= cols; j++) {                 if (matrix[i - 1][j - 1] == '1') {                     maxSquareCorner[i][j] = min(maxSquareCorner[i - 1][j - 1], min(maxSquareCorner[i - 1][j], maxSquareCorner[i][j - 1])) + 1;                     result = max(result, maxSquareCorner[i][j]);                 }             }         }         return result * result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/5/221-maximal-square.cpp/Solution/maximalSquare(vector<vector<char>>&)"
+    }
+]

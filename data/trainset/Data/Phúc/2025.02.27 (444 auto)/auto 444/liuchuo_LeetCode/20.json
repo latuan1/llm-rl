@@ -1,0 +1,152 @@
+[
+    {
+        "f": [],
+        "fm": "string reverseWords(string s) {         string result = \"\";         stack<char> word;         int flag = 0;         for (int i = 0; i < s.length(); i++) {             if (s[i] != ' ')                  word.push(s[i]);             if (s[i] == ' ' || i == s.length() - 1) {                 if (flag == 1) result += \" \";                 while (!word.empty()) {                     result += word.top();                     word.pop();                     flag = 1;                 }             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string reverseWords(string s) {         string result = \"\";         stack<char> word;         int flag = 0;         for (int i = 0; i < s.length(); i++) {             if (s[i] != ' ')                  word.push(s[i]);             if (s[i] == ' ' || i == s.length() - 1) {                 if (flag == 1) result += \" \";                 while (!word.empty()) {                     result += word.top();                     word.pop();                     flag = 1;                 }             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/557. Reverse Words in a String III.cpp/Solution/reverseWords(string)"
+    },
+    {
+        "f": [],
+        "fm": "int arrayPairSum(vector<int>& nums) {         sort(nums.begin(), nums.end());         int ans = 0;         for (int i = 0; i < nums.size(); i+=2)             ans += nums[i];         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int arrayPairSum(vector<int>& nums) {         sort(nums.begin(), nums.end());         int ans = 0;         for (int i = 0; i < nums.size(); i+=2)             ans += nums[i];         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/561. Array Partition I.cpp/Solution/arrayPairSum(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "vector<vector<int>> matrixReshape(vector<vector<int>>& nums, int r, int c) {         int n = nums.size(), m = nums[0].size();         if (n * m != r * c) return nums;         vector<vector<int>> ans(r, vector<int>(c));         for (int i = 0; i < r * c; i++) ans[i/c][i%c] = nums[i/m][i%m];         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<vector<int>> matrixReshape(vector<vector<int>>& nums, int r, int c) {         int n = nums.size(), m = nums[0].size();         if (n * m != r * c) return nums;         vector<vector<int>> ans(r, vector<int>(c));         for (int i = 0; i < r * c; i++) ans[i/c][i%c] = nums[i/m][i%m];         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/566. Reshape the Matrix.cpp/Solution/matrixReshape(vector<vector<int>>&,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "bool isSubtree(TreeNode* s, TreeNode* t) {         if (s == NULL && t == NULL) return true;         if (s == NULL || t == NULL) return false;         if (s->val == t->val && isSame(s, t)) return true;         return isSubtree(s->left, t) || isSubtree(s->right, t);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isSubtree(TreeNode* s, TreeNode* t) {         if (s == NULL && t == NULL) return true;         if (s == NULL || t == NULL) return false;         if (s->val == t->val && isSame(s, t)) return true;         return isSubtree(s->left, t) || isSubtree(s->right, t);     } private:     bool isSame(TreeNode* r, TreeNode* t) {         if (r == NULL && t == NULL) return true;         if (r == NULL || t == NULL || r->val != t->val) return false;         return (isSame(r->left, t->left) && isSame(r->right, t->right));     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/572. Subtree of Another Tree.cpp/Solution/isSubtree(TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool isSame(TreeNode* r, TreeNode* t) {         if (r == NULL && t == NULL) return true;         if (r == NULL || t == NULL || r->val != t->val) return false;         return (isSame(r->left, t->left) && isSame(r->right, t->right));     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isSubtree(TreeNode* s, TreeNode* t) {         if (s == NULL && t == NULL) return true;         if (s == NULL || t == NULL) return false;         if (s->val == t->val && isSame(s, t)) return true;         return isSubtree(s->left, t) || isSubtree(s->right, t);     } private:     bool isSame(TreeNode* r, TreeNode* t) {         if (r == NULL && t == NULL) return true;         if (r == NULL || t == NULL || r->val != t->val) return false;         return (isSame(r->left, t->left) && isSame(r->right, t->right));     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/572. Subtree of Another Tree.cpp/Solution/isSame(TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int distributeCandies(vector<int>& candies) {         unordered_set<int> s;         for (int i = 0; i < candies.size(); i++) s.insert(candies[i]);         return min(s.size(), candies.size() / 2);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int distributeCandies(vector<int>& candies) {         unordered_set<int> s;         for (int i = 0; i < candies.size(); i++) s.insert(candies[i]);         return min(s.size(), candies.size() / 2);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/575. Distribute Candies.cpp/Solution/distributeCandies(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findUnsortedSubarray(vector<int>& nums) {         vector<int> v(nums);         sort(v.begin(), v.end());         int i = 0, j = nums.size() - 1;         while (i < nums.size() && nums[i] == v[i]) i++;         while (j >= 0 && nums[j] == v[j]) j--;         return i <= j ? j - i + 1 : 0;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findUnsortedSubarray(vector<int>& nums) {         vector<int> v(nums);         sort(v.begin(), v.end());         int i = 0, j = nums.size() - 1;         while (i < nums.size() && nums[i] == v[i]) i++;         while (j >= 0 && nums[j] == v[j]) j--;         return i <= j ? j - i + 1 : 0;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/581. Shortest Unsorted Continuous Subarray.cpp/Solution/findUnsortedSubarray(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "vector<string> findRestaurant(vector<string>& list1, vector<string>& list2) {         vector<string> ans;         int minSum = 2000;         for (int i = 0; i < list1.size(); i++) {             for (int j = 0; j < list2.size(); j++) {                 if (list1[i] == list2[j] && minSum > i + j) {                     ans.clear();                     ans.push_back(list1[i]);                     minSum = i + j;                 } else if (list1[i] == list2[j] && minSum == i + j) {                     ans.push_back(list1[i]);                 }             }         }         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<string> findRestaurant(vector<string>& list1, vector<string>& list2) {         vector<string> ans;         int minSum = 2000;         for (int i = 0; i < list1.size(); i++) {             for (int j = 0; j < list2.size(); j++) {                 if (list1[i] == list2[j] && minSum > i + j) {                     ans.clear();                     ans.push_back(list1[i]);                     minSum = i + j;                 } else if (list1[i] == list2[j] && minSum == i + j) {                     ans.push_back(list1[i]);                 }             }         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/599. Minimum Index Sum of Two Lists.cpp/Solution/findRestaurant(vector<string>&,vector<string>&)"
+    },
+    {
+        "f": [],
+        "fm": "int maximumProduct(vector<int>& nums) {         sort(nums.begin(), nums.end());         int n = nums.size();         return max(nums[0] * nums[1] * nums[n-1], nums[n-3] * nums[n-2] * nums[n-1]);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maximumProduct(vector<int>& nums) {         sort(nums.begin(), nums.end());         int n = nums.size();         return max(nums[0] * nums[1] * nums[n-1], nums[n-3] * nums[n-2] * nums[n-1]);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/628. Maximum Product of Three Numbers.cpp/Solution/maximumProduct(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool judgeSquareSum(int c) {         int t = sqrt(c);         for (int i = t; i >= 0; i--) {             for (int j = t; j >= 0; j--) {                 if (i * i + j * j == c) return true;                 if (i * i + j * j < c) break;             }         }         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool judgeSquareSum(int c) {         int t = sqrt(c);         for (int i = t; i >= 0; i--) {             for (int j = t; j >= 0; j--) {                 if (i * i + j * j == c) return true;                 if (i * i + j * j < c) break;             }         }         return false;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/20/633. Sum of Square Numbers.cpp/Solution/judgeSquareSum(int)"
+    }
+]

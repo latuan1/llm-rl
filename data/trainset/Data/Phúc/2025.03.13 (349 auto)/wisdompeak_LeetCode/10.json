@@ -1,0 +1,1529 @@
+[
+    {
+        "f": [],
+        "fm": "vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k)      {         int n = nums.size();         vector<int>presum(n);                 for (int i=0; i<n; i++)             presum[i] = (i==0?0:presum[i-1]) + nums[i];                                  vector<int>leftMax(n,0);         vector<int>leftIdx(n,0);          int maxSum = 0;         int maxIdx = 0;         for (int i=k-1; i<n; i++)         {             // [i-k+1 : i]             int sum = presum[i] - (i<k?0:presum[i-k]);             if (sum > maxSum)             {                 maxSum = sum;                 maxIdx = i-k+1;             }             leftMax[i] = maxSum;             leftIdx[i] = maxIdx;         }          vector<int>rightMax(n,0);         vector<int>rightIdx(n,0);          maxSum = 0;         maxIdx = 0;         for (int i=n-k; i>=0; i--)         {             // [i : i+k-1]             int sum = presum[i+k-1] - (i==0?0:presum[i-1]);             if (sum >= maxSum)             {                 maxSum = sum;                 maxIdx = i;             }             rightMax[i] = maxSum;             rightIdx[i] = maxIdx;         }          vector<int>rets;         maxSum = 0;         for (int i=k; i+2*k<=n; i++)         {             int sum = presum[i+k-1] - (i==0?0:presum[i-1]);             if (sum + leftMax[i-1] + rightMax[i+k] > maxSum)             {                 maxSum = sum + leftMax[i-1] + rightMax[i+k];                 rets = {leftIdx[i-1], i, rightIdx[i+k]};             }         }          return rets;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxSumOfThreeSubarrays(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "2132938011"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "108960077"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/nums/element #2",
+                                            "correspondingType": "int",
+                                            "value": "122639867"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxSumOfThreeSubarrays_vector_int_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_maxSumOfThreeSubarrays_vector_int_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=2;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=2132938011;\nnums.push_back(nums_element0);\nint nums_element1=108960077;\nnums.push_back(nums_element1);\nint nums_element2=122639867;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode k */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxSumOfThreeSubarrays_vector_int_int_random_4\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxSumOfThreeSubarrays(nums,k);\nAKA_fCall++;AKA_mark(\"Return from: ./10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=2;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=2132938011;\nnums.push_back(nums_element0);\nint nums_element1=108960077;\nnums.push_back(nums_element1);\nint nums_element2=122639867;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode k */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k)      {         int n = nums.size();         vector<int>presum(n);                 for (int i=0; i<n; i++)             presum[i] = (i==0?0:presum[i-1]) + nums[i];                                  vector<int>leftMax(n,0);         vector<int>leftIdx(n,0);          int maxSum = 0;         int maxIdx = 0;         for (int i=k-1; i<n; i++)         {             // [i-k+1 : i]             int sum = presum[i] - (i<k?0:presum[i-k]);             if (sum > maxSum)             {                 maxSum = sum;                 maxIdx = i-k+1;             }             leftMax[i] = maxSum;             leftIdx[i] = maxIdx;         }          vector<int>rightMax(n,0);         vector<int>rightIdx(n,0);          maxSum = 0;         maxIdx = 0;         for (int i=n-k; i>=0; i--)         {             // [i : i+k-1]             int sum = presum[i+k-1] - (i==0?0:presum[i-1]);             if (sum >= maxSum)             {                 maxSum = sum;                 maxIdx = i;             }             rightMax[i] = maxSum;             rightIdx[i] = maxIdx;         }          vector<int>rets;         maxSum = 0;         for (int i=k; i+2*k<=n; i++)         {             int sum = presum[i+k-1] - (i==0?0:presum[i-1]);             if (sum + leftMax[i-1] + rightMax[i+k] > maxSum)             {                 maxSum = sum + leftMax[i-1] + rightMax[i+k];                 rets = {leftIdx[i-1], i, rightIdx[i+k]};             }         }          return rets;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/689.Maximum-Sum-of-3-Non-Overlapping-Subarrays.cpp/Solution/maxSumOfThreeSubarrays(vector<int>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "string minWindow(string S, string T)      {         int m = S.size();         int n = T.size();         S = \"#\"+S;         T = \"#\"+T;         auto dp = vector<vector<int>>(m+1,vector<int>(n+1,0));                  for (int j=1; j<=n; j++)             dp[0][j] = INT_MAX/2;         for (int i=0; i<=m; i++)             dp[i][0] = 0;                  for (int i=1; i<=m; i++)             for (int j=1; j<=n; j++)             {                 if (S[i]==T[j])                     dp[i][j] = dp[i-1][j-1]+1;                 else                     dp[i][j] = dp[i-1][j]+1;             }                  int len  = INT_MAX/2;         int pos;         for (int i=1; i<=m; i++)         {             if (dp[i][n] < len)             {                 len = dp[i][n];                 pos = i;             }         }                  if (len>=INT_MAX/2)             return \"\";         else             return S.substr(pos-len+1,len);              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "727.Minimum-Window-Subsequence_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/727.Minimum-Window-Subsequence_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minWindow(string,string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "T",
+                                    "virtual_name": "EXPECTED_T",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/T",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/S",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "102"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "T",
+                                    "virtual_name": "T",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/T",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "T[0]",
+                                            "virtual_name": "T[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/T/T[0]",
+                                            "correspondingType": "char",
+                                            "value": "-51"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minWindow_string_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_minWindow_string_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/727.Minimum-Window-Subsequence_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName262171 = new char[2];akaRandomName262171[0] = 102;akaRandomName262171[1] = '\\0';string S=akaRandomName262171;\nchar* akaRandomName464937 = new char[2];akaRandomName464937[0] = -51;akaRandomName464937[1] = '\\0';string T=akaRandomName464937;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalStringDataNode T */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minWindow_string_string_random_0\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minWindow(S,T);\nAKA_fCall++;AKA_mark(\"Return from: ./10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/727.Minimum-Window-Subsequence_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName468075 = new char[2];akaRandomName468075[0] = 102;akaRandomName468075[1] = '\\0';string S=akaRandomName468075;\nchar* akaRandomName466295 = new char[2];akaRandomName466295[0] = -51;akaRandomName466295[1] = '\\0';string T=akaRandomName466295;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalStringDataNode T */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string minWindow(string S, string T)      {         int m = S.size();         int n = T.size();         S = \"#\"+S;         T = \"#\"+T;         auto dp = vector<vector<int>>(m+1,vector<int>(n+1,0));                  for (int j=1; j<=n; j++)             dp[0][j] = INT_MAX/2;         for (int i=0; i<=m; i++)             dp[i][0] = 0;                  for (int i=1; i<=m; i++)             for (int j=1; j<=n; j++)             {                 if (S[i]==T[j])                     dp[i][j] = dp[i-1][j-1]+1;                 else                     dp[i][j] = dp[i-1][j]+1;             }                  int len  = INT_MAX/2;         int pos;         for (int i=1; i<=m; i++)         {             if (dp[i][n] < len)             {                 len = dp[i][n];                 pos = i;             }         }                  if (len>=INT_MAX/2)             return \"\";         else             return S.substr(pos-len+1,len);              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/727.Minimum-Window-Subsequence_v1.cpp/Solution/minWindow(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "string minWindow(string s1, string s2)      {         int m = s1.size();         int next[m+1][26];         s1 = \"#\" + s1;                  for (int ch=0; ch<26; ch++)             next[m][ch] = -1;         for (int i=m-1; i>=0; i--)         {             for (int ch=0; ch<26; ch++)                 next[i][ch] = next[i+1][ch];             next[i][s1[i+1]-'a'] = i+1;         }                  vector<int>start;         for (int i=1; i<=m; i++)         {             if (s1[i]==s2[0])                 start.push_back(i);         }                  string ret = \"\";         for (int i: start)         {             int j = i-1;             int flag = 1;             for (auto ch: s2)             {                 j = next[j][ch-'a'];                 if (j==-1)                 {                     flag = 0;                     break;                 }             }             if (flag)             {                 int len = j-i+1;                 if (ret == \"\" || len < ret.size())                 {                     ret = s1.substr(i, len);                 }             }                 }                  return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "727.Minimum-Window-Subsequence_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/727.Minimum-Window-Subsequence_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minWindow(string,string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s1",
+                                    "virtual_name": "EXPECTED_s1",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/s1",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s2",
+                                    "virtual_name": "EXPECTED_s2",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/s2",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s1",
+                                    "virtual_name": "s1",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/s1",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s1[0]",
+                                            "virtual_name": "s1[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/s1/s1[0]",
+                                            "correspondingType": "char",
+                                            "value": "-32"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s2",
+                                    "virtual_name": "s2",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/s2",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s2[0]",
+                                            "virtual_name": "s2[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/s2/s2[0]",
+                                            "correspondingType": "char",
+                                            "value": "27"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minWindow_string_string_random_5(void) {\n{\nAKA_test_case_name=\"Solution_minWindow_string_string_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/727.Minimum-Window-Subsequence_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName892054 = new char[2];akaRandomName892054[0] = -32;akaRandomName892054[1] = '\\0';string s1=akaRandomName892054;\nchar* akaRandomName82106 = new char[2];akaRandomName82106[0] = 27;akaRandomName82106[1] = '\\0';string s2=akaRandomName82106;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s1 */\n/* NormalStringDataNode s2 */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minWindow_string_string_random_5\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minWindow(s1,s2);\nAKA_fCall++;AKA_mark(\"Return from: ./10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/727.Minimum-Window-Subsequence_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName218237 = new char[2];akaRandomName218237[0] = -32;akaRandomName218237[1] = '\\0';string s1=akaRandomName218237;\nchar* akaRandomName848129 = new char[2];akaRandomName848129[0] = 27;akaRandomName848129[1] = '\\0';string s2=akaRandomName848129;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s1 */\n/* NormalStringDataNode s2 */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string minWindow(string s1, string s2)      {         int m = s1.size();         int next[m+1][26];         s1 = \"#\" + s1;                  for (int ch=0; ch<26; ch++)             next[m][ch] = -1;         for (int i=m-1; i>=0; i--)         {             for (int ch=0; ch<26; ch++)                 next[i][ch] = next[i+1][ch];             next[i][s1[i+1]-'a'] = i+1;         }                  vector<int>start;         for (int i=1; i<=m; i++)         {             if (s1[i]==s2[0])                 start.push_back(i);         }                  string ret = \"\";         for (int i: start)         {             int j = i-1;             int flag = 1;             for (auto ch: s2)             {                 j = next[j][ch-'a'];                 if (j==-1)                 {                     flag = 0;                     break;                 }             }             if (flag)             {                 int len = j-i+1;                 if (ret == \"\" || len < ret.size())                 {                     ret = s1.substr(i, len);                 }             }                 }                  return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/727.Minimum-Window-Subsequence_v2.cpp/Solution/minWindow(string,string)"
+    },
+    {
+        "f": [
+            "vector<pair<int,int>> events;"
+        ],
+        "fm": "bool book(int start, int end)      {         vector<pair<int,int>>temp;         for (int i=0; i<events.size(); i++)         {             if (!(events[i].second<=start || events[i].first>=end))                 temp.push_back(events[i]);         }         sort(temp.begin(),temp.end());                  for (int i=1; i<temp.size(); i++)         {             if (temp[i].first<temp[i-1].second)                 return false;         }                  events.push_back({start,end});                  return true;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "731.My-Calendar-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/731.My-Calendar-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___MyCalendarTwo",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___MyCalendarTwo",
+                                    "dataType": "::MyCalendarTwo",
+                                    "realType": "::MyCalendarTwo",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo",
+                                    "correspondingType": "./10/731.My-Calendar-II.cpp/MyCalendarTwo"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___MyCalendarTwo",
+                                    "virtual_name": "AKA_INSTANCE___MyCalendarTwo",
+                                    "dataType": "::MyCalendarTwo",
+                                    "realType": "::MyCalendarTwo",
+                                    "external": true,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo",
+                                    "correspondingType": "./10/731.My-Calendar-II.cpp/MyCalendarTwo",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___MyCalendarTwo",
+                                            "virtual_name": "AKA_INSTANCE___MyCalendarTwo",
+                                            "dataType": "::MyCalendarTwo",
+                                            "realType": "::MyCalendarTwo",
+                                            "external": false,
+                                            "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo",
+                                            "correspondingType": "./10/731.My-Calendar-II.cpp/MyCalendarTwo",
+                                            "rawType": "::MyCalendarTwo",
+                                            "selectedConstructor": "MyCalendarTwo()",
+                                            "variableType": "::MyCalendarTwo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "MyCalendarTwo()",
+                                                    "virtual_name": "AKA_INSTANCE___MyCalendarTwo",
+                                                    "dataType": "::MyCalendarTwo",
+                                                    "realType": "::MyCalendarTwo",
+                                                    "functionNode": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/MyCalendarTwo()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                                    "name": "events",
+                                                    "virtual_name": "AKA_INSTANCE___MyCalendarTwo->events",
+                                                    "dataType": "vector<pair<int,int>>",
+                                                    "realType": "vector<pair<int,int>>",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/events",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "pair<int,int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "book(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "end",
+                                    "virtual_name": "EXPECTED_end",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)/end",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "start",
+                                    "virtual_name": "EXPECTED_start",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)/start",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "start",
+                                    "virtual_name": "start",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)/start",
+                                    "correspondingType": "int",
+                                    "value": "287049282"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "end",
+                                    "virtual_name": "end",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)/end",
+                                    "correspondingType": "int",
+                                    "value": "-351312420"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_MyCalendarTwo_book_int_int_random_0(void) {\n{\nAKA_test_case_name=\"MyCalendarTwo_book_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___MyCalendarTwo */\n/* ConstructorDataNode MyCalendarTwo() */\nAKA_mark(\"Calling: ./10/731.My-Calendar-II.cpp/MyCalendarTwo/MyCalendarTwo()|ROOT/731.My-Calendar-II.cpp/GLOBAL/AKA_INSTANCE___MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo/MyCalendarTwo()\");AKA_fCall++;AKA_INSTANCE___MyCalendarTwo = new ::MyCalendarTwo();\n/* VectorDataNode events */\n\n\n\n\nint start=287049282;\n\n\nint end=-351312420;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode start */\n/* NormalNumberDataNode end */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test MyCalendarTwo_book_int_int_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___MyCalendarTwo->book(start,end);\nAKA_fCall++;AKA_mark(\"Return from: ./10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___MyCalendarTwo */\n/* ConstructorDataNode MyCalendarTwo() */\nAKA_mark(\"Calling: ./10/731.My-Calendar-II.cpp/MyCalendarTwo/MyCalendarTwo()|ROOT/731.My-Calendar-II.cpp/GLOBAL/AKA_INSTANCE___MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo/MyCalendarTwo()\");AKA_fCall++;AKA_INSTANCE___MyCalendarTwo = new ::MyCalendarTwo();\n/* VectorDataNode events */\n\n\n\n\nint start=287049282;\n\n\nint end=-351312420;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode start */\n/* NormalNumberDataNode end */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class MyCalendarTwo {     vector<pair<int,int>>events; public:     MyCalendarTwo()      {              }          bool book(int start, int end)      {         vector<pair<int,int>>temp;         for (int i=0; i<events.size(); i++)         {             if (!(events[i].second<=start || events[i].first>=end))                 temp.push_back(events[i]);         }         sort(temp.begin(),temp.end());                  for (int i=1; i<temp.size(); i++)         {             if (temp[i].first<temp[i-1].second)                 return false;         }                  events.push_back({start,end});                  return true;     } };",
+        "c": [
+            "MyCalendarTwo() \n    {\n        \n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/731.My-Calendar-II.cpp/MyCalendarTwo/book(int,int)"
+    },
+    {
+        "f": [
+            "multiset<pair<int,int>> Set;"
+        ],
+        "fm": "bool book(int start, int end)      {         vector<pair<int,int>>p;         for (auto x: Set)         {             if (!(end<=x.first || start>=x.second))                 p.push_back(x);             if (end<=x.first) break;         }                 for (int i=1; i<p.size(); i++)         {             if (p[i].first<p[i-1].second)                 return false;         }         Set.insert({start,end});         return true;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "731.My-Calendar-II_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/731.My-Calendar-II_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___MyCalendarTwo",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___MyCalendarTwo",
+                                    "dataType": "::MyCalendarTwo",
+                                    "realType": "::MyCalendarTwo",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo",
+                                    "correspondingType": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___MyCalendarTwo",
+                                    "virtual_name": "AKA_INSTANCE___MyCalendarTwo",
+                                    "dataType": "::MyCalendarTwo",
+                                    "realType": "::MyCalendarTwo",
+                                    "external": true,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo",
+                                    "correspondingType": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___MyCalendarTwo",
+                                            "virtual_name": "AKA_INSTANCE___MyCalendarTwo",
+                                            "dataType": "::MyCalendarTwo",
+                                            "realType": "::MyCalendarTwo",
+                                            "external": false,
+                                            "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo",
+                                            "correspondingType": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo",
+                                            "rawType": "::MyCalendarTwo",
+                                            "selectedConstructor": "MyCalendarTwo()",
+                                            "variableType": "::MyCalendarTwo",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "MyCalendarTwo()",
+                                                    "virtual_name": "AKA_INSTANCE___MyCalendarTwo",
+                                                    "dataType": "::MyCalendarTwo",
+                                                    "realType": "::MyCalendarTwo",
+                                                    "functionNode": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/MyCalendarTwo()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.MultiSetDataNode",
+                                                    "name": "Set",
+                                                    "virtual_name": "AKA_INSTANCE___MyCalendarTwo->Set",
+                                                    "dataType": "multiset<pair<int,int>>",
+                                                    "realType": "multiset<pair<int,int>>",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/Set",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "pair<int,int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "book(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "end",
+                                    "virtual_name": "EXPECTED_end",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)/end",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "start",
+                                    "virtual_name": "EXPECTED_start",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)/start",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "start",
+                                    "virtual_name": "start",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)/start",
+                                    "correspondingType": "int",
+                                    "value": "1285716717"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "end",
+                                    "virtual_name": "end",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)/end",
+                                    "correspondingType": "int",
+                                    "value": "-634197671"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_MyCalendarTwo_book_int_int_random_5(void) {\n{\nAKA_test_case_name=\"MyCalendarTwo_book_int_int_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___MyCalendarTwo */\n/* ConstructorDataNode MyCalendarTwo() */\nAKA_mark(\"Calling: ./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/MyCalendarTwo()|ROOT/731.My-Calendar-II_v2.cpp/GLOBAL/AKA_INSTANCE___MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo/MyCalendarTwo()\");AKA_fCall++;AKA_INSTANCE___MyCalendarTwo = new ::MyCalendarTwo();\n/* MultiSetDataNode Set */\n\n\n\n\nint start=1285716717;\n\n\nint end=-634197671;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode start */\n/* NormalNumberDataNode end */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test MyCalendarTwo_book_int_int_random_5\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___MyCalendarTwo->book(start,end);\nAKA_fCall++;AKA_mark(\"Return from: ./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___MyCalendarTwo */\n/* ConstructorDataNode MyCalendarTwo() */\nAKA_mark(\"Calling: ./10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/MyCalendarTwo()|ROOT/731.My-Calendar-II_v2.cpp/GLOBAL/AKA_INSTANCE___MyCalendarTwo/AKA_INSTANCE___MyCalendarTwo/MyCalendarTwo()\");AKA_fCall++;AKA_INSTANCE___MyCalendarTwo = new ::MyCalendarTwo();\n/* MultiSetDataNode Set */\n\n\n\n\nint start=1285716717;\n\n\nint end=-634197671;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode start */\n/* NormalNumberDataNode end */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class MyCalendarTwo {     multiset<pair<int,int>>Set; public:     MyCalendarTwo()      {              }          bool book(int start, int end)      {         vector<pair<int,int>>p;         for (auto x: Set)         {             if (!(end<=x.first || start>=x.second))                 p.push_back(x);             if (end<=x.first) break;         }                 for (int i=1; i<p.size(); i++)         {             if (p[i].first<p[i-1].second)                 return false;         }         Set.insert({start,end});         return true;     } };",
+        "c": [
+            "MyCalendarTwo() \n    {\n        \n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/731.My-Calendar-II_v2.cpp/MyCalendarTwo/book(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "static bool cmp(vector<int>&a, vector<int>&b)     {         if (a[1]==b[1])             return a[0]>b[0];         else             return a[1]<b[1];     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "757.Set-Intersection-Size-At-Least-Two.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "cmp(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "b",
+                                    "virtual_name": "EXPECTED_b",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/b",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "a_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/a/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-711415925"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "b",
+                                    "virtual_name": "b",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/b",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "b_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/b/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1488713695"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "b_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/b/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-1644710574"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_cmp_vector_int_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_cmp_vector_int_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/757.Set-Intersection-Size-At-Least-Two.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> b;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=-711415925;\na.push_back(a_element0);\n/* VectorDataNode b */\nint b_element0=-1488713695;\nb.push_back(b_element0);\nint b_element1=-1644710574;\nb.push_back(b_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_cmp_vector_int_vector_int_random_2\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->cmp(a,b);\nAKA_fCall++;AKA_mark(\"Return from: ./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_a;\n\nvector<int> EXPECTED_b;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/757.Set-Intersection-Size-At-Least-Two.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> b;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=-711415925;\na.push_back(a_element0);\n/* VectorDataNode b */\nint b_element0=-1488713695;\nb.push_back(b_element0);\nint b_element1=-1644710574;\nb.push_back(b_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     static bool cmp(vector<int>&a, vector<int>&b)     {         if (a[1]==b[1])             return a[0]>b[0];         else             return a[1]<b[1];     } public:     int intersectionSizeTwo(vector<vector<int>>& intervals)      {         sort(intervals.begin(), intervals.end(), cmp);         int a = intervals[0][1]-1, b = intervals[0][1];         int count = 2;          for (auto& interval: intervals)         {             if (interval[0]<=a)                 continue;             else if (interval[0]<=b)             {                 count++;                 a = b;                 b = interval[1];             }             else             {                 count+=2;                 a = interval[1]-1;                 b = interval[1];             }         }         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/cmp(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int intersectionSizeTwo(vector<vector<int>>& intervals)      {         sort(intervals.begin(), intervals.end(), cmp);         int a = intervals[0][1]-1, b = intervals[0][1];         int count = 2;          for (auto& interval: intervals)         {             if (interval[0]<=a)                 continue;             else if (interval[0]<=b)             {                 count++;                 a = b;                 b = interval[1];             }             else             {                 count+=2;                 a = interval[1]-1;                 b = interval[1];             }         }         return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "757.Set-Intersection-Size-At-Least-Two.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "intersectionSizeTwo(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "intervals",
+                                    "virtual_name": "EXPECTED_intervals",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "intervals",
+                                    "virtual_name": "intervals",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "intervals_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "intervals_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1842570810"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "intervals_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-1077221122"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_intersectionSizeTwo_vector_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_intersectionSizeTwo_vector_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/757.Set-Intersection-Size-At-Least-Two.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> intervals;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode intervals */\nvector<int> intervals_element0;\nint intervals_element0_element0=-1842570810;\nintervals_element0.push_back(intervals_element0_element0);\nint intervals_element0_element1=-1077221122;\nintervals_element0.push_back(intervals_element0_element1);\nintervals.push_back(intervals_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_intersectionSizeTwo_vector_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->intersectionSizeTwo(intervals);\nAKA_fCall++;AKA_mark(\"Return from: ./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_intervals;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/757.Set-Intersection-Size-At-Least-Two.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> intervals;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode intervals */\nvector<int> intervals_element0;\nint intervals_element0_element0=-1842570810;\nintervals_element0.push_back(intervals_element0_element0);\nint intervals_element0_element1=-1077221122;\nintervals_element0.push_back(intervals_element0_element1);\nintervals.push_back(intervals_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "757.Set-Intersection-Size-At-Least-Two.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "intersectionSizeTwo(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "intervals",
+                                    "virtual_name": "EXPECTED_intervals",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "intervals",
+                                    "virtual_name": "intervals",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "intervals_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "intervals_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-959153562"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "intervals_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-323005477"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "intervals_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "intervals_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #1/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "1916728242"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "intervals_element1_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/intervals/element #1/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-966199180"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_intersectionSizeTwo_vector_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_intersectionSizeTwo_vector_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/757.Set-Intersection-Size-At-Least-Two.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> intervals;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode intervals */\nvector<int> intervals_element0;\nint intervals_element0_element0=-959153562;\nintervals_element0.push_back(intervals_element0_element0);\nint intervals_element0_element1=-323005477;\nintervals_element0.push_back(intervals_element0_element1);\nintervals.push_back(intervals_element0);\nvector<int> intervals_element1;\nint intervals_element1_element0=1916728242;\nintervals_element1.push_back(intervals_element1_element0);\nint intervals_element1_element1=-966199180;\nintervals_element1.push_back(intervals_element1_element1);\nintervals.push_back(intervals_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_intersectionSizeTwo_vector_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->intersectionSizeTwo(intervals);\nAKA_fCall++;AKA_mark(\"Return from: ./10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_intervals;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/757.Set-Intersection-Size-At-Least-Two.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> intervals;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode intervals */\nvector<int> intervals_element0;\nint intervals_element0_element0=-959153562;\nintervals_element0.push_back(intervals_element0_element0);\nint intervals_element0_element1=-323005477;\nintervals_element0.push_back(intervals_element0_element1);\nintervals.push_back(intervals_element0);\nvector<int> intervals_element1;\nint intervals_element1_element0=1916728242;\nintervals_element1.push_back(intervals_element1_element0);\nint intervals_element1_element1=-966199180;\nintervals_element1.push_back(intervals_element1_element1);\nintervals.push_back(intervals_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     static bool cmp(vector<int>&a, vector<int>&b)     {         if (a[1]==b[1])             return a[0]>b[0];         else             return a[1]<b[1];     } public:     int intersectionSizeTwo(vector<vector<int>>& intervals)      {         sort(intervals.begin(), intervals.end(), cmp);         int a = intervals[0][1]-1, b = intervals[0][1];         int count = 2;          for (auto& interval: intervals)         {             if (interval[0]<=a)                 continue;             else if (interval[0]<=b)             {                 count++;                 a = b;                 b = interval[1];             }             else             {                 count+=2;                 a = interval[1]-1;                 b = interval[1];             }         }         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/10/757.Set-Intersection-Size-At-Least-Two.cpp/Solution/intersectionSizeTwo(vector<vector<int>>&)"
+    }
+]

@@ -1,0 +1,2212 @@
+[
+    {
+        "f": [],
+        "fm": "long long appealSum(string s)      {         vector<int>pos(26, -1);         long long result=0;         for (int i=0; i<s.size(); i++)         {             pos[s[i]-'a'] = i;             for (int i=0; i<26; i++)             {                 if (pos[i]!=-1)                                                         result+=(long long)pos[i]+1;                               }         }         return result;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2262.Total-Appeal-of-A-String_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2262.Total-Appeal-of-A-String_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "appealSum(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "102"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_appealSum_string_random_4(void) {\n{\nAKA_test_case_name=\"Solution_appealSum_string_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2262.Total-Appeal-of-A-String_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName256969 = new char[2];akaRandomName256969[0] = 102;akaRandomName256969[1] = '\\0';string s=akaRandomName256969;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_appealSum_string_random_4\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->appealSum(s);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2262.Total-Appeal-of-A-String_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName716515 = new char[2];akaRandomName716515[0] = 102;akaRandomName716515[1] = '\\0';string s=akaRandomName716515;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long appealSum(string s)      {         vector<int>pos(26, -1);         long long result=0;         for (int i=0; i<s.size(); i++)         {             pos[s[i]-'a'] = i;             for (int i=0; i<26; i++)             {                 if (pos[i]!=-1)                                                         result+=(long long)pos[i]+1;                               }         }         return result;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2262.Total-Appeal-of-A-String_v1.cpp/Solution/appealSum(string)"
+    },
+    {
+        "f": [],
+        "fm": "long long appealSum(string s)      {         int n = s.size();         vector<int>last(26, -1);                              long long ret = 0;         for (int i=0; i<n; i++)         {             ret += (i-last[s[i]-'a']) * (n-i);             last[s[i]-'a']=i;         }                      return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2262.Total-Appeal-of-A-String_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2262.Total-Appeal-of-A-String_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "appealSum(string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "63"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_appealSum_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_appealSum_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2262.Total-Appeal-of-A-String_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName462947 = new char[2];akaRandomName462947[0] = 63;akaRandomName462947[1] = '\\0';string s=akaRandomName462947;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_appealSum_string_random_0\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->appealSum(s);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2262.Total-Appeal-of-A-String_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName846509 = new char[2];akaRandomName846509[0] = 63;akaRandomName846509[1] = '\\0';string s=akaRandomName846509;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     long long appealSum(string s)      {         int n = s.size();         vector<int>last(26, -1);                              long long ret = 0;         for (int i=0; i<n; i++)         {             ret += (i-last[s[i]-'a']) * (n-i);             last[s[i]-'a']=i;         }                      return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2262.Total-Appeal-of-A-String_v2.cpp/Solution/appealSum(string)"
+    },
+    {
+        "f": [],
+        "fm": "int convertArray(vector<int>& nums) {         int ret = solve(nums);         reverse(nums.begin(),nums.end());         ret = min(ret, solve(nums));         return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2263.Make-Array-Non-decreasing-or-Non-increasing.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "convertArray(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1042855910"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "419853818"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_convertArray_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_convertArray_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1042855910;\nnums.push_back(nums_element0);\nint nums_element1=419853818;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_convertArray_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->convertArray(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1042855910;\nnums.push_back(nums_element0);\nint nums_element1=419853818;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int convertArray(vector<int>& nums) {         int ret = solve(nums);         reverse(nums.begin(),nums.end());         ret = min(ret, solve(nums));         return ret;     }          int solve(vector<int>& nums) {         int res = 0;         priority_queue<int> que;         for(auto num: nums) {             if(!que.empty() && que.top()>num) {                 res += que.top() - num;                 que.pop();                 que.push(num);             }             que.push(num);         }         return res;     }     };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/convertArray(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int solve(vector<int>& nums) {         int res = 0;         priority_queue<int> que;         for(auto num: nums) {             if(!que.empty() && que.top()>num) {                 res += que.top() - num;                 que.pop();                 que.push(num);             }             que.push(num);         }         return res;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2263.Make-Array-Non-decreasing-or-Non-increasing.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "solve(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-540365984"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1543075300"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_solve_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_solve_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-540365984;\nnums.push_back(nums_element0);\nint nums_element1=1543075300;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_solve_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->solve(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-540365984;\nnums.push_back(nums_element0);\nint nums_element1=1543075300;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2263.Make-Array-Non-decreasing-or-Non-increasing.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "solve(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "499370503"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-563804075"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_solve_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_solve_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=499370503;\nnums.push_back(nums_element0);\nint nums_element1=-563804075;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_solve_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->solve(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=499370503;\nnums.push_back(nums_element0);\nint nums_element1=-563804075;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int convertArray(vector<int>& nums) {         int ret = solve(nums);         reverse(nums.begin(),nums.end());         ret = min(ret, solve(nums));         return ret;     }          int solve(vector<int>& nums) {         int res = 0;         priority_queue<int> que;         for(auto num: nums) {             if(!que.empty() && que.top()>num) {                 res += que.top() - num;                 que.pop();                 que.push(num);             }             que.push(num);         }         return res;     }     };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2263.Make-Array-Non-decreasing-or-Non-increasing.cpp/Solution/solve(vector<int>&)"
+    },
+    {
+        "f": [
+            "vector<int> presum;"
+        ],
+        "fm": "int maximumWhiteTiles(vector<vector<int>>& tiles, int carpetLen)      {         sort(tiles.begin(), tiles.end());         int n = tiles.size();          presum.resize(n);         for (int i=0; i<n; i++)             presum[i] = (i==0?0:presum[i-1]) + (tiles[i][1]-tiles[i][0]+1);                 int ret = 0;                  int j = 0;         for (int i=0; i<n; i++)         {             while (j<n && tiles[i][0]+carpetLen-1 >= tiles[j][1])                 j++;             int len = 0;             if (j>i)                  len += presum[j-1] - (i==0?0:presum[i-1]);             if (j<n)                 len += max(0, tiles[i][0]+carpetLen-1 - tiles[j][0] + 1);                                                      ret = max(ret, len);         }                  return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                                    "name": "presum",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->presum",
+                                                    "dataType": "vector<int>",
+                                                    "realType": "vector<int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/presum",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "int"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumWhiteTiles(vector<vector<int>>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "tiles",
+                                    "virtual_name": "EXPECTED_tiles",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/tiles",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "carpetLen",
+                                    "virtual_name": "EXPECTED_carpetLen",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/carpetLen",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "tiles",
+                                    "virtual_name": "tiles",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/tiles",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "tiles_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/tiles/element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "tiles_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/tiles/element #0/element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-567337467"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "tiles_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/tiles/element #0/element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "1080086582"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "carpetLen",
+                                    "virtual_name": "carpetLen",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/carpetLen",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumWhiteTiles_vector_vector_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_maximumWhiteTiles_vector_vector_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* VectorDataNode presum */\n\n\nvector<vector<int>> tiles;\n\n\nint carpetLen=5;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode tiles */\nvector<int> tiles_element0;\nint tiles_element0_element0=-567337467;\ntiles_element0.push_back(tiles_element0_element0);\nint tiles_element0_element1=1080086582;\ntiles_element0.push_back(tiles_element0_element1);\ntiles.push_back(tiles_element0);\n/* NormalNumberDataNode carpetLen */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumWhiteTiles_vector_vector_int_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumWhiteTiles(tiles,carpetLen);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)\");\n\n\nvector<vector<int>> EXPECTED_tiles;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* VectorDataNode presum */\n\n\nvector<vector<int>> tiles;\n\n\nint carpetLen=5;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode tiles */\nvector<int> tiles_element0;\nint tiles_element0_element0=-567337467;\ntiles_element0.push_back(tiles_element0_element0);\nint tiles_element0_element1=1080086582;\ntiles_element0.push_back(tiles_element0_element1);\ntiles.push_back(tiles_element0);\n/* NormalNumberDataNode carpetLen */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     vector<int>presum; public:     int maximumWhiteTiles(vector<vector<int>>& tiles, int carpetLen)      {         sort(tiles.begin(), tiles.end());         int n = tiles.size();          presum.resize(n);         for (int i=0; i<n; i++)             presum[i] = (i==0?0:presum[i-1]) + (tiles[i][1]-tiles[i][0]+1);                 int ret = 0;                  int j = 0;         for (int i=0; i<n; i++)         {             while (j<n && tiles[i][0]+carpetLen-1 >= tiles[j][1])                 j++;             int len = 0;             if (j>i)                  len += presum[j-1] - (i==0?0:presum[i-1]);             if (j<n)                 len += max(0, tiles[i][0]+carpetLen-1 - tiles[j][0] + 1);                                                      ret = max(ret, len);         }                  return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2271.Maximum-White-Tiles-Covered-by-a-Carpet.cpp/Solution/maximumWhiteTiles(vector<vector<int>>&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int largestCombination(vector<int>& candidates)      {         int ret = 0;         for (int i=0; i<31; i++)         {             int count = 0;             for (int x: candidates)             {                 if ((x>>i)&1)                     count++;             }             ret = max(ret, count);         }         return ret;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "largestCombination(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "candidates",
+                                    "virtual_name": "EXPECTED_candidates",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)/candidates",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "candidates",
+                                    "virtual_name": "candidates",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)/candidates",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "candidates_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)/candidates/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1015436337"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_largestCombination_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_largestCombination_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> candidates;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode candidates */\nint candidates_element0=-1015436337;\ncandidates.push_back(candidates_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_largestCombination_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->largestCombination(candidates);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)\");\n\n\nvector<int> EXPECTED_candidates;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> candidates;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode candidates */\nint candidates_element0=-1015436337;\ncandidates.push_back(candidates_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int largestCombination(vector<int>& candidates)      {         int ret = 0;         for (int i=0; i<31; i++)         {             int count = 0;             for (int x: candidates)             {                 if ((x>>i)&1)                     count++;             }             ret = max(ret, count);         }         return ret;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2275.Largest-Combination-With-Bitwise-AND-Greater-Than-Zero.cpp/Solution/largestCombination(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int longestSubsequence(string s, int k)      {         string t;         while (k>0)         {             if (k%2==0)                 t.push_back('0');             else                 t.push_back('1');             k/=2;         }         reverse(t.begin(), t.end());                  int m = s.size();         int n = t.size();                  if (m<n) return m;                  int ret = countZeros(s, m-n+1) + n-1;                    for (int i=m-1; i>=0; i--)         {             if (check(s,i,t, 0))             {                 ret = max(ret, countZeros(s, i) + n);                 break;             }                        }                  return ret ;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "longestSubsequence(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "2"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_longestSubsequence_string_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_longestSubsequence_string_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName21215 = new char[2];akaRandomName21215[0] = 8;akaRandomName21215[1] = '\\0';string s=akaRandomName21215;\n\n\nint k=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_longestSubsequence_string_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->longestSubsequence(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName372134 = new char[2];akaRandomName372134[0] = 8;akaRandomName372134[1] = '\\0';string s=akaRandomName372134;\n\n\nint k=2;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "longestSubsequence(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "118"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "1"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_longestSubsequence_string_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_longestSubsequence_string_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName173668 = new char[2];akaRandomName173668[0] = 118;akaRandomName173668[1] = '\\0';string s=akaRandomName173668;\n\n\nint k=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_longestSubsequence_string_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->longestSubsequence(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName534406 = new char[2];akaRandomName534406[0] = 118;akaRandomName534406[1] = '\\0';string s=akaRandomName534406;\n\n\nint k=1;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int longestSubsequence(string s, int k)      {         string t;         while (k>0)         {             if (k%2==0)                 t.push_back('0');             else                 t.push_back('1');             k/=2;         }         reverse(t.begin(), t.end());                  int m = s.size();         int n = t.size();                  if (m<n) return m;                  int ret = countZeros(s, m-n+1) + n-1;                    for (int i=m-1; i>=0; i--)         {             if (check(s,i,t, 0))             {                 ret = max(ret, countZeros(s, i) + n);                 break;             }                        }                  return ret ;             }          int countZeros(string&s, int k)     {         int count = 0;         for (int i=0; i<k; i++)             count+= s[i]=='0';         return count;     }          bool check(string& s, int i, string& t, int j)     {         if (j==t.size()) return true;         if (i==s.size()) return false;                  if (t[j]=='1')         {             if (s[i]=='1')                 return check(s, i+1, t, j+1);             else                 return (int)s.size() - i >= (int)t.size() - j;         }         else         {             while (i<s.size() && s[i]=='1')                 i++;             if (i==s.size()) return false;             else return check(s, i+1, t, j+1);         }     }     };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/longestSubsequence(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int countZeros(string&s, int k)     {         int count = 0;         for (int i=0; i<k; i++)             count+= s[i]=='0';         return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "countZeros(string&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)/s",
+                                    "correspondingType": "string&",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)/s",
+                                    "correspondingType": "string&",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "124"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "7"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_countZeros_string_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_countZeros_string_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName697384 = new char[2];akaRandomName697384[0] = 124;akaRandomName697384[1] = '\\0';string s=akaRandomName697384;\n\n\nint k=7;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_countZeros_string_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->countZeros(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName805626 = new char[2];akaRandomName805626[0] = 124;akaRandomName805626[1] = '\\0';string s=akaRandomName805626;\n\n\nint k=7;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int longestSubsequence(string s, int k)      {         string t;         while (k>0)         {             if (k%2==0)                 t.push_back('0');             else                 t.push_back('1');             k/=2;         }         reverse(t.begin(), t.end());                  int m = s.size();         int n = t.size();                  if (m<n) return m;                  int ret = countZeros(s, m-n+1) + n-1;                    for (int i=m-1; i>=0; i--)         {             if (check(s,i,t, 0))             {                 ret = max(ret, countZeros(s, i) + n);                 break;             }                        }                  return ret ;             }          int countZeros(string&s, int k)     {         int count = 0;         for (int i=0; i<k; i++)             count+= s[i]=='0';         return count;     }          bool check(string& s, int i, string& t, int j)     {         if (j==t.size()) return true;         if (i==s.size()) return false;                  if (t[j]=='1')         {             if (s[i]=='1')                 return check(s, i+1, t, j+1);             else                 return (int)s.size() - i >= (int)t.size() - j;         }         else         {             while (i<s.size() && s[i]=='1')                 i++;             if (i==s.size()) return false;             else return check(s, i+1, t, j+1);         }     }     };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v1.cpp/Solution/countZeros(string&,int)"
+    },
+    {
+        "f": [],
+        "fm": "int longestSubsequence(string s, int k)      {         string t;         while (k>0)         {             if (k%2==0)                 t.push_back('0');             else                 t.push_back('1');             k/=2;         }         reverse(t.begin(), t.end());                  int m = s.size();         int n = t.size();                  if (m<n) return m;                  int ret = n-1;                 ret = max(ret, countZeros(s, m-n+1) + n-1);                  int i = m-n;         if (s.substr(i) <= t)         {             ret = max(ret, countZeros(s, i) + n);         }                  return ret ;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "longestSubsequence(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "-103"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_longestSubsequence_string_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_longestSubsequence_string_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName397751 = new char[2];akaRandomName397751[0] = -103;akaRandomName397751[1] = '\\0';string s=akaRandomName397751;\n\n\nint k=0;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_longestSubsequence_string_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->longestSubsequence(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName38750 = new char[2];akaRandomName38750[0] = -103;akaRandomName38750[1] = '\\0';string s=akaRandomName38750;\n\n\nint k=0;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "longestSubsequence(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/s",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "99"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "3"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_longestSubsequence_string_int_random_6(void) {\n{\nAKA_test_case_name=\"Solution_longestSubsequence_string_int_random_6\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName763147 = new char[2];akaRandomName763147[0] = 99;akaRandomName763147[1] = '\\0';string s=akaRandomName763147;\n\n\nint k=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_longestSubsequence_string_int_random_6\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->longestSubsequence(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName841538 = new char[2];akaRandomName841538[0] = 99;akaRandomName841538[1] = '\\0';string s=akaRandomName841538;\n\n\nint k=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int longestSubsequence(string s, int k)      {         string t;         while (k>0)         {             if (k%2==0)                 t.push_back('0');             else                 t.push_back('1');             k/=2;         }         reverse(t.begin(), t.end());                  int m = s.size();         int n = t.size();                  if (m<n) return m;                  int ret = n-1;                 ret = max(ret, countZeros(s, m-n+1) + n-1);                  int i = m-n;         if (s.substr(i) <= t)         {             ret = max(ret, countZeros(s, i) + n);         }                  return ret ;             }          int countZeros(string&s, int k)     {         int count = 0;         for (int i=0; i<k; i++)             count+= s[i]=='0';         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/longestSubsequence(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int countZeros(string&s, int k)     {         int count = 0;         for (int i=0; i<k; i++)             count+= s[i]=='0';         return count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "countZeros(string&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "EXPECTED_s",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)/s",
+                                    "correspondingType": "string&",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "s",
+                                    "virtual_name": "s",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)/s",
+                                    "correspondingType": "string&",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "s[0]",
+                                            "virtual_name": "s[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)/s/s[0]",
+                                            "correspondingType": "char",
+                                            "value": "107"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "6"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_countZeros_string_int_random_5(void) {\n{\nAKA_test_case_name=\"Solution_countZeros_string_int_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName879076 = new char[2];akaRandomName879076[0] = 107;akaRandomName879076[1] = '\\0';string s=akaRandomName879076;\n\n\nint k=6;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_countZeros_string_int_random_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->countZeros(s,k);\nAKA_fCall++;AKA_mark(\"Return from: ./21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName482097 = new char[2];akaRandomName482097[0] = 107;akaRandomName482097[1] = '\\0';string s=akaRandomName482097;\n\n\nint k=6;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode s */\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int longestSubsequence(string s, int k)      {         string t;         while (k>0)         {             if (k%2==0)                 t.push_back('0');             else                 t.push_back('1');             k/=2;         }         reverse(t.begin(), t.end());                  int m = s.size();         int n = t.size();                  if (m<n) return m;                  int ret = n-1;                 ret = max(ret, countZeros(s, m-n+1) + n-1);                  int i = m-n;         if (s.substr(i) <= t)         {             ret = max(ret, countZeros(s, i) + n);         }                  return ret ;             }          int countZeros(string&s, int k)     {         int count = 0;         for (int i=0; i<k; i++)             count+= s[i]=='0';         return count;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/21/2311.Longest-Binary-Subsequence-Less-Than-or-Equal-to-K_v2.cpp/Solution/countZeros(string&,int)"
+    }
+]

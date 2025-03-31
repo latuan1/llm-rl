@@ -1,0 +1,2137 @@
+[
+    {
+        "f": [],
+        "fm": "TreeNode *addOneRow(TreeNode *root, int v, int d) {\r         if (d == 1) {\r             auto *newRoot = new TreeNode(v);\r             newRoot->left = root;\r             return newRoot;\r         }\r         helper(root, v, d + 0);\r         return root;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "623.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\623.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "addOneRow(TreeNode*,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "TreeNode*",
+                            "realType": "TreeNode*",
+                            "functionNode": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "EXPECTED_root",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\root",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "v",
+                                    "virtual_name": "EXPECTED_v",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\v",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "d",
+                                    "virtual_name": "EXPECTED_d",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\d",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "root",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\root",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1,
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "root[0]",
+                                            "virtual_name": "root[0]",
+                                            "dataType": "TreeNode",
+                                            "realType": "TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\root\\root[0]",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "root",
+                                                    "virtual_name": "root[0]",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\root\\root",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "rawType": "::TreeNode",
+                                                    "selectedConstructor": "TreeNode(int)",
+                                                    "variableType": "::TreeNode",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "TreeNode(int)",
+                                                            "virtual_name": "root[0]",
+                                                            "dataType": "::TreeNode",
+                                                            "realType": "::TreeNode",
+                                                            "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                    "name": "x",
+                                                                    "virtual_name": "root0_x",
+                                                                    "dataType": "int",
+                                                                    "realType": "int",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                                    "correspondingType": "int",
+                                                                    "value": "1414844743"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "val",
+                                                            "virtual_name": "root[0].val",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\val",
+                                                            "correspondingType": "int",
+                                                            "value": "-886109568"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "left",
+                                                            "virtual_name": "root[0].left",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\left",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "right",
+                                                            "virtual_name": "root[0].right",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\right",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "v",
+                                    "virtual_name": "v",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\v",
+                                    "correspondingType": "int",
+                                    "value": "832671887"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "d",
+                                    "virtual_name": "d",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\d",
+                                    "correspondingType": "int",
+                                    "value": "1821823563"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)\\RETURN",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_addOneRow_TreeNodemul_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_addOneRow_TreeNodemul_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\623.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nstd::vector<TreeNode*> AKA_VECTOR_INIT_root;\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root0_x=1414844743;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\623.cpp\\\\addOneRow(TreeNode*,int,int)\\\\root\\\\AKA_VECTOR_INIT_root_0\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_0 = new ::TreeNode(root0_x);\n/* NormalNumberDataNode val */\n(*AKA_VECTOR_INIT_root_0).val=-886109568;\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_0).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_0).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_0);\n\nTreeNode* root = AKA_VECTOR_INIT_root[0];\n\n\nint v=832671887;\n\n\nint d=1821823563;\nTreeNode* AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* NormalNumberDataNode v */\n/* NormalNumberDataNode d */\n/* PointerStructureDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_addOneRow_TreeNodemul_int_int_random_0\");TreeNode* AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->addOneRow(root,v,d);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\623.cpp\\\\Solution\\\\addOneRow(TreeNode*,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\623.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nstd::vector<TreeNode*> AKA_VECTOR_INIT_root;\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root0_x=1414844743;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\623.cpp\\\\addOneRow(TreeNode*,int,int)\\\\root\\\\AKA_VECTOR_INIT_root_0\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_0 = new ::TreeNode(root0_x);\n/* NormalNumberDataNode val */\n(*AKA_VECTOR_INIT_root_0).val=-886109568;\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_0).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_0).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_0);\n\nTreeNode* root = AKA_VECTOR_INIT_root[0];\n\n\nint v=832671887;\n\n\nint d=1821823563;\nTreeNode* AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* NormalNumberDataNode v */\n/* NormalNumberDataNode d */\n/* PointerStructureDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     TreeNode *addOneRow(TreeNode *root, int v, int d) {\r         if (d == 1) {\r             auto *newRoot = new TreeNode(v);\r             newRoot->left = root;\r             return newRoot;\r         }\r         helper(root, v, d + 0);\r         return root;\r     }\r \r     void helper(TreeNode *root, const int &v, int &&d) {\r         if(!root)\r             return;\r         if (d == 2) {\r             auto *newLeft = new TreeNode(v);\r             if (root->left) newLeft->left = root->left;\r             root->left = newLeft;\r             auto *newRight = new TreeNode(v);\r             if (root->right) newRight->right = root->right;\r             root->right = newRight;\r             return;\r         }\r         helper(root->left, v, d - 1);\r         helper(root->right, v, d - 1);\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\623.cpp\\Solution\\addOneRow(TreeNode*,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "void helper(TreeNode *root, const int &v, int &&d) {\r         if(!root)\r             return;\r         if (d == 2) {\r             auto *newLeft = new TreeNode(v);\r             if (root->left) newLeft->left = root->left;\r             root->left = newLeft;\r             auto *newRight = new TreeNode(v);\r             if (root->right) newRight->right = root->right;\r             root->right = newRight;\r             return;\r         }\r         helper(root->left, v, d - 1);\r         helper(root->right, v, d - 1);\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "623.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\623.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "helper(TreeNode*,int const&,int&&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "v",
+                                    "virtual_name": "EXPECTED_v",
+                                    "dataType": "int const&",
+                                    "realType": "int const&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)\\v",
+                                    "correspondingType": "int const&",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.OtherUnresolvedDataNode",
+                                    "name": "d",
+                                    "virtual_name": "EXPECTED_d",
+                                    "dataType": "int&&",
+                                    "realType": "int&&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)\\d"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "EXPECTED_root",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)\\root",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "root",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)\\root",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "v",
+                                    "virtual_name": "v",
+                                    "dataType": "int const&",
+                                    "realType": "int const&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)\\v",
+                                    "correspondingType": "int const&",
+                                    "value": "-1282477035"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.OtherUnresolvedDataNode",
+                                    "name": "d",
+                                    "virtual_name": "d",
+                                    "dataType": "int&&",
+                                    "realType": "int&&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)\\d"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_helper_TreeNodemul_int_const_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_helper_TreeNodemul_int_const_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\623.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nTreeNode* root;\n\n\nint v=-1282477035;\nint d;\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* NormalNumberDataNode v */\n/* OtherUnresolvedDataNode d */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_helper_TreeNodemul_int_const_int_random_0\");AKA_INSTANCE___Solution->helper(root,v,d);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\623.cpp\\\\Solution\\\\helper(TreeNode*,int const&,int&&)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\623.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nTreeNode* root;\n\n\nint v=-1282477035;\nint d;\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* NormalNumberDataNode v */\n/* OtherUnresolvedDataNode d */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     TreeNode *addOneRow(TreeNode *root, int v, int d) {\r         if (d == 1) {\r             auto *newRoot = new TreeNode(v);\r             newRoot->left = root;\r             return newRoot;\r         }\r         helper(root, v, d + 0);\r         return root;\r     }\r \r     void helper(TreeNode *root, const int &v, int &&d) {\r         if(!root)\r             return;\r         if (d == 2) {\r             auto *newLeft = new TreeNode(v);\r             if (root->left) newLeft->left = root->left;\r             root->left = newLeft;\r             auto *newRight = new TreeNode(v);\r             if (root->right) newRight->right = root->right;\r             root->right = newRight;\r             return;\r         }\r         helper(root->left, v, d - 1);\r         helper(root->right, v, d - 1);\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\623.cpp\\Solution\\helper(TreeNode*,int const&,int&&)"
+    },
+    {
+        "f": [],
+        "fm": "explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "623.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\623.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___TreeNode",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode",
+                                    "dataType": "::TreeNode",
+                                    "realType": "::TreeNode",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___TreeNode",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode",
+                                            "dataType": "::TreeNode",
+                                            "realType": "::TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                            "rawType": "::TreeNode",
+                                            "selectedConstructor": "TreeNode(int)",
+                                            "variableType": "::TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TreeNode(int)",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "left",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode->left",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\left",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "level": 1
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "right",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode->right",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\right",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___TreeNode",
+                                    "virtual_name": "AKA_INSTANCE___TreeNode",
+                                    "dataType": "::TreeNode",
+                                    "realType": "::TreeNode",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___TreeNode",
+                                            "virtual_name": "AKA_INSTANCE___TreeNode",
+                                            "dataType": "::TreeNode",
+                                            "realType": "::TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                            "rawType": "::TreeNode",
+                                            "selectedConstructor": "TreeNode(int)",
+                                            "variableType": "::TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TreeNode(int)",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "AKA_INSTANCE___TreeNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "1399605397"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "left",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode->left",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\left",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "level": 1
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "right",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode->right",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\right",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "TreeNode(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TreeNode_int_random_0(void) {\n{\nAKA_test_case_name=\"TreeNode_int_random_0\";\n\n// set up\n;\n\n\n/* SubStructDataNode AKA_INSTANCE___TreeNode */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___TreeNode_x=1399605397;\nAKA_mark(\"<<PRE-CALLING>> Test TreeNode_int_random_0\");AKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\623.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TreeNode\\\\AKA_INSTANCE___TreeNode\\\\TreeNode(int)\");AKA_fCall++;AKA_INSTANCE___TreeNode = new ::TreeNode(AKA_INSTANCE___TreeNode_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\nAKA_INSTANCE___TreeNode->left;\n/* PointerStructureDataNode right */\nAKA_INSTANCE___TreeNode->right;\n\n\n\n\n\n\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubStructDataNode AKA_INSTANCE___TreeNode */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___TreeNode_x=1399605397;\nAKA_mark(\"<<PRE-CALLING>> Test TreeNode_int_random_0\");AKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\623.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TreeNode\\\\AKA_INSTANCE___TreeNode\\\\TreeNode(int)\");AKA_fCall++;AKA_INSTANCE___TreeNode = new ::TreeNode(AKA_INSTANCE___TreeNode_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\nAKA_INSTANCE___TreeNode->left;\n/* PointerStructureDataNode right */\nAKA_INSTANCE___TreeNode->right;\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)"
+    },
+    {
+        "f": [],
+        "fm": "int maximumProduct(vector<int> &nums) {\r         int n = nums.size();\r         int min1 = 0, min2 = 0, max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN;\r         for (int i = 0; i < n; ++i) {\r             if (nums[i] < min1) {\r                 min2 = min1;\r                 min1 = nums[i];\r             } else if (nums[i] < min2) {\r                 min2 = nums[i];\r             }\r             if (nums[i] > max1) {\r                 max3 = max2;\r                 max2 = max1;\r                 max1 = nums[i];\r             } else if (nums[i] > max2) {\r                 max3 = max2;\r                 max2 = nums[i];\r             } else if (nums[i] > max3)\r                 max3 = nums[i];\r         }\r         return max(min1 * min2 * max1, max1 * max2 * max3);\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "628.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\628.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\628.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\628.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\628.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumProduct(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "-235691438"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumProduct_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_maximumProduct_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\628.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-235691438;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumProduct_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumProduct(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\628.cpp\\\\Solution\\\\maximumProduct(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\628.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-235691438;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "628.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\628.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\628.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\628.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\628.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maximumProduct(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "1067294614"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\nums\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "1029169887"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maximumProduct_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_maximumProduct_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\628.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1067294614;\nnums.push_back(nums_element0);\nint nums_element1=1029169887;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maximumProduct_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maximumProduct(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\628.cpp\\\\Solution\\\\maximumProduct(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\628.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1067294614;\nnums.push_back(nums_element0);\nint nums_element1=1029169887;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int maximumProduct(vector<int> &nums) {\r         int n = nums.size();\r         int min1 = 0, min2 = 0, max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN;\r         for (int i = 0; i < n; ++i) {\r             if (nums[i] < min1) {\r                 min2 = min1;\r                 min1 = nums[i];\r             } else if (nums[i] < min2) {\r                 min2 = nums[i];\r             }\r             if (nums[i] > max1) {\r                 max3 = max2;\r                 max2 = max1;\r                 max1 = nums[i];\r             } else if (nums[i] > max2) {\r                 max3 = max2;\r                 max2 = nums[i];\r             } else if (nums[i] > max3)\r                 max3 = nums[i];\r         }\r         return max(min1 * min2 * max1, max1 * max2 * max3);\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\628.cpp\\Solution\\maximumProduct(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int uniquePathsWithObstacles(vector<vector<int>> &obstacleGrid) {\r         int n = obstacleGrid.size();\r         if (n == 0)\r             return 0;\r         int m = obstacleGrid[0].size();\r         if (obstacleGrid[n - 1][m - 1] == 1 || obstacleGrid[0][0] == 1)\r             return 0;\r         vector<vector<int>> dp(n, vector<int>(m, 0));\r         int sum = 0;\r         dp[0][0] = 1;\r         for (int i = 1; i < n; ++i)\r             if (obstacleGrid[i][0] == 0)\r                 dp[i][0] = dp[i - 1][0];\r         for (int j = 1; j < m; ++j)\r             if (obstacleGrid[0][j] == 0)\r                 dp[0][j] = dp[0][j - 1];\r         for (int i = 1; i < n; ++i)\r             for (int j = 1; j < m; ++j)\r                 if (obstacleGrid[i][j] == 0)\r                     dp[i][j] = dp[i - 1][j] + dp[i][j - 1];\r         return dp[n - 1][m - 1];\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "63.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\63.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\63.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\63.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\63.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "uniquePathsWithObstacles(vector<vector<int>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "obstacleGrid",
+                                    "virtual_name": "EXPECTED_obstacleGrid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "obstacleGrid",
+                                    "virtual_name": "obstacleGrid",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "obstacleGrid_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "obstacleGrid_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #0\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "1431832093"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "obstacleGrid_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #0\\element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-194141215"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "obstacleGrid_element0_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #0\\element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "-1767838243"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "obstacleGrid_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "obstacleGrid_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #1\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "1376573351"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "obstacleGrid_element1_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #1\\element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "674183509"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "obstacleGrid_element1_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #1\\element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "-355178199"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "obstacleGrid_element2",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #2",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 3,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "obstacleGrid_element2_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #2\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "541003729"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "obstacleGrid_element2_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #2\\element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-1051116071"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #2",
+                                                    "virtual_name": "obstacleGrid_element2_element2",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\obstacleGrid\\element #2\\element #2",
+                                                    "correspondingType": "int",
+                                                    "value": "-1619980690"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_uniquePathsWithObstacles_vector_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_uniquePathsWithObstacles_vector_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\63.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> obstacleGrid;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode obstacleGrid */\nvector<int> obstacleGrid_element0;\nint obstacleGrid_element0_element0=1431832093;\nobstacleGrid_element0.push_back(obstacleGrid_element0_element0);\nint obstacleGrid_element0_element1=-194141215;\nobstacleGrid_element0.push_back(obstacleGrid_element0_element1);\nint obstacleGrid_element0_element2=-1767838243;\nobstacleGrid_element0.push_back(obstacleGrid_element0_element2);\nobstacleGrid.push_back(obstacleGrid_element0);\nvector<int> obstacleGrid_element1;\nint obstacleGrid_element1_element0=1376573351;\nobstacleGrid_element1.push_back(obstacleGrid_element1_element0);\nint obstacleGrid_element1_element1=674183509;\nobstacleGrid_element1.push_back(obstacleGrid_element1_element1);\nint obstacleGrid_element1_element2=-355178199;\nobstacleGrid_element1.push_back(obstacleGrid_element1_element2);\nobstacleGrid.push_back(obstacleGrid_element1);\nvector<int> obstacleGrid_element2;\nint obstacleGrid_element2_element0=541003729;\nobstacleGrid_element2.push_back(obstacleGrid_element2_element0);\nint obstacleGrid_element2_element1=-1051116071;\nobstacleGrid_element2.push_back(obstacleGrid_element2_element1);\nint obstacleGrid_element2_element2=-1619980690;\nobstacleGrid_element2.push_back(obstacleGrid_element2_element2);\nobstacleGrid.push_back(obstacleGrid_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_uniquePathsWithObstacles_vector_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->uniquePathsWithObstacles(obstacleGrid);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\63.cpp\\\\Solution\\\\uniquePathsWithObstacles(vector<vector<int>>&)\");\n\n\nvector<vector<int>> EXPECTED_obstacleGrid;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\63.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<vector<int>> obstacleGrid;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode obstacleGrid */\nvector<int> obstacleGrid_element0;\nint obstacleGrid_element0_element0=1431832093;\nobstacleGrid_element0.push_back(obstacleGrid_element0_element0);\nint obstacleGrid_element0_element1=-194141215;\nobstacleGrid_element0.push_back(obstacleGrid_element0_element1);\nint obstacleGrid_element0_element2=-1767838243;\nobstacleGrid_element0.push_back(obstacleGrid_element0_element2);\nobstacleGrid.push_back(obstacleGrid_element0);\nvector<int> obstacleGrid_element1;\nint obstacleGrid_element1_element0=1376573351;\nobstacleGrid_element1.push_back(obstacleGrid_element1_element0);\nint obstacleGrid_element1_element1=674183509;\nobstacleGrid_element1.push_back(obstacleGrid_element1_element1);\nint obstacleGrid_element1_element2=-355178199;\nobstacleGrid_element1.push_back(obstacleGrid_element1_element2);\nobstacleGrid.push_back(obstacleGrid_element1);\nvector<int> obstacleGrid_element2;\nint obstacleGrid_element2_element0=541003729;\nobstacleGrid_element2.push_back(obstacleGrid_element2_element0);\nint obstacleGrid_element2_element1=-1051116071;\nobstacleGrid_element2.push_back(obstacleGrid_element2_element1);\nint obstacleGrid_element2_element2=-1619980690;\nobstacleGrid_element2.push_back(obstacleGrid_element2_element2);\nobstacleGrid.push_back(obstacleGrid_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int uniquePathsWithObstacles(vector<vector<int>> &obstacleGrid) {\r         int n = obstacleGrid.size();\r         if (n == 0)\r             return 0;\r         int m = obstacleGrid[0].size();\r         if (obstacleGrid[n - 1][m - 1] == 1 || obstacleGrid[0][0] == 1)\r             return 0;\r         vector<vector<int>> dp(n, vector<int>(m, 0));\r         int sum = 0;\r         dp[0][0] = 1;\r         for (int i = 1; i < n; ++i)\r             if (obstacleGrid[i][0] == 0)\r                 dp[i][0] = dp[i - 1][0];\r         for (int j = 1; j < m; ++j)\r             if (obstacleGrid[0][j] == 0)\r                 dp[0][j] = dp[0][j - 1];\r         for (int i = 1; i < n; ++i)\r             for (int j = 1; j < m; ++j)\r                 if (obstacleGrid[i][j] == 0)\r                     dp[i][j] = dp[i - 1][j] + dp[i][j - 1];\r         return dp[n - 1][m - 1];\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\63.cpp\\Solution\\uniquePathsWithObstacles(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "637.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\637.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___TreeNode",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode",
+                                    "dataType": "::TreeNode",
+                                    "realType": "::TreeNode",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                    "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___TreeNode",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode",
+                                            "dataType": "::TreeNode",
+                                            "realType": "::TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                            "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                            "rawType": "::TreeNode",
+                                            "selectedConstructor": "TreeNode(int)",
+                                            "variableType": "::TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TreeNode(int)",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "functionNode": ".\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "left",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode->left",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\left",
+                                                    "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                                    "level": 1
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "right",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TreeNode->right",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\right",
+                                                    "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.StructDataNode",
+                                    "name": "AKA_INSTANCE___TreeNode",
+                                    "virtual_name": "AKA_INSTANCE___TreeNode",
+                                    "dataType": "::TreeNode",
+                                    "realType": "::TreeNode",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                    "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubStructDataNode",
+                                            "name": "AKA_INSTANCE___TreeNode",
+                                            "virtual_name": "AKA_INSTANCE___TreeNode",
+                                            "dataType": "::TreeNode",
+                                            "realType": "::TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\AKA_INSTANCE___TreeNode",
+                                            "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                            "rawType": "::TreeNode",
+                                            "selectedConstructor": "TreeNode(int)",
+                                            "variableType": "::TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TreeNode(int)",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "functionNode": ".\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x",
+                                                            "virtual_name": "AKA_INSTANCE___TreeNode_x",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                            "correspondingType": "int",
+                                                            "value": "880019115"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "val",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode->val",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\val",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "left",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode->left",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\left",
+                                                    "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                                    "level": 1
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                    "name": "right",
+                                                    "virtual_name": "AKA_INSTANCE___TreeNode->right",
+                                                    "dataType": "TreeNode*",
+                                                    "realType": "TreeNode*",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\TreeNode\\right",
+                                                    "correspondingType": ".\\folder_58\\637.cpp\\TreeNode",
+                                                    "level": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "TreeNode(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": ".\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TreeNode_int_random_1(void) {\n{\nAKA_test_case_name=\"TreeNode_int_random_1\";\n\n// set up\n;\n\n\n/* SubStructDataNode AKA_INSTANCE___TreeNode */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___TreeNode_x=880019115;\nAKA_mark(\"<<PRE-CALLING>> Test TreeNode_int_random_1\");AKA_mark(\"Calling: .\\\\folder_58\\\\637.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TreeNode\\\\AKA_INSTANCE___TreeNode\\\\TreeNode(int)\");AKA_fCall++;AKA_INSTANCE___TreeNode = new ::TreeNode(AKA_INSTANCE___TreeNode_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\nAKA_INSTANCE___TreeNode->left;\n/* PointerStructureDataNode right */\nAKA_INSTANCE___TreeNode->right;\n\n\n\n\n\n\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubStructDataNode AKA_INSTANCE___TreeNode */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint AKA_INSTANCE___TreeNode_x=880019115;\nAKA_mark(\"<<PRE-CALLING>> Test TreeNode_int_random_1\");AKA_mark(\"Calling: .\\\\folder_58\\\\637.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\GLOBAL\\\\AKA_INSTANCE___TreeNode\\\\AKA_INSTANCE___TreeNode\\\\TreeNode(int)\");AKA_fCall++;AKA_INSTANCE___TreeNode = new ::TreeNode(AKA_INSTANCE___TreeNode_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\nAKA_INSTANCE___TreeNode->left;\n/* PointerStructureDataNode right */\nAKA_INSTANCE___TreeNode->right;\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\637.cpp\\TreeNode\\TreeNode(int)"
+    },
+    {
+        "f": [],
+        "fm": "vector<double> averageOfLevels(TreeNode *root) {\r         vector<double> average;\r         if (!root)\r             return average;\r         queue<TreeNode *> que;\r         que.push(root);\r         while (!que.empty()) {\r             int len = que.size();\r             double ave = 0.0;\r             for (int i = 0; i < len; ++i) {\r                 TreeNode *temp = que.front();\r                 ave += temp->val;\r                 que.pop();\r                 if (temp->left) que.push(temp->left);\r                 if (temp->right) que.push(temp->right);\r             }\r             average.push_back(ave / len);\r         }\r         return average;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "637.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\637.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\637.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\637.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\637.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "averageOfLevels(TreeNode*)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<double>",
+                            "realType": "vector<double>",
+                            "functionNode": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "EXPECTED_root",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                    "name": "root",
+                                    "virtual_name": "root",
+                                    "dataType": "TreeNode*",
+                                    "realType": "TreeNode*",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root",
+                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                    "level": 1,
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "root[0]",
+                                            "virtual_name": "root[0]",
+                                            "dataType": "TreeNode",
+                                            "realType": "TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root\\root[0]",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "root",
+                                                    "virtual_name": "root[0]",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root\\root",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "rawType": "::TreeNode",
+                                                    "selectedConstructor": "TreeNode(int)",
+                                                    "variableType": "::TreeNode",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "TreeNode(int)",
+                                                            "virtual_name": "root[0]",
+                                                            "dataType": "::TreeNode",
+                                                            "realType": "::TreeNode",
+                                                            "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                    "name": "x",
+                                                                    "virtual_name": "root0_x",
+                                                                    "dataType": "int",
+                                                                    "realType": "int",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                                    "correspondingType": "int",
+                                                                    "value": "-985831052"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "val",
+                                                            "virtual_name": "root[0].val",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\val",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "left",
+                                                            "virtual_name": "root[0].left",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\left",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "right",
+                                                            "virtual_name": "root[0].right",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\right",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "root[1]",
+                                            "virtual_name": "root[1]",
+                                            "dataType": "TreeNode",
+                                            "realType": "TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root\\root[1]",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "root",
+                                                    "virtual_name": "root[1]",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root\\root",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "rawType": "::TreeNode",
+                                                    "selectedConstructor": "TreeNode(int)",
+                                                    "variableType": "::TreeNode",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "TreeNode(int)",
+                                                            "virtual_name": "root[1]",
+                                                            "dataType": "::TreeNode",
+                                                            "realType": "::TreeNode",
+                                                            "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                    "name": "x",
+                                                                    "virtual_name": "root1_x",
+                                                                    "dataType": "int",
+                                                                    "realType": "int",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                                    "correspondingType": "int",
+                                                                    "value": "1806026010"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "val",
+                                                            "virtual_name": "root[1].val",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\val",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "left",
+                                                            "virtual_name": "root[1].left",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\left",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "right",
+                                                            "virtual_name": "root[1].right",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\right",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.StructDataNode",
+                                            "name": "root[2]",
+                                            "virtual_name": "root[2]",
+                                            "dataType": "TreeNode",
+                                            "realType": "TreeNode",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root\\root[2]",
+                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.SubStructDataNode",
+                                                    "name": "root",
+                                                    "virtual_name": "root[2]",
+                                                    "dataType": "::TreeNode",
+                                                    "realType": "::TreeNode",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\root\\root",
+                                                    "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                    "rawType": "::TreeNode",
+                                                    "selectedConstructor": "TreeNode(int)",
+                                                    "variableType": "::TreeNode",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                            "name": "TreeNode(int)",
+                                                            "virtual_name": "root[2]",
+                                                            "dataType": "::TreeNode",
+                                                            "realType": "::TreeNode",
+                                                            "functionNode": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)",
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                    "name": "x",
+                                                                    "virtual_name": "root2_x",
+                                                                    "dataType": "int",
+                                                                    "realType": "int",
+                                                                    "external": false,
+                                                                    "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\TreeNode(int)\\x",
+                                                                    "correspondingType": "int",
+                                                                    "value": "0"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "val",
+                                                            "virtual_name": "root[2].val",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\val",
+                                                            "correspondingType": "int",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "left",
+                                                            "virtual_name": "root[2].left",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\left",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.PointerStructureDataNode",
+                                                            "name": "right",
+                                                            "virtual_name": "root[2].right",
+                                                            "dataType": "TreeNode*",
+                                                            "realType": "TreeNode*",
+                                                            "external": false,
+                                                            "correspondingVar": ".\\folder_58\\623.cpp\\TreeNode\\right",
+                                                            "correspondingType": ".\\folder_58\\623.cpp\\TreeNode",
+                                                            "level": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<double>",
+                                    "realType": "vector<double>",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)\\RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "double"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_averageOfLevels_TreeNodemul_random_3(void) {\n{\nAKA_test_case_name=\"Solution_averageOfLevels_TreeNodemul_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\637.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nstd::vector<TreeNode*> AKA_VECTOR_INIT_root;\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root0_x=-985831052;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\averageOfLevels(TreeNode*)\\\\root\\\\AKA_VECTOR_INIT_root_0\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_0 = new ::TreeNode(root0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_0).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_0).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_0);\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root1_x=1806026010;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\averageOfLevels(TreeNode*)\\\\root\\\\AKA_VECTOR_INIT_root_1\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_1 = new ::TreeNode(root1_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_1).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_1).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_1);\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root2_x=0;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\averageOfLevels(TreeNode*)\\\\root\\\\AKA_VECTOR_INIT_root_2\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_2 = new ::TreeNode(root2_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_2).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_2).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_2);\n\nTreeNode* root = AKA_VECTOR_INIT_root[0];\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_averageOfLevels_TreeNodemul_random_3\");vector<double> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->averageOfLevels(root);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\637.cpp\\\\Solution\\\\averageOfLevels(TreeNode*)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\637.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nstd::vector<TreeNode*> AKA_VECTOR_INIT_root;\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root0_x=-985831052;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\averageOfLevels(TreeNode*)\\\\root\\\\AKA_VECTOR_INIT_root_0\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_0 = new ::TreeNode(root0_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_0).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_0).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_0);\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root1_x=1806026010;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\averageOfLevels(TreeNode*)\\\\root\\\\AKA_VECTOR_INIT_root_1\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_1 = new ::TreeNode(root1_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_1).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_1).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_1);\n\n\n/* SubStructDataNode root */\n/* ConstructorDataNode TreeNode(int) */\n/* NormalNumberDataNode x */\nint root2_x=0;\nAKA_mark(\"Calling: .\\\\folder_58\\\\623.cpp\\\\TreeNode\\\\TreeNode(int)|ROOT\\\\637.cpp\\\\averageOfLevels(TreeNode*)\\\\root\\\\AKA_VECTOR_INIT_root_2\\\\root\\\\TreeNode(int)\");AKA_fCall++;auto AKA_VECTOR_INIT_root_2 = new ::TreeNode(root2_x);\n/* NormalNumberDataNode val */\n/* val : null value -> no code */\n/* PointerStructureDataNode left */\n(*AKA_VECTOR_INIT_root_2).left;\n/* PointerStructureDataNode right */\n(*AKA_VECTOR_INIT_root_2).right;\n\nAKA_VECTOR_INIT_root.push_back(AKA_VECTOR_INIT_root_2);\n\nTreeNode* root = AKA_VECTOR_INIT_root[0];\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* PointerStructureDataNode root */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     vector<double> averageOfLevels(TreeNode *root) {\r         vector<double> average;\r         if (!root)\r             return average;\r         queue<TreeNode *> que;\r         que.push(root);\r         while (!que.empty()) {\r             int len = que.size();\r             double ave = 0.0;\r             for (int i = 0; i < len; ++i) {\r                 TreeNode *temp = que.front();\r                 ave += temp->val;\r                 que.pop();\r                 if (temp->left) que.push(temp->left);\r                 if (temp->right) que.push(temp->right);\r             }\r             average.push_back(ave / len);\r         }\r         return average;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\637.cpp\\Solution\\averageOfLevels(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int shoppingOffers(vector<int> &price, vector<vector<int>> &special, vector<int> &needs) {\r         int base = 0, size = needs.size();\r         bool empty = true;\r         for (int i = 0; i < size; ++i) {\r             if (needs[i] != 0)\r                 empty = false;\r             base += price[i] * needs[i];\r         }\r         if (empty)\r             return 0;\r         for (int i = 0; i < special.size(); ++i) {\r             vector<int> temp;\r             int remain = 0;\r             for (int j = 0; j < size; ++j) {\r                 if (j == special[i].size() - 1)\r                     break;\r                 remain = needs[j] - special[i][j];\r                 if (remain < 0)\r                     break;\r                 temp.push_back(remain);\r             }\r             if (remain >= 0)\r                 base = min(base, shoppingOffers(price, special, temp) + special[i][size]);\r         }\r         return base;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "638.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_58\\638.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\638.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_58\\638.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_58\\638.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "price",
+                                    "virtual_name": "EXPECTED_price",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\price",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "special",
+                                    "virtual_name": "EXPECTED_special",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "needs",
+                                    "virtual_name": "EXPECTED_needs",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\needs",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "price",
+                                    "virtual_name": "price",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\price",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "price_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\price\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "257906532"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "special",
+                                    "virtual_name": "special",
+                                    "dataType": "vector<vector<int>>",
+                                    "realType": "vector<vector<int>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "vector<int>",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "special_element0",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special\\element #0",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 2,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "special_element0_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special\\element #0\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-743498427"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #1",
+                                                    "virtual_name": "special_element0_element1",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special\\element #0\\element #1",
+                                                    "correspondingType": "int",
+                                                    "value": "-2144093089"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "special_element1",
+                                            "dataType": "vector<int>",
+                                            "realType": "vector<int>",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special\\element #1",
+                                            "correspondingType": "STLListBaseType",
+                                            "templateArg": "int",
+                                            "size": 1,
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "element #0",
+                                                    "virtual_name": "special_element1_element0",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\special\\element #1\\element #0",
+                                                    "correspondingType": "int",
+                                                    "value": "-1007323615"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "needs",
+                                    "virtual_name": "needs",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\needs",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "needs_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\needs\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "797019706"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_shoppingOffers_vector_int_vector_vector_int_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_shoppingOffers_vector_int_vector_vector_int_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\638.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> price;\nvector<vector<int>> special;\nvector<int> needs;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode price */\nint price_element0=257906532;\nprice.push_back(price_element0);\n/* VectorDataNode special */\nvector<int> special_element0;\nint special_element0_element0=-743498427;\nspecial_element0.push_back(special_element0_element0);\nint special_element0_element1=-2144093089;\nspecial_element0.push_back(special_element0_element1);\nspecial.push_back(special_element0);\nvector<int> special_element1;\nint special_element1_element0=-1007323615;\nspecial_element1.push_back(special_element1_element0);\nspecial.push_back(special_element1);\n/* VectorDataNode needs */\nint needs_element0=797019706;\nneeds.push_back(needs_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_shoppingOffers_vector_int_vector_vector_int_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->shoppingOffers(price,special,needs);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_58\\\\638.cpp\\\\Solution\\\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_price;\n\nvector<vector<int>> EXPECTED_special;\n\nvector<int> EXPECTED_needs;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\638.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> price;\nvector<vector<int>> special;\nvector<int> needs;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode price */\nint price_element0=257906532;\nprice.push_back(price_element0);\n/* VectorDataNode special */\nvector<int> special_element0;\nint special_element0_element0=-743498427;\nspecial_element0.push_back(special_element0_element0);\nint special_element0_element1=-2144093089;\nspecial_element0.push_back(special_element0_element1);\nspecial.push_back(special_element0);\nvector<int> special_element1;\nint special_element1_element0=-1007323615;\nspecial_element1.push_back(special_element1_element0);\nspecial.push_back(special_element1);\n/* VectorDataNode needs */\nint needs_element0=797019706;\nneeds.push_back(needs_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int shoppingOffers(vector<int> &price, vector<vector<int>> &special, vector<int> &needs) {\r         int base = 0, size = needs.size();\r         bool empty = true;\r         for (int i = 0; i < size; ++i) {\r             if (needs[i] != 0)\r                 empty = false;\r             base += price[i] * needs[i];\r         }\r         if (empty)\r             return 0;\r         for (int i = 0; i < special.size(); ++i) {\r             vector<int> temp;\r             int remain = 0;\r             for (int j = 0; j < size; ++j) {\r                 if (j == special[i].size() - 1)\r                     break;\r                 remain = needs[j] - special[i][j];\r                 if (remain < 0)\r                     break;\r                 temp.push_back(remain);\r             }\r             if (remain >= 0)\r                 base = min(base, shoppingOffers(price, special, temp) + special[i][size]);\r         }\r         return base;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "E:\\OneDrive - vnu.edu.vn\\test\\folder_58\\638.cpp\\Solution\\shoppingOffers(vector<int>&,vector<vector<int>>&,vector<int>&)"
+    }
+]

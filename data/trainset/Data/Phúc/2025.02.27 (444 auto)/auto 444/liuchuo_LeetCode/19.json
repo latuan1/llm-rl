@@ -1,0 +1,98 @@
+[
+    {
+        "f": [],
+        "fm": "int findLengthOfLCIS(vector<int>& nums) {         int temp = 1, ans = 1;         for (int i = 1; i < nums.size(); i++) {             temp = (nums[i-1] < nums[i]) ? temp + 1 : 1;             ans = max(ans, temp);         }         return nums.size() == 0 ? 0 : ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findLengthOfLCIS(vector<int>& nums) {         int temp = 1, ans = 1;         for (int i = 1; i < nums.size(); i++) {             temp = (nums[i-1] < nums[i]) ? temp + 1 : 1;             ans = max(ans, temp);         }         return nums.size() == 0 ? 0 : ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/19/674. Longest Continuous Increasing Subsequence.cpp/Solution/findLengthOfLCIS(vector<int>&)"
+    },
+    {
+        "f": [
+            "int n;",
+            "int m;",
+            "int cnt = 0;",
+            "int tempcnt = 0;",
+            "int arr[5] = {0, 1, 0, -1, 0};"
+        ],
+        "fm": "int maxAreaOfIsland(vector<vector<int>>& grid) {         if (grid.size() == 0) return 0;         n = grid.size(), m = grid[0].size();         for (int x = 0; x < n; x++) {             for (int y = 0; y < m; y++) {                 if (grid[x][y] == 1) {                     tempcnt = 0;                     dfs(x, y, grid);                     cnt = max(cnt, tempcnt);                 }             }         }         return cnt;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxAreaOfIsland(vector<vector<int>>& grid) {         if (grid.size() == 0) return 0;         n = grid.size(), m = grid[0].size();         for (int x = 0; x < n; x++) {             for (int y = 0; y < m; y++) {                 if (grid[x][y] == 1) {                     tempcnt = 0;                     dfs(x, y, grid);                     cnt = max(cnt, tempcnt);                 }             }         }         return cnt;     } private:     int n, m, cnt = 0, tempcnt = 0;     int arr[5] = {0, 1, 0, -1, 0};     void dfs(int x, int y, vector<vector<int>>& grid) {         grid[x][y] = 0;         tempcnt++;         for (int i = 0; i < 4; i++) {             int tx = x + arr[i], ty = y + arr[i+1];             if (tx >= 0 && tx < n && ty >= 0 && ty < m && grid[tx][ty] == 1)                 dfs(tx, ty, grid);         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/19/695. Max Area of Island.cpp/Solution/maxAreaOfIsland(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool isOneBitCharacter(vector<int>& bits) {         int i = 0;         while(i < bits.size()) {             if (i == (bits.size() - 1)) return true;             if (bits[i] == 0) i++;             else i += 2;         }         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isOneBitCharacter(vector<int>& bits) {         int i = 0;         while(i < bits.size()) {             if (i == (bits.size() - 1)) return true;             if (bits[i] == 0) i++;             else i += 2;         }         return false;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/19/717. 1-bit and 2-bit Characters.cpp/Solution/isOneBitCharacter(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> dailyTemperatures(vector<int>& temperatures) {         stack<pair<int, int>> s;         int len = temperatures.size();         vector<int> ans(len);         for (int i = 0; i < len; i++) {             while(!s.empty() && temperatures[i] > s.top().first) {                 ans[s.top().second] = i - s.top().second;                 s.pop();             }             s.push(pair<int, int>(temperatures[i], i));         }         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> dailyTemperatures(vector<int>& temperatures) {         stack<pair<int, int>> s;         int len = temperatures.size();         vector<int> ans(len);         for (int i = 0; i < len; i++) {             while(!s.empty() && temperatures[i] > s.top().first) {                 ans[s.top().second] = i - s.top().second;                 s.pop();             }             s.push(pair<int, int>(temperatures[i], i));         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/19/739. Daily Temperatures.cpp/Solution/dailyTemperatures(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "char nextGreatestLetter(vector<char>& letters, char target) {         auto it = upper_bound(letters.begin(), letters.end(), target);         return it == letters.end() ? letters[0] : *it;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     char nextGreatestLetter(vector<char>& letters, char target) {         auto it = upper_bound(letters.begin(), letters.end(), target);         return it == letters.end() ? letters[0] : *it;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/19/744. Find Smallest Letter Greater Than Target.cpp/Solution/nextGreatestLetter(vector<char>&,char)"
+    },
+    {
+        "f": [],
+        "fm": "int minCostClimbingStairs(vector<int>& cost) {         int n = cost.size();         vector<int> dp(n);         dp[0] = cost[0], dp[1] = cost[1];         for (int i = 2; i < n; i++)             dp[i] = cost[i] + min(dp[i-1], dp[i-2]);         return min(dp[n-1], dp[n-2]);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minCostClimbingStairs(vector<int>& cost) {         int n = cost.size();         vector<int> dp(n);         dp[0] = cost[0], dp[1] = cost[1];         for (int i = 2; i < n; i++)             dp[i] = cost[i] + min(dp[i-1], dp[i-2]);         return min(dp[n-1], dp[n-2]);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/19/746. Min Cost Climbing Stairs.cpp/Solution/minCostClimbingStairs(vector<int>&)"
+    }
+]

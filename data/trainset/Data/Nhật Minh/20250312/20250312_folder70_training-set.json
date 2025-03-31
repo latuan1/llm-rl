@@ -1,0 +1,1621 @@
+[
+    {
+        "f": [],
+        "fm": "int dominantIndex(vector<int> &nums) {\r         int n = nums.size();\r         if (n == 0)\r             return -1;\r         else if (n == 1)\r             return 0;\r         int first = nums[0] > nums[1] ? nums[0] : nums[1];\r         int second = nums[0] > nums[1] ? nums[1] : nums[0];\r         int iF = nums[0] > nums[1] ? 0 : 1;\r         int iS = nums[0] > nums[1] ? 1 : 0;\r         for (int i = 2; i < n; ++i) {\r             if (nums[i] > first) {\r                 second = first;\r                 iS = iF;\r                 first = nums[i];\r                 iF = i;\r             } else if (nums[i] > second) {\r                 second = nums[i];\r                 iS = i;\r             }\r         }\r         return first >= second * 2 ? iF : -1;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "747.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\747.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "dominantIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "1818648489"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_dominantIndex_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_dominantIndex_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1818648489;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_dominantIndex_vector_int_random_1\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->dominantIndex(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\747.cpp\\\\Solution\\\\dominantIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1818648489;\nnums.push_back(nums_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "747.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\747.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "dominantIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "1243096594"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "97553445"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #2",
+                                            "correspondingType": "int",
+                                            "value": "-1180884956"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_dominantIndex_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_dominantIndex_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1243096594;\nnums.push_back(nums_element0);\nint nums_element1=97553445;\nnums.push_back(nums_element1);\nint nums_element2=-1180884956;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_dominantIndex_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->dominantIndex(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\747.cpp\\\\Solution\\\\dominantIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=1243096594;\nnums.push_back(nums_element0);\nint nums_element1=97553445;\nnums.push_back(nums_element1);\nint nums_element2=-1180884956;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 2,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "747.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\747.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "dominantIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1771860077"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "-1338314257"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #2",
+                                            "correspondingType": "int",
+                                            "value": "1112060369"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_dominantIndex_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_dominantIndex_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1771860077;\nnums.push_back(nums_element0);\nint nums_element1=-1338314257;\nnums.push_back(nums_element1);\nint nums_element2=1112060369;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_dominantIndex_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->dominantIndex(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\747.cpp\\\\Solution\\\\dominantIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1771860077;\nnums.push_back(nums_element0);\nint nums_element1=-1338314257;\nnums.push_back(nums_element1);\nint nums_element2=1112060369;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 3,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "747.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\747.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\747.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "dominantIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "224720831"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #1",
+                                            "correspondingType": "int",
+                                            "value": "833207520"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\nums\\element #2",
+                                            "correspondingType": "int",
+                                            "value": "592656786"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_dominantIndex_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_dominantIndex_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=224720831;\nnums.push_back(nums_element0);\nint nums_element1=833207520;\nnums.push_back(nums_element1);\nint nums_element2=592656786;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_dominantIndex_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->dominantIndex(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\747.cpp\\\\Solution\\\\dominantIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\747.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=224720831;\nnums.push_back(nums_element0);\nint nums_element1=833207520;\nnums.push_back(nums_element1);\nint nums_element2=592656786;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     int dominantIndex(vector<int> &nums) {\r         int n = nums.size();\r         if (n == 0)\r             return -1;\r         else if (n == 1)\r             return 0;\r         int first = nums[0] > nums[1] ? nums[0] : nums[1];\r         int second = nums[0] > nums[1] ? nums[1] : nums[0];\r         int iF = nums[0] > nums[1] ? 0 : 1;\r         int iS = nums[0] > nums[1] ? 1 : 0;\r         for (int i = 2; i < n; ++i) {\r             if (nums[i] > first) {\r                 second = first;\r                 iS = iF;\r                 first = nums[i];\r                 iF = i;\r             } else if (nums[i] > second) {\r                 second = nums[i];\r                 iS = i;\r             }\r         }\r         return first >= second * 2 ? iF : -1;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "C:\\Users\\min\\OneDrive - vnu.edu.vn\\test\\folder_70\\747.cpp\\Solution\\dominantIndex(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "string shortestCompletingWord(string licensePlate, vector<string> &words) {\r         string ret;\r         int minLen = INT_MAX;\r         unordered_map<char, int> letters;\r         for (char l : licensePlate)\r             if ((l >= 'a' && l <= 'z') || (l >= 'A' && l <= 'Z'))\r                 ++letters[tolower(l)];\r         for (const string &w: words) {\r             auto len = w.size();\r             if (len >= minLen) continue;\r             auto temp = letters;\r             for (const char &c:w) {\r                 if (temp.find(c) != temp.end()) {\r                     --temp[c];\r                     if (!temp[c])\r                         temp.erase(c);\r                 } else\r                     continue;\r             }\r             if (temp.empty()) {\r                 ret = w;\r                 minLen = len;\r             }\r         }\r         return ret;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "748.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\748.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\748.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\748.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\748.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "shortestCompletingWord(string,vector<string>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "EXPECTED_words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "licensePlate",
+                                    "virtual_name": "EXPECTED_licensePlate",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\licensePlate",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "licensePlate",
+                                    "virtual_name": "licensePlate",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\licensePlate",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "licensePlate[0]",
+                                            "virtual_name": "licensePlate[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\licensePlate\\licensePlate[0]",
+                                            "correspondingType": "char",
+                                            "value": "98"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "words",
+                                    "virtual_name": "words",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\words",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "words_element0",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\words\\element #0",
+                                            "correspondingType": "string",
+                                            "value": "1",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #0[0]",
+                                                    "virtual_name": "words_element0[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\words\\element #0\\element #0[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "-2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "words_element1",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\words\\element #1",
+                                            "correspondingType": "string",
+                                            "value": "3",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #1[0]",
+                                                    "virtual_name": "words_element1[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\words\\element #1\\element #1[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "84"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)\\RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_shortestCompletingWord_string_vector_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_shortestCompletingWord_string_vector_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\748.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName980361 = new char[2];akaRandomName980361[0] = 98;akaRandomName980361[1] = '\\0';string licensePlate=akaRandomName980361;\nvector<string> words;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode licensePlate */\n/* VectorDataNode words */\nchar* akaRandomName165379 = new char[2];akaRandomName165379[0] = -2;akaRandomName165379[1] = '\\0';string words_element0=akaRandomName165379;\nwords.push_back(words_element0);\nchar* akaRandomName78135 = new char[2];akaRandomName78135[0] = 84;akaRandomName78135[1] = '\\0';string words_element1=akaRandomName78135;\nwords.push_back(words_element1);\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_shortestCompletingWord_string_vector_string_random_0\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->shortestCompletingWord(licensePlate,words);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\748.cpp\\\\Solution\\\\shortestCompletingWord(string,vector<string>&)\");\n\n\n\nvector<string> EXPECTED_words;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\748.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName771229 = new char[2];akaRandomName771229[0] = 98;akaRandomName771229[1] = '\\0';string licensePlate=akaRandomName771229;\nvector<string> words;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode licensePlate */\n/* VectorDataNode words */\nchar* akaRandomName177602 = new char[2];akaRandomName177602[0] = -2;akaRandomName177602[1] = '\\0';string words_element0=akaRandomName177602;\nwords.push_back(words_element0);\nchar* akaRandomName218725 = new char[2];akaRandomName218725[0] = 84;akaRandomName218725[1] = '\\0';string words_element1=akaRandomName218725;\nwords.push_back(words_element1);\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     string shortestCompletingWord(string licensePlate, vector<string> &words) {\r         string ret;\r         int minLen = INT_MAX;\r         unordered_map<char, int> letters;\r         for (char l : licensePlate)\r             if ((l >= 'a' && l <= 'z') || (l >= 'A' && l <= 'Z'))\r                 ++letters[tolower(l)];\r         for (const string &w: words) {\r             auto len = w.size();\r             if (len >= minLen) continue;\r             auto temp = letters;\r             for (const char &c:w) {\r                 if (temp.find(c) != temp.end()) {\r                     --temp[c];\r                     if (!temp[c])\r                         temp.erase(c);\r                 } else\r                     continue;\r             }\r             if (temp.empty()) {\r                 ret = w;\r                 minLen = len;\r             }\r         }\r         return ret;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "C:\\Users\\min\\OneDrive - vnu.edu.vn\\test\\folder_70\\748.cpp\\Solution\\shortestCompletingWord(string,vector<string>&)"
+    },
+    {
+        "f": [],
+        "fm": "void sortColors(vector<int> &nums) {\r         int i = 0, j = 0, k = nums.size() - 1;\r         while (j <= k) {\r             if (nums[j] == 2) swap(nums[j], nums[k--]);\r             else if (nums[j] == 0) swap(nums[i++], nums[j++]);\r             else\r                 ++j;\r         }\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "75.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\75.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\75.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\75.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\75.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\75.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\75.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\75.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "sortColors(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": ".\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)\\nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)\\nums\\element #0",
+                                            "correspondingType": "int",
+                                            "value": "-699918612"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_sortColors_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_sortColors_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\75.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-699918612;\nnums.push_back(nums_element0);\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_sortColors_vector_int_random_2\");AKA_INSTANCE___Solution->sortColors(nums);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\75.cpp\\\\Solution\\\\sortColors(vector<int>&)\");\n\n/* error assertion */\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\75.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-699918612;\nnums.push_back(nums_element0);\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     void sortColors(vector<int> &nums) {\r         int i = 0, j = 0, k = nums.size() - 1;\r         while (j <= k) {\r             if (nums[j] == 2) swap(nums[j], nums[k--]);\r             else if (nums[j] == 0) swap(nums[i++], nums[j++]);\r             else\r                 ++j;\r         }\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "C:\\Users\\min\\OneDrive - vnu.edu.vn\\test\\folder_70\\75.cpp\\Solution\\sortColors(vector<int>&)"
+    },
+    {
+        "f": [
+            "int num;"
+        ],
+        "fm": "int reachNumber(int target) {\r         int m = 0;\r         target = abs(target);\r         while (target > 0)\r             target -= ++m;\r         return target % 2 == 0 ? m : m + 1 + m % 2;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "754.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\754.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\754.cpp\\Solution\\reachNumber(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\754.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\754.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\754.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "num",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->num",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\num",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "reachNumber(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": ".\\folder_70\\754.cpp\\Solution\\reachNumber(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "EXPECTED_target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\reachNumber(int)\\target",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\754.cpp\\Solution\\reachNumber(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "target",
+                                    "virtual_name": "target",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\reachNumber(int)\\target",
+                                    "correspondingType": "int",
+                                    "value": "3"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\754.cpp\\Solution\\reachNumber(int)\\RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_reachNumber_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_reachNumber_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\754.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* NormalNumberDataNode num */\n/* num : null value -> no code */\n\n\n\n\nint target=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_reachNumber_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->reachNumber(target);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\754.cpp\\\\Solution\\\\reachNumber(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\754.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* NormalNumberDataNode num */\n/* num : null value -> no code */\n\n\n\n\nint target=3;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode target */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r     int num;\r public:\r     int reachNumber(int target) {\r         int m = 0;\r         target = abs(target);\r         while (target > 0)\r             target -= ++m;\r         return target % 2 == 0 ? m : m + 1 + m % 2;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "C:\\Users\\min\\OneDrive - vnu.edu.vn\\test\\folder_70\\754.cpp\\Solution\\reachNumber(int)"
+    },
+    {
+        "f": [],
+        "fm": "bool pyramidTransition(string bottom, vector<string> &allowed) {\r         unordered_map<char, vector<string>> tuple;\r         for (auto &a:allowed)\r             tuple[a[0]].push_back(a);\r         string upper;\r         return DFS(bottom, upper, tuple);\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "756.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\756.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\756.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\756.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\756.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "pyramidTransition(string,vector<string>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "allowed",
+                                    "virtual_name": "EXPECTED_allowed",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\allowed",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "bottom",
+                                    "virtual_name": "EXPECTED_bottom",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\bottom",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "bottom",
+                                    "virtual_name": "bottom",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\bottom",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "bottom[0]",
+                                            "virtual_name": "bottom[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\bottom\\bottom[0]",
+                                            "correspondingType": "char",
+                                            "value": "-60"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "allowed",
+                                    "virtual_name": "allowed",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\allowed",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "allowed_element0",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\allowed\\element #0",
+                                            "correspondingType": "string",
+                                            "value": "1",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #0[0]",
+                                                    "virtual_name": "allowed_element0[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\allowed\\element #0\\element #0[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "26"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "allowed_element1",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\allowed\\element #1",
+                                            "correspondingType": "string",
+                                            "value": "1",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #1[0]",
+                                                    "virtual_name": "allowed_element1[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\allowed\\element #1\\element #1[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "-25"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)\\RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_pyramidTransition_string_vector_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_pyramidTransition_string_vector_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\756.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName552603 = new char[2];akaRandomName552603[0] = -60;akaRandomName552603[1] = '\\0';string bottom=akaRandomName552603;\nvector<string> allowed;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode bottom */\n/* VectorDataNode allowed */\nchar* akaRandomName548721 = new char[2];akaRandomName548721[0] = 26;akaRandomName548721[1] = '\\0';string allowed_element0=akaRandomName548721;\nallowed.push_back(allowed_element0);\nchar* akaRandomName20294 = new char[2];akaRandomName20294[0] = -25;akaRandomName20294[1] = '\\0';string allowed_element1=akaRandomName20294;\nallowed.push_back(allowed_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_pyramidTransition_string_vector_string_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->pyramidTransition(bottom,allowed);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\756.cpp\\\\Solution\\\\pyramidTransition(string,vector<string>&)\");\n\n\nvector<string> EXPECTED_allowed;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\756.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName414909 = new char[2];akaRandomName414909[0] = -60;akaRandomName414909[1] = '\\0';string bottom=akaRandomName414909;\nvector<string> allowed;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode bottom */\n/* VectorDataNode allowed */\nchar* akaRandomName364104 = new char[2];akaRandomName364104[0] = 26;akaRandomName364104[1] = '\\0';string allowed_element0=akaRandomName364104;\nallowed.push_back(allowed_element0);\nchar* akaRandomName491341 = new char[2];akaRandomName491341[0] = -25;akaRandomName491341[1] = '\\0';string allowed_element1=akaRandomName491341;\nallowed.push_back(allowed_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     bool pyramidTransition(string bottom, vector<string> &allowed) {\r         unordered_map<char, vector<string>> tuple;\r         for (auto &a:allowed)\r             tuple[a[0]].push_back(a);\r         string upper;\r         return DFS(bottom, upper, tuple);\r     }\r \r     bool DFS(string bot, string upper, unordered_map<char, vector<string>> &tuple) {\r         if (bot.size() <= 1) {\r             if (upper.size() <= 1)\r                 return true;\r             bot = upper;\r             upper.clear();\r         }\r         auto s = bot[0];\r         bot.erase(bot.begin());\r         for (auto l:tuple[s]) {\r             if (l[1] == bot[0]) {\r                 upper.push_back(l[2]);\r                 if (DFS(bot, upper, tuple))\r                     return true;\r                 upper.pop_back();\r             }\r         }\r         return false;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "C:\\Users\\min\\OneDrive - vnu.edu.vn\\test\\folder_70\\756.cpp\\Solution\\pyramidTransition(string,vector<string>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool DFS(string bot, string upper, unordered_map<char, vector<string>> &tuple) {\r         if (bot.size() <= 1) {\r             if (upper.size() <= 1)\r                 return true;\r             bot = upper;\r             upper.clear();\r         }\r         auto s = bot[0];\r         bot.erase(bot.begin());\r         for (auto l:tuple[s]) {\r             if (l[1] == bot[0]) {\r                 upper.push_back(l[2]);\r                 if (DFS(bot, upper, tuple))\r                     return true;\r                 upper.pop_back();\r             }\r         }\r         return false;\r     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "756.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": ".\\folder_70\\756.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\756.cpp\\Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                    "correspondingType": ".\\folder_70\\756.cpp\\Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\AKA_INSTANCE___Solution",
+                                            "correspondingType": ".\\folder_70\\756.cpp\\Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "\\Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "DFS(string,string,unordered_map<char,vector<string>>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "upper",
+                                    "virtual_name": "EXPECTED_upper",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\upper",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                    "name": "tuple",
+                                    "virtual_name": "EXPECTED_tuple",
+                                    "dataType": "unordered_map<char, vector<string>>",
+                                    "realType": "unordered_map<char,vector<string>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\tuple",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "std::pair<char, vector<string>>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "bot",
+                                    "virtual_name": "EXPECTED_bot",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\bot",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "bot",
+                                    "virtual_name": "bot",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\bot",
+                                    "correspondingType": "string",
+                                    "value": "2",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "bot[0]",
+                                            "virtual_name": "bot[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\bot\\bot[0]",
+                                            "correspondingType": "char",
+                                            "value": "111"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "upper",
+                                    "virtual_name": "upper",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\upper",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "upper[0]",
+                                            "virtual_name": "upper[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\upper\\upper[0]",
+                                            "correspondingType": "char",
+                                            "value": "-113"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                    "name": "tuple",
+                                    "virtual_name": "tuple",
+                                    "dataType": "unordered_map<char, vector<string>>",
+                                    "realType": "unordered_map<char,vector<string>>&",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\tuple",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "std::pair<char, vector<string>>"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": ".\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)\\RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_DFS_string_string_unordered_map_char_vector_string_random_0(void) {\n{\nAKA_test_case_name=\"Solution_DFS_string_string_unordered_map_char_vector_string_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\756.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName780243 = new char[2];akaRandomName780243[0] = 111;akaRandomName780243[1] = '\\0';string bot=akaRandomName780243;\nchar* akaRandomName892201 = new char[2];akaRandomName892201[0] = -113;akaRandomName892201[1] = '\\0';string upper=akaRandomName892201;\nunordered_map<char, vector<string>> tuple;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode bot */\n/* NormalStringDataNode upper */\n/* UnorderedMapDataNode tuple */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_DFS_string_string_unordered_map_char_vector_string_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->DFS(bot,upper,tuple);\nAKA_fCall++;AKA_mark(\"Return from: .\\\\folder_70\\\\756.cpp\\\\Solution\\\\DFS(string,string,unordered_map<char,vector<string>>&)\");\n\n\nunordered_map<char, vector<string>> EXPECTED_tuple;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: \\\\Solution()|ROOT\\\\756.cpp\\\\GLOBAL\\\\AKA_INSTANCE___Solution\\\\AKA_INSTANCE___Solution\\\\Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName525838 = new char[2];akaRandomName525838[0] = 111;akaRandomName525838[1] = '\\0';string bot=akaRandomName525838;\nchar* akaRandomName994118 = new char[2];akaRandomName994118[0] = -113;akaRandomName994118[1] = '\\0';string upper=akaRandomName994118;\nunordered_map<char, vector<string>> tuple;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode bot */\n/* NormalStringDataNode upper */\n/* UnorderedMapDataNode tuple */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {\r public:\r     bool pyramidTransition(string bottom, vector<string> &allowed) {\r         unordered_map<char, vector<string>> tuple;\r         for (auto &a:allowed)\r             tuple[a[0]].push_back(a);\r         string upper;\r         return DFS(bottom, upper, tuple);\r     }\r \r     bool DFS(string bot, string upper, unordered_map<char, vector<string>> &tuple) {\r         if (bot.size() <= 1) {\r             if (upper.size() <= 1)\r                 return true;\r             bot = upper;\r             upper.clear();\r         }\r         auto s = bot[0];\r         bot.erase(bot.begin());\r         for (auto l:tuple[s]) {\r             if (l[1] == bot[0]) {\r                 upper.push_back(l[2]);\r                 if (DFS(bot, upper, tuple))\r                     return true;\r                 upper.pop_back();\r             }\r         }\r         return false;\r     }\r };",
+        "c": [
+            ""
+        ],
+        "path_fm": "C:\\Users\\min\\OneDrive - vnu.edu.vn\\test\\folder_70\\756.cpp\\Solution\\DFS(string,string,unordered_map<char,vector<string>>&)"
+    }
+]

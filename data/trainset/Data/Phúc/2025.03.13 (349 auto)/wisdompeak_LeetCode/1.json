@@ -1,0 +1,1345 @@
+[
+    {
+        "f": [
+            "unordered_map<int,int> Map;"
+        ],
+        "fm": "void add(int number)  \t{ \t    Map[number]++;    \t}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "170.Two Sum III - Data structure design.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/170.Two Sum III - Data structure design.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TwoSum",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TwoSum",
+                                    "dataType": "::TwoSum",
+                                    "realType": "::TwoSum",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/AKA_INSTANCE___TwoSum",
+                                    "correspondingType": "./1/170.Two Sum III - Data structure design.cpp/TwoSum"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TwoSum",
+                                    "virtual_name": "AKA_INSTANCE___TwoSum",
+                                    "dataType": "::TwoSum",
+                                    "realType": "::TwoSum",
+                                    "external": true,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/AKA_INSTANCE___TwoSum",
+                                    "correspondingType": "./1/170.Two Sum III - Data structure design.cpp/TwoSum",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___TwoSum",
+                                            "virtual_name": "AKA_INSTANCE___TwoSum",
+                                            "dataType": "::TwoSum",
+                                            "realType": "::TwoSum",
+                                            "external": false,
+                                            "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/AKA_INSTANCE___TwoSum",
+                                            "correspondingType": "./1/170.Two Sum III - Data structure design.cpp/TwoSum",
+                                            "rawType": "::TwoSum",
+                                            "selectedConstructor": "TwoSum()",
+                                            "variableType": "::TwoSum",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TwoSum()",
+                                                    "virtual_name": "AKA_INSTANCE___TwoSum",
+                                                    "dataType": "::TwoSum",
+                                                    "realType": "::TwoSum",
+                                                    "functionNode": "/TwoSum()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "Map",
+                                                    "virtual_name": "AKA_INSTANCE___TwoSum->Map",
+                                                    "dataType": "unordered_map<int,int>",
+                                                    "realType": "unordered_map<int,int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/Map",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<int, int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "add(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "number",
+                                    "virtual_name": "EXPECTED_number",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)/number",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "number",
+                                    "virtual_name": "number",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)/number",
+                                    "correspondingType": "int",
+                                    "value": "-1341057153"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TwoSum_add_int_random_0(void) {\n{\nAKA_test_case_name=\"TwoSum_add_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___TwoSum */\n/* ConstructorDataNode TwoSum() */\nAKA_mark(\"Calling: /TwoSum()|ROOT/170.Two Sum III - Data structure design.cpp/GLOBAL/AKA_INSTANCE___TwoSum/AKA_INSTANCE___TwoSum/TwoSum()\");AKA_fCall++;AKA_INSTANCE___TwoSum = new ::TwoSum();\n/* UnorderedMapDataNode Map */\n\n\n\n\nint number=-1341057153;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode number */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TwoSum_add_int_random_0\");AKA_INSTANCE___TwoSum->add(number);\nAKA_fCall++;AKA_mark(\"Return from: ./1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___TwoSum */\n/* ConstructorDataNode TwoSum() */\nAKA_mark(\"Calling: /TwoSum()|ROOT/170.Two Sum III - Data structure design.cpp/GLOBAL/AKA_INSTANCE___TwoSum/AKA_INSTANCE___TwoSum/TwoSum()\");AKA_fCall++;AKA_INSTANCE___TwoSum = new ::TwoSum();\n/* UnorderedMapDataNode Map */\n\n\n\n\nint number=-1341057153;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode number */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class TwoSum {      private:     unordered_map<int,int>Map;  public:      // Add the number to an internal data structure. \tvoid add(int number)  \t{ \t    Map[number]++;    \t}      // Find if there exists any pair of numbers which sum is equal to the value. \tbool find(int value)  \t{ \t    for (auto a:Map) \t    { \t        if (value-a.first!=a.first) \t        { \t           if (Map.find(value-a.first)!=Map.end()) \t                return true;; \t        } \t        else if (value-a.first==a.first) \t        { \t            if (a.second>1) \t                return true; \t        } \t    } \t     \t    return false; \t} };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/1/170.Two Sum III - Data structure design.cpp/TwoSum/add(int)"
+    },
+    {
+        "f": [
+            "unordered_map<int,int> Map;"
+        ],
+        "fm": "bool find(int value)  \t{ \t    for (auto a:Map) \t    { \t        if (value-a.first!=a.first) \t        { \t           if (Map.find(value-a.first)!=Map.end()) \t                return true;; \t        } \t        else if (value-a.first==a.first) \t        { \t            if (a.second>1) \t                return true; \t        } \t    } \t     \t    return false; \t}",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "170.Two Sum III - Data structure design.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/170.Two Sum III - Data structure design.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TwoSum",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___TwoSum",
+                                    "dataType": "::TwoSum",
+                                    "realType": "::TwoSum",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/AKA_INSTANCE___TwoSum",
+                                    "correspondingType": "./1/170.Two Sum III - Data structure design.cpp/TwoSum"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___TwoSum",
+                                    "virtual_name": "AKA_INSTANCE___TwoSum",
+                                    "dataType": "::TwoSum",
+                                    "realType": "::TwoSum",
+                                    "external": true,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/AKA_INSTANCE___TwoSum",
+                                    "correspondingType": "./1/170.Two Sum III - Data structure design.cpp/TwoSum",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___TwoSum",
+                                            "virtual_name": "AKA_INSTANCE___TwoSum",
+                                            "dataType": "::TwoSum",
+                                            "realType": "::TwoSum",
+                                            "external": false,
+                                            "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/AKA_INSTANCE___TwoSum",
+                                            "correspondingType": "./1/170.Two Sum III - Data structure design.cpp/TwoSum",
+                                            "rawType": "::TwoSum",
+                                            "selectedConstructor": "TwoSum()",
+                                            "variableType": "::TwoSum",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "TwoSum()",
+                                                    "virtual_name": "AKA_INSTANCE___TwoSum",
+                                                    "dataType": "::TwoSum",
+                                                    "realType": "::TwoSum",
+                                                    "functionNode": "/TwoSum()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "Map",
+                                                    "virtual_name": "AKA_INSTANCE___TwoSum->Map",
+                                                    "dataType": "unordered_map<int,int>",
+                                                    "realType": "unordered_map<int,int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/Map",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<int, int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "find(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "value",
+                                    "virtual_name": "EXPECTED_value",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)/value",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "value",
+                                    "virtual_name": "value",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)/value",
+                                    "correspondingType": "int",
+                                    "value": "935787009"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_TwoSum_find_int_random_0(void) {\n{\nAKA_test_case_name=\"TwoSum_find_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___TwoSum */\n/* ConstructorDataNode TwoSum() */\nAKA_mark(\"Calling: /TwoSum()|ROOT/170.Two Sum III - Data structure design.cpp/GLOBAL/AKA_INSTANCE___TwoSum/AKA_INSTANCE___TwoSum/TwoSum()\");AKA_fCall++;AKA_INSTANCE___TwoSum = new ::TwoSum();\n/* UnorderedMapDataNode Map */\n\n\n\n\nint value=935787009;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode value */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test TwoSum_find_int_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___TwoSum->find(value);\nAKA_fCall++;AKA_mark(\"Return from: ./1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___TwoSum */\n/* ConstructorDataNode TwoSum() */\nAKA_mark(\"Calling: /TwoSum()|ROOT/170.Two Sum III - Data structure design.cpp/GLOBAL/AKA_INSTANCE___TwoSum/AKA_INSTANCE___TwoSum/TwoSum()\");AKA_fCall++;AKA_INSTANCE___TwoSum = new ::TwoSum();\n/* UnorderedMapDataNode Map */\n\n\n\n\nint value=935787009;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode value */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class TwoSum {      private:     unordered_map<int,int>Map;  public:      // Add the number to an internal data structure. \tvoid add(int number)  \t{ \t    Map[number]++;    \t}      // Find if there exists any pair of numbers which sum is equal to the value. \tbool find(int value)  \t{ \t    for (auto a:Map) \t    { \t        if (value-a.first!=a.first) \t        { \t           if (Map.find(value-a.first)!=Map.end()) \t                return true;; \t        } \t        else if (value-a.first==a.first) \t        { \t            if (a.second>1) \t                return true; \t        } \t    } \t     \t    return false; \t} };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/1/170.Two Sum III - Data structure design.cpp/TwoSum/find(int)"
+    },
+    {
+        "f": [],
+        "fm": "int hIndex(vector<int>& citations)      {         int left=0;         int N=citations.size();         int right=N-1;         int mid;                  if (N==0) return 0;                  while (left<right)         {             int mid= left+(right-left)/2;                          if (N-mid==citations[mid])                 return citations[mid];             else if (N-mid<citations[mid])                 right = mid;             else                 left= mid+1;         }                  return min(N-left,citations[left]);              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "274.H-index_Binary.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/274.H-index_Binary.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-index_Binary.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-index_Binary.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./1/274.H-index_Binary.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "hIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "EXPECTED_citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "citations_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)/citations/element #0",
+                                            "correspondingType": "int",
+                                            "value": "869056154"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "citations_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)/citations/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-374883504"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "citations_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)/citations/element #2",
+                                            "correspondingType": "int",
+                                            "value": "1376848284"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_hIndex_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_hIndex_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-index_Binary.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=869056154;\ncitations.push_back(citations_element0);\nint citations_element1=-374883504;\ncitations.push_back(citations_element1);\nint citations_element2=1376848284;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_hIndex_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->hIndex(citations);\nAKA_fCall++;AKA_mark(\"Return from: ./1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_citations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-index_Binary.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=869056154;\ncitations.push_back(citations_element0);\nint citations_element1=-374883504;\ncitations.push_back(citations_element1);\nint citations_element2=1376848284;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int hIndex(vector<int>& citations)      {         int left=0;         int N=citations.size();         int right=N-1;         int mid;                  if (N==0) return 0;                  while (left<right)         {             int mid= left+(right-left)/2;                          if (N-mid==citations[mid])                 return citations[mid];             else if (N-mid<citations[mid])                 right = mid;             else                 left= mid+1;         }                  return min(N-left,citations[left]);              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/1/274.H-index_Binary.cpp/Solution/hIndex(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int hIndex(vector<int>& citations)      {         if (citations.size()==0) return 0;                  map<int,int>Map;         for (int i=0; i<citations.size(); i++)             Map[citations[i]]++;         auto q = vector<pair<int,int>>(Map.begin(),Map.end());                  int sum=0;                  for (int i=q.size()-1; i>=0; i--)         {             if (q[i].first>sum+q[i].second)                 sum+=q[i].second;             else if (q[i].first==sum+q[i].second)                 return q[i].first;             else                 return max(q[i].first,sum);         }                  return sum;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "274.H-Index_Hash.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/274.H-Index_Hash.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-Index_Hash.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-Index_Hash.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./1/274.H-Index_Hash.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "hIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "EXPECTED_citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "citations_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations/element #0",
+                                            "correspondingType": "int",
+                                            "value": "1920408108"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "citations_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-816221199"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "citations_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations/element #2",
+                                            "correspondingType": "int",
+                                            "value": "1386143988"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_hIndex_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_hIndex_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-Index_Hash.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=1920408108;\ncitations.push_back(citations_element0);\nint citations_element1=-816221199;\ncitations.push_back(citations_element1);\nint citations_element2=1386143988;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_hIndex_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->hIndex(citations);\nAKA_fCall++;AKA_mark(\"Return from: ./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_citations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-Index_Hash.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=1920408108;\ncitations.push_back(citations_element0);\nint citations_element1=-816221199;\ncitations.push_back(citations_element1);\nint citations_element2=1386143988;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "274.H-Index_Hash.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/274.H-Index_Hash.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-Index_Hash.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-Index_Hash.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./1/274.H-Index_Hash.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "hIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "EXPECTED_citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "citations_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/citations/element #0",
+                                            "correspondingType": "int",
+                                            "value": "508856521"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_hIndex_vector_int_random_5(void) {\n{\nAKA_test_case_name=\"Solution_hIndex_vector_int_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-Index_Hash.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=508856521;\ncitations.push_back(citations_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_hIndex_vector_int_random_5\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->hIndex(citations);\nAKA_fCall++;AKA_mark(\"Return from: ./1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_citations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-Index_Hash.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=508856521;\ncitations.push_back(citations_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int hIndex(vector<int>& citations)      {         if (citations.size()==0) return 0;                  map<int,int>Map;         for (int i=0; i<citations.size(); i++)             Map[citations[i]]++;         auto q = vector<pair<int,int>>(Map.begin(),Map.end());                  int sum=0;                  for (int i=q.size()-1; i>=0; i--)         {             if (q[i].first>sum+q[i].second)                 sum+=q[i].second;             else if (q[i].first==sum+q[i].second)                 return q[i].first;             else                 return max(q[i].first,sum);         }                  return sum;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/1/274.H-Index_Hash.cpp/Solution/hIndex(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int hIndex(vector<int>& citations)      {         if (citations.size()==0) return 0;                  sort(citations.begin(),citations.end());                  int sum=0;         int i=citations.size()-1;                  while (i>=0)         {             sum++;                          if (citations[i]==sum)                 return sum;             else if (citations[i]>sum)                 i--;             else             {                 return max(citations[i],sum-1);             }                      }                  return sum;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "274.H-index_Pointer.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/274.H-index_Pointer.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-index_Pointer.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-index_Pointer.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./1/274.H-index_Pointer.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "hIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "EXPECTED_citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "citations_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations/element #0",
+                                            "correspondingType": "int",
+                                            "value": "610861069"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "citations_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations/element #1",
+                                            "correspondingType": "int",
+                                            "value": "2126351799"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "citations_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations/element #2",
+                                            "correspondingType": "int",
+                                            "value": "219928217"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_hIndex_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_hIndex_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-index_Pointer.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=610861069;\ncitations.push_back(citations_element0);\nint citations_element1=2126351799;\ncitations.push_back(citations_element1);\nint citations_element2=219928217;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_hIndex_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->hIndex(citations);\nAKA_fCall++;AKA_mark(\"Return from: ./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_citations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-index_Pointer.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=610861069;\ncitations.push_back(citations_element0);\nint citations_element1=2126351799;\ncitations.push_back(citations_element1);\nint citations_element2=219928217;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "274.H-index_Pointer.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/274.H-index_Pointer.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-index_Pointer.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/274.H-index_Pointer.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./1/274.H-index_Pointer.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "hIndex(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "EXPECTED_citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "citations",
+                                    "virtual_name": "citations",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "citations_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1893643004"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "citations_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations/element #1",
+                                            "correspondingType": "int",
+                                            "value": "1903801258"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "citations_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/citations/element #2",
+                                            "correspondingType": "int",
+                                            "value": "2101718969"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_hIndex_vector_int_random_7(void) {\n{\nAKA_test_case_name=\"Solution_hIndex_vector_int_random_7\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-index_Pointer.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=-1893643004;\ncitations.push_back(citations_element0);\nint citations_element1=1903801258;\ncitations.push_back(citations_element1);\nint citations_element2=2101718969;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_hIndex_vector_int_random_7\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->hIndex(citations);\nAKA_fCall++;AKA_mark(\"Return from: ./1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)\");\n\n\nvector<int> EXPECTED_citations;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/274.H-index_Pointer.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> citations;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode citations */\nint citations_element0=-1893643004;\ncitations.push_back(citations_element0);\nint citations_element1=1903801258;\ncitations.push_back(citations_element1);\nint citations_element2=2101718969;\ncitations.push_back(citations_element2);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int hIndex(vector<int>& citations)      {         if (citations.size()==0) return 0;                  sort(citations.begin(),citations.end());                  int sum=0;         int i=citations.size()-1;                  while (i>=0)         {             sum++;                          if (citations[i]==sum)                 return sum;             else if (citations[i]>sum)                 i--;             else             {                 return max(citations[i],sum-1);             }                      }                  return sum;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/1/274.H-index_Pointer.cpp/Solution/hIndex(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int maxSubArrayLen(vector<int>& nums, int k)      {         unordered_map<long,vector<int>>Map;         long sum=0;         int result=INT_MIN;                  nums.insert(nums.begin(),0);                  for (int i=0; i<nums.size(); i++)         {             sum+=nums[i];             Map[sum].push_back(i);                          int temp = sum-k;             if (Map.find(temp)!=Map.end())             {                 result = max(result, i-Map[temp][0]);             }         }                  if (result==INT_MIN) result=0;                  return result;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "325.Maximum Size Subarray Sum Equals k.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./1/325.Maximum Size Subarray Sum Equals k.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "maxSubArrayLen(vector<int>&,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "EXPECTED_k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 3,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1250203778"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-2115959448"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #2",
+                                            "virtual_name": "nums_element2",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/nums/element #2",
+                                            "correspondingType": "int",
+                                            "value": "1618849271"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "k",
+                                    "virtual_name": "k",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/k",
+                                    "correspondingType": "int",
+                                    "value": "-627395169"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_maxSubArrayLen_vector_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_maxSubArrayLen_vector_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/325.Maximum Size Subarray Sum Equals k.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=-627395169;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1250203778;\nnums.push_back(nums_element0);\nint nums_element1=-2115959448;\nnums.push_back(nums_element1);\nint nums_element2=1618849271;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_maxSubArrayLen_vector_int_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->maxSubArrayLen(nums,k);\nAKA_fCall++;AKA_mark(\"Return from: ./1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/325.Maximum Size Subarray Sum Equals k.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint k=-627395169;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1250203778;\nnums.push_back(nums_element0);\nint nums_element1=-2115959448;\nnums.push_back(nums_element1);\nint nums_element2=1618849271;\nnums.push_back(nums_element2);\n/* NormalNumberDataNode k */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxSubArrayLen(vector<int>& nums, int k)      {         unordered_map<long,vector<int>>Map;         long sum=0;         int result=INT_MIN;                  nums.insert(nums.begin(),0);                  for (int i=0; i<nums.size(); i++)         {             sum+=nums[i];             Map[sum].push_back(i);                          int temp = sum-k;             if (Map.find(temp)!=Map.end())             {                 result = max(result, i-Map[temp][0]);             }         }                  if (result==INT_MIN) result=0;                  return result;              } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/1/325.Maximum Size Subarray Sum Equals k.cpp/Solution/maxSubArrayLen(vector<int>&,int)"
+    }
+]

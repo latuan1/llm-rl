@@ -1,0 +1,216 @@
+[
+    {
+        "f": [],
+        "fm": "bool isSameTree(TreeNode* p, TreeNode* q) {         if (!p && !q) return true;         if (p && !q || !p && q) return false;         return p->val == q->val && isSameTree(p->left, q->left) && isSameTree(p->right, q->right);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isSameTree(TreeNode* p, TreeNode* q) {         if (!p && !q) return true;         if (p && !q || !p && q) return false;         return p->val == q->val && isSameTree(p->left, q->left) && isSameTree(p->right, q->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/100-same-tree.cpp/Solution/isSameTree(TreeNode*,TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool checkSymmetry(const TreeNode* treeL, const TreeNode* treeR) {         if (treeL == nullptr && treeR == nullptr) {             return true;         } else if (treeL != nullptr && treeR != nullptr) {             return treeL->val == treeR->val && checkSymmetry(treeL->left, treeR->right) && checkSymmetry(treeL->right, treeR->left);         }         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool checkSymmetry(const TreeNode* treeL, const TreeNode* treeR) {         if (treeL == nullptr && treeR == nullptr) {             return true;         } else if (treeL != nullptr && treeR != nullptr) {             return treeL->val == treeR->val && checkSymmetry(treeL->left, treeR->right) && checkSymmetry(treeL->right, treeR->left);         }         return false;     }          bool isSymmetric(TreeNode* root) {         return root == nullptr || checkSymmetry(root->left, root->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/101-symmetric-tree.cpp/Solution/checkSymmetry(TreeNode const*,TreeNode const*)"
+    },
+    {
+        "f": [],
+        "fm": "bool isSymmetric(TreeNode* root) {         return root == nullptr || checkSymmetry(root->left, root->right);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool checkSymmetry(const TreeNode* treeL, const TreeNode* treeR) {         if (treeL == nullptr && treeR == nullptr) {             return true;         } else if (treeL != nullptr && treeR != nullptr) {             return treeL->val == treeR->val && checkSymmetry(treeL->left, treeR->right) && checkSymmetry(treeL->right, treeR->left);         }         return false;     }          bool isSymmetric(TreeNode* root) {         return root == nullptr || checkSymmetry(root->left, root->right);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/101-symmetric-tree.cpp/Solution/isSymmetric(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "int maxDepth(TreeNode* root) {         if (root == NULL) {             return 0;         } else {             int leftDepth = maxDepth(root->left);             int rightDepth = maxDepth(root->right);                          int max = leftDepth > rightDepth ? leftDepth : rightDepth;             return max + 1;         }     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxDepth(TreeNode* root) {         if (root == NULL) {             return 0;         } else {             int leftDepth = maxDepth(root->left);             int rightDepth = maxDepth(root->right);                          int max = leftDepth > rightDepth ? leftDepth : rightDepth;             return max + 1;         }     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/104-maximum-depth-of-binary-tree.cpp/Solution/maxDepth(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {         if (preorder.size() == 0) return NULL;         int rootVal = preorder[0];         if (preorder.size() == 1) {             return new TreeNode(rootVal);         }         int i = 0;         for (; i < inorder.size(); i++) {             if (rootVal == inorder[i]) break;         }         vector<int> leftPreorder = {preorder.begin() + 1, preorder.begin() + 1 + i};         vector<int> rightPreorder = {preorder.begin() + 1 + i, preorder.end()};         vector<int> leftInorder = {inorder.begin(), inorder.begin() + i};         vector<int> rightInorder = {inorder.begin() + i + 1, inorder.end()};                  TreeNode* currNode = new TreeNode(rootVal);         currNode->left = buildTree(leftPreorder, leftInorder);         currNode->right = buildTree(rightPreorder, rightInorder);         return currNode;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {         if (preorder.size() == 0) return NULL;         int rootVal = preorder[0];         if (preorder.size() == 1) {             return new TreeNode(rootVal);         }         int i = 0;         for (; i < inorder.size(); i++) {             if (rootVal == inorder[i]) break;         }         vector<int> leftPreorder = {preorder.begin() + 1, preorder.begin() + 1 + i};         vector<int> rightPreorder = {preorder.begin() + 1 + i, preorder.end()};         vector<int> leftInorder = {inorder.begin(), inorder.begin() + i};         vector<int> rightInorder = {inorder.begin() + i + 1, inorder.end()};                  TreeNode* currNode = new TreeNode(rootVal);         currNode->left = buildTree(leftPreorder, leftInorder);         currNode->right = buildTree(rightPreorder, rightInorder);         return currNode;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/105-construct-binary-tree-from-preorder-and-inorder-traversal.cpp/Solution/buildTree(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "BalanceHeight checkBalance(TreeNode* root) {         if (root == nullptr) {             return {true, -1};         }                  BalanceHeight left = checkBalance(root->left);         if (!left.balanced) {return {false, 0}; }                  BalanceHeight right = checkBalance(root->right);         if (!right.balanced) {return {false, 0}; }                  bool balanced = abs(left.height - right.height) <= 1;         int height = std::max(left.height, right.height) + 1;         return {balanced, height};     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     struct BalanceHeight {         bool balanced;         int height;     };          BalanceHeight checkBalance(TreeNode* root) {         if (root == nullptr) {             return {true, -1};         }                  BalanceHeight left = checkBalance(root->left);         if (!left.balanced) {return {false, 0}; }                  BalanceHeight right = checkBalance(root->right);         if (!right.balanced) {return {false, 0}; }                  bool balanced = abs(left.height - right.height) <= 1;         int height = std::max(left.height, right.height) + 1;         return {balanced, height};     }          bool isBalanced(TreeNode* root) {         return checkBalance(root).balanced;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/110-balanced-binary-tree.cpp/Solution/checkBalance(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool isBalanced(TreeNode* root) {         return checkBalance(root).balanced;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     struct BalanceHeight {         bool balanced;         int height;     };          BalanceHeight checkBalance(TreeNode* root) {         if (root == nullptr) {             return {true, -1};         }                  BalanceHeight left = checkBalance(root->left);         if (!left.balanced) {return {false, 0}; }                  BalanceHeight right = checkBalance(root->right);         if (!right.balanced) {return {false, 0}; }                  bool balanced = abs(left.height - right.height) <= 1;         int height = std::max(left.height, right.height) + 1;         return {balanced, height};     }          bool isBalanced(TreeNode* root) {         return checkBalance(root).balanced;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/110-balanced-binary-tree.cpp/Solution/isBalanced(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "vector<vector<int>> generate(int numRows) {         if (numRows == 0) return {};         vector<vector<int>> result;         for (int i = 0; i < numRows; i++) {             if (i == 0) {                 result.push_back({1});             } else {                 vector<int> row;                 for (int j = 0; j <= i; j++) {                     if (j == 0) {                         row.push_back(1);                     } else if (j == i) {                         row.push_back(1);                     } else {                         int elem = result[i-1][j-1] + result[i-1][j];                         row.push_back(elem);                     }                 }                 result.push_back(row);             }         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<vector<int>> generate(int numRows) {         if (numRows == 0) return {};         vector<vector<int>> result;         for (int i = 0; i < numRows; i++) {             if (i == 0) {                 result.push_back({1});             } else {                 vector<int> row;                 for (int j = 0; j <= i; j++) {                     if (j == 0) {                         row.push_back(1);                     } else if (j == i) {                         row.push_back(1);                     } else {                         int elem = result[i-1][j-1] + result[i-1][j];                         row.push_back(elem);                     }                 }                 result.push_back(row);             }         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/118-pascals-triangle.cpp/Solution/generate(int)"
+    },
+    {
+        "f": [],
+        "fm": "int maxProfit(vector<int>& prices) {         int maxDiff = 0;         int minSoFar = INT_MAX;         for (int n : prices) {             minSoFar = min(minSoFar, n);             maxDiff = max(maxDiff, n - minSoFar);         }         return maxDiff;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxProfit(vector<int>& prices) {         int maxDiff = 0;         int minSoFar = INT_MAX;         for (int n : prices) {             minSoFar = min(minSoFar, n);             maxDiff = max(maxDiff, n - minSoFar);         }         return maxDiff;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/121-best-time-to-buy-and-sell-stock.cpp/Solution/maxProfit(vector<int>&)"
+    },
+    {
+        "f": [
+            "int maxSum = INT_MIN;"
+        ],
+        "fm": "int maxGain(TreeNode* root) {         if (!root) {             return 0;         }         int leftMax = max(maxGain(root->left), 0);         int rightMax = max(maxGain(root->right), 0);         int tempSum = leftMax + rightMax + root->val;         maxSum = maxSum < tempSum? tempSum : maxSum;         return root->val + max(leftMax, rightMax);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxSum = INT_MIN;          int maxGain(TreeNode* root) {         if (!root) {             return 0;         }         int leftMax = max(maxGain(root->left), 0);         int rightMax = max(maxGain(root->right), 0);         int tempSum = leftMax + rightMax + root->val;         maxSum = maxSum < tempSum? tempSum : maxSum;         return root->val + max(leftMax, rightMax);     }          int maxPathSum(TreeNode* root) {         maxGain(root);         return maxSum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/124-binary-tree-maximum-path-sum.cpp/Solution/maxGain(TreeNode*)"
+    },
+    {
+        "f": [
+            "int maxSum = INT_MIN;"
+        ],
+        "fm": "int maxPathSum(TreeNode* root) {         maxGain(root);         return maxSum;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxSum = INT_MIN;          int maxGain(TreeNode* root) {         if (!root) {             return 0;         }         int leftMax = max(maxGain(root->left), 0);         int rightMax = max(maxGain(root->right), 0);         int tempSum = leftMax + rightMax + root->val;         maxSum = maxSum < tempSum? tempSum : maxSum;         return root->val + max(leftMax, rightMax);     }          int maxPathSum(TreeNode* root) {         maxGain(root);         return maxSum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/124-binary-tree-maximum-path-sum.cpp/Solution/maxPathSum(TreeNode*)"
+    },
+    {
+        "f": [],
+        "fm": "bool isPalindrome(string str) {         int n = str.size();         int i = 0, j = n - 1;         while (i < j) {             if (str[i] != str[j]) {                 return false;             } else {                 i++;                 j--;             }         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isPalindrome(string str) {         int n = str.size();         int i = 0, j = n - 1;         while (i < j) {             if (str[i] != str[j]) {                 return false;             } else {                 i++;                 j--;             }         }         return true;     }          int minCut(string s) {         int n = s.size();         if (n <= 1) return 0;                  vector<int> minCuts(n, INT_MAX);         minCuts[0] = 0;                  for (int i = 0; i < n; i++) {             if (isPalindrome(s.substr(0, i + 1))) {                 minCuts[i] = 0;             } else {                 minCuts[i] = minCuts[i - 1] + 1;                 for (int j = 1; j < i; j++) {                     if (isPalindrome(s.substr(j, i - j + 1)) && minCuts[i] > minCuts[j - 1] + 1) {                         minCuts[i] = minCuts[j - 1] + 1;                     }                 }             }         }         return minCuts[n - 1];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/132-palindrome-partitioning.cpp/Solution/isPalindrome(string)"
+    },
+    {
+        "f": [],
+        "fm": "int minCut(string s) {         int n = s.size();         if (n <= 1) return 0;                  vector<int> minCuts(n, INT_MAX);         minCuts[0] = 0;                  for (int i = 0; i < n; i++) {             if (isPalindrome(s.substr(0, i + 1))) {                 minCuts[i] = 0;             } else {                 minCuts[i] = minCuts[i - 1] + 1;                 for (int j = 1; j < i; j++) {                     if (isPalindrome(s.substr(j, i - j + 1)) && minCuts[i] > minCuts[j - 1] + 1) {                         minCuts[i] = minCuts[j - 1] + 1;                     }                 }             }         }         return minCuts[n - 1];     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isPalindrome(string str) {         int n = str.size();         int i = 0, j = n - 1;         while (i < j) {             if (str[i] != str[j]) {                 return false;             } else {                 i++;                 j--;             }         }         return true;     }          int minCut(string s) {         int n = s.size();         if (n <= 1) return 0;                  vector<int> minCuts(n, INT_MAX);         minCuts[0] = 0;                  for (int i = 0; i < n; i++) {             if (isPalindrome(s.substr(0, i + 1))) {                 minCuts[i] = 0;             } else {                 minCuts[i] = minCuts[i - 1] + 1;                 for (int j = 1; j < i; j++) {                     if (isPalindrome(s.substr(j, i - j + 1)) && minCuts[i] > minCuts[j - 1] + 1) {                         minCuts[i] = minCuts[j - 1] + 1;                     }                 }             }         }         return minCuts[n - 1];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/132-palindrome-partitioning.cpp/Solution/minCut(string)"
+    },
+    {
+        "f": [],
+        "fm": "int singleNumber(vector<int>& nums) {         unordered_set<int> s;         int actualSum = 0;         int doubleSum = 0;         for (int i = 0; i < nums.size(); i++)         {             int curr = nums[i];             actualSum += curr;                          if (s.find(curr) == s.end())             {                 s.insert(curr);                 doubleSum += curr + curr;             }         }         return doubleSum - actualSum;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int singleNumber(vector<int>& nums) {         unordered_set<int> s;         int actualSum = 0;         int doubleSum = 0;         for (int i = 0; i < nums.size(); i++)         {             int curr = nums[i];             actualSum += curr;                          if (s.find(curr) == s.end())             {                 s.insert(curr);                 doubleSum += curr + curr;             }         }         return doubleSum - actualSum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/4/136-single-number.cpp/Solution/singleNumber(vector<int>&)"
+    }
+]

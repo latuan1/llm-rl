@@ -1,0 +1,2005 @@
+[
+    {
+        "f": [],
+        "fm": "int poorPigs(int buckets, int minutesToDie, int minutesToTest)      {         return ceil(log(buckets)/log(minutesToTest/minutesToDie+1));     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "458.Poor-Pigs.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/458.Poor-Pigs.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/458.Poor-Pigs.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/458.Poor-Pigs.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/458.Poor-Pigs.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "poorPigs(int,int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "minutesToTest",
+                                    "virtual_name": "EXPECTED_minutesToTest",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/minutesToTest",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "minutesToDie",
+                                    "virtual_name": "EXPECTED_minutesToDie",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/minutesToDie",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "buckets",
+                                    "virtual_name": "EXPECTED_buckets",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/buckets",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "buckets",
+                                    "virtual_name": "buckets",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/buckets",
+                                    "correspondingType": "int",
+                                    "value": "-267889014"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "minutesToDie",
+                                    "virtual_name": "minutesToDie",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/minutesToDie",
+                                    "correspondingType": "int",
+                                    "value": "-1241974819"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "minutesToTest",
+                                    "virtual_name": "minutesToTest",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/minutesToTest",
+                                    "correspondingType": "int",
+                                    "value": "-384252185"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_poorPigs_int_int_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_poorPigs_int_int_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/458.Poor-Pigs.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint buckets=-267889014;\n\n\nint minutesToDie=-1241974819;\n\n\nint minutesToTest=-384252185;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode buckets */\n/* NormalNumberDataNode minutesToDie */\n/* NormalNumberDataNode minutesToTest */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_poorPigs_int_int_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->poorPigs(buckets,minutesToDie,minutesToTest);\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/458.Poor-Pigs.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint buckets=-267889014;\n\n\nint minutesToDie=-1241974819;\n\n\nint minutesToTest=-384252185;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode buckets */\n/* NormalNumberDataNode minutesToDie */\n/* NormalNumberDataNode minutesToTest */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int poorPigs(int buckets, int minutesToDie, int minutesToTest)      {         return ceil(log(buckets)/log(minutesToTest/minutesToDie+1));     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/458.Poor-Pigs.cpp/Solution/poorPigs(int,int,int)"
+    },
+    {
+        "f": [],
+        "fm": "int minMoves2(vector<int>& nums)      {         sort(nums.begin(),nums.end());         int median=nums[nums.size()/2];         int result=0;         for (int i=0; i<nums.size(); i++)             result+=abs(nums[i]-median);         return result;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "462.Minimum-Moves-to-Equal-Array-Elements-II.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minMoves2(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-412294877"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-1778691725"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minMoves2_vector_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_minMoves2_vector_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-412294877;\nnums.push_back(nums_element0);\nint nums_element1=-1778691725;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minMoves2_vector_int_random_3\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minMoves2(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-412294877;\nnums.push_back(nums_element0);\nint nums_element1=-1778691725;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int minMoves2(vector<int>& nums)      {         sort(nums.begin(),nums.end());         int median=nums[nums.size()/2];         int result=0;         for (int i=0; i<nums.size(); i++)             result+=abs(nums[i]-median);         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/462.Minimum-Moves-to-Equal-Array-Elements-II.cpp/Solution/minMoves2(vector<int>&)"
+    },
+    {
+        "f": [
+            "double R;",
+            "double x0;",
+            "double y0;"
+        ],
+        "fm": "Solution(double radius, double x_center, double y_center)      {         R = radius;         x0 = x_center;         y0 = y_center;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "478.Generate-Random-Point-in-a-Circle_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "0.59"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.93"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.95"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "Solution(double,double,double)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_Solution_double_double_double_random_0(void) {\n{\nAKA_test_case_name=\"Solution_Solution_double_double_double_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.59;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.93;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.95;\nAKA_mark(\"<<PRE-CALLING>> Test Solution_Solution_double_double_double_random_0\");AKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n\n\n\n\n\n\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.59;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.93;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.95;\nAKA_mark(\"<<PRE-CALLING>> Test Solution_Solution_double_double_double_random_0\");AKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     double R, x0, y0; public:     Solution(double radius, double x_center, double y_center)      {         R = radius;         x0 = x_center;         y0 = y_center;     }          vector<double> randPoint()      {         double r1 = (double)rand()/RAND_MAX;  // [0,1)          double x = r1*2*R-R+x0;         double r2 = (double)rand()/RAND_MAX;          double y = r2*2*R-R+y0;                  if ((x-x0)*(x-x0)+(y-y0)*(y-y0)<=R*R)             return {x,y};         else             return randPoint();     } };",
+        "c": [
+            "Solution(double radius, double x_center, double y_center) \n    {\n        R = radius;\n        x0 = x_center;\n        y0 = y_center;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)"
+    },
+    {
+        "f": [
+            "double R;",
+            "double x0;",
+            "double y0;"
+        ],
+        "fm": "vector<double> randPoint()      {         double r1 = (double)rand()/RAND_MAX;  // [0,1)          double x = r1*2*R-R+x0;         double r2 = (double)rand()/RAND_MAX;          double y = r2*2*R-R+y0;                  if ((x-x0)*(x-x0)+(y-y0)*(y-y0)<=R*R)             return {x,y};         else             return randPoint();     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "478.Generate-Random-Point-in-a-Circle_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "0.82"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.97"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.59"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "randPoint()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<double>",
+                            "realType": "vector<double>",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<double>",
+                                    "realType": "vector<double>",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "double"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_randPoint_random_2(void) {\n{\nAKA_test_case_name=\"Solution_randPoint_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.82;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.97;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.59;\nAKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n\n\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_randPoint_random_2\");vector<double> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->randPoint();\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.82;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.97;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.59;\nAKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n\n\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "478.Generate-Random-Point-in-a-Circle_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "0.72"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.44"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.92"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "randPoint()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<double>",
+                            "realType": "vector<double>",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<double>",
+                                    "realType": "vector<double>",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "double"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_randPoint_random_1(void) {\n{\nAKA_test_case_name=\"Solution_randPoint_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.72;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.44;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.92;\nAKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n\n\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_randPoint_random_1\");vector<double> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->randPoint();\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.72;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.44;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.92;\nAKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n\n\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     double R, x0, y0; public:     Solution(double radius, double x_center, double y_center)      {         R = radius;         x0 = x_center;         y0 = y_center;     }          vector<double> randPoint()      {         double r1 = (double)rand()/RAND_MAX;  // [0,1)          double x = r1*2*R-R+x0;         double r2 = (double)rand()/RAND_MAX;          double y = r2*2*R-R+y0;                  if ((x-x0)*(x-x0)+(y-y0)*(y-y0)<=R*R)             return {x,y};         else             return randPoint();     } };",
+        "c": [
+            "Solution(double radius, double x_center, double y_center) \n    {\n        R = radius;\n        x0 = x_center;\n        y0 = y_center;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/478.Generate-Random-Point-in-a-Circle_v1.cpp/Solution/randPoint()"
+    },
+    {
+        "f": [
+            "double R;",
+            "double x0;",
+            "double y0;",
+            "double PI = 3.1415926;"
+        ],
+        "fm": "Solution(double radius, double x_center, double y_center)      {         R = radius;         x0 = x_center;         y0 = y_center;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "478.Generate-Random-Point-in-a-Circle_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "PI",
+                                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution->PI",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/PI",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "0.67"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.4"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.5"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "PI",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->PI",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/PI",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "Solution(double,double,double)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "",
+                            "realType": "",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)"
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_Solution_double_double_double_random_5(void) {\n{\nAKA_test_case_name=\"Solution_Solution_double_double_double_random_5\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.67;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.4;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.5;\nAKA_mark(\"<<PRE-CALLING>> Test Solution_Solution_double_double_double_random_5\");AKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n/* NormalNumberDataNode PI */\n/* PI : null value -> no code */\n\n\n\n\n\n\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.67;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.4;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.5;\nAKA_mark(\"<<PRE-CALLING>> Test Solution_Solution_double_double_double_random_5\");AKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n/* NormalNumberDataNode PI */\n/* PI : null value -> no code */\n\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     double R;     double x0;     double y0; public:     double PI = 3.1415926;     Solution(double radius, double x_center, double y_center)      {         R = radius;         x0 = x_center;         y0 = y_center;     }          vector<double> randPoint()      {                 double r = (double)rand()/RAND_MAX;         r = sqrt(r)*R;         double theta = (double)rand()/RAND_MAX*PI*2;         double x = x0+r*sin(theta);         double y = y0+r*cos(theta);         return {x,y};             } };",
+        "c": [
+            "Solution(double radius, double x_center, double y_center) \n    {\n        R = radius;\n        x0 = x_center;\n        y0 = y_center;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)"
+    },
+    {
+        "f": [
+            "double R;",
+            "double x0;",
+            "double y0;",
+            "double PI = 3.1415926;"
+        ],
+        "fm": "vector<double> randPoint()      {                 double r = (double)rand()/RAND_MAX;         r = sqrt(r)*R;         double theta = (double)rand()/RAND_MAX*PI*2;         double x = x0+r*sin(theta);         double y = y0+r*cos(theta);         return {x,y};             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "478.Generate-Random-Point-in-a-Circle_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/randPoint()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(double,double,double)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(double,double,double)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "radius",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_radius",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/radius",
+                                                            "correspondingType": "double",
+                                                            "value": "0.78"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "x_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_x_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/x_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.1"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "y_center",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_y_center",
+                                                            "dataType": "double",
+                                                            "realType": "double",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)/y_center",
+                                                            "correspondingType": "double",
+                                                            "value": "0.94"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "R",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->R",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/R",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "x0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->x0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/x0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "y0",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->y0",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/y0",
+                                                    "correspondingType": "double",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "PI",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->PI",
+                                                    "dataType": "double",
+                                                    "realType": "double",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/PI",
+                                                    "correspondingType": "double",
+                                                    "value": "0.75"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "randPoint()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<double>",
+                            "realType": "vector<double>",
+                            "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/randPoint()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/randPoint()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<double>",
+                                    "realType": "vector<double>",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/randPoint()/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "double"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_randPoint_random_4(void) {\n{\nAKA_test_case_name=\"Solution_randPoint_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.78;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.1;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.94;\nAKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n/* NormalNumberDataNode PI */\nAKA_INSTANCE___Solution->PI=0.75;\n\n\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_randPoint_random_4\");vector<double> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->randPoint();\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/randPoint()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(double,double,double) */\n/* NormalNumberDataNode radius */\ndouble AKA_INSTANCE___Solution_radius=0.78;\n/* NormalNumberDataNode x_center */\ndouble AKA_INSTANCE___Solution_x_center=0.1;\n/* NormalNumberDataNode y_center */\ndouble AKA_INSTANCE___Solution_y_center=0.94;\nAKA_mark(\"Calling: ./27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/Solution(double,double,double)|ROOT/478.Generate-Random-Point-in-a-Circle_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(double,double,double)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_radius,AKA_INSTANCE___Solution_x_center,AKA_INSTANCE___Solution_y_center);\n/* NormalNumberDataNode R */\n/* R : null value -> no code */\n/* NormalNumberDataNode x0 */\n/* x0 : null value -> no code */\n/* NormalNumberDataNode y0 */\n/* y0 : null value -> no code */\n/* NormalNumberDataNode PI */\nAKA_INSTANCE___Solution->PI=0.75;\n\n\nvector<double> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     double R;     double x0;     double y0; public:     double PI = 3.1415926;     Solution(double radius, double x_center, double y_center)      {         R = radius;         x0 = x_center;         y0 = y_center;     }          vector<double> randPoint()      {                 double r = (double)rand()/RAND_MAX;         r = sqrt(r)*R;         double theta = (double)rand()/RAND_MAX*PI*2;         double x = x0+r*sin(theta);         double y = y0+r*cos(theta);         return {x,y};             } };",
+        "c": [
+            "Solution(double radius, double x_center, double y_center) \n    {\n        R = radius;\n        x0 = x_center;\n        y0 = y_center;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/478.Generate-Random-Point-in-a-Circle_v2.cpp/Solution/randPoint()"
+    },
+    {
+        "f": [
+            "int m;",
+            "int n;",
+            "int count;",
+            "unordered_map<int,int> Map;"
+        ],
+        "fm": "vector<int> flip()      {         int k = rand()%(m*n-count);         int ret;                  count++;                  if (Map.find(k)!=Map.end())             ret = Map[k];         else             ret = k;                  if (Map.find(m*n-count)!=Map.end())             Map[k] = Map[m*n-count];         else             Map[k] = m*n-count;                  return {ret/n,ret%n};              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "519.Random-Flip-Matrix.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/519.Random-Flip-Matrix.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/flip()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(int,int)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(int,int)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "n_rows",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_n_rows",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)/n_rows",
+                                                            "correspondingType": "int",
+                                                            "value": "929982064"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "n_cols",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_n_cols",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)/n_cols",
+                                                            "correspondingType": "int",
+                                                            "value": "-602964880"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "m",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->m",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/m",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "n",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->n",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/n",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "count",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->count",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/count",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "Map",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Map",
+                                                    "dataType": "unordered_map<int,int>",
+                                                    "realType": "unordered_map<int,int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Map",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<int, int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "flip()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/flip()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/flip()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/flip()/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_flip_random_1(void) {\n{\nAKA_test_case_name=\"Solution_flip_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(int,int) */\n/* NormalNumberDataNode n_rows */\nint AKA_INSTANCE___Solution_n_rows=929982064;\n/* NormalNumberDataNode n_cols */\nint AKA_INSTANCE___Solution_n_cols=-602964880;\nAKA_mark(\"Calling: ./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)|ROOT/519.Random-Flip-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(int,int)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_n_rows,AKA_INSTANCE___Solution_n_cols);\n/* NormalNumberDataNode m */\n/* m : null value -> no code */\n/* NormalNumberDataNode n */\n/* n : null value -> no code */\n/* NormalNumberDataNode count */\n/* count : null value -> no code */\n/* UnorderedMapDataNode Map */\n\n\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_flip_random_1\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->flip();\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/519.Random-Flip-Matrix.cpp/Solution/flip()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(int,int) */\n/* NormalNumberDataNode n_rows */\nint AKA_INSTANCE___Solution_n_rows=929982064;\n/* NormalNumberDataNode n_cols */\nint AKA_INSTANCE___Solution_n_cols=-602964880;\nAKA_mark(\"Calling: ./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)|ROOT/519.Random-Flip-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(int,int)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_n_rows,AKA_INSTANCE___Solution_n_cols);\n/* NormalNumberDataNode m */\n/* m : null value -> no code */\n/* NormalNumberDataNode n */\n/* n : null value -> no code */\n/* NormalNumberDataNode count */\n/* count : null value -> no code */\n/* UnorderedMapDataNode Map */\n\n\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     int m,n;     int count;     unordered_map<int,int>Map; public:     Solution(int n_rows, int n_cols) {         m = n_rows;         n = n_cols;         count = 0;     }          vector<int> flip()      {         int k = rand()%(m*n-count);         int ret;                  count++;                  if (Map.find(k)!=Map.end())             ret = Map[k];         else             ret = k;                  if (Map.find(m*n-count)!=Map.end())             Map[k] = Map[m*n-count];         else             Map[k] = m*n-count;                  return {ret/n,ret%n};              }          void reset()      {         Map.clear();         count = 0;     } };",
+        "c": [
+            "Solution(int n_rows, int n_cols) {\n        m = n_rows;\n        n = n_cols;\n        count = 0;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/519.Random-Flip-Matrix.cpp/Solution/flip()"
+    },
+    {
+        "f": [
+            "int m;",
+            "int n;",
+            "int count;",
+            "unordered_map<int,int> Map;"
+        ],
+        "fm": "void reset()      {         Map.clear();         count = 0;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "519.Random-Flip-Matrix.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/519.Random-Flip-Matrix.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/reset()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(int,int)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(int,int)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "n_rows",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_n_rows",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)/n_rows",
+                                                            "correspondingType": "int",
+                                                            "value": "-349533527"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "n_cols",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_n_cols",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)/n_cols",
+                                                            "correspondingType": "int",
+                                                            "value": "-1258805641"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "m",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->m",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/m",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "n",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->n",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/n",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "count",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->count",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/count",
+                                                    "correspondingType": "int",
+                                                    "value": "null"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.unordered.UnorderedMapDataNode",
+                                                    "name": "Map",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->Map",
+                                                    "dataType": "unordered_map<int,int>",
+                                                    "realType": "unordered_map<int,int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Map",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "std::pair<int, int>"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "reset()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/reset()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/519.Random-Flip-Matrix.cpp/Solution/reset()",
+                                    "level": "STATIC"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_reset_random_0(void) {\n{\nAKA_test_case_name=\"Solution_reset_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(int,int) */\n/* NormalNumberDataNode n_rows */\nint AKA_INSTANCE___Solution_n_rows=-349533527;\n/* NormalNumberDataNode n_cols */\nint AKA_INSTANCE___Solution_n_cols=-1258805641;\nAKA_mark(\"Calling: ./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)|ROOT/519.Random-Flip-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(int,int)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_n_rows,AKA_INSTANCE___Solution_n_cols);\n/* NormalNumberDataNode m */\n/* m : null value -> no code */\n/* NormalNumberDataNode n */\n/* n : null value -> no code */\n/* NormalNumberDataNode count */\n/* count : null value -> no code */\n/* UnorderedMapDataNode Map */\n\n\n\n/* RootDataNode STATIC */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_reset_random_0\");AKA_INSTANCE___Solution->reset();\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/519.Random-Flip-Matrix.cpp/Solution/reset()\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(int,int) */\n/* NormalNumberDataNode n_rows */\nint AKA_INSTANCE___Solution_n_rows=-349533527;\n/* NormalNumberDataNode n_cols */\nint AKA_INSTANCE___Solution_n_cols=-1258805641;\nAKA_mark(\"Calling: ./27-6.3/519.Random-Flip-Matrix.cpp/Solution/Solution(int,int)|ROOT/519.Random-Flip-Matrix.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(int,int)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_n_rows,AKA_INSTANCE___Solution_n_cols);\n/* NormalNumberDataNode m */\n/* m : null value -> no code */\n/* NormalNumberDataNode n */\n/* n : null value -> no code */\n/* NormalNumberDataNode count */\n/* count : null value -> no code */\n/* UnorderedMapDataNode Map */\n\n\n\n/* RootDataNode STATIC */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     int m,n;     int count;     unordered_map<int,int>Map; public:     Solution(int n_rows, int n_cols) {         m = n_rows;         n = n_cols;         count = 0;     }          vector<int> flip()      {         int k = rand()%(m*n-count);         int ret;                  count++;                  if (Map.find(k)!=Map.end())             ret = Map[k];         else             ret = k;                  if (Map.find(m*n-count)!=Map.end())             Map[k] = Map[m*n-count];         else             Map[k] = m*n-count;                  return {ret/n,ret%n};              }          void reset()      {         Map.clear();         count = 0;     } };",
+        "c": [
+            "Solution(int n_rows, int n_cols) {\n        m = n_rows;\n        n = n_cols;\n        count = 0;\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/519.Random-Flip-Matrix.cpp/Solution/reset()"
+    },
+    {
+        "f": [
+            "vector<int> p;"
+        ],
+        "fm": "int pickIndex()      {         int r = rand()%(p.back()+1);         auto iter = lower_bound(p.begin(),p.end(),r);         return iter-p.begin();     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "528.Random-Pick-with-Weight.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./27-6.3/528.Random-Pick-with-Weight.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/pickIndex()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution(vector<int>&)",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution(vector<int>&)",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/Solution(vector<int>&)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                                            "name": "w",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_w",
+                                                            "dataType": "vector<int>",
+                                                            "realType": "vector<int>&",
+                                                            "external": false,
+                                                            "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/Solution(vector<int>&)/w",
+                                                            "correspondingType": "STLListBaseType",
+                                                            "templateArg": "int",
+                                                            "size": 1,
+                                                            "children": [
+                                                                {
+                                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                                    "name": "element #0",
+                                                                    "virtual_name": "AKA_INSTANCE___Solution_w_element0",
+                                                                    "dataType": "int",
+                                                                    "realType": "int",
+                                                                    "external": false,
+                                                                    "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/Solution(vector<int>&)/w/element #0",
+                                                                    "correspondingType": "int",
+                                                                    "value": "1098559952"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                                    "name": "p",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->p",
+                                                    "dataType": "vector<int>",
+                                                    "realType": "vector<int>",
+                                                    "external": false,
+                                                    "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/p",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "int"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "pickIndex()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/pickIndex()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/pickIndex()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/pickIndex()/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_pickIndex_random_2(void) {\n{\nAKA_test_case_name=\"Solution_pickIndex_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(vector<int>&) */\n/* VectorDataNode w */\nvector<int> AKA_INSTANCE___Solution_w;\nint AKA_INSTANCE___Solution_w_element0=1098559952;\nAKA_INSTANCE___Solution_w.push_back(AKA_INSTANCE___Solution_w_element0);\nAKA_mark(\"Calling: ./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/Solution(vector<int>&)|ROOT/528.Random-Pick-with-Weight.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(vector<int>&)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_w);\n/* VectorDataNode p */\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_pickIndex_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->pickIndex();\nAKA_fCall++;AKA_mark(\"Return from: ./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/pickIndex()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution(vector<int>&) */\n/* VectorDataNode w */\nvector<int> AKA_INSTANCE___Solution_w;\nint AKA_INSTANCE___Solution_w_element0=1098559952;\nAKA_INSTANCE___Solution_w.push_back(AKA_INSTANCE___Solution_w_element0);\nAKA_mark(\"Calling: ./27-6.3/528.Random-Pick-with-Weight.cpp/Solution/Solution(vector<int>&)|ROOT/528.Random-Pick-with-Weight.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution(vector<int>&)\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution(AKA_INSTANCE___Solution_w);\n/* VectorDataNode p */\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     vector<int>p; public:     Solution(vector<int>& w)      {         int sum = -1;         for (auto ww: w)         {             sum+=ww;             p.push_back(sum);         }     }          int pickIndex()      {         int r = rand()%(p.back()+1);         auto iter = lower_bound(p.begin(),p.end(),r);         return iter-p.begin();     } };",
+        "c": [
+            "Solution(vector<int>& w) \n    {\n        int sum = -1;\n        for (auto ww: w)\n        {\n            sum+=ww;\n            p.push_back(sum);\n        }\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/27-6.3/528.Random-Pick-with-Weight.cpp/Solution/pickIndex()"
+    }
+]

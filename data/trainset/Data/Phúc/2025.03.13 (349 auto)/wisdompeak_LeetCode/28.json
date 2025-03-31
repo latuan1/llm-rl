@@ -1,0 +1,2196 @@
+[
+    {
+        "f": [
+            "LL c[N];"
+        ],
+        "fm": "LL ask(LL x) {     LL ans = 0;     for (; x; x -= x & -x) ans = max(ans, c[x]);     return ans; }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5841. Find the Longest Valid Obstacle Course at Each Position.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "c",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_c",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/c",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "c",
+                                    "virtual_name": "c",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/c",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "ask(LL)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "LL",
+                            "realType": "long long",
+                            "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)/x",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)/x",
+                                    "correspondingType": "LL",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)/RETURN",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_ask_LL_random_0(void) {\n{\nAKA_test_case_name=\"ask_LL_random_0\";\n\n// set up\n;\n\n\n/* is global variable */\n\n\n\n\nLL x=0;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test ask_LL_random_0\");long long AKA_ACTUAL_OUTPUT=ask(x);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* is global variable */\n\n\n\n\nLL x=0;\n\n\nLL AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/ask(LL)"
+    },
+    {
+        "f": [
+            "LL c[N];",
+            "LL n;",
+            "LL a[N];",
+            "LL b[N];"
+        ],
+        "fm": "vector<int> longestObstacleCourseAtEachPosition(vector<int>& a) {         unordered_map<int, LL> mp;         memset(c, 0, sizeof c);         n = a.size();         a.insert(a.begin(), 0);         vector<int> ans(n + 1);         // 离散化         for (int i = 1; i <= n; i++) {             b[i] = a[i];         }         sort(b + 1, b + n + 1);         LL m = 0;         for (int i = 1; i <= n; i++) {             if (!mp.count(b[i])) {                 mp[b[i]] = ++m;             }         }         for (int i = 1; i <= n; i++) {             // cout << i << \" \" << a[i] << \" \" << mp[a[i]] << \" \" << ask(mp[a[i]]) << \" \" << len[i] << endl;             // cout << \"ask \" << ask(1) << endl;             // cout << a[i] << \" \" << mp[a[i]] << endl;             ans[i] = max(1ll, ask(mp[a[i]]) + 1);             // cout << \"add \" << mp[a[i]] << \" \" << len[i] << endl;             add(mp[a[i]], ans[i]);         }         ans.erase(ans.begin());         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5841. Find the Longest Valid Obstacle Course at Each Position.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_a",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/a",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "c",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_c",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/c",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_n",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/n",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "b",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_b",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/b",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "c",
+                                    "virtual_name": "c",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/c",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/n",
+                                    "correspondingType": "LL",
+                                    "value": "0"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/a",
+                                    "correspondingType": "",
+                                    "fixedSize": false,
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "a[0]",
+                                            "virtual_name": "a[0]",
+                                            "dataType": "long long",
+                                            "realType": "long long",
+                                            "external": false,
+                                            "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/a/a[0]",
+                                            "correspondingType": "long long",
+                                            "value": "-205430477778223319"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "a[1]",
+                                            "virtual_name": "a[1]",
+                                            "dataType": "long long",
+                                            "realType": "long long",
+                                            "external": false,
+                                            "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/a/a[1]",
+                                            "correspondingType": "long long",
+                                            "value": "441965860062850615"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "b",
+                                    "virtual_name": "b",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/b",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "longestObstacleCourseAtEachPosition(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "vector<int>",
+                            "realType": "vector<int>",
+                            "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "EXPECTED_a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "a",
+                                    "virtual_name": "a",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)/a",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "a_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)/a/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1447935344"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)/RETURN",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_longestObstacleCourseAtEachPosition_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_longestObstacleCourseAtEachPosition_vector_int_random_1\";\n\n// set up\n;\n\n\n/* is global variable */\n\n\n\n n=0;\n\n\n/* is global variable */\n\n/* NormalNumberDataNode a[0] */\na[0]=-205430477778223319;\n/* NormalNumberDataNode a[1] */\na[1]=441965860062850615;\n\n\n\n/* is global variable */\n\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=-1447935344;\na.push_back(a_element0);\n/* VectorDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_longestObstacleCourseAtEachPosition_vector_int_random_1\");vector<int> AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->longestObstacleCourseAtEachPosition(a);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)\");\n\n\nvector<int> EXPECTED_a;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* is global variable */\n\n\n\n n=0;\n\n\n/* is global variable */\n\n/* NormalNumberDataNode a[0] */\na[0]=-205430477778223319;\n/* NormalNumberDataNode a[1] */\na[1]=441965860062850615;\n\n\n\n/* is global variable */\n\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> a;\nvector<int> AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode a */\nint a_element0=-1447935344;\na.push_back(a_element0);\n/* VectorDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     vector<int> longestObstacleCourseAtEachPosition(vector<int>& a) {         unordered_map<int, LL> mp;         memset(c, 0, sizeof c);         n = a.size();         a.insert(a.begin(), 0);         vector<int> ans(n + 1);         // 离散化         for (int i = 1; i <= n; i++) {             b[i] = a[i];         }         sort(b + 1, b + n + 1);         LL m = 0;         for (int i = 1; i <= n; i++) {             if (!mp.count(b[i])) {                 mp[b[i]] = ++m;             }         }         for (int i = 1; i <= n; i++) {             // cout << i << \" \" << a[i] << \" \" << mp[a[i]] << \" \" << ask(mp[a[i]]) << \" \" << len[i] << endl;             // cout << \"ask \" << ask(1) << endl;             // cout << a[i] << \" \" << mp[a[i]] << endl;             ans[i] = max(1ll, ask(mp[a[i]]) + 1);             // cout << \"add \" << mp[a[i]] << \" \" << len[i] << endl;             add(mp[a[i]], ans[i]);         }         ans.erase(ans.begin());         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/Solution/longestObstacleCourseAtEachPosition(vector<int>&)"
+    },
+    {
+        "f": [
+            "LL n;",
+            "LL c[N];"
+        ],
+        "fm": "void add(int x, LL y) {     for (; x <= n; x += x & -x) c[x] = max(c[x], y); }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5841. Find the Longest Valid Obstacle Course at Each Position.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "c",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_c",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/c",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_n",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/n",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.OneDimensionNumberDataNode",
+                                    "name": "c",
+                                    "virtual_name": "c",
+                                    "dataType": "LL[N]",
+                                    "realType": "long long[N]",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/c",
+                                    "correspondingType": "",
+                                    "fixedSize": false
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "n",
+                                    "virtual_name": "n",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": true,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/n",
+                                    "correspondingType": "LL",
+                                    "value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "add(int,LL)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "EXPECTED_y",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)/y",
+                                    "correspondingType": "LL",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "EXPECTED_x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)/x",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "x",
+                                    "virtual_name": "x",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)/x",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "y",
+                                    "virtual_name": "y",
+                                    "dataType": "LL",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)/y",
+                                    "correspondingType": "LL",
+                                    "value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_add_int_LL_random_0(void) {\n{\nAKA_test_case_name=\"add_int_LL_random_0\";\n\n// set up\n;\n\n\n/* is global variable */\n\n\n\n n=0;\n\n\n\nint x=5;\n\n\nLL y=0;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test add_int_LL_random_0\");add(x,y);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* is global variable */\n\n\n\n n=0;\n\n\n\nint x=5;\n\n\nLL y=0;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode x */\n/* NormalNumberDataNode y */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "",
+        "c": [],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5841. Find the Longest Valid Obstacle Course at Each Position.cpp/add(int,LL)"
+    },
+    {
+        "f": [],
+        "fm": "int findGCD(vector<int>& nums) {         int mi = INT_MAX, ma = INT_MIN;         for (auto& a : nums) {             mi = min(a, mi);             ma = max(a, ma);         }         return __gcd(mi, ma);     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5850. Find Greatest Common Divisor of Array.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5850. Find Greatest Common Divisor of Array.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findGCD(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1799716656"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "926090359"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findGCD_vector_int_random_4(void) {\n{\nAKA_test_case_name=\"Solution_findGCD_vector_int_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5850. Find Greatest Common Divisor of Array.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1799716656;\nnums.push_back(nums_element0);\nint nums_element1=926090359;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findGCD_vector_int_random_4\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findGCD(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5850. Find Greatest Common Divisor of Array.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1799716656;\nnums.push_back(nums_element0);\nint nums_element1=926090359;\nnums.push_back(nums_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     int findGCD(vector<int>& nums) {         int mi = INT_MAX, ma = INT_MIN;         for (auto& a : nums) {             mi = min(a, mi);             ma = max(a, ma);         }         return __gcd(mi, ma);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5850. Find Greatest Common Divisor of Array.cpp/Solution/findGCD(vector<int>&)"
+    },
+    {
+        "f": [
+            "set<string> s;",
+            "int n;",
+            "string ans;"
+        ],
+        "fm": "string findDifferentBinaryString(vector<string>& nums) {         n = nums[0].length();         s = set<string>(nums.begin(), nums.end());         dfs(\"\");         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5851. Find Unique Binary String.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5851. Find Unique Binary String.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/5851. Find Unique Binary String.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/5851. Find Unique Binary String.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./28/5851. Find Unique Binary String.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.stl.containers.associative.SetDataNode",
+                                                    "name": "s",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->s",
+                                                    "dataType": "set<string>",
+                                                    "realType": "set<string>",
+                                                    "external": false,
+                                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/s",
+                                                    "correspondingType": "STLListBaseType",
+                                                    "templateArg": "string",
+                                                    "size": 2,
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                            "name": "element #0",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_s_element0",
+                                                            "dataType": "string",
+                                                            "realType": "string",
+                                                            "external": false,
+                                                            "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/s/element #0",
+                                                            "correspondingType": "string",
+                                                            "value": "null"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                            "name": "element #1",
+                                                            "virtual_name": "AKA_INSTANCE___Solution_s_element1",
+                                                            "dataType": "string",
+                                                            "realType": "string",
+                                                            "external": false,
+                                                            "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/s/element #1",
+                                                            "correspondingType": "string",
+                                                            "value": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                    "name": "n",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->n",
+                                                    "dataType": "int",
+                                                    "realType": "int",
+                                                    "external": false,
+                                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/n",
+                                                    "correspondingType": "int",
+                                                    "value": "1244592175"
+                                                },
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                                    "name": "ans",
+                                                    "virtual_name": "AKA_INSTANCE___Solution->ans",
+                                                    "dataType": "string",
+                                                    "realType": "string",
+                                                    "external": false,
+                                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/ans",
+                                                    "correspondingType": "string",
+                                                    "value": "1",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                            "name": "ans[0]",
+                                                            "virtual_name": "AKA_INSTANCE___Solution->ans[0]",
+                                                            "dataType": "char",
+                                                            "realType": "char",
+                                                            "external": false,
+                                                            "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/ans/ans[0]",
+                                                            "correspondingType": "char",
+                                                            "value": "-94"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "findDifferentBinaryString(vector<string>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<string>",
+                                    "realType": "vector<string>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "string",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/nums/element #0",
+                                            "correspondingType": "string",
+                                            "value": "2",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #0[0]",
+                                                    "virtual_name": "nums_element0[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/nums/element #0/element #0[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "18"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalStringDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "string",
+                                            "realType": "string",
+                                            "external": false,
+                                            "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/nums/element #1",
+                                            "correspondingType": "string",
+                                            "value": "1",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                                    "name": "element #1[0]",
+                                                    "virtual_name": "nums_element1[0]",
+                                                    "dataType": "char",
+                                                    "realType": "char",
+                                                    "external": false,
+                                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/nums/element #1/element #1[0]",
+                                                    "correspondingType": "char",
+                                                    "value": "-128"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_findDifferentBinaryString_vector_string_random_3(void) {\n{\nAKA_test_case_name=\"Solution_findDifferentBinaryString_vector_string_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5851. Find Unique Binary String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* SetDataNode s */\nstring AKA_INSTANCE___Solution_s_element0=\"\";\nAKA_INSTANCE___Solution->s.insert(AKA_INSTANCE___Solution_s_element0);\nstring AKA_INSTANCE___Solution_s_element1=\"\";\nAKA_INSTANCE___Solution->s.insert(AKA_INSTANCE___Solution_s_element1);\n/* NormalNumberDataNode n */\nAKA_INSTANCE___Solution->n=1244592175;\n/* NormalStringDataNode ans */\nchar* akaRandomName869762 = new char[2];akaRandomName869762[0] = -94;akaRandomName869762[1] = '\\0';AKA_INSTANCE___Solution->ans=akaRandomName869762;\n\n\nvector<string> nums;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nchar* akaRandomName603822 = new char[2];akaRandomName603822[0] = 18;akaRandomName603822[1] = '\\0';string nums_element0=akaRandomName603822;\nnums.push_back(nums_element0);\nchar* akaRandomName201718 = new char[2];akaRandomName201718[0] = -128;akaRandomName201718[1] = '\\0';string nums_element1=akaRandomName201718;\nnums.push_back(nums_element1);\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_findDifferentBinaryString_vector_string_random_3\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->findDifferentBinaryString(nums);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)\");\n\n\n\nvector<string> EXPECTED_nums;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/5851. Find Unique Binary String.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n/* SetDataNode s */\nstring AKA_INSTANCE___Solution_s_element0=\"\";\nAKA_INSTANCE___Solution->s.insert(AKA_INSTANCE___Solution_s_element0);\nstring AKA_INSTANCE___Solution_s_element1=\"\";\nAKA_INSTANCE___Solution->s.insert(AKA_INSTANCE___Solution_s_element1);\n/* NormalNumberDataNode n */\nAKA_INSTANCE___Solution->n=1244592175;\n/* NormalStringDataNode ans */\nchar* akaRandomName233882 = new char[2];akaRandomName233882[0] = -94;akaRandomName233882[1] = '\\0';AKA_INSTANCE___Solution->ans=akaRandomName233882;\n\n\nvector<string> nums;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nchar* akaRandomName741002 = new char[2];akaRandomName741002[0] = 18;akaRandomName741002[1] = '\\0';string nums_element0=akaRandomName741002;\nnums.push_back(nums_element0);\nchar* akaRandomName324561 = new char[2];akaRandomName324561[0] = -128;akaRandomName324561[1] = '\\0';string nums_element1=akaRandomName324561;\nnums.push_back(nums_element1);\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     set<string> s;     int n;     string ans;     void dfs(string cur) {         if (ans.length()) return;         if (cur.length() == n) {             if (!s.count(cur)) ans = cur;             return;         }         dfs(cur + '0');         dfs(cur + '1');     }     string findDifferentBinaryString(vector<string>& nums) {         n = nums[0].length();         s = set<string>(nums.begin(), nums.end());         dfs(\"\");         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5851. Find Unique Binary String.cpp/Solution/findDifferentBinaryString(vector<string>&)"
+    },
+    {
+        "f": [
+            "vector<vector<int>> all;",
+            "unordered_map<int, unordered_map<int, int>> cnt;"
+        ],
+        "fm": "void add(vector<int> point) {         cout << \"add \" << point[0] << \" \" << point[1] << endl;         ;         all.push_back(point);         cnt[point[0]][point[1]]++;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5877. Detect Squares.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5877. Detect Squares.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___DetectSquares",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___DetectSquares",
+                                    "dataType": "::DetectSquares",
+                                    "realType": "::DetectSquares",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/AKA_INSTANCE___DetectSquares",
+                                    "correspondingType": "./28/5877. Detect Squares.cpp/DetectSquares"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___DetectSquares",
+                                    "virtual_name": "AKA_INSTANCE___DetectSquares",
+                                    "dataType": "::DetectSquares",
+                                    "realType": "::DetectSquares",
+                                    "external": true,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/AKA_INSTANCE___DetectSquares",
+                                    "correspondingType": "./28/5877. Detect Squares.cpp/DetectSquares",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___DetectSquares",
+                                            "virtual_name": "AKA_INSTANCE___DetectSquares",
+                                            "dataType": "::DetectSquares",
+                                            "realType": "::DetectSquares",
+                                            "external": false,
+                                            "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/AKA_INSTANCE___DetectSquares",
+                                            "correspondingType": "./28/5877. Detect Squares.cpp/DetectSquares",
+                                            "rawType": "::DetectSquares",
+                                            "selectedConstructor": "DetectSquares()",
+                                            "variableType": "::DetectSquares",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "DetectSquares()",
+                                                    "virtual_name": "AKA_INSTANCE___DetectSquares",
+                                                    "dataType": "::DetectSquares",
+                                                    "realType": "::DetectSquares",
+                                                    "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/DetectSquares()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "add(vector<int>)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "point",
+                                    "virtual_name": "EXPECTED_point",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)/point",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "point",
+                                    "virtual_name": "point",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)/point",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "point_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)/point/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1170916859"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_DetectSquares_add_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"DetectSquares_add_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___DetectSquares */\n/* ConstructorDataNode DetectSquares() */\nAKA_mark(\"Calling: ./28/5877. Detect Squares.cpp/DetectSquares/DetectSquares()|ROOT/5877. Detect Squares.cpp/GLOBAL/AKA_INSTANCE___DetectSquares/AKA_INSTANCE___DetectSquares/DetectSquares()\");AKA_fCall++;AKA_INSTANCE___DetectSquares = new ::DetectSquares();\n\n\nvector<int> point;\n\n/* RootDataNode STATIC */\n/* VectorDataNode point */\nint point_element0=-1170916859;\npoint.push_back(point_element0);\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test DetectSquares_add_vector_int_random_1\");AKA_INSTANCE___DetectSquares->add(point);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)\");\n\n/* error assertion */\nvector<int> EXPECTED_point;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___DetectSquares */\n/* ConstructorDataNode DetectSquares() */\nAKA_mark(\"Calling: ./28/5877. Detect Squares.cpp/DetectSquares/DetectSquares()|ROOT/5877. Detect Squares.cpp/GLOBAL/AKA_INSTANCE___DetectSquares/AKA_INSTANCE___DetectSquares/DetectSquares()\");AKA_fCall++;AKA_INSTANCE___DetectSquares = new ::DetectSquares();\n\n\nvector<int> point;\n\n/* RootDataNode STATIC */\n/* VectorDataNode point */\nint point_element0=-1170916859;\npoint.push_back(point_element0);\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class DetectSquares {     vector<vector<int>> all;     unordered_map<int, unordered_map<int, int>> cnt;     public:     DetectSquares() {     }      void add(vector<int> point) {         cout << \"add \" << point[0] << \" \" << point[1] << endl;         ;         all.push_back(point);         cnt[point[0]][point[1]]++;     }      int count(vector<int> point) {         int ans = 0;         for (auto &p : all) {             if (p[0] == point[0] || p[1] == point[1]) continue;             if (abs(point[0] - p[0]) != abs(point[1] - p[1])) continue;             if (cnt.count(p[0]) && cnt[p[0]].count(point[1]) && cnt.count(point[0]) && cnt[point[0]].count(p[1])) {                 ans += cnt[p[0]][point[1]] * cnt[point[0]][p[1]];             }         }         return ans;     } };",
+        "c": [
+            "DetectSquares() {\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5877. Detect Squares.cpp/DetectSquares/add(vector<int>)"
+    },
+    {
+        "f": [
+            "vector<vector<int>> all;",
+            "unordered_map<int, unordered_map<int, int>> cnt;"
+        ],
+        "fm": "int count(vector<int> point) {         int ans = 0;         for (auto &p : all) {             if (p[0] == point[0] || p[1] == point[1]) continue;             if (abs(point[0] - p[0]) != abs(point[1] - p[1])) continue;             if (cnt.count(p[0]) && cnt[p[0]].count(point[1]) && cnt.count(point[0]) && cnt[point[0]].count(p[1])) {                 ans += cnt[p[0]][point[1]] * cnt[point[0]][p[1]];             }         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "5877. Detect Squares.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/5877. Detect Squares.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___DetectSquares",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___DetectSquares",
+                                    "dataType": "::DetectSquares",
+                                    "realType": "::DetectSquares",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/AKA_INSTANCE___DetectSquares",
+                                    "correspondingType": "./28/5877. Detect Squares.cpp/DetectSquares"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___DetectSquares",
+                                    "virtual_name": "AKA_INSTANCE___DetectSquares",
+                                    "dataType": "::DetectSquares",
+                                    "realType": "::DetectSquares",
+                                    "external": true,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/AKA_INSTANCE___DetectSquares",
+                                    "correspondingType": "./28/5877. Detect Squares.cpp/DetectSquares",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___DetectSquares",
+                                            "virtual_name": "AKA_INSTANCE___DetectSquares",
+                                            "dataType": "::DetectSquares",
+                                            "realType": "::DetectSquares",
+                                            "external": false,
+                                            "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/AKA_INSTANCE___DetectSquares",
+                                            "correspondingType": "./28/5877. Detect Squares.cpp/DetectSquares",
+                                            "rawType": "::DetectSquares",
+                                            "selectedConstructor": "DetectSquares()",
+                                            "variableType": "::DetectSquares",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "DetectSquares()",
+                                                    "virtual_name": "AKA_INSTANCE___DetectSquares",
+                                                    "dataType": "::DetectSquares",
+                                                    "realType": "::DetectSquares",
+                                                    "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/DetectSquares()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "count(vector<int>)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "point",
+                                    "virtual_name": "EXPECTED_point",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)/point",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "point",
+                                    "virtual_name": "point",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)/point",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "point_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)/point/element #0",
+                                            "correspondingType": "int",
+                                            "value": "296676427"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "point_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)/point/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-2112859156"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_DetectSquares_count_vector_int_random_0(void) {\n{\nAKA_test_case_name=\"DetectSquares_count_vector_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___DetectSquares */\n/* ConstructorDataNode DetectSquares() */\nAKA_mark(\"Calling: ./28/5877. Detect Squares.cpp/DetectSquares/DetectSquares()|ROOT/5877. Detect Squares.cpp/GLOBAL/AKA_INSTANCE___DetectSquares/AKA_INSTANCE___DetectSquares/DetectSquares()\");AKA_fCall++;AKA_INSTANCE___DetectSquares = new ::DetectSquares();\n\n\nvector<int> point;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode point */\nint point_element0=296676427;\npoint.push_back(point_element0);\nint point_element1=-2112859156;\npoint.push_back(point_element1);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test DetectSquares_count_vector_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___DetectSquares->count(point);\nAKA_fCall++;AKA_mark(\"Return from: ./28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)\");\n\n\nvector<int> EXPECTED_point;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___DetectSquares */\n/* ConstructorDataNode DetectSquares() */\nAKA_mark(\"Calling: ./28/5877. Detect Squares.cpp/DetectSquares/DetectSquares()|ROOT/5877. Detect Squares.cpp/GLOBAL/AKA_INSTANCE___DetectSquares/AKA_INSTANCE___DetectSquares/DetectSquares()\");AKA_fCall++;AKA_INSTANCE___DetectSquares = new ::DetectSquares();\n\n\nvector<int> point;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode point */\nint point_element0=296676427;\npoint.push_back(point_element0);\nint point_element1=-2112859156;\npoint.push_back(point_element1);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class DetectSquares {     vector<vector<int>> all;     unordered_map<int, unordered_map<int, int>> cnt;     public:     DetectSquares() {     }      void add(vector<int> point) {         cout << \"add \" << point[0] << \" \" << point[1] << endl;         ;         all.push_back(point);         cnt[point[0]][point[1]]++;     }      int count(vector<int> point) {         int ans = 0;         for (auto &p : all) {             if (p[0] == point[0] || p[1] == point[1]) continue;             if (abs(point[0] - p[0]) != abs(point[1] - p[1])) continue;             if (cnt.count(p[0]) && cnt[p[0]].count(point[1]) && cnt.count(point[0]) && cnt[point[0]].count(p[1])) {                 ans += cnt[p[0]][point[1]] * cnt[point[0]][p[1]];             }         }         return ans;     } };",
+        "c": [
+            "DetectSquares() {\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/5877. Detect Squares.cpp/DetectSquares/count(vector<int>)"
+    },
+    {
+        "f": [
+            "CountIntervals *left = nullptr;",
+            "CountIntervals *right = nullptr;",
+            "int l;",
+            "int r;",
+            "int sum = 0;"
+        ],
+        "fm": "int count() { return sum; }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "6066. Count Integers in Intervals-1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/6066. Count Integers in Intervals-1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/count()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___CountIntervals",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___CountIntervals",
+                                    "dataType": "::CountIntervals",
+                                    "realType": "::CountIntervals",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                    "correspondingType": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___CountIntervals",
+                                    "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                    "dataType": "::CountIntervals",
+                                    "realType": "::CountIntervals",
+                                    "external": true,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                    "correspondingType": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___CountIntervals",
+                                            "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                            "dataType": "::CountIntervals",
+                                            "realType": "::CountIntervals",
+                                            "external": false,
+                                            "correspondingVar": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                            "correspondingType": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals",
+                                            "rawType": "::CountIntervals",
+                                            "selectedConstructor": "CountIntervals(int,int)",
+                                            "variableType": "::CountIntervals",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "CountIntervals(int,int)",
+                                                    "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                                    "dataType": "::CountIntervals",
+                                                    "realType": "::CountIntervals",
+                                                    "functionNode": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/CountIntervals(int,int)",
+                                                    "children": [
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "l",
+                                                            "virtual_name": "AKA_INSTANCE___CountIntervals_l",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/CountIntervals(int,int)/l",
+                                                            "correspondingType": "int",
+                                                            "value": "1593722503"
+                                                        },
+                                                        {
+                                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                                            "name": "r",
+                                                            "virtual_name": "AKA_INSTANCE___CountIntervals_r",
+                                                            "dataType": "int",
+                                                            "realType": "int",
+                                                            "external": false,
+                                                            "correspondingVar": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/CountIntervals(int,int)/r",
+                                                            "correspondingType": "int",
+                                                            "value": "221380568"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "count()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/count()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/count()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/count()/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_CountIntervals_count_random_2(void) {\n{\nAKA_test_case_name=\"CountIntervals_count_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___CountIntervals */\n/* ConstructorDataNode CountIntervals(int,int) */\n/* NormalNumberDataNode l */\nint AKA_INSTANCE___CountIntervals_l=1593722503;\n/* NormalNumberDataNode r */\nint AKA_INSTANCE___CountIntervals_r=221380568;\nAKA_mark(\"Calling: ./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/CountIntervals(int,int)|ROOT/6066. Count Integers in Intervals-1.cpp/GLOBAL/AKA_INSTANCE___CountIntervals/AKA_INSTANCE___CountIntervals/CountIntervals(int,int)\");AKA_fCall++;AKA_INSTANCE___CountIntervals = new ::CountIntervals(AKA_INSTANCE___CountIntervals_l,AKA_INSTANCE___CountIntervals_r);\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test CountIntervals_count_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___CountIntervals->count();\nAKA_fCall++;AKA_mark(\"Return from: ./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/count()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___CountIntervals */\n/* ConstructorDataNode CountIntervals(int,int) */\n/* NormalNumberDataNode l */\nint AKA_INSTANCE___CountIntervals_l=1593722503;\n/* NormalNumberDataNode r */\nint AKA_INSTANCE___CountIntervals_r=221380568;\nAKA_mark(\"Calling: ./28/6066. Count Integers in Intervals-1.cpp/CountIntervals/CountIntervals(int,int)|ROOT/6066. Count Integers in Intervals-1.cpp/GLOBAL/AKA_INSTANCE___CountIntervals/AKA_INSTANCE___CountIntervals/CountIntervals(int,int)\");AKA_fCall++;AKA_INSTANCE___CountIntervals = new ::CountIntervals(AKA_INSTANCE___CountIntervals_l,AKA_INSTANCE___CountIntervals_r);\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class CountIntervals {     CountIntervals *left = nullptr, *right = nullptr;     int l, r, sum = 0;     public:     CountIntervals() : l(1), r(1e9) {}      CountIntervals(int l, int r) : l(l), r(r) {}      void add(int L, int R) {           // 为方便区分变量名，将递归中始终不变的入参改为大写（视作常量）         if (sum == r - l + 1) return;  // 当前节点已被完整覆盖，无需执行任何操作         if (L <= l && r <= R) {        // 当前节点已被区间 [L,R] 完整覆盖，不再继续递归             sum = r - l + 1;             return;         }         int mid = (l + r) / 2;         if (left == nullptr) left = new CountIntervals(l, mid);        // 动态开点         if (right == nullptr) right = new CountIntervals(mid + 1, r);  // 动态开点         if (L <= mid) left->add(L, R);         if (mid < R) right->add(L, R);         sum = left->sum + right->sum;     }      int count() { return sum; } };",
+        "c": [
+            "CountIntervals() : l(1), r(1e9) {}",
+            "CountIntervals(int l, int r) : l(l), r(r) {}"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/6066. Count Integers in Intervals-1.cpp/CountIntervals/count()"
+    },
+    {
+        "f": [
+            "int ans = 0;",
+            "set<pii> st;"
+        ],
+        "fm": "void add(int left, int right) {         // st 中已有的区间总是保持互不相交的         auto it = st.lower_bound({left - 1, -1});         while (it != st.end()) {             // 不可能合并了             if (it->second >= right + 1) break;             right = max(right, it->first);             left = min(left, it->second);             ans -= it->first - it->second + 1;             st.erase(it++);         }         ans += right - left + 1;         st.insert({right, left});     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "6066. Count Integers in Intervals.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/6066. Count Integers in Intervals.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___CountIntervals",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___CountIntervals",
+                                    "dataType": "::CountIntervals",
+                                    "realType": "::CountIntervals",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                    "correspondingType": "./28/6066. Count Integers in Intervals.cpp/CountIntervals"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___CountIntervals",
+                                    "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                    "dataType": "::CountIntervals",
+                                    "realType": "::CountIntervals",
+                                    "external": true,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                    "correspondingType": "./28/6066. Count Integers in Intervals.cpp/CountIntervals",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___CountIntervals",
+                                            "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                            "dataType": "::CountIntervals",
+                                            "realType": "::CountIntervals",
+                                            "external": false,
+                                            "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                            "correspondingType": "./28/6066. Count Integers in Intervals.cpp/CountIntervals",
+                                            "rawType": "::CountIntervals",
+                                            "selectedConstructor": "CountIntervals()",
+                                            "variableType": "::CountIntervals",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "CountIntervals()",
+                                                    "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                                    "dataType": "::CountIntervals",
+                                                    "realType": "::CountIntervals",
+                                                    "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/CountIntervals()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "add(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "left",
+                                    "virtual_name": "EXPECTED_left",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)/left",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "right",
+                                    "virtual_name": "EXPECTED_right",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)/right",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "left",
+                                    "virtual_name": "left",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)/left",
+                                    "correspondingType": "int",
+                                    "value": "-1227596909"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "right",
+                                    "virtual_name": "right",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)/right",
+                                    "correspondingType": "int",
+                                    "value": "1758545142"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_CountIntervals_add_int_int_random_9(void) {\n{\nAKA_test_case_name=\"CountIntervals_add_int_int_random_9\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___CountIntervals */\n/* ConstructorDataNode CountIntervals() */\nAKA_mark(\"Calling: ./28/6066. Count Integers in Intervals.cpp/CountIntervals/CountIntervals()|ROOT/6066. Count Integers in Intervals.cpp/GLOBAL/AKA_INSTANCE___CountIntervals/AKA_INSTANCE___CountIntervals/CountIntervals()\");AKA_fCall++;AKA_INSTANCE___CountIntervals = new ::CountIntervals();\n\n\n\n\nint left=-1227596909;\n\n\nint right=1758545142;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode left */\n/* NormalNumberDataNode right */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test CountIntervals_add_int_int_random_9\");AKA_INSTANCE___CountIntervals->add(left,right);\nAKA_fCall++;AKA_mark(\"Return from: ./28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___CountIntervals */\n/* ConstructorDataNode CountIntervals() */\nAKA_mark(\"Calling: ./28/6066. Count Integers in Intervals.cpp/CountIntervals/CountIntervals()|ROOT/6066. Count Integers in Intervals.cpp/GLOBAL/AKA_INSTANCE___CountIntervals/AKA_INSTANCE___CountIntervals/CountIntervals()\");AKA_fCall++;AKA_INSTANCE___CountIntervals = new ::CountIntervals();\n\n\n\n\nint left=-1227596909;\n\n\nint right=1758545142;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode left */\n/* NormalNumberDataNode right */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class CountIntervals {     typedef pair<int, int> pii;     int ans = 0;     set<pii> st;     public:     CountIntervals() {     }      void add(int left, int right) {         // st 中已有的区间总是保持互不相交的         auto it = st.lower_bound({left - 1, -1});         while (it != st.end()) {             // 不可能合并了             if (it->second >= right + 1) break;             right = max(right, it->first);             left = min(left, it->second);             ans -= it->first - it->second + 1;             st.erase(it++);         }         ans += right - left + 1;         st.insert({right, left});     }      int count() {         return ans;     } };",
+        "c": [
+            "CountIntervals() {\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/6066. Count Integers in Intervals.cpp/CountIntervals/add(int,int)"
+    },
+    {
+        "f": [
+            "int ans = 0;",
+            "set<pii> st;"
+        ],
+        "fm": "int count() {         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "6066. Count Integers in Intervals.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/6066. Count Integers in Intervals.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/count()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___CountIntervals",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___CountIntervals",
+                                    "dataType": "::CountIntervals",
+                                    "realType": "::CountIntervals",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                    "correspondingType": "./28/6066. Count Integers in Intervals.cpp/CountIntervals"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___CountIntervals",
+                                    "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                    "dataType": "::CountIntervals",
+                                    "realType": "::CountIntervals",
+                                    "external": true,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                    "correspondingType": "./28/6066. Count Integers in Intervals.cpp/CountIntervals",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___CountIntervals",
+                                            "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                            "dataType": "::CountIntervals",
+                                            "realType": "::CountIntervals",
+                                            "external": false,
+                                            "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/AKA_INSTANCE___CountIntervals",
+                                            "correspondingType": "./28/6066. Count Integers in Intervals.cpp/CountIntervals",
+                                            "rawType": "::CountIntervals",
+                                            "selectedConstructor": "CountIntervals()",
+                                            "variableType": "::CountIntervals",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "CountIntervals()",
+                                                    "virtual_name": "AKA_INSTANCE___CountIntervals",
+                                                    "dataType": "::CountIntervals",
+                                                    "realType": "::CountIntervals",
+                                                    "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/CountIntervals()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "count()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/count()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/count()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6066. Count Integers in Intervals.cpp/CountIntervals/count()/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_CountIntervals_count_random_0(void) {\n{\nAKA_test_case_name=\"CountIntervals_count_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___CountIntervals */\n/* ConstructorDataNode CountIntervals() */\nAKA_mark(\"Calling: ./28/6066. Count Integers in Intervals.cpp/CountIntervals/CountIntervals()|ROOT/6066. Count Integers in Intervals.cpp/GLOBAL/AKA_INSTANCE___CountIntervals/AKA_INSTANCE___CountIntervals/CountIntervals()\");AKA_fCall++;AKA_INSTANCE___CountIntervals = new ::CountIntervals();\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test CountIntervals_count_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___CountIntervals->count();\nAKA_fCall++;AKA_mark(\"Return from: ./28/6066. Count Integers in Intervals.cpp/CountIntervals/count()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___CountIntervals */\n/* ConstructorDataNode CountIntervals() */\nAKA_mark(\"Calling: ./28/6066. Count Integers in Intervals.cpp/CountIntervals/CountIntervals()|ROOT/6066. Count Integers in Intervals.cpp/GLOBAL/AKA_INSTANCE___CountIntervals/AKA_INSTANCE___CountIntervals/CountIntervals()\");AKA_fCall++;AKA_INSTANCE___CountIntervals = new ::CountIntervals();\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class CountIntervals {     typedef pair<int, int> pii;     int ans = 0;     set<pii> st;     public:     CountIntervals() {     }      void add(int left, int right) {         // st 中已有的区间总是保持互不相交的         auto it = st.lower_bound({left - 1, -1});         while (it != st.end()) {             // 不可能合并了             if (it->second >= right + 1) break;             right = max(right, it->first);             left = min(left, it->second);             ans -= it->first - it->second + 1;             st.erase(it++);         }         ans += right - left + 1;         st.insert({right, left});     }      int count() {         return ans;     } };",
+        "c": [
+            "CountIntervals() {\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/6066. Count Integers in Intervals.cpp/CountIntervals/count()"
+    },
+    {
+        "f": [
+            "set<int> s;"
+        ],
+        "fm": "int popSmallest() {         int x = *s.begin();         s.erase(s.begin());         return x;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "6113. Smallest Number in Infinite Set.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/6113. Smallest Number in Infinite Set.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/popSmallest()",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___SmallestInfiniteSet",
+                                    "dataType": "::SmallestInfiniteSet",
+                                    "realType": "::SmallestInfiniteSet",
+                                    "external": false,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet",
+                                    "correspondingType": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                    "virtual_name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                    "dataType": "::SmallestInfiniteSet",
+                                    "realType": "::SmallestInfiniteSet",
+                                    "external": true,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet",
+                                    "correspondingType": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                            "virtual_name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                            "dataType": "::SmallestInfiniteSet",
+                                            "realType": "::SmallestInfiniteSet",
+                                            "external": false,
+                                            "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet",
+                                            "correspondingType": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet",
+                                            "rawType": "::SmallestInfiniteSet",
+                                            "selectedConstructor": "SmallestInfiniteSet()",
+                                            "variableType": "::SmallestInfiniteSet",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "SmallestInfiniteSet()",
+                                                    "virtual_name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                                    "dataType": "::SmallestInfiniteSet",
+                                                    "realType": "::SmallestInfiniteSet",
+                                                    "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/SmallestInfiniteSet()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "popSmallest()",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/popSmallest()",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/popSmallest()",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/popSmallest()/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_SmallestInfiniteSet_popSmallest_random_0(void) {\n{\nAKA_test_case_name=\"SmallestInfiniteSet_popSmallest_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___SmallestInfiniteSet */\n/* ConstructorDataNode SmallestInfiniteSet() */\nAKA_mark(\"Calling: ./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/SmallestInfiniteSet()|ROOT/6113. Smallest Number in Infinite Set.cpp/GLOBAL/AKA_INSTANCE___SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet/SmallestInfiniteSet()\");AKA_fCall++;AKA_INSTANCE___SmallestInfiniteSet = new ::SmallestInfiniteSet();\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test SmallestInfiniteSet_popSmallest_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___SmallestInfiniteSet->popSmallest();\nAKA_fCall++;AKA_mark(\"Return from: ./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/popSmallest()\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___SmallestInfiniteSet */\n/* ConstructorDataNode SmallestInfiniteSet() */\nAKA_mark(\"Calling: ./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/SmallestInfiniteSet()|ROOT/6113. Smallest Number in Infinite Set.cpp/GLOBAL/AKA_INSTANCE___SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet/SmallestInfiniteSet()\");AKA_fCall++;AKA_INSTANCE___SmallestInfiniteSet = new ::SmallestInfiniteSet();\n\n\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class SmallestInfiniteSet {     set<int> s;     public:     SmallestInfiniteSet() {         for (int i = 1; i <= 1e3; i++) s.insert(i);     }      int popSmallest() {         int x = *s.begin();         s.erase(s.begin());         return x;     }      void addBack(int num) {         s.insert(num);     } };",
+        "c": [
+            "SmallestInfiniteSet() {\n        for (int i = 1; i <= 1e3; i++) s.insert(i);\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/popSmallest()"
+    },
+    {
+        "f": [
+            "set<int> s;"
+        ],
+        "fm": "void addBack(int num) {         s.insert(num);     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "6113. Smallest Number in Infinite Set.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/6113. Smallest Number in Infinite Set.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___SmallestInfiniteSet",
+                                    "dataType": "::SmallestInfiniteSet",
+                                    "realType": "::SmallestInfiniteSet",
+                                    "external": false,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet",
+                                    "correspondingType": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                    "virtual_name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                    "dataType": "::SmallestInfiniteSet",
+                                    "realType": "::SmallestInfiniteSet",
+                                    "external": true,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet",
+                                    "correspondingType": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                            "virtual_name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                            "dataType": "::SmallestInfiniteSet",
+                                            "realType": "::SmallestInfiniteSet",
+                                            "external": false,
+                                            "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet",
+                                            "correspondingType": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet",
+                                            "rawType": "::SmallestInfiniteSet",
+                                            "selectedConstructor": "SmallestInfiniteSet()",
+                                            "variableType": "::SmallestInfiniteSet",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "SmallestInfiniteSet()",
+                                                    "virtual_name": "AKA_INSTANCE___SmallestInfiniteSet",
+                                                    "dataType": "::SmallestInfiniteSet",
+                                                    "realType": "::SmallestInfiniteSet",
+                                                    "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/SmallestInfiniteSet()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "addBack(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "void",
+                            "realType": "void",
+                            "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "num",
+                                    "virtual_name": "EXPECTED_num",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)/num",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "num",
+                                    "virtual_name": "num",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)/num",
+                                    "correspondingType": "int",
+                                    "value": "-1101545757"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_SmallestInfiniteSet_addBack_int_random_3(void) {\n{\nAKA_test_case_name=\"SmallestInfiniteSet_addBack_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___SmallestInfiniteSet */\n/* ConstructorDataNode SmallestInfiniteSet() */\nAKA_mark(\"Calling: ./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/SmallestInfiniteSet()|ROOT/6113. Smallest Number in Infinite Set.cpp/GLOBAL/AKA_INSTANCE___SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet/SmallestInfiniteSet()\");AKA_fCall++;AKA_INSTANCE___SmallestInfiniteSet = new ::SmallestInfiniteSet();\n\n\n\n\nint num=-1101545757;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode num */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test SmallestInfiniteSet_addBack_int_random_3\");AKA_INSTANCE___SmallestInfiniteSet->addBack(num);\nAKA_fCall++;AKA_mark(\"Return from: ./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)\");\n\n/* error assertion */\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___SmallestInfiniteSet */\n/* ConstructorDataNode SmallestInfiniteSet() */\nAKA_mark(\"Calling: ./28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/SmallestInfiniteSet()|ROOT/6113. Smallest Number in Infinite Set.cpp/GLOBAL/AKA_INSTANCE___SmallestInfiniteSet/AKA_INSTANCE___SmallestInfiniteSet/SmallestInfiniteSet()\");AKA_fCall++;AKA_INSTANCE___SmallestInfiniteSet = new ::SmallestInfiniteSet();\n\n\n\n\nint num=-1101545757;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode num */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class SmallestInfiniteSet {     set<int> s;     public:     SmallestInfiniteSet() {         for (int i = 1; i <= 1e3; i++) s.insert(i);     }      int popSmallest() {         int x = *s.begin();         s.erase(s.begin());         return x;     }      void addBack(int num) {         s.insert(num);     } };",
+        "c": [
+            "SmallestInfiniteSet() {\n        for (int i = 1; i <= 1e3; i++) s.insert(i);\n    }"
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/6113. Smallest Number in Infinite Set.cpp/SmallestInfiniteSet/addBack(int)"
+    },
+    {
+        "f": [],
+        "fm": "long long minCost(vector<int>& nums, vector<int>& cost) {         vector<int> idx;         int n = nums.size();         for (int i = 0; i < n; i++) idx.push_back(i);         sort(idx.begin(), idx.end(), [&nums, &cost](int i, int j) {             return nums[i] < nums[j];         });         long long s = 0, cl = cost[idx[0]], cr = 0;         for (int i = 1; i < n; i++) {             s += (long long)(nums[idx[i]] - nums[idx[0]]) * (long long)cost[idx[i]];             cr += cost[idx[i]];         }         long long ans = s;         for (int i = 1; i < n; i++) {             s -= (long long)(nums[idx[i]] - nums[idx[i - 1]]) * cr;             s += (long long)(nums[idx[i]] - nums[idx[i - 1]]) * cl;             cl += cost[idx[i]];             cr -= cost[idx[i]];             ans = min(ans, s);         }         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "6216. Minimum Cost to Make Array Equal.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./28/6216. Minimum Cost to Make Array Equal.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "minCost(vector<int>&,vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "long long",
+                            "realType": "long long",
+                            "functionNode": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "EXPECTED_nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "cost",
+                                    "virtual_name": "EXPECTED_cost",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/cost",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "nums",
+                                    "virtual_name": "nums",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/nums",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 2,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "nums_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/nums/element #0",
+                                            "correspondingType": "int",
+                                            "value": "-1294116544"
+                                        },
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #1",
+                                            "virtual_name": "nums_element1",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/nums/element #1",
+                                            "correspondingType": "int",
+                                            "value": "-2133163160"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "cost",
+                                    "virtual_name": "cost",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/cost",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "cost_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/cost/element #0",
+                                            "correspondingType": "int",
+                                            "value": "326508061"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "long long",
+                                    "realType": "long long",
+                                    "external": false,
+                                    "correspondingVar": "./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)/RETURN",
+                                    "correspondingType": "long long",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_minCost_vector_int_vector_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_minCost_vector_int_vector_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/6216. Minimum Cost to Make Array Equal.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\nvector<int> cost;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1294116544;\nnums.push_back(nums_element0);\nint nums_element1=-2133163160;\nnums.push_back(nums_element1);\n/* VectorDataNode cost */\nint cost_element0=326508061;\ncost.push_back(cost_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_minCost_vector_int_vector_int_random_1\");long long AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->minCost(nums,cost);\nAKA_fCall++;AKA_mark(\"Return from: ./28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)\");\n\n\nvector<int> EXPECTED_nums;\n\nvector<int> EXPECTED_cost;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/6216. Minimum Cost to Make Array Equal.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> nums;\nvector<int> cost;\n\n\nlong long AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode nums */\nint nums_element0=-1294116544;\nnums.push_back(nums_element0);\nint nums_element1=-2133163160;\nnums.push_back(nums_element1);\n/* VectorDataNode cost */\nint cost_element0=326508061;\ncost.push_back(cost_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {    public:     long long minCost(vector<int>& nums, vector<int>& cost) {         vector<int> idx;         int n = nums.size();         for (int i = 0; i < n; i++) idx.push_back(i);         sort(idx.begin(), idx.end(), [&nums, &cost](int i, int j) {             return nums[i] < nums[j];         });         long long s = 0, cl = cost[idx[0]], cr = 0;         for (int i = 1; i < n; i++) {             s += (long long)(nums[idx[i]] - nums[idx[0]]) * (long long)cost[idx[i]];             cr += cost[idx[i]];         }         long long ans = s;         for (int i = 1; i < n; i++) {             s -= (long long)(nums[idx[i]] - nums[idx[i - 1]]) * cr;             s += (long long)(nums[idx[i]] - nums[idx[i - 1]]) * cl;             cl += cost[idx[i]];             cr -= cost[idx[i]];             ans = min(ans, s);         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.08/28/6216. Minimum Cost to Make Array Equal.cpp/Solution/minCost(vector<int>&,vector<int>&)"
+    }
+]

@@ -1,0 +1,1771 @@
+[
+    {
+        "f": [
+            "int count = 0;"
+        ],
+        "fm": "int numDupDigitsAtMostN(int N)      {                  vector<int>num;         int n = N;         while (n>0)         {             num.push_back(n%10);             n=n/10;         }         reverse(num.begin(),num.end());                  for (int k=1; k<num.size(); k++)         {             count+= 9*permu(9,num.size()-(1+k));         }                  cout<<count<<endl;                  vector<int>digits(10,0);         DFS(num,digits,0);                  return N-count;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1012.Numbers-With-Repeated-Digits.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/1012.Numbers-With-Repeated-Digits.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "numDupDigitsAtMostN(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_numDupDigitsAtMostN_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_numDupDigitsAtMostN_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1012.Numbers-With-Repeated-Digits.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=4;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_numDupDigitsAtMostN_int_random_0\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->numDupDigitsAtMostN(N);\nAKA_fCall++;AKA_mark(\"Return from: ./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1012.Numbers-With-Repeated-Digits.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=4;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     int count = 0; public:     int numDupDigitsAtMostN(int N)      {                  vector<int>num;         int n = N;         while (n>0)         {             num.push_back(n%10);             n=n/10;         }         reverse(num.begin(),num.end());                  for (int k=1; k<num.size(); k++)         {             count+= 9*permu(9,num.size()-(1+k));         }                  cout<<count<<endl;                  vector<int>digits(10,0);         DFS(num,digits,0);                  return N-count;     }          void DFS(vector<int>&num, vector<int>&digits, int k)     {         if (k==num.size())         {             count++;             return;         }                  for (int i=0; i<=9; i++)         {             if (k==0 && i==0) continue;                          if (i<num[k])             {                 if (digits[i]==1) continue;                 count+= permu(10-(k+1),num.size()-(k+1));             }             else if (i==num[k])             {                 if (digits[i]==1) continue;                 digits[i] = 1;                 DFS(num, digits, k+1);                 digits[i] = 0;                             }                      }     }      int permu(int M, int N)     {         int ans =1 ;         for (int i=0; i<N; i++)             ans*=(M-i);         return ans;     }          };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/1012.Numbers-With-Repeated-Digits.cpp/Solution/numDupDigitsAtMostN(int)"
+    },
+    {
+        "f": [
+            "int count = 0;"
+        ],
+        "fm": "int permu(int M, int N)     {         int ans =1 ;         for (int i=0; i<N; i++)             ans*=(M-i);         return ans;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1012.Numbers-With-Repeated-Digits.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/1012.Numbers-With-Repeated-Digits.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "permu(int,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "M",
+                                    "virtual_name": "EXPECTED_M",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)/M",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)/N",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "M",
+                                    "virtual_name": "M",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)/M",
+                                    "correspondingType": "int",
+                                    "value": "-402610228"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)/N",
+                                    "correspondingType": "int",
+                                    "value": "9"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_permu_int_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_permu_int_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1012.Numbers-With-Repeated-Digits.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint M=-402610228;\n\n\nint N=9;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode M */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_permu_int_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->permu(M,N);\nAKA_fCall++;AKA_mark(\"Return from: ./29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1012.Numbers-With-Repeated-Digits.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint M=-402610228;\n\n\nint N=9;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode M */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution {     int count = 0; public:     int numDupDigitsAtMostN(int N)      {                  vector<int>num;         int n = N;         while (n>0)         {             num.push_back(n%10);             n=n/10;         }         reverse(num.begin(),num.end());                  for (int k=1; k<num.size(); k++)         {             count+= 9*permu(9,num.size()-(1+k));         }                  cout<<count<<endl;                  vector<int>digits(10,0);         DFS(num,digits,0);                  return N-count;     }          void DFS(vector<int>&num, vector<int>&digits, int k)     {         if (k==num.size())         {             count++;             return;         }                  for (int i=0; i<=9; i++)         {             if (k==0 && i==0) continue;                          if (i<num[k])             {                 if (digits[i]==1) continue;                 count+= permu(10-(k+1),num.size()-(k+1));             }             else if (i==num[k])             {                 if (digits[i]==1) continue;                 digits[i] = 1;                 DFS(num, digits, k+1);                 digits[i] = 0;                             }                      }     }      int permu(int M, int N)     {         int ans =1 ;         for (int i=0; i<N; i++)             ans*=(M-i);         return ans;     }          };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/1012.Numbers-With-Repeated-Digits.cpp/Solution/permu(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "string baseNeg2(int N)      {         string ret;         while (N!=-0)         {             int r = N%(-2);             int d = (N-r)/(-2);                          if (r<0)             {                 d += 1;                 r += 2;             }                          ret.push_back('0'+r);             N = d;         }         reverse(ret.begin(), ret.end());         if (ret==\"\") return \"0\";         else return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1017.Convert-to-Base--2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/1017.Convert-to-Base--2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/1017.Convert-to-Base--2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1017.Convert-to-Base--2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/1017.Convert-to-Base--2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1017.Convert-to-Base--2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/1017.Convert-to-Base--2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/1017.Convert-to-Base--2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "baseNeg2(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "10"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_baseNeg2_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_baseNeg2_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1017.Convert-to-Base--2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=10;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_baseNeg2_int_random_3\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->baseNeg2(N);\nAKA_fCall++;AKA_mark(\"Return from: ./29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1017.Convert-to-Base--2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=10;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string baseNeg2(int N)      {         string ret;         while (N!=-0)         {             int r = N%(-2);             int d = (N-r)/(-2);                          if (r<0)             {                 d += 1;                 r += 2;             }                          ret.push_back('0'+r);             N = d;         }         reverse(ret.begin(), ret.end());         if (ret==\"\") return \"0\";         else return ret;     }      };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/1017.Convert-to-Base--2.cpp/Solution/baseNeg2(int)"
+    },
+    {
+        "f": [],
+        "fm": "bool divisorGame(int N)      {         vector<int>dp(N+1,0);                  dp[1] = 0;                  for (int i=1; i<=N; i++)         {             for (int j=1; j*2<=i; j++)             {                 if (i%j==0 && dp[i-j]==0)                 {                     dp[i] = 1;                     break;                 }             }         }         return dp[N];     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1025.Divisor-Game_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/1025.Divisor-Game_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1025.Divisor-Game_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1025.Divisor-Game_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/1025.Divisor-Game_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "divisorGame(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "7"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_divisorGame_int_random_0(void) {\n{\nAKA_test_case_name=\"Solution_divisorGame_int_random_0\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1025.Divisor-Game_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=7;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_divisorGame_int_random_0\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->divisorGame(N);\nAKA_fCall++;AKA_mark(\"Return from: ./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1025.Divisor-Game_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=7;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1025.Divisor-Game_v1.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/1025.Divisor-Game_v1.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1025.Divisor-Game_v1.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1025.Divisor-Game_v1.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/1025.Divisor-Game_v1.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "divisorGame(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "5"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_divisorGame_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_divisorGame_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1025.Divisor-Game_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=5;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_divisorGame_int_random_2\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->divisorGame(N);\nAKA_fCall++;AKA_mark(\"Return from: ./29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1025.Divisor-Game_v1.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=5;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool divisorGame(int N)      {         vector<int>dp(N+1,0);                  dp[1] = 0;                  for (int i=1; i<=N; i++)         {             for (int j=1; j*2<=i; j++)             {                 if (i%j==0 && dp[i-j]==0)                 {                     dp[i] = 1;                     break;                 }             }         }         return dp[N];     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/1025.Divisor-Game_v1.cpp/Solution/divisorGame(int)"
+    },
+    {
+        "f": [],
+        "fm": "bool divisorGame(int N)      {         return (N%2==0);     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "1025.Divisor-Game_v2.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/1025.Divisor-Game_v2.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1025.Divisor-Game_v2.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/1025.Divisor-Game_v2.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/1025.Divisor-Game_v2.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/1025.Divisor-Game_v2.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "divisorGame(int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "EXPECTED_N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "N",
+                                    "virtual_name": "N",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)/N",
+                                    "correspondingType": "int",
+                                    "value": "1841332978"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_divisorGame_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_divisorGame_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1025.Divisor-Game_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=1841332978;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_divisorGame_int_random_3\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->divisorGame(N);\nAKA_fCall++;AKA_mark(\"Return from: ./29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/1025.Divisor-Game_v2.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\n\n\nint N=1841332978;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalNumberDataNode N */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool divisorGame(int N)      {         return (N%2==0);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/1025.Divisor-Game_v2.cpp/Solution/divisorGame(int)"
+    },
+    {
+        "f": [],
+        "fm": "int sumSubseqWidths(vector<int>& A)      {         long M = 1e9+7;                  vector<long>Pow2(20000,1);         for (int i=1; i<20000; i++)             Pow2[i] = Pow2[i-1]*2%M;                  sort(A.begin(),A.end());         long sum = 0;         int n = A.size();         for (int i=0; i<n; i++)         {             sum -= A[i]*Pow2[n-1-i]%M;             sum += A[i]*Pow2[i]%M;             sum %= M;         }         return sum;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "891.Sum-of-Subsequence-Widths.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/891.Sum-of-Subsequence-Widths.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "sumSubseqWidths(vector<int>&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "int",
+                            "realType": "int",
+                            "functionNode": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "EXPECTED_A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.stl.containers.sequence.VectorDataNode",
+                                    "name": "A",
+                                    "virtual_name": "A",
+                                    "dataType": "vector<int>",
+                                    "realType": "vector<int>&",
+                                    "external": false,
+                                    "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)/A",
+                                    "correspondingType": "STLListBaseType",
+                                    "templateArg": "int",
+                                    "size": 1,
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                            "name": "element #0",
+                                            "virtual_name": "A_element0",
+                                            "dataType": "int",
+                                            "realType": "int",
+                                            "external": false,
+                                            "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)/A/element #0",
+                                            "correspondingType": "int",
+                                            "value": "129329901"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)/RETURN",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_sumSubseqWidths_vector_int_random_2(void) {\n{\nAKA_test_case_name=\"Solution_sumSubseqWidths_vector_int_random_2\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/891.Sum-of-Subsequence-Widths.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=129329901;\nA.push_back(A_element0);\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_sumSubseqWidths_vector_int_random_2\");int AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->sumSubseqWidths(A);\nAKA_fCall++;AKA_mark(\"Return from: ./29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)\");\n\n\nvector<int> EXPECTED_A;\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/891.Sum-of-Subsequence-Widths.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nvector<int> A;\n\n\nint AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* VectorDataNode A */\nint A_element0=129329901;\nA.push_back(A_element0);\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int sumSubseqWidths(vector<int>& A)      {         long M = 1e9+7;                  vector<long>Pow2(20000,1);         for (int i=1; i<20000; i++)             Pow2[i] = Pow2[i-1]*2%M;                  sort(A.begin(),A.end());         long sum = 0;         int n = A.size();         for (int i=0; i<n; i++)         {             sum -= A[i]*Pow2[n-1-i]%M;             sum += A[i]*Pow2[i]%M;             sum %= M;         }         return sum;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/891.Sum-of-Subsequence-Widths.cpp/Solution/sumSubseqWidths(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "string orderlyQueue(string S, int K)      {         if (K>=2)         {             sort(S.begin(),S.end());             return S;         }                  string ret = S;         for (int i=0; i<S.size(); i++)         {             S = S.substr(1) + S.substr(0,1);             if (S<ret)                 ret = S;         }         return ret;     }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "899.Orderly-Queue.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/899.Orderly-Queue.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/899.Orderly-Queue.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/899.Orderly-Queue.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/899.Orderly-Queue.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "orderlyQueue(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "K",
+                                    "virtual_name": "EXPECTED_K",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/K",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/S",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "19"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "K",
+                                    "virtual_name": "K",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/K",
+                                    "correspondingType": "int",
+                                    "value": "1138788141"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_orderlyQueue_string_int_random_1(void) {\n{\nAKA_test_case_name=\"Solution_orderlyQueue_string_int_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/899.Orderly-Queue.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName59475 = new char[2];akaRandomName59475[0] = 19;akaRandomName59475[1] = '\\0';string S=akaRandomName59475;\n\n\nint K=1138788141;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalNumberDataNode K */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_orderlyQueue_string_int_random_1\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->orderlyQueue(S,K);\nAKA_fCall++;AKA_mark(\"Return from: ./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/899.Orderly-Queue.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName532304 = new char[2];akaRandomName532304[0] = 19;akaRandomName532304[1] = '\\0';string S=akaRandomName532304;\n\n\nint K=1138788141;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalNumberDataNode K */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            },
+            {
+                "id": 1,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "899.Orderly-Queue.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/899.Orderly-Queue.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/899.Orderly-Queue.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/899.Orderly-Queue.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/899.Orderly-Queue.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "orderlyQueue(string,int)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "string",
+                            "realType": "string",
+                            "functionNode": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "K",
+                                    "virtual_name": "EXPECTED_K",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/K",
+                                    "correspondingType": "int",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/S",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "17"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "K",
+                                    "virtual_name": "K",
+                                    "dataType": "int",
+                                    "realType": "int",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/K",
+                                    "correspondingType": "int",
+                                    "value": "-429940515"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)/RETURN",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_orderlyQueue_string_int_random_3(void) {\n{\nAKA_test_case_name=\"Solution_orderlyQueue_string_int_random_3\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/899.Orderly-Queue.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName606883 = new char[2];akaRandomName606883[0] = 17;akaRandomName606883[1] = '\\0';string S=akaRandomName606883;\n\n\nint K=-429940515;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalNumberDataNode K */\n/* NormalStringDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_orderlyQueue_string_int_random_3\");string AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->orderlyQueue(S,K);\nAKA_fCall++;AKA_mark(\"Return from: ./29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)\");\n\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/899.Orderly-Queue.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName623753 = new char[2];akaRandomName623753[0] = 17;akaRandomName623753[1] = '\\0';string S=akaRandomName623753;\n\n\nint K=-429940515;\nstring AKA_EXPECTED_OUTPUT=\"\";\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalNumberDataNode K */\n/* NormalStringDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string orderlyQueue(string S, int K)      {         if (K>=2)         {             sort(S.begin(),S.end());             return S;         }                  string ret = S;         for (int i=0; i<S.size(); i++)         {             S = S.substr(1) + S.substr(0,1);             if (S<ret)                 ret = S;         }         return ret;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/899.Orderly-Queue.cpp/Solution/orderlyQueue(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "bool isRationalEqual(string S, string T)      {         double valS,valT;         string strS, strT;         bool isValS = parseVal(S, valS, strS);         bool isValT = parseVal(T, valT, strT);                  if (isValS!=isValT)             return false;         if (isValS)             return abs(valS-valT)<1e-12;         else             return strS==strT;              }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "972.Equal-Rational-Numbers.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/972.Equal-Rational-Numbers.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/972.Equal-Rational-Numbers.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/972.Equal-Rational-Numbers.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/972.Equal-Rational-Numbers.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "isRationalEqual(string,string)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "T",
+                                    "virtual_name": "EXPECTED_T",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/T",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/S",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "87"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "T",
+                                    "virtual_name": "T",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/T",
+                                    "correspondingType": "string",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "T[0]",
+                                            "virtual_name": "T[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/T/T[0]",
+                                            "correspondingType": "char",
+                                            "value": "-54"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_isRationalEqual_string_string_random_1(void) {\n{\nAKA_test_case_name=\"Solution_isRationalEqual_string_string_random_1\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/972.Equal-Rational-Numbers.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName707947 = new char[2];akaRandomName707947[0] = 87;akaRandomName707947[1] = '\\0';string S=akaRandomName707947;\nchar* akaRandomName430593 = new char[2];akaRandomName430593[0] = -54;akaRandomName430593[1] = '\\0';string T=akaRandomName430593;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalStringDataNode T */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_isRationalEqual_string_string_random_1\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->isRationalEqual(S,T);\nAKA_fCall++;AKA_mark(\"Return from: ./29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/972.Equal-Rational-Numbers.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName705970 = new char[2];akaRandomName705970[0] = 87;akaRandomName705970[1] = '\\0';string S=akaRandomName705970;\nchar* akaRandomName747399 = new char[2];akaRandomName747399[0] = -54;akaRandomName747399[1] = '\\0';string T=akaRandomName747399;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalStringDataNode T */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isRationalEqual(string S, string T)      {         double valS,valT;         string strS, strT;         bool isValS = parseVal(S, valS, strS);         bool isValT = parseVal(T, valT, strT);                  if (isValS!=isValT)             return false;         if (isValS)             return abs(valS-valT)<1e-12;         else             return strS==strT;              }          bool parseVal(string S, double &val, string &str)     {         int i = S.find(\"(\");         if (i==-1)         {             val = stod(S);             return true;         }                  // \"x.y(z)\"\"         string a = S.substr(0,i);       // a => x.y         string b = S.substr(i+1, S.size()-i-2);     // b=> z                  bool flag0 = true;         for (auto ch: b)         {             if (ch!='0')             {                 flag0 = false;                 break;             }         }         if (flag0)         {             val = stod(a);             return true;         }                  bool flag9 = true;         for (auto ch: b)         {             if (ch!='9')             {                 flag9 = false;                 break;             }         }         if (flag9)         {             int i = a.find(\".\");             int k = a.size()-1-i;             val = stod(a) + 1.0/pow(10,k);             return true;         }                  while (a.size()<20)             a+=b;         str = a.substr(0,20);         return false;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/972.Equal-Rational-Numbers.cpp/Solution/isRationalEqual(string,string)"
+    },
+    {
+        "f": [],
+        "fm": "bool parseVal(string S, double &val, string &str)     {         int i = S.find(\"(\");         if (i==-1)         {             val = stod(S);             return true;         }                  // \"x.y(z)\"\"         string a = S.substr(0,i);       // a => x.y         string b = S.substr(i+1, S.size()-i-2);     // b=> z                  bool flag0 = true;         for (auto ch: b)         {             if (ch!='0')             {                 flag0 = false;                 break;             }         }         if (flag0)         {             val = stod(a);             return true;         }                  bool flag9 = true;         for (auto ch: b)         {             if (ch!='9')             {                 flag9 = false;                 break;             }         }         if (flag9)         {             int i = a.find(\".\");             int k = a.size()-1-i;             val = stod(a) + 1.0/pow(10,k);             return true;         }                  while (a.size()<20)             a+=b;         str = a.substr(0,20);         return false;             }",
+        "datatest": [
+            {
+                "id": 0,
+                "dt": {
+                    "type": "com.dse.testdata.object.UnitUnderTestNode",
+                    "name": "972.Equal-Rational-Numbers.cpp",
+                    "virtual_name": "NON_VALUE",
+                    "sourceNode": "./29/972.Equal-Rational-Numbers.cpp",
+                    "children": [
+                        {
+                            "type": "com.dse.testdata.object.GlobalRootDataNode",
+                            "name": "GLOBAL",
+                            "virtual_name": "NON_VALUE",
+                            "functionNode": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "EXPECTED_AKA_GLOBAL_AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/972.Equal-Rational-Numbers.cpp/Solution"
+                                }
+                            ],
+                            "level": "GLOBAL",
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.ClassDataNode",
+                                    "name": "AKA_INSTANCE___Solution",
+                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                    "dataType": "::Solution",
+                                    "realType": "::Solution",
+                                    "external": true,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/AKA_INSTANCE___Solution",
+                                    "correspondingType": "./29/972.Equal-Rational-Numbers.cpp/Solution",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.SubClassDataNode",
+                                            "name": "AKA_INSTANCE___Solution",
+                                            "virtual_name": "AKA_INSTANCE___Solution",
+                                            "dataType": "::Solution",
+                                            "realType": "::Solution",
+                                            "external": false,
+                                            "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/AKA_INSTANCE___Solution",
+                                            "correspondingType": "./29/972.Equal-Rational-Numbers.cpp/Solution",
+                                            "rawType": "::Solution",
+                                            "selectedConstructor": "Solution()",
+                                            "variableType": "::Solution",
+                                            "children": [
+                                                {
+                                                    "type": "com.dse.testdata.object.ConstructorDataNode",
+                                                    "name": "Solution()",
+                                                    "virtual_name": "AKA_INSTANCE___Solution",
+                                                    "dataType": "::Solution",
+                                                    "realType": "::Solution",
+                                                    "functionNode": "/Solution()"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "com.dse.testdata.object.SubprogramNode",
+                            "name": "parseVal(string,double&,string&)",
+                            "virtual_name": "NON_VALUE",
+                            "dataType": "bool",
+                            "realType": "bool",
+                            "functionNode": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)",
+                            "paramExpectedOuputs": [
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "val",
+                                    "virtual_name": "EXPECTED_val",
+                                    "dataType": "double&",
+                                    "realType": "double&",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/val",
+                                    "correspondingType": "double&",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "EXPECTED_S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/S",
+                                    "correspondingType": "string",
+                                    "value": "null"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "str",
+                                    "virtual_name": "EXPECTED_str",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/str",
+                                    "correspondingType": "string&",
+                                    "value": "null"
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "com.dse.testdata.object.RootDataNode",
+                                    "name": "STATIC",
+                                    "virtual_name": "NON_VALUE",
+                                    "functionNode": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)",
+                                    "level": "STATIC"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "S",
+                                    "virtual_name": "S",
+                                    "dataType": "string",
+                                    "realType": "string",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/S",
+                                    "correspondingType": "string",
+                                    "value": "3",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "S[0]",
+                                            "virtual_name": "S[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/S/S[0]",
+                                            "correspondingType": "char",
+                                            "value": "90"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "val",
+                                    "virtual_name": "val",
+                                    "dataType": "double&",
+                                    "realType": "double&",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/val",
+                                    "correspondingType": "double&",
+                                    "value": "0.37"
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalStringDataNode",
+                                    "name": "str",
+                                    "virtual_name": "str",
+                                    "dataType": "string&",
+                                    "realType": "string&",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/str",
+                                    "correspondingType": "string&",
+                                    "value": "1",
+                                    "children": [
+                                        {
+                                            "type": "com.dse.testdata.object.NormalCharacterDataNode",
+                                            "name": "str[0]",
+                                            "virtual_name": "str[0]",
+                                            "dataType": "char",
+                                            "realType": "char",
+                                            "external": false,
+                                            "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/str/str[0]",
+                                            "correspondingType": "char",
+                                            "value": "-58"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "com.dse.testdata.object.NormalNumberDataNode",
+                                    "name": "RETURN",
+                                    "virtual_name": "AKA_EXPECTED_OUTPUT",
+                                    "dataType": "bool",
+                                    "realType": "bool",
+                                    "external": false,
+                                    "correspondingVar": "./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)/RETURN",
+                                    "correspondingType": "bool",
+                                    "value": "null"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "td": "void AKA_TEST_Solution_parseVal_string_double_string_random_4(void) {\n{\nAKA_test_case_name=\"Solution_parseVal_string_double_string_random_4\";\n\n// set up\n;\n\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/972.Equal-Rational-Numbers.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName748573 = new char[2];akaRandomName748573[0] = 90;akaRandomName748573[1] = '\\0';string S=akaRandomName748573;\n\n\ndouble val=0.37;\nchar* akaRandomName924643 = new char[2];akaRandomName924643[0] = -58;akaRandomName924643[1] = '\\0';string str=akaRandomName924643;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalNumberDataNode val */\n/* NormalStringDataNode str */\n/* NormalNumberDataNode RETURN */\n\n\n\nAKA_mark(\"<<PRE-CALLING>> Test Solution_parseVal_string_double_string_random_4\");bool AKA_ACTUAL_OUTPUT=AKA_INSTANCE___Solution->parseVal(S,val,str);\nAKA_fCall++;AKA_mark(\"Return from: ./29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)\");\n\n\n\n\n// tear down\n;\n}\n}\n",
+                "simplified_t": "\n\n/* SubClassDataNode AKA_INSTANCE___Solution */\n/* ConstructorDataNode Solution() */\nAKA_mark(\"Calling: /Solution()|ROOT/972.Equal-Rational-Numbers.cpp/GLOBAL/AKA_INSTANCE___Solution/AKA_INSTANCE___Solution/Solution()\");AKA_fCall++;AKA_INSTANCE___Solution = new ::Solution();\n\n\nchar* akaRandomName686228 = new char[2];akaRandomName686228[0] = 90;akaRandomName686228[1] = '\\0';string S=akaRandomName686228;\n\n\ndouble val=0.37;\nchar* akaRandomName613952 = new char[2];akaRandomName613952[0] = -58;akaRandomName613952[1] = '\\0';string str=akaRandomName613952;\n\n\nbool AKA_EXPECTED_OUTPUT;\n\n/* RootDataNode STATIC */\n/* NormalStringDataNode S */\n/* NormalNumberDataNode val */\n/* NormalStringDataNode str */\n/* NormalNumberDataNode RETURN */\n\n",
+                "isAutomated": true,
+                "testpath": [],
+                "executed_fm": "",
+                "executed_fm_masked": "",
+                "executed_m": "",
+                "executed_m_masked": ""
+            }
+        ],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isRationalEqual(string S, string T)      {         double valS,valT;         string strS, strT;         bool isValS = parseVal(S, valS, strS);         bool isValT = parseVal(T, valT, strT);                  if (isValS!=isValT)             return false;         if (isValS)             return abs(valS-valT)<1e-12;         else             return strS==strT;              }          bool parseVal(string S, double &val, string &str)     {         int i = S.find(\"(\");         if (i==-1)         {             val = stod(S);             return true;         }                  // \"x.y(z)\"\"         string a = S.substr(0,i);       // a => x.y         string b = S.substr(i+1, S.size()-i-2);     // b=> z                  bool flag0 = true;         for (auto ch: b)         {             if (ch!='0')             {                 flag0 = false;                 break;             }         }         if (flag0)         {             val = stod(a);             return true;         }                  bool flag9 = true;         for (auto ch: b)         {             if (ch!='9')             {                 flag9 = false;                 break;             }         }         if (flag9)         {             int i = a.find(\".\");             int k = a.size()-1-i;             val = stod(a) + 1.0/pow(10,k);             return true;         }                  while (a.size()<20)             a+=b;         str = a.substr(0,20);         return false;             } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/2025.03.01/29/972.Equal-Rational-Numbers.cpp/Solution/parseVal(string,double&,string&)"
+    }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "f": [],
+        "fm": "int islandPerimeter(vector<vector<int>>& grid) {         int cnt = 0;         for(int i = 0; i < grid.size(); i++) {             for(int j = 0; j < grid[i].size(); j++) {                 if(grid[i][j] == 1) {                     cnt += 4;                     if(i != 0 && grid[i-1][j] == 1)                         cnt -= 2;                     if(j != 0 && grid[i][j-1] == 1)                         cnt -= 2;                 }             }         }         return cnt;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int islandPerimeter(vector<vector<int>>& grid) {         int cnt = 0;         for(int i = 0; i < grid.size(); i++) {             for(int j = 0; j < grid[i].size(); j++) {                 if(grid[i][j] == 1) {                     cnt += 4;                     if(i != 0 && grid[i-1][j] == 1)                         cnt -= 2;                     if(j != 0 && grid[i][j-1] == 1)                         cnt -= 2;                 }             }         }         return cnt;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/463. Island Perimeter .cpp/Solution/islandPerimeter(vector<vector<int>>&)"
+    },
+    {
+        "f": [
+            "int maxn;",
+            "map<int, bool> m;"
+        ],
+        "fm": "bool canIWin(int maxChoosableInteger, int desiredTotal) {         maxn = maxChoosableInteger;         if(maxn >= desiredTotal) return true;         if((1 + maxn) * maxn / 2 < desiredTotal) return false;         return canWin(desiredTotal, 0);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     int maxn;     map<int, bool> m; public:     bool canIWin(int maxChoosableInteger, int desiredTotal) {         maxn = maxChoosableInteger;         if(maxn >= desiredTotal) return true;         if((1 + maxn) * maxn / 2 < desiredTotal) return false;         return canWin(desiredTotal, 0);     }     bool canWin(int target, int visited) {         if(m.find(visited) != m.end()) return m[visited];         for(int i = 1; i <= maxn; i++) {             int mask = (1 << i);             if((mask & visited) == 0 && (i >= target || canWin(target - i, mask | visited) == false)) {                 m[visited] = true;                 return true;             }         }         m[visited] = false;         return false;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/464. Can I Win.cpp/Solution/canIWin(int,int)"
+    },
+    {
+        "f": [
+            "int maxn;",
+            "map<int, bool> m;"
+        ],
+        "fm": "bool canWin(int target, int visited) {         if(m.find(visited) != m.end()) return m[visited];         for(int i = 1; i <= maxn; i++) {             int mask = (1 << i);             if((mask & visited) == 0 && (i >= target || canWin(target - i, mask | visited) == false)) {                 m[visited] = true;                 return true;             }         }         m[visited] = false;         return false;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { private:     int maxn;     map<int, bool> m; public:     bool canIWin(int maxChoosableInteger, int desiredTotal) {         maxn = maxChoosableInteger;         if(maxn >= desiredTotal) return true;         if((1 + maxn) * maxn / 2 < desiredTotal) return false;         return canWin(desiredTotal, 0);     }     bool canWin(int target, int visited) {         if(m.find(visited) != m.end()) return m[visited];         for(int i = 1; i <= maxn; i++) {             int mask = (1 << i);             if((mask & visited) == 0 && (i >= target || canWin(target - i, mask | visited) == false)) {                 m[visited] = true;                 return true;             }         }         m[visited] = false;         return false;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/464. Can I Win.cpp/Solution/canWin(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "string validIPAddress(string IP) { \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif (IP[i] == '.') \t\t\t\treturn isIPv4(IP) ? \"IPv4\" : \"Neither\"; \t\t\telse if (IP[i] == ':') \t\t\t\treturn isIPv6(IP) ? \"IPv6\" : \"Neither\"; \t\t} \t\treturn \"Neither\";     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string validIPAddress(string IP) { \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif (IP[i] == '.') \t\t\t\treturn isIPv4(IP) ? \"IPv4\" : \"Neither\"; \t\t\telse if (IP[i] == ':') \t\t\t\treturn isIPv6(IP) ? \"IPv6\" : \"Neither\"; \t\t} \t\treturn \"Neither\";     } private: \tbool isIPv4(string IP) { \t\tint dotcnt = 0; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif (IP[i] == '.') \t\t\t\tdotcnt++; \t\t} \t\tif (dotcnt != 3) return false; \t\tstring temp = \"\"; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t    if (IP[i] != '.') \t\t        temp += IP[i]; \t\t    if (IP[i] == '.' || i == IP.length() - 1) { \t\t        if (temp.length() == 0 || temp.length() > 3) return false; \t\t        for (int j = 0; j < temp.length(); j++) { \t\t            if (!isdigit(temp[j])) return false; \t\t        } \t\t        int tempInt = stoi(temp); \t\t        if (tempInt > 255 || tempInt < 0) return false; \t\t        string convertString = to_string(tempInt); \t\t        if (convertString != temp) return false; \t\t        temp = \"\"; \t\t    } \t\t} \t\tif (IP[IP.length()-1] == '.') return false; \t\treturn true; \t}  \tbool isIPv6(string IP) { \t\tint dotcnt = 0; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif(IP[i] == ':') \t\t\t\tdotcnt++; \t\t} \t\tif (dotcnt != 7) return false; \t\tstring temp = \"\"; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t    if (IP[i] != ':') \t\t        temp += IP[i]; \t\t    if (IP[i] == ':' || i == IP.length() - 1) { \t\t        if (temp.length() == 0 || temp.length() > 4) return false; \t\t        for (int j = 0; j < temp.length(); j++) { \t\t            if (!(isdigit(temp[j]) || (temp[j] >= 'a' && temp[j] <= 'f') || (temp[j] >= 'A' && temp[j] <= 'F'))) return false; \t\t        } \t\t        temp = \"\"; \t\t    } \t\t} \t\tif (IP[IP.length()-1] == ':') return false; \t\treturn true; \t} };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/468. Validate IP Address.cpp/Solution/validIPAddress(string)"
+    },
+    {
+        "f": [],
+        "fm": "bool isIPv4(string IP) { \t\tint dotcnt = 0; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif (IP[i] == '.') \t\t\t\tdotcnt++; \t\t} \t\tif (dotcnt != 3) return false; \t\tstring temp = \"\"; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t    if (IP[i] != '.') \t\t        temp += IP[i]; \t\t    if (IP[i] == '.' || i == IP.length() - 1) { \t\t        if (temp.length() == 0 || temp.length() > 3) return false; \t\t        for (int j = 0; j < temp.length(); j++) { \t\t            if (!isdigit(temp[j])) return false; \t\t        } \t\t        int tempInt = stoi(temp); \t\t        if (tempInt > 255 || tempInt < 0) return false; \t\t        string convertString = to_string(tempInt); \t\t        if (convertString != temp) return false; \t\t        temp = \"\"; \t\t    } \t\t} \t\tif (IP[IP.length()-1] == '.') return false; \t\treturn true; \t}",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string validIPAddress(string IP) { \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif (IP[i] == '.') \t\t\t\treturn isIPv4(IP) ? \"IPv4\" : \"Neither\"; \t\t\telse if (IP[i] == ':') \t\t\t\treturn isIPv6(IP) ? \"IPv6\" : \"Neither\"; \t\t} \t\treturn \"Neither\";     } private: \tbool isIPv4(string IP) { \t\tint dotcnt = 0; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif (IP[i] == '.') \t\t\t\tdotcnt++; \t\t} \t\tif (dotcnt != 3) return false; \t\tstring temp = \"\"; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t    if (IP[i] != '.') \t\t        temp += IP[i]; \t\t    if (IP[i] == '.' || i == IP.length() - 1) { \t\t        if (temp.length() == 0 || temp.length() > 3) return false; \t\t        for (int j = 0; j < temp.length(); j++) { \t\t            if (!isdigit(temp[j])) return false; \t\t        } \t\t        int tempInt = stoi(temp); \t\t        if (tempInt > 255 || tempInt < 0) return false; \t\t        string convertString = to_string(tempInt); \t\t        if (convertString != temp) return false; \t\t        temp = \"\"; \t\t    } \t\t} \t\tif (IP[IP.length()-1] == '.') return false; \t\treturn true; \t}  \tbool isIPv6(string IP) { \t\tint dotcnt = 0; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t\tif(IP[i] == ':') \t\t\t\tdotcnt++; \t\t} \t\tif (dotcnt != 7) return false; \t\tstring temp = \"\"; \t\tfor (int i = 0; i < IP.length(); i++) { \t\t    if (IP[i] != ':') \t\t        temp += IP[i]; \t\t    if (IP[i] == ':' || i == IP.length() - 1) { \t\t        if (temp.length() == 0 || temp.length() > 4) return false; \t\t        for (int j = 0; j < temp.length(); j++) { \t\t            if (!(isdigit(temp[j]) || (temp[j] >= 'a' && temp[j] <= 'f') || (temp[j] >= 'A' && temp[j] <= 'F'))) return false; \t\t        } \t\t        temp = \"\"; \t\t    } \t\t} \t\tif (IP[IP.length()-1] == ':') return false; \t\treturn true; \t} };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/468. Validate IP Address.cpp/Solution/isIPv4(string)"
+    },
+    {
+        "f": [],
+        "fm": "int findRadius(vector<int>& houses, vector<int>& heaters) {         sort(houses.begin(), houses.end());         sort(heaters.begin(), heaters.end());         int startindex = 0, maxn = 0;         for(int i = 0; i < houses.size(); i++) {             int tempmin = INT_MAX;             for(int j = startindex; j < heaters.size(); j++) {                 if(abs(heaters[j] - houses[i]) <= tempmin) {                     tempmin = abs(heaters[j] - houses[i]);                     startindex = j;                 } else {                     break;                 }             }             maxn = max(maxn, tempmin);         }         return maxn;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findRadius(vector<int>& houses, vector<int>& heaters) {         sort(houses.begin(), houses.end());         sort(heaters.begin(), heaters.end());         int startindex = 0, maxn = 0;         for(int i = 0; i < houses.size(); i++) {             int tempmin = INT_MAX;             for(int j = startindex; j < heaters.size(); j++) {                 if(abs(heaters[j] - houses[i]) <= tempmin) {                     tempmin = abs(heaters[j] - houses[i]);                     startindex = j;                 } else {                     break;                 }             }             maxn = max(maxn, tempmin);         }         return maxn;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/475. Heaters .cpp/Solution/findRadius(vector<int>&,vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int findComplement(int num) {         int temp = num, mask = 1;         while(temp != 0) {             temp = temp >> 1;             mask = mask << 1;         }         return num ^ (mask - 1);     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findComplement(int num) {         int temp = num, mask = 1;         while(temp != 0) {             temp = temp >> 1;             mask = mask << 1;         }         return num ^ (mask - 1);     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/476. Number Complement.cpp/Solution/findComplement(int)"
+    },
+    {
+        "f": [],
+        "fm": "int totalHammingDistance(vector<int>& nums) {         int result = 0, n = nums.size();         for(int i = 0; i < 32; i++) {             int cnt = 0;             for(int j = 0; j < n; j++) {                 if(nums[j] >> i & 1 == 1)                     cnt++;             }             result += cnt * (n - cnt);         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int totalHammingDistance(vector<int>& nums) {         int result = 0, n = nums.size();         for(int i = 0; i < 32; i++) {             int cnt = 0;             for(int j = 0; j < n; j++) {                 if(nums[j] >> i & 1 == 1)                     cnt++;             }             result += cnt * (n - cnt);         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/477. Total Hamming Distance.cpp/Solution/totalHammingDistance(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int largestPalindrome(int n) {         int l = pow(10, n-1), r = pow(10, n) - 1;         for (int i = r; i >= 1; i--) {             string s = to_string(i);             string t = s;             reverse(t.begin(), t.end());             long ans = stol(s + t);             for (long j = r; j * j >= ans; j--)                 if (ans % j == 0 && ans / j <= r) return ans % 1337;         }         return 9;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int largestPalindrome(int n) {         int l = pow(10, n-1), r = pow(10, n) - 1;         for (int i = r; i >= 1; i--) {             string s = to_string(i);             string t = s;             reverse(t.begin(), t.end());             long ans = stol(s + t);             for (long j = r; j * j >= ans; j--)                 if (ans % j == 0 && ans / j <= r) return ans % 1337;         }         return 9;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/479. Largest Palindrome Product.cpp/Solution/largestPalindrome(int)"
+    },
+    {
+        "f": [],
+        "fm": "int magicalString(int n) {         string s = \"122\";         int index = 2;         while(s.length() < n) {             int cnt = s[index] - '0';             char c = (s.back() == '1' ? '2' : '1');             string temp(cnt, c);             s += temp;             index++;         }         return count(s.begin(), s.begin() + n, '1');     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int magicalString(int n) {         string s = \"122\";         int index = 2;         while(s.length() < n) {             int cnt = s[index] - '0';             char c = (s.back() == '1' ? '2' : '1');             string temp(cnt, c);             s += temp;             index++;         }         return count(s.begin(), s.begin() + n, '1');     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/481. Magical String.cpp/Solution/magicalString(int)"
+    },
+    {
+        "f": [],
+        "fm": "string licenseKeyFormatting(string S, int K) {         string result = \"\", temp = \"\";         for(int i = 0; i < S.length(); i++) {             if(S[i] != '-')                 temp += toupper(S[i]);         }         int len = temp.length(), index = 0;         while(index < len % K)             result += temp[index++];         for(int i = 0; i < len - len % K; i++) {             if(i % K == 0 && index != 0)                 result += '-';             result += temp[index++];         }         return result;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     string licenseKeyFormatting(string S, int K) {         string result = \"\", temp = \"\";         for(int i = 0; i < S.length(); i++) {             if(S[i] != '-')                 temp += toupper(S[i]);         }         int len = temp.length(), index = 0;         while(index < len % K)             result += temp[index++];         for(int i = 0; i < len - len % K; i++) {             if(i % K == 0 && index != 0)                 result += '-';             result += temp[index++];         }         return result;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/482. License Key Formatting.cpp/Solution/licenseKeyFormatting(string,int)"
+    },
+    {
+        "f": [],
+        "fm": "int findMaxConsecutiveOnes(vector<int>& nums) {         vector<int> cnt(nums.size());         int maxn = 0;         cnt[0] = nums[0];         for(int i = 1; i < nums.size(); i++) {             if(nums[i] == 0) {                 cnt[i] = 0;                 maxn = max(maxn, cnt[i-1]);             } else {                 cnt[i] = cnt[i-1] + 1;             }         }         maxn = max(maxn, cnt[nums.size() - 1]);         return maxn;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int findMaxConsecutiveOnes(vector<int>& nums) {         vector<int> cnt(nums.size());         int maxn = 0;         cnt[0] = nums[0];         for(int i = 1; i < nums.size(); i++) {             if(nums[i] == 0) {                 cnt[i] = 0;                 maxn = max(maxn, cnt[i-1]);             } else {                 cnt[i] = cnt[i-1] + 1;             }         }         maxn = max(maxn, cnt[nums.size() - 1]);         return maxn;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/24/485. Max Consecutive Ones.cpp/Solution/findMaxConsecutiveOnes(vector<int>&)"
+    }
+]

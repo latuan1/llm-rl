@@ -1,0 +1,107 @@
+[
+    {
+        "f": [],
+        "fm": "int dominantIndex(vector<int>& nums) {         int maxn = INT_MIN, idx = -1, sec = INT_MIN;         for (int i = 0; i < nums.size(); i++) {             if (nums[i] > maxn) {                 sec = maxn;                 maxn = nums[i];                 idx = i;             } else if(nums[i] > sec){                 sec = nums[i];             }         }         return sec * 2 > maxn ? -1 : idx;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int dominantIndex(vector<int>& nums) {         int maxn = INT_MIN, idx = -1, sec = INT_MIN;         for (int i = 0; i < nums.size(); i++) {             if (nums[i] > maxn) {                 sec = maxn;                 maxn = nums[i];                 idx = i;             } else if(nums[i] > sec){                 sec = nums[i];             }         }         return sec * 2 > maxn ? -1 : idx;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/747. Largest Number At Least Twice of Others.cpp/Solution/dominantIndex(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int countPrimeSetBits(int L, int R) {         int cnt = 0, hash[20] = {0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1};         for (int i = L; i <= R; i++) {             bitset<20> b(i);             if(hash[b.count()]) cnt++;         }         return cnt;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int countPrimeSetBits(int L, int R) {         int cnt = 0, hash[20] = {0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1};         for (int i = L; i <= R; i++) {             bitset<20> b(i);             if(hash[b.count()]) cnt++;         }         return cnt;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/762. Prime Number of Set Bits in Binary Representation.cpp/Solution/countPrimeSetBits(int,int)"
+    },
+    {
+        "f": [],
+        "fm": "vector<int> partitionLabels(string S) {         vector<int> ans;         for (int i = 0, start = 0, end = 0; i < S.length(); i++) {             end = max(end, (int)S.find_last_of(S[i]));             if (i == end) {                 ans.push_back(end - start + 1);                 start = end + 1;             }         }         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     vector<int> partitionLabels(string S) {         vector<int> ans;         for (int i = 0, start = 0, end = 0; i < S.length(); i++) {             end = max(end, (int)S.find_last_of(S[i]));             if (i == end) {                 ans.push_back(end - start + 1);                 start = end + 1;             }         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/763. Partition Labels.cpp/Solution/partitionLabels(string)"
+    },
+    {
+        "f": [],
+        "fm": "bool isToeplitzMatrix(vector<vector<int>>& matrix) {         for (int i = 1; i < matrix.size(); i++)             for (int j = 1; j < matrix[0].size(); j++)                 if (matrix[i][j] != matrix[i-1][j-1]) return false;         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isToeplitzMatrix(vector<vector<int>>& matrix) {         for (int i = 1; i < matrix.size(); i++)             for (int j = 1; j < matrix[0].size(); j++)                 if (matrix[i][j] != matrix[i-1][j-1]) return false;         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/766. Toeplitz Matrix.cpp/Solution/isToeplitzMatrix(vector<vector<int>>&)"
+    },
+    {
+        "f": [],
+        "fm": "int maxChunksToSorted(vector<int>& arr) {         int sum1 = 0, sum2 = 0, ans = 0;         vector<int> t = arr;         sort(t.begin(), t.end());         for(int i = 0; i < arr.size(); i++) {             sum1 += t[i];             sum2 += arr[i];             if(sum1 == sum2) ans++;         }         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxChunksToSorted(vector<int>& arr) {         int sum1 = 0, sum2 = 0, ans = 0;         vector<int> t = arr;         sort(t.begin(), t.end());         for(int i = 0; i < arr.size(); i++) {             sum1 += t[i];             sum2 += arr[i];             if(sum1 == sum2) ans++;         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/768. Max Chunks To Make Sorted II.cpp/Solution/maxChunksToSorted(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "int maxChunksToSorted(vector<int>& arr) {         int ans = 0;         for (int i = 0, maxn = 0; i < arr.size(); i++) {             maxn = max(arr[i], maxn);             if (maxn == i) ans++;         }         return ans;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     int maxChunksToSorted(vector<int>& arr) {         int ans = 0;         for (int i = 0, maxn = 0; i < arr.size(); i++) {             maxn = max(arr[i], maxn);             if (maxn == i) ans++;         }         return ans;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/769. Max Chunks To Make Sorted.cpp/Solution/maxChunksToSorted(vector<int>&)"
+    },
+    {
+        "f": [],
+        "fm": "bool isIdealPermutation(vector<int>& A) {         if (A.size() <= 2) return true;         for (int i = 0, maxn = -1; i < A.size() - 2; i++) {             maxn = max(maxn, A[i]);             if (maxn > A[i+2]) return false;         }         return true;     }",
+        "datatest": [],
+        "m": {
+            "called_m": [],
+            "stub_called_m": [],
+            "callee_m": []
+        },
+        "fc": "class Solution { public:     bool isIdealPermutation(vector<int>& A) {         if (A.size() <= 2) return true;         for (int i = 0, maxn = -1; i < A.size() - 2; i++) {             maxn = max(maxn, A[i]);             if (maxn > A[i+2]) return false;         }         return true;     } };",
+        "c": [
+            ""
+        ],
+        "path_fm": "/mnt/sdb2/LAB/test/18/775. Global and Local Inversions.cpp/Solution/isIdealPermutation(vector<int>&)"
+    }
+]
