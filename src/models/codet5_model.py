@@ -1,14 +1,19 @@
+import datasets
+
 from src.models.base_model import BaseModel
 import os
 import torch
 from peft import PeftConfig, PeftModel
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from src.config.config import max_target_length, max_source_length
+from src.utils.mylogger import logger
 
 class Codet5Model(BaseModel):
     def __init__(self, model_name: str):
         super().__init__(model_name)
-        model_path = os.path.join("models", self.model_name)
+
+    def load_model(self, model_name):
+        model_path = os.path.join("models", model_name)
         if os.path.exists(os.path.join(model_path, "adapter_config.json")):
             # Đọc thông tin cấu hình adapter
             config = PeftConfig.from_pretrained(model_path)
@@ -21,25 +26,27 @@ class Codet5Model(BaseModel):
                 device_map="auto"
             )
             # Load adapter từ checkpoint với đủ thông tin
-            self.model = PeftModel.from_pretrained(
+            model = PeftModel.from_pretrained(
                 model,
                 model_path,
                 is_trainable=False,
             )
-            self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
-            print("model loaded 1")
+            tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+            logger.info(f"model loaded from checkpoint: {model_path}")
         else:
-            model_path = os.path.join("Salesforce", self.model_name)
+            model_path = os.path.join("Salesforce", model_name)
             # Load mô hình thông thường từ HuggingFace
-            self.model = AutoModelForSeq2SeqLM.from_pretrained(
+            model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_path,
                 device_map="cuda" if torch.cuda.is_available() else "cpu"
             )
-            self.tokenizer = AutoTokenizer.from_pretrained(model_path)
-            print("model loaded 2")
+            tokenizer = AutoTokenizer.from_pretrained(model_path)
+            logger.info(f"model loaded from huggingface: {model_path}")
+        return model, tokenizer
 
     def generate_from_sample(self, sample: str):
-        inputs = self.tokenizer(sample, return_tensors="pt", max_length=max_source_length, truncation=True)
+        source_text = str(sample["source"]) + " <SEP>"
+        inputs = self.tokenizer(source_text, return_tensors="pt", max_length=max_source_length, truncation=True)
         inputs = {key: value.to(self.model.device) for key, value in inputs.items()}
 
         self.model.eval()  # bật chế độ đánh giá
@@ -51,4 +58,4 @@ class Codet5Model(BaseModel):
                 pad_token_id=self.tokenizer.pad_token_id if hasattr(self.tokenizer,
                                                                     'pad_token_id') else self.tokenizer.eos_token_id
             )
-        return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+        return source_text, self.tokenizer.decode(outputs[0], skip_special_tokens=True)
