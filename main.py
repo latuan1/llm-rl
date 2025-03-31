@@ -54,13 +54,13 @@ def main():
     #  Đánh giá mô hình
     logger.info("\n")
     logger.info("[UET] Đánh giá mô hình trên tập validation. Tôi sử dụng trực tiếp mô hình vừa học.")
-    _, dataset = load_model_and_dataset(datapath=VALIDATIONSET_DATA_PATH_PROCESS)
+    dataset = load_model_and_dataset(datapath=VALIDATIONSET_DATA_PATH_PROCESS)
     evaluate_model(dataset, modelObject, outputFolder=OUTPUT_VALIDATIONSET_CSV)
     logger.info("[UET] Hoàn tất đánh giá trên tập validation!")
 
     logger.info("\n")
     logger.info("[UET] Đánh giá mô hình trên tập training. Tôi sử dụng trực tiếp mô hình vừa học.")
-    _, dataset = load_model_and_dataset(datapath=TRAINSET_DATA_PATH_PROCESS)
+    dataset = load_model_and_dataset(datapath=TRAINSET_DATA_PATH_PROCESS)
     evaluate_model(dataset, modelObject, outputFolder=OUTPUT_TRAINSET_CSV)
     logger.info("[UET] Hoàn tất đánh giá trên tập training!")
 
