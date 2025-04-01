@@ -46,6 +46,9 @@ class Codet5Model(BaseModel):
 
     def generate_from_sample(self, sample: str):
         source_text = str(sample["source"]) + " <SEP>"
+        expected_output = str(sample["target"])
+        if expected_output.endswith("<TC>"):
+            expected_output = expected_output[:-4]
         inputs = self.tokenizer(source_text, return_tensors="pt", max_length=max_source_length, truncation=True)
         inputs = {key: value.to(self.model.device) for key, value in inputs.items()}
 
@@ -58,4 +61,7 @@ class Codet5Model(BaseModel):
                 pad_token_id=self.tokenizer.pad_token_id if hasattr(self.tokenizer,
                                                                     'pad_token_id') else self.tokenizer.eos_token_id
             )
-        return source_text, self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+        predicted = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+        if predicted.endswith(expected_output):
+            predicted = predicted[:-4]
+        return str(sample["source"]), predicted
