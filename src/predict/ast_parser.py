@@ -38,3 +38,7 @@ def check_cpp_code_ast(code: str) -> bool:
     except Exception as e:
         logger.info("Có ngoại lệ xảy ra:", e)
         return False
+
+if __name__ == "__main__":
+    code = "int a = 0; int b = 1; int sum(int a, int b) {return a + b; } int c = sum(a, b);"
+    print(check_cpp_code_ast(code))
