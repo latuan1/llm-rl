@@ -16,12 +16,13 @@ def check_cpp_code_ast(code: str) -> bool:
     index = Index.create()
     try:
         # Parse code dưới dạng một file tạm thời "tmp.cpp"
-        tu = index.parse(
-            'tmp.cpp',
-            args=['-std=c++11'],  # Bạn có thể thay đổi options nếu cần
-            unsaved_files=[('tmp.cpp', code)],
-            options=0
-        )
+        # tu = index.parse(
+        #     'tmp.cpp',
+        #     args=['-std=c++11'],  # Bạn có thể thay đổi options nếu cần
+        #     unsaved_files=[('tmp.cpp', code)],
+        #     options=0
+        # )
+        tu = index.parse('temp.cpp', unsaved_files=[('temp.cpp', code)], args=['-x', 'c++'])
 
         # Kiểm tra các thông báo chẩn đoán: nếu có lỗi (Diagnostic.Error trở lên), báo lỗi
         errors = [diag for diag in tu.diagnostics if diag.severity >= clang.cindex.Diagnostic.Error]

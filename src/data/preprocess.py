@@ -4,10 +4,12 @@ import logging
 import os
 import re
 import traceback
+
+from clang.cindex import Index, TokenKind
+
 from src.config.config import REMOVE_COMMENT_MODE, COMMENT_REMOVAL, max_target_length, TARGET_SELETCTION_STRATEGIES, \
     max_source_length
-
-logger = logging.getLogger(__name__)
+from src.utils.mylogger import logger
 
 
 # Config clang path - Khong xoa
@@ -83,34 +85,32 @@ def remove_comments_ast(code):
     Loại bỏ comment trong mã C++ bằng Clang AST.
     """
     # Tam thoi comment do ko chay duoc tren VAST
-    # try:
-    #     if not code:
-    #         return ""
-    #
-    #     if isinstance(code, list):
-    #         code = " ".join(map(str, code))
-    #
-    #     index = Index.create()
-    #     tu = index.parse('temp.cpp', unsaved_files=[('temp.cpp', code)], args=['-x', 'c++'])
-    #     comments = [(token.extent.start.offset, token.extent.end.offset) for token in tu.cursor.get_tokens() if
-    #                 token.kind == TokenKind.COMMENT]
-    #
-    #     if not comments:
-    #         return code
-    #
-    #     result = []
-    #     last_end = 0
-    #     for start, end in comments:
-    #         result.append(code[last_end:start])
-    #         last_end = end
-    #     result.append(code[last_end:])
-    #
-    #     return re.sub(r';+', '; ', "".join(result).strip(";")) + ";"
-    # except Exception as e:
-    #     logger.error(f"[ERROR] remove_comments_ast: {e}")
-    #     return code
+    try:
+        if not code:
+            return ""
 
-    return code
+        if isinstance(code, list):
+            code = " ".join(map(str, code))
+
+        index = Index.create()
+        tu = index.parse('temp.cpp', unsaved_files=[('temp.cpp', code)], args=['-x', 'c++'])
+        comments = [(token.extent.start.offset, token.extent.end.offset) for token in tu.cursor.get_tokens() if
+                    token.kind == TokenKind.COMMENT]
+
+        if not comments:
+            return code
+
+        result = []
+        last_end = 0
+        for start, end in comments:
+            result.append(code[last_end:start])
+            last_end = end
+        result.append(code[last_end:])
+
+        return re.sub(r';+', '; ', "".join(result).strip(";")) + ";"
+    except Exception as e:
+        logger.error(f"[ERROR] remove_comments_ast: {e}")
+        return code
 
 
 def clean_code(code):
