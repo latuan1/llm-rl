@@ -58,7 +58,7 @@ class Codet5Model(BaseModel):
                 pad_token_id=self.tokenizer.pad_token_id if hasattr(self.tokenizer,
                                                                     'pad_token_id') else self.tokenizer.eos_token_id
             )
-        predicted = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+        predicted = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
         if predicted.endswith("<TC>"):
             predicted = predicted.replace("<TC>", "")
         return str(sample["source"]), predicted
