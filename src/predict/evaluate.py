@@ -26,7 +26,7 @@ def evaluate_model(dataset, modelObject: BaseModel, outputFolder: str, limit: in
 
     with open(outputFolder, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f, quoting=csv.QUOTE_ALL)
-        writer.writerow(["Source", "Expected Target", "Predicted Target", "Check AST"])
+        writer.writerow(["Source", "Expected Target", "Predicted Target", "Check AST Expected", "Check AST Predicted"])
         count = 0
 
         # Tao progress bar
@@ -40,9 +40,12 @@ def evaluate_model(dataset, modelObject: BaseModel, outputFolder: str, limit: in
             try:
                 source_text, predicted = modelObject.generate_from_sample(sample)
                 ground_truth = str(sample["target"])
-                check_ast = str(check_cpp_code_ast(predicted))
+                if ground_truth.endswith("<TC>"):
+                    ground_truth = ground_truth.replace("<TC>", "")
+                check_ast_expected = str(check_cpp_code_ast(ground_truth))
+                check_ast_predict = str(check_cpp_code_ast(predicted))
 
-                writer.writerow([source_text, ground_truth, predicted, check_ast])
+                writer.writerow([source_text, ground_truth, predicted,check_ast_expected, check_ast_predict])
                 f.flush()
 
                 count += 1
